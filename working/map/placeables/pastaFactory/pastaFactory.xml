@@ -98,7 +98,7 @@
                     <output fillType="TRICOLORE" amount="100" />
                 </outputs>
             </production>
-			<production id="pastaUovo" name="$l10n_fillType_pastaUovo" cyclesPerHour="3" costsPerActiveHour="3">
+            <production id="pastaUovo" name="$l10n_fillType_pastaUovo" cyclesPerHour="3" costsPerActiveHour="3">
                 <inputs>
                     <input fillType="FLOUR" amount="80" />
 					<input fillType="EGG" amount="10" />
@@ -107,6 +107,24 @@
                     <output fillType="PASTAUOVO" amount="90" />
                 </outputs>
             </production>
+            <production id="passata" name="$l10n_fillType_passata" cyclesPerHour="8" costsPerActiveHour="3"><inputs><input fillType="TOMATO" amount="20"/></inputs><outputs><output fillType="PASSATA" amount="16"/></outputs></production>
+            <production id="sugoPomodoro" name="$l10n_fillType_sugoPomodoro" cyclesPerHour="6" costsPerActiveHour="3"><inputs><input fillType="TOMATO" amount="15"/><input fillType="OLIVE_OIL" amount="2"/><input fillType="GARLIC" amount="1"/></inputs><outputs><output fillType="SUGO_AL_POMODORO" amount="14"/></outputs></production>
+            <production id="arrabbiata" name="$l10n_fillType_arrabbiata" cyclesPerHour="6" costsPerActiveHour="3"><inputs><input fillType="TOMATO" amount="15"/><input fillType="OLIVE_OIL" amount="2"/><input fillType="CHILLI" amount="2"/></inputs><outputs><output fillType="ARRABBIATA" amount="14"/></outputs></production>
+            <production id="marinara" name="$l10n_fillType_marinara" cyclesPerHour="6" costsPerActiveHour="3"><inputs><input fillType="TOMATO" amount="15"/><input fillType="OLIVE_OIL" amount="2"/><input fillType="GARLIC" amount="1"/><input fillType="BASIL" amount="1"/></inputs><outputs><output fillType="MARINARA" amount="14"/></outputs></production>
+            <production id="sugoFunghi" name="$l10n_fillType_sugoFunghi" cyclesPerHour="6" costsPerActiveHour="3"><inputs><input fillType="OYSTER" amount="8"/><input fillType="TOMATO" amount="8"/><input fillType="OLIVE_OIL" amount="2"/></inputs><outputs><output fillType="SUGO_AI_FUNGHI" amount="14"/></outputs></production>
+            <production id="pesto" name="$l10n_fillType_pesto" cyclesPerHour="6" costsPerActiveHour="3"><inputs><input fillType="BASIL" amount="6"/><input fillType="OLIVE_OIL" amount="2"/><input fillType="CHEESE" amount="2"/></inputs><outputs><output fillType="PESTO" amount="8"/></outputs></production>
+            <production id="pestoRosso" name="$l10n_fillType_pestoRosso" cyclesPerHour="6" costsPerActiveHour="3"><inputs><input fillType="BASIL" amount="4"/><input fillType="TOMATO" amount="8"/><input fillType="OLIVE_OIL" amount="2"/></inputs><outputs><output fillType="PESTO_ROSSO" amount="10"/></outputs></production>
+            <production id="preservedPeppers" name="$l10n_fillType_preservedPeppers" cyclesPerHour="6" costsPerActiveHour="3"><inputs><input fillType="PEPPER" amount="12"/><input fillType="OLIVE_OIL" amount="2"/></inputs><outputs><output fillType="PRESERVED_PEPPERS" amount="10"/></outputs></production>
+            <production id="garlicInOil" name="$l10n_fillType_garlicInOil" cyclesPerHour="6" costsPerActiveHour="3"><inputs><input fillType="GARLIC" amount="12"/><input fillType="OLIVE_OIL" amount="2"/></inputs><outputs><output fillType="GARLIC_IN_OIL" amount="10"/></outputs></production>
+            <production id="mushroomsInOil" name="$l10n_fillType_mushroomsInOil" cyclesPerHour="6" costsPerActiveHour="3"><inputs><input fillType="OYSTER" amount="8"/><input fillType="OLIVE_OIL" amount="2"/></inputs><outputs><output fillType="MUSHROOMS_IN_OIL" amount="10"/></outputs></production>
+            <production id="herbDryer" name="Dried herbs" cyclesPerHour="6" costsPerActiveHour="2"><inputs><input fillType="BASIL" amount="5"/><input fillType="PARSLEY" amount="5"/><input fillType="ROSEMARY" amount="5"/><input fillType="SAGE" amount="5"/><input fillType="THYME" amount="5"/><input fillType="MINT" amount="5"/></inputs><outputs><output fillType="DRIED_BASIL" amount="4"/><output fillType="DRIED_PARSLEY" amount="4"/><output fillType="DRIED_ROSEMARY" amount="4"/><output fillType="DRIED_SAGE" amount="4"/><output fillType="DRIED_THYME" amount="4"/><output fillType="DRIED_MINT" amount="4"/></outputs></production>
+            <production id="ricottaSpinachFilling" name="$l10n_fillType_ricottaSpinachFilling" cyclesPerHour="5" costsPerActiveHour="3"><inputs><input fillType="RICOTTA" amount="8"/><input fillType="SPINACH" amount="8"/></inputs><outputs><output fillType="RICOTTA_SPINACH_FILLING" amount="12"/></outputs></production>
+            <production id="ravioli" name="$l10n_fillType_ravioli" cyclesPerHour="4" costsPerActiveHour="3"><inputs><input fillType="PASTA" amount="8"/><input fillType="RICOTTA_SPINACH_FILLING" amount="8"/></inputs><outputs><output fillType="RAVIOLI" amount="12"/></outputs></production>
+            <production id="pastaAlPomodoro" name="$l10n_fillType_pastaAlPomodoro" cyclesPerHour="4" costsPerActiveHour="3"><inputs><input fillType="PASTA" amount="10"/><input fillType="SUGO_AL_POMODORO" amount="8"/></inputs><outputs><output fillType="PASTA_AL_POMODORO" amount="14"/></outputs></production>
+            <production id="pastaArrabbiata" name="$l10n_fillType_pastaArrabbiata" cyclesPerHour="4" costsPerActiveHour="3"><inputs><input fillType="PASTA" amount="10"/><input fillType="ARRABBIATA" amount="8"/></inputs><outputs><output fillType="PASTA_ARRABBIATA" amount="14"/></outputs></production>
+            <production id="pastaAiFunghi" name="$l10n_fillType_pastaAiFunghi" cyclesPerHour="4" costsPerActiveHour="3"><inputs><input fillType="PASTA" amount="10"/><input fillType="SUGO_AI_FUNGHI" amount="8"/></inputs><outputs><output fillType="PASTA_AI_FUNGHI" amount="14"/></outputs></production>
+            <production id="pastaAlPesto" name="$l10n_fillType_pastaAlPesto" cyclesPerHour="4" costsPerActiveHour="3"><inputs><input fillType="PASTA" amount="10"/><input fillType="PESTO" amount="8"/></inputs><outputs><output fillType="PASTA_AL_PESTO" amount="14"/></outputs></production>
+            <production id="gnocchiAlPomodoro" name="$l10n_fillType_gnocchiAlPomodoro" cyclesPerHour="4" costsPerActiveHour="3"><inputs><input fillType="GNOCCHI" amount="10"/><input fillType="SUGO_AL_POMODORO" amount="8"/></inputs><outputs><output fillType="GNOCCHI_AL_POMODORO" amount="14"/></outputs></production>
         </productions>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
@@ -118,12 +136,15 @@
 			<capacity fillType="PASTA"          capacity="25000" />
 			<capacity fillType="PASTAUOVO"   	capacity="25000" />
 			<capacity fillType="GNOCCHI" 		capacity="25000" />
-			<capacity fillType="TRICOLORE"		capacity="25000" />
+            <capacity fillType="TRICOLORE"		capacity="25000" />
+            <capacity fillType="PEPPER" capacity="20000"/><capacity fillType="BASIL" capacity="10000"/><capacity fillType="PARSLEY" capacity="10000"/><capacity fillType="ROSEMARY" capacity="10000"/><capacity fillType="SAGE" capacity="10000"/><capacity fillType="THYME" capacity="10000"/><capacity fillType="MINT" capacity="10000"/>
+            <capacity fillType="PASSATA" capacity="25000"/><capacity fillType="SUGO_AL_POMODORO" capacity="25000"/><capacity fillType="ARRABBIATA" capacity="25000"/><capacity fillType="MARINARA" capacity="25000"/><capacity fillType="SUGO_AI_FUNGHI" capacity="25000"/><capacity fillType="PESTO" capacity="25000"/><capacity fillType="PESTO_ROSSO" capacity="25000"/><capacity fillType="RICOTTA" capacity="20000"/><capacity fillType="RICOTTA_SPINACH_FILLING" capacity="25000"/><capacity fillType="RAVIOLI" capacity="25000"/>
+            <capacity fillType="EGGPLANT" capacity="20000"/><capacity fillType="ASPARAGUS_WHITE" capacity="20000"/><capacity fillType="ASPARAGUS_GREEN" capacity="20000"/><capacity fillType="CHIVES" capacity="10000"/><capacity fillType="LEMONBALM" capacity="10000"/><capacity fillType="DRIED_BASIL" capacity="25000"/><capacity fillType="DRIED_PARSLEY" capacity="25000"/><capacity fillType="DRIED_ROSEMARY" capacity="25000"/><capacity fillType="DRIED_SAGE" capacity="25000"/><capacity fillType="DRIED_THYME" capacity="25000"/><capacity fillType="DRIED_MINT" capacity="25000"/><capacity fillType="PRESERVED_PEPPERS" capacity="25000"/><capacity fillType="GARLIC_IN_OIL" capacity="25000"/><capacity fillType="MUSHROOMS_IN_OIL" capacity="25000"/><capacity fillType="PASTA_AL_POMODORO" capacity="25000"/><capacity fillType="PASTA_ARRABBIATA" capacity="25000"/><capacity fillType="PASTA_AI_FUNGHI" capacity="25000"/><capacity fillType="PASTA_AL_PESTO" capacity="25000"/><capacity fillType="GNOCCHI_AL_POMODORO" capacity="25000"/>
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="exactFillNode" aiNode="unloadTriggerAINode" fillTypes="POTATO SPINACH"/>
-            <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR POTATO TOMATO SPINACH EGG"/>
+            <unloadTrigger exactFillRootNode="exactFillNode" aiNode="unloadTriggerAINode" fillTypes="POTATO TOMATO SPINACH PEPPER EGGPLANT ASPARAGUS_WHITE ASPARAGUS_GREEN BASIL PARSLEY ROSEMARY SAGE CHIVES THYME LEMONBALM OYSTER OLIVE_OIL CHEESE RICOTTA PASTA GNOCCHI"/>
+            <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR POTATO TOMATO SPINACH PEPPER EGGPLANT ASPARAGUS_WHITE ASPARAGUS_GREEN BASIL PARSLEY ROSEMARY SAGE CHIVES THYME LEMONBALM OYSTER OLIVE_OIL CHEESE RICOTTA PASTA GNOCCHI"/>
         </sellingStation>
 
         <palletSpawner>
