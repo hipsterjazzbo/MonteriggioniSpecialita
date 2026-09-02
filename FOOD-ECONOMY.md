@@ -17,7 +17,7 @@ Existing equivalent names were reused: `GREENBEAN`, `PEA`, `SPINACH`, `ENOKI`, a
 
 ## Greenhouses
 
-Both existing medium greenhouse variants now have fertilizer recipes producing the new vegetables and herbs. Inputs are `WATER + SEEDS + FERTILIZER`; existing manure paths remain intact. Outputs are stored in the greenhouse and are saleable through the existing economy. Seasonal greenhouse Lua was not imported; these outputs remain non-seasonal until the seasonal donor can be integrated safely.
+Both existing medium greenhouse variants now also expose compost-backed specialty recipes using `WATER + SEEDS + COMPOST`; inherited fertilizer/manure paths remain intact. Seasonal greenhouse Lua was not imported; outputs remain non-seasonal.
 
 ## Dairy
 
@@ -31,7 +31,7 @@ Animal collection remains the existing map architecture; no animal Lua was added
 
 ## Conservificio and herbs
 
-The existing pasta factory is used as the map’s shared small food-production point for this pass. It produces `PASSATA`, `SUGO_AL_POMODORO`, `ARRABBIATA`, `MARINARA`, `SUGO_AI_FUNGHI`, `PESTO`, `PESTO_ROSSO`, `PRESERVED_PEPPERS`, `GARLIC_IN_OIL`, and `MUSHROOMS_IN_OIL`. Its simple herb-dryer recipes produce `DRIED_BASIL`, `DRIED_PARSLEY`, `DRIED_ROSEMARY`, `DRIED_SAGE`, `DRIED_THYME`, and `DRIED_MINT` without changing the existing `MINT_WINDROW -> DRYMINT_WINDROW` field mechanic.
+The standalone Conservificio Monteriggioni produces `PASSATA`, `SUGO_AL_POMODORO`, `ARRABBIATA`, `MARINARA`, `SUGO_AI_FUNGHI`, `PESTO`, `PESTO_ROSSO`, `PRESERVED_PEPPERS`, `GARLIC_IN_OIL`, and `MUSHROOMS_IN_OIL`. The standalone Farm Herb Dryer produces dried herbs without changing the existing `MINT_WINDROW -> DRYMINT_WINDROW` field mechanic. See `PLACEABLES-AND-COMPOST.md`.
 
 ## Pasta meals
 
