@@ -21,8 +21,8 @@
 
 ## Donors and internal names
 
-- Crop donor: `sesame(prefab).zip`, Jinkou89.
-- Oil pallet/icon reference: `FS25_MultifruitPack_PREFAB.zip`, Jinkou89; no generic oil factory or multifruit framework imported.
+- Crop donor: `donors/sesame(prefab).zip`, Jinkou89.
+- Oil pallet/icon reference: `donors/FS25_MultifruitPack_PREFAB.zip`, Jinkou89; no generic oil factory or multifruit framework imported.
 - Internal names: `SESAME`, `SESAME_OIL`, foliage fruit type `sesame`, production id `sesame_oil`.
 
 ## Compromises / not yet tested
