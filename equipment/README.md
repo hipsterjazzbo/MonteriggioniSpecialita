@@ -15,14 +15,15 @@ This is catalogue coverage, not a claim that every candidate has been gameplay-t
 | Rake / windrower | CANDIDATE — NEEDS GAMEPLAY TEST | SIP Favorit 220 dual-purpose configuration |
 | Round baler | CANDIDATE — NEEDS GAMEPLAY TEST | Welger RP150, earliest confirmed existence 1978 |
 | Forage wagon | CANDIDATE — NEEDS GAMEPLAY TEST | Pöttinger Pionier LW14 (1963); Krone Optimat Alleslader (1963 family date) |
-| Grain drill | MISSING | Amazone D8-25 Super result is FS22-only; no suitable FS25 candidate with defensible date added |
+| Grain drill | CANDIDATE — NEEDS GAMEPLAY TEST | Hassia DU 100, earliest confirmed exact-model existence 1984 |
 | Plough | CANDIDATE — YEAR UNRESOLVED | Nardi BT2 / BT3 |
-| Cultivator / secondary tillage | MISSING | No suitable pre-1990 FS25 candidate with defensible identity added |
+| Cultivator / secondary tillage | CANDIDATE — YEAR UNRESOLVED | Lemken Achat, exact model documented with build year 1990 |
 | Manure spreader | CANDIDATE — YEAR UNRESOLVED | Strautmann Streublitz BE5 |
-| Slurry tanker | MISSING | No suitable pre-1990 FS25 candidate verified |
+| Slurry tanker | CANDIDATE — YEAR UNRESOLVED | Joskin Tanker 3500; historic capacity/source conflict prevents a date assignment |
 | Fertiliser spreader | MISSING | No suitable pre-1990 FS25 candidate verified |
 | Grain / general trailer | CANDIDATE — YEAR UNRESOLVED | Krone Emsland |
 | Bale handling / transport | CANDIDATE — YEAR UNRESOLVED | Krone Emsland removable-side / bale configurations |
+| Fertiliser spreader | CANDIDATE — NEEDS GAMEPLAY TEST | RAUCH ZSA580, earliest confirmed dated documentation 1989 |
 | Maize / silage harvesting | CANDIDATE — YEAR UNRESOLVED | Pöttinger MEX II S; wider MEX family begins around 1969, exact II S date unresolved |
 
 ## Research decisions
@@ -32,6 +33,10 @@ This is catalogue coverage, not a claim that every candidate has been gameplay-t
 - Krone independently dates the first self-loading Alleslader to 1963. The FS25 Optimat conversion is therefore catalogued as a family-date candidate, not as proof of every configuration's date.
 - The Welger RP150's 1978 date is explicitly an earliest confirmed existence date from a surviving January 1978 manual, not a claimed launch date.
 - The Amazone D8-25 Super was not added because the located ModHub listing is FS22, not FS25.
+- The Hassia DU 100 row uses 1984 as earliest confirmed exact-model existence from the IMAG/DLG report, not as a claimed launch year.
+- The RAUCH ZSA580 row uses 1989 as earliest confirmed dated documentation from ZSA spread-table sheets, not as a claimed launch year.
+- The Lemken Achat row uses an exact 1990 used-machine record as earliest confirmed existence, not as a proven introduction.
+- The Joskin Tanker 3500 remains undated: JOSKIN sources disagree on whether the first 1984 tanker was 3,500 or 5,500 litres, and the FS25 listing does not prove historic reproduction.
 
 ## Deferred or rejected candidates
 
