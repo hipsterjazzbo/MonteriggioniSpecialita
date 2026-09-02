@@ -36,22 +36,27 @@
 		<fruitType filename="map/foliage/greenRye/greenRye.xml"/>
 		<fruitType filename="map/foliage/fieldGrass/fieldGrass.xml"/>
 		<fruitType filename="map/foliage/sesame/sesame.xml"/>
+		<fruitType filename="map/foliage/fabaBean/fabaBean.xml"/>
+		<fruitType filename="map/foliage/lavender/lavender.xml"/>
+		<fruitType filename="map/foliage/mint/mint.xml"/>
+		<fruitType filename="map/foliage/chickpeas.xml"/>
+		<fruitType filename="map/foliage/grapeb.xml"/>
 		
 		<fruitType filename="$data/foliage/meadow/meadowUS/meadowUS.xml"/>
     </fruitTypes>
 
     <fruitTypeCategories>
-        <fruitTypeCategory name="GRAINHEADER">WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM RICELONGGRAIN RYE TRITICALE SPELT SESAME</fruitTypeCategory>
+        <fruitTypeCategory name="GRAINHEADER">WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM RICELONGGRAIN RYE TRITICALE SPELT SESAME FABABEAN CHICKPEA</fruitTypeCategory>
         <fruitTypeCategory name="MAIZEHEADER">MAIZE SUNFLOWER</fruitTypeCategory>
-        <fruitTypeCategory name="MAIZECUTTER">MAIZE WHEAT BARLEY OAT CANOLA SORGHUM SOYBEAN SUNFLOWER SILAGEMAIZE VETCHRYE GREENRYE SESAME</fruitTypeCategory>
-        <fruitTypeCategory name="DIRECTCUTTER">GRASS WHEAT BARLEY OAT CANOLA SORGHUM SOYBEAN SUNFLOWER FIELDGRASS SESAME</fruitTypeCategory>
-        <fruitTypeCategory name="SOWINGMACHINE">WHEAT BARLEY OAT CANOLA RICELONGGRAIN OILSEEDRADISH GRASS PEA SPINACH RYE TRITICALE SPELT VETCHRYE GREENRYE HUMUSACTIVE MUSTARD FIELDGRASS</fruitTypeCategory>
+        <fruitTypeCategory name="MAIZECUTTER">MAIZE WHEAT BARLEY OAT CANOLA SORGHUM SOYBEAN SUNFLOWER SILAGEMAIZE VETCHRYE GREENRYE SESAME FABABEAN LAVENDER CHICKPEA</fruitTypeCategory>
+        <fruitTypeCategory name="DIRECTCUTTER">GRASS WHEAT BARLEY OAT CANOLA SORGHUM SOYBEAN SUNFLOWER FIELDGRASS SESAME FABABEAN LAVENDER CHICKPEA</fruitTypeCategory>
+        <fruitTypeCategory name="SOWINGMACHINE">WHEAT BARLEY OAT CANOLA RICELONGGRAIN OILSEEDRADISH GRASS PEA SPINACH RYE TRITICALE SPELT VETCHRYE GREENRYE HUMUSACTIVE MUSTARD FIELDGRASS MINT</fruitTypeCategory>
         <fruitTypeCategory name="SUGARCANE_PLANTER">SUGARCANE</fruitTypeCategory>
-        <fruitTypeCategory name="PLANTER">MAIZE SORGHUM SUNFLOWER SOYBEAN SUGARBEET COTTON GREENBEAN SILAGEMAIZE SESAME</fruitTypeCategory>
-        <fruitTypeCategory name="PLANTER_SMALL">CARROT PARSNIP BEETROOT SPINACH</fruitTypeCategory>
+        <fruitTypeCategory name="PLANTER">MAIZE SORGHUM SUNFLOWER SOYBEAN SUGARBEET COTTON GREENBEAN SILAGEMAIZE SESAME FABABEAN CHICKPEA</fruitTypeCategory>
+        <fruitTypeCategory name="PLANTER_SMALL">CARROT PARSNIP BEETROOT SPINACH LAVENDER GRAPEB</fruitTypeCategory>
         <fruitTypeCategory name="WEEDER">OILSEEDRADISH GRASS HUMUSACTIVE MUSTARD VETCHRYE GREENRYE FIELDGRASS</fruitTypeCategory>
         <fruitTypeCategory name="TOPLIFTINGHARVESTER">CARROT BEETROOT PARSNIP</fruitTypeCategory>
-        <fruitTypeCategory name="MOWER">GRASS WHEAT BARLEY OAT CANOLA SOYBEAN FIELDGRASS MEADOW</fruitTypeCategory>
+        <fruitTypeCategory name="MOWER">GRASS WHEAT BARLEY OAT CANOLA SOYBEAN FIELDGRASS MEADOW LAVENDER MINT</fruitTypeCategory>
         <fruitTypeCategory name="COMBINE_MOWER">WHEAT BARLEY OAT CANOLA SOYBEAN RYE TRITICALE SPELT</fruitTypeCategory>
     </fruitTypeCategories>
 
@@ -71,6 +76,8 @@
             <converter from="VETCHRYE" to="CHAFF" factor="3.9"/>
             <converter from="GREENRYE" to="CHAFF" factor="3.9"/>
             <converter from="SESAME" to="CHAFF" factor="6.0"/>
+			<converter from="FABABEAN" to="CHAFF" factor="4.0"/>
+			<converter from="CHICKPEA" to="CHAFF" factor="4.0"/>
         </fruitTypeConverter>
         <fruitTypeConverter name="MOWER">
             <converter from="GRASS" to="GRASS_WINDROW" factor="1.0"/>
@@ -87,6 +94,7 @@
             <converter from="TRITICALE" to="STRAW" factor="1.0"/>
             <converter from="SPELT" to="STRAW" factor="1.0"/>
 			<converter from="HUMUSACTIVE" to="GRASS_WINDROW" factor="1.0"/>
+			<converter from="MINT" to="MINT_WINDROW" factor="1.0"/>
         </fruitTypeConverter>
         <fruitTypeConverter name="COMBINE_MOWER">
             <converter from="WHEAT" to="WHEAT_CUT" factor="1.0"/>
@@ -97,6 +105,8 @@
 			<converter from="RYE" 		to="RYE_CUT" 		factor="1.0"/>
             <converter from="SPELT" 	to="SPELT_CUT" 		factor="1.0"/>
             <converter from="TRITICALE" to="TRITICALE_CUT" 	factor="1.0"/>
+			<converter from="FABABEAN" to="FABA_BEAN_CUT" factor="1.0"/>
+			<converter from="CHICKPEA" to="CHICKPEA_CUT" factor="1.0"/>
         </fruitTypeConverter>
     </fruitTypeConverters>
 </map>

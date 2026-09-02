@@ -56,6 +56,7 @@
 		<text name="ui_animalDealerBaleSell" 				text="Vente de balles" />
 		<text name="fillType_sesame" text="Sesame" />
 		<text name="fillType_sesameOil" text="Sesame Oil" />
+		<text name="fillType_fabaBean" text="Fèves" /><text name="fillType_fabaBeanCut" text="Andain de fèves" /><text name="fillType_lavender" text="Lavande" /><text name="fillType_mint" text="Menthe" /><text name="fillType_mintDry" text="Menthe séchée" /><text name="fillType_chickpea" text="Pois chiches" /><text name="fillType_chickpeaFlour" text="Farine de pois chiches" /><text name="fillType_grapeB" text="Raisins blancs" /><text name="fillType_lavenderOil" text="Huile de lavande" /><text name="fillType_mintOil" text="Huile de menthe" /><text name="fillType_redWine" text="Vin rouge" /><text name="fillType_whiteWine" text="Vin blanc" />
 	</texts>
 
 </l10n>

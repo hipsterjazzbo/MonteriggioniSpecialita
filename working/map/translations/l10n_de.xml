@@ -57,5 +57,6 @@
 	
 		<text name="fillType_sesame" text="Sesame" />
 		<text name="fillType_sesameOil" text="Sesame Oil" />
+		<text name="fillType_fabaBean" text="Ackerbohnen" /><text name="fillType_fabaBeanCut" text="Ackerbohnen-Schwaden" /><text name="fillType_lavender" text="Lavendel" /><text name="fillType_mint" text="Minze" /><text name="fillType_mintDry" text="Getrocknete Minze" /><text name="fillType_chickpea" text="Kichererbsen" /><text name="fillType_chickpeaFlour" text="Kichererbsenmehl" /><text name="fillType_grapeB" text="Weiße Trauben" /><text name="fillType_lavenderOil" text="Lavendelöl" /><text name="fillType_mintOil" text="Minzöl" /><text name="fillType_redWine" text="Rotwein" /><text name="fillType_whiteWine" text="Weißwein" />
     </texts>
 </l10n>

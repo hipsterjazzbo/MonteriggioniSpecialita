@@ -135,6 +135,8 @@
                     <output fillType="GRAPESEED_OIL" amount="4" />
                 </outputs>
             </production>
+			<production id="red_wine" name="$l10n_fillType_redWine" cyclesPerHour="5" costsPerActiveHour="2"><inputs><input fillType="GRAPE" amount="150" /><input fillType="SUGAR" amount="20" /><input fillType="BARREL" amount="10" /></inputs><outputs><output fillType="RED_WINE" amount="100" /></outputs></production>
+			<production id="white_wine" name="$l10n_fillType_whiteWine" cyclesPerHour="5" costsPerActiveHour="2"><inputs><input fillType="GRAPEB" amount="150" /><input fillType="SUGAR" amount="20" /><input fillType="BARREL" amount="10" /></inputs><outputs><output fillType="WHITE_WINE" amount="100" /></outputs></production>
         </productions>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
@@ -149,11 +151,12 @@
             <capacity fillType="OLIVE_OIL"     capacity="25000" />
             <capacity fillType="RICE_OIL"      capacity="50000" />
 			<capacity fillType="GRAPESEED_OIL" capacity="50000" />
+			<capacity fillType="GRAPE" capacity="96000" /><capacity fillType="GRAPEB" capacity="96000" /><capacity fillType="RED_WINE" capacity="50000" /><capacity fillType="WHITE_WINE" capacity="50000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="SUNFLOWER CANOLA OLIVE RICELONGGRAIN RICE GRAPESEED"/>
-			<palletTrigger triggerNode="palletTrigger" fillTypes="SUNFLOWER CANOLA OLIVE RICELONGGRAIN RICE GRAPESEED"/>
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="SUNFLOWER CANOLA OLIVE RICELONGGRAIN RICE GRAPESEED GRAPE GRAPEB SUGAR BARREL"/>
+			<palletTrigger triggerNode="palletTrigger" fillTypes="SUNFLOWER CANOLA OLIVE RICELONGGRAIN RICE GRAPESEED RED_WINE WHITE_WINE"/>
         </sellingStation>
 
         <palletSpawner>

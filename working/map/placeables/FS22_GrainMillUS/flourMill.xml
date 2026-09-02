@@ -153,6 +153,7 @@
                     <output fillType="RICEFLOUR" amount="15" />
                 </outputs>
             </production>
+			<production id="chickpeaFlour" name="$l10n_fillType_chickpeaFlour" cyclesPerHour="20" costsPerActiveHour="1"><inputs><input fillType="CHICKPEA" amount="10" /></inputs><outputs><output fillType="CHICKPEA_FLOUR" amount="8" /></outputs></production>
         </productions>
 
         <storage isExtension="false" fillLevelSyncThreshold="50" >
@@ -167,6 +168,7 @@
             <capacity fillType="RICE"          capacity="65000" />
             <capacity fillType="FLOUR"         capacity="60000" />
             <capacity fillType="RICEFLOUR"     capacity="60000" />
+			<capacity fillType="CHICKPEA" capacity="100000" /><capacity fillType="CHICKPEA_FLOUR" capacity="60000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">
