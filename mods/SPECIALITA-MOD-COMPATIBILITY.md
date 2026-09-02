@@ -322,3 +322,43 @@ For Advanced Damage System, the only map-specific check worth doing is whether a
 **Do not modify the map to compensate for undocumented internals of a script mod.**
 
 Map changes should represent correct crop, fill-type, PF, husbandry or terrain data that remains sensible without the mod. Mod-specific behaviour belongs in documented extension/config files or in savegame settings.
+
+---
+
+## Pre-campaign audit — 2026-09-03
+
+This pass used the current FS25 profile and the locally available mod archives. No campaign save was created and no map-side compatibility changes were made.
+
+| Mod/system | Tested version | Status | Evidence / next action |
+|---|---:|---|---|
+| Realistic Livestock RM | 1.3.1.0 | PARTIAL / LIMITATION | Archive inspected. It supports standard map animals and explicitly includes water buffalo in the map animal definitions. Fresh-save reproduction, health UI, movement, and production were not interactively exercised in this pass. No bridge is justified. |
+| Manure For All Husbandries | 1.0.0.0 | WORKS AS-IS* | Archive inspected: augments map/mod husbandries, uses normal `MANURE`, and requires a player-placed manure heap near each husbandry. No map edit. Farm 6 still needs a campaign smoke test with heap and loose straw. |
+| Animal Herding Lite | not installed | NOT TESTED | Install the ConGan fork before testing movement for cows, goats, and buffalo. |
+| Pasture Grazing System | not installed | NOT TESTED | Requires the herding/RLRM stack; do not hardwire pasture into Farm 6 yet. |
+| Precision Farming | map integration present; mod version not locally identified | PARTIAL / LIMITATION | `map.xml` has explicit sesame PF requirements and seed-rate entries for FABABEAN, CHICKPEA, LAVENDER, and MINT. Only SESAME is in `cropSensor`/`npcTramlines`; no new PF entries were added without a controlled PF gameplay test. GRAPEB remains outside arable PF additions. |
+| Crop Rotation | not installed | NOT TESTED | No documented stable map-author custom-crop schema was available locally. Record behavior after installing; do not hack classifications into the map. |
+| Moisture System | not installed | NOT TESTED | Mediterranean profile and custom crop handling require an actual installed-version test. |
+| Realistic Harvesting | not installed | NOT TESTED | Existing crop/cut mechanics were not changed. Test SESAME, FABABEAN/FABA_BEAN_CUT, CHICKPEA/CHICKPEA_CUT, and mint windrows together with Moisture System. |
+| FS25_Fresh | not installed; no `customDefaults.xml` present | EXTERNAL CONFIG REQUIRED | Existing repo README remains documentation only. Inspect the installed schema first, then create a supported external preset; none was fabricated here. |
+| Vehicle Years / Historical Start / Disable GPS by Year | not installed | SAVE SETUP REQUIRED | No map changes. Validate date/year filtering before building the March 1990 save. |
+| Advanced Damage System | not installed | TEST NOT AVAILABLE | No map-specific dependency found locally. |
+| Real Fuel Consumption / Realistic Fuel Costs | not installed | TEST NOT AVAILABLE | Existing fuel stations were not changed. Test together with ADS at the planned ~1.5x consumption setting. |
+| Courseplay | not installed | TEST NOT AVAILABLE | No custom-category change made. Test cereals, sesame, fava, chickpea, mint, and GRAPEB after installation. |
+| DynamicDrive Pro | not installed | TEST NOT AVAILABLE | No terrain/ground changes made. |
+| British Fill Units / Wood And Weight Info | not installed | TEST NOT AVAILABLE | Current custom fill types have explicit mass values; no clear outlier was demonstrated in-game. |
+| Enhanced Loan System / Hire Purchasing / Dynamic Field Prices | not installed | TEST NOT AVAILABLE | No economy changes made. |
+
+\* “WORKS AS-IS” here means no map integration is required according to the installed mod’s own implementation; the Farm 6 gameplay smoke test remains outstanding.
+
+### Available profile installs
+
+The active profile contains the Specialità map, Easy Development Controls, and ordinary map/content mods. The two requested compatibility archives were copied into the profile for later interactive testing:
+
+- `FS25_RealisticLivestockRM.zip` — SHA-256 `42cf0f07ebf73ff840fd85c8264efd147c76e440186eb71b58e137f6509aab38`
+- `FS25_ManureForAll.zip` — SHA-256 `f90f7fb9e6bbcc18ac848699e8f0f7e87421f4a85e9ee91f2ef6f249f36bfc31`
+
+The game profile has no installed `FS25_Fresh/customDefaults.xml`, so Fresh syntax remains intentionally unimplemented.
+
+### Freeze decision
+
+The map is structurally safe to freeze for the next campaign-preparation step: no compatibility-driven map change was demonstrated, the 14/7 density setup is untouched, and no campaign save was created. Do not call the complete realism stack campaign-safe until the unavailable mods and the Farm 6 animal/pasture smoke test have been run interactively.
