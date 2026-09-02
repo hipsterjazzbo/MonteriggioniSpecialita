@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <foliageType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/foliageType.xsd">
     <fruitType name="chickpea" shownOnMap="true" useForFieldMissions="true">
-        <mapColors default="0.4574 0.0282 0.0246 1" colorBlind="0.7000 0.6000 0.5000 1"/>        
+        <mapColors default="0.4574 0.0282 0.0246 1" colorBlind="0.7000 0.6000 0.5000 1"/>
         <windrow fillType="CHICKPEA_CUT" litersPerSqm="2.2" cutFillType="CHICKPEA_CUT" windrowCutFactor="1.25"/>
         <harvest litersPerSqm="0.33" cutHeight="0.20" chopperType="CHOPPER_STRAW" forageCutHeight="0.15"/>
         <growth resetsSpray="true" growthRequiresLime="true"/>
@@ -28,10 +28,10 @@
         <!-- default LOD distances etc -->
         <foliageLodDefaults lod="0" viewDistance="20" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
         <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
-        
+
 		<!-- 1 0 0 0 - invisible -->
         <foliageState name="1 invisible" isGrowing="true" allowsWeeding="true" allowsHoeing="true"/>
-        
+
 		<!-- 0 1 0 0 - green small -->
         <foliageState name="2 small" distanceMap="distances/foliage_canola_distance2_diffuse.dds" numBlocksPerUnit="3" isGrowing="true" allowsWeeding="true" allowsHoeing="true" >
             <foliageShape>
@@ -39,7 +39,7 @@
                 <foliageLod blockShape="1>0" />
             </foliageShape>
         </foliageState>
-        
+
 		<!-- 1 1 0 0 - green middle -->
         <foliageState name="3 middle" distanceMap="distances/foliage_canola_distance3_diffuse.dds" numBlocksPerUnit="3" isGrowing="true" isDestructibleByWheel="true" allowsWeeding="true" allowsHoeing="true" fieldCourseLineHeight="0.3">
             <foliageShape>
@@ -47,7 +47,7 @@
                 <foliageLod blockShape="1>1" />
             </foliageShape>
         </foliageState>
-       
+
 	   <!-- 0 0 1 0 - green big -->
         <foliageState name="4 big" distanceMap="distances/foliage_canola_distance3_diffuse.dds" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" allowsHoeing="true" fieldCourseLineHeight="0.4">
             <foliageShape>
@@ -55,7 +55,7 @@
                 <foliageLod blockShape="1>2" />
             </foliageShape>
         </foliageState>
-        
+
 		<!-- 1 1 1 0 - harvest ready -->
         <foliageState name="5 ready" distanceMap="distances/foliage_soybean_distance5_diffuse.dds" isGrowing="true" isHarvestReady="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" groundType="HARVEST_READY" fieldCourseLineHeight="0.5">
             <foliageShape>
@@ -63,7 +63,7 @@
                 <foliageLod blockShape="1>3" />
             </foliageShape>
         </foliageState>
-       
+
 	   <!-- 0 0 0 1 - dead -->
         <foliageState name="6 dead" distanceMap="distances/foliage_soybean_distance6_diffuse.dds" width="0.7" height="0.7" isWithered="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" fieldCourseLineHeight="0.4">
             <foliageShape>
@@ -71,7 +71,7 @@
                 <foliageLod blockShape="1>4" />
             </foliageShape>
         </foliageState>
-        
+
 		<!-- 1 0 0 1 - harvested (cut) -->
         <foliageState name="7 cut" distanceMap="distances/foliage_soybean_distance6_diffuse.dds" numBlocksPerUnit="5" height="1.5" width="1.5" isCut="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
@@ -79,7 +79,7 @@
                 <foliageLod blockShape="1>5" />
             </foliageShape>
         </foliageState>
-	
+
 		<!-- 1 0 0 1 - TyreTracks -->
         <foliageState name="8 tyre" distanceMap="distances/foliage_soybean_distance6_diffuse.dds" numBlocksPerUnit="5" height="0.2" width="0.2" isCut="false" isDestructibleByWheel="false" isDestructedByWheel="true" isDestructedByDisaster="true">
             <foliageShape>
@@ -89,7 +89,7 @@
         </foliageState>
         <!--  -->
     </foliageLayer>
-	
+
 	<growth>
         <seasonal initialState="5 ready">
             <period name="EARLY_SPRING"/> <!-- March -->
@@ -122,5 +122,5 @@
             <period name="LATE_WINTER" /> <!-- February -->
         </seasonal>
     </growth>
-	
+
 </foliageType>
