@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="greenHouseProps.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="29" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotsSmall_diffuse.png"/>
+    <File fileId="30" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotsSmall_normal.png"/>
+    <File fileId="31" filename="$data/maps/mapAS/textures/props/flowerPots/flowerPotsSmall_specular.png"/>
+    <File fileId="18" filename="$data/maps/mapAS/textures/props/wateringCan.i3d"/>
+    <File fileId="11" filename="$data/maps/mapAS/textures/props/woodMetalTools/woodMetalTools02.i3d"/>
+    <File fileId="12" filename="$data/maps/mapEU/textures/props/gardenTools_diffuse.png"/>
+    <File fileId="13" filename="$data/maps/mapEU/textures/props/gardenTools_normal.png"/>
+    <File fileId="14" filename="$data/maps/mapEU/textures/props/gardenTools_specular.png"/>
+    <File fileId="2" filename="$data/maps/mapEU/textures/props/propsDecals_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/mapEU/textures/props/propsDecals_specular.png"/>
+    <File fileId="26" filename="$data/maps/mapEU/textures/props/woodenTable_diffuse.png"/>
+    <File fileId="27" filename="$data/maps/mapEU/textures/props/woodenTable_normal.png"/>
+    <File fileId="28" filename="$data/maps/mapEU/textures/props/woodenTable_specular.png"/>
+    <File fileId="25" filename="$data/maps/mapUS/textures/props/laundryBaskets_alpha.png"/>
+    <File fileId="19" filename="$data/maps/mapUS/textures/props/laundryBaskets_diffuse.png"/>
+    <File fileId="20" filename="$data/maps/mapUS/textures/props/laundryBaskets_normal.png"/>
+    <File fileId="21" filename="$data/maps/mapUS/textures/props/laundryBaskets_specular.png"/>
+    <File fileId="32" filename="$data/maps/textures/shared/dirtGeneric_diffuse.png"/>
+    <File fileId="33" filename="$data/maps/textures/shared/dirtGeneric_normal.png"/>
+    <File fileId="34" filename="$data/maps/textures/shared/dirtGeneric_specular.png"/>
+    <File fileId="8" filename="$data/objects/pallets/liquidTank/fertilizerTank_diffuse.png"/>
+    <File fileId="9" filename="$data/objects/pallets/liquidTank/fertilizerTank_normal.png"/>
+    <File fileId="10" filename="$data/objects/pallets/liquidTank/fertilizerTank_specular.png"/>
+    <File fileId="4" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="22" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="15" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/bucketGalvanized_diffuse.png"/>
+    <File fileId="16" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/bucketGalvanized_normal.png"/>
+    <File fileId="17" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/bucketGalvanized_specular.png"/>
+    <File fileId="6" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/euroPallet01_normal.png"/>
+    <File fileId="7" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/euroPallet01_specular.png"/>
+    <File fileId="5" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/euroPallet02_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="bucketGalvanized_mat" materialId="287">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+    </Material>
+    <Material name="dirtGeneric_mat" materialId="289" customShaderId="22">
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+      <Glossmap fileId="34"/>
+    </Material>
+    <Material name="euroPallet02_mat" materialId="10">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="fertilizerTank_mat" materialId="290">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="flowerPotsSmall_mat" materialId="291" customShaderId="22">
+      <Texture fileId="29"/>
+      <Normalmap fileId="30"/>
+      <Glossmap fileId="31"/>
+    </Material>
+    <Material name="gardenTools_mat" materialId="292">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+    </Material>
+    <Material name="lambert1" materialId="14" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="15" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="laundryBaskets_mat" materialId="293" customShaderId="22" customShaderVariation="alphaMap">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <Custommap name="alphaMap" fileId="25"/>
+    </Material>
+    <Material name="propsDecals_mat" materialId="17" alphaBlending="true" customShaderId="4">
+      <Texture fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="woodenTable_mat" materialId="294" customShaderId="22">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="greenHouseProps.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="props" lockedgroup="true" nodeId="361">
+      <Shape name="euroPalletOld" lockedgroup="true" translation="-0.023247 0.55975 4.16834" rotation="90.0001 20.2493 90.0001" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="261" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14">
+        <Shape name="decal" shapeId="2" clipDistance="20" nodeId="262" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="17"/>
+        <Shape name="euroPalletOld_vis" shapeId="3" clipDistance="80" nodeId="263" castsShadows="true" receiveShadows="true" materialIds="10"/>
+      </Shape>
+      <Shape name="euroPalletOld" lockedgroup="true" translation="0.336407 0.550551 4.36965" rotation="116.697 17.302 96.6168" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="264" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14">
+        <Shape name="decal" shapeId="2" clipDistance="20" nodeId="265" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="17"/>
+        <Shape name="euroPalletOld_vis" shapeId="3" clipDistance="80" nodeId="266" castsShadows="true" receiveShadows="true" materialIds="10"/>
+      </Shape>
+      <Shape name="fertilizerTank_vis5" translation="4.04112 0 4.62962" rotation="-0 90 0" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="315" castsShadows="true" receiveShadows="true" materialIds="290"/>
+      <ReferenceNode name="homiHoe" translation="-0.492558 0.940798 -0.691561" rotation="-90.0001 68.0936 -162.413" referenceId="11" nodeId="321"/>
+      <TransformGroup name="roseScissor" lockedgroup="true" translation="0.354233 0.914974 -0.681341" rotation="-90 15.975 -1.41649e-06" lodDistance="0 8" clipDistance="60" nodeId="326">
+        <Shape name="LOD0" shapeId="5" nodeId="327" castsShadows="true" receiveShadows="true" materialIds="292">
+          <Shape name="collision" translation="-0.001257 0.003141 -0.013239" shapeId="6" static="true" collisionFilterMask="0xfffffbff" nodeId="328" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+        </Shape>
+        <Shape name="LOD1" shapeId="7" nodeId="329" castsShadows="true" receiveShadows="true" materialIds="292"/>
+      </TransformGroup>
+      <Shape name="bucketGalvanized" lockedgroup="true" translation="-0.589984 0.135929 -0.522401" rotation="0 26.368 2.91022e-05" shapeId="8" static="true" density="0.25" nodeId="330" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14">
+        <Shape name="bucketGalvanized_vis" translation="0 2.84217e-16 0" shapeId="9" clipDistance="20" nodeId="331" castsShadows="true" receiveShadows="true" materialIds="287"/>
+      </Shape>
+      <ReferenceNode name="wateringCan" translation="0.858261 0.915266 -0.963928" rotation="180 -34.1901 180" referenceId="18" nodeId="337"/>
+      <TransformGroup name="plasticStoolTiny" lockedgroup="true" translation="1.16045 0.135929 -1.15389" rotation="-180 77.7738 180" scale="0.9 0.9 0.9" lodDistance="0 8" lodBlending="false" clipDistance="45" nodeId="341">
+        <Shape name="LOD0" shapeId="10" nodeId="342" castsShadows="true" receiveShadows="true" materialIds="293"/>
+        <Shape name="LOD1" shapeId="11" nodeId="343" castsShadows="true" receiveShadows="true" materialIds="293"/>
+        <Shape name="col" shapeId="12" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="344" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+      </TransformGroup>
+      <TransformGroup name="woodenTable" lockedgroup="true" translation="0.0191689 0.135929 -0.910754" lodDistance="0 15" clipDistance="130" nodeId="347">
+        <Shape name="LOD0" shapeId="13" nodeId="348" castsShadows="true" receiveShadows="true" materialIds="294"/>
+        <Shape name="LOD1" shapeId="14" nodeId="349" castsShadows="true" receiveShadows="true" materialIds="294"/>
+        <Shape name="col" shapeId="15" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="350" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+      </TransformGroup>
+      <TransformGroup name="flowerPotSmall02" lockedgroup="true" translation="-0.540167 0.918013 -1.05542" rotation="-0 90 0" clipDistance="25" nodeId="351">
+        <Shape name="pot" shapeId="16" nodeId="352" castsShadows="true" receiveShadows="true" materialIds="291">
+          <Shape name="dirt" translation="0 0.150753 0" shapeId="17" nodeId="353" castsShadows="true" receiveShadows="true" materialIds="289"/>
+        </Shape>
+        <Shape name="collision" shapeId="18" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="354" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

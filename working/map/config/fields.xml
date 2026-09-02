@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/fields.xsd">
+    <fields>
+        <field fieldId="10" weedState="0">
+            <fruit type="WHEAT" growthState="HARVESTREADY"/>
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+		<field fieldId="12" weedState="0">
+            <fruit type="WHEAT" growthState="HARVESTREADY"/>
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+		<field fieldId="14" weedState="0">
+            <fruit type="WHEAT" growthState="HARVESTREADY"/>
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+		<field fieldId="15" weedState="0">
+            <fruit type="TRITICALE" growthState="HARVESTREADY"/>
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+		<field fieldId="17" weedState="1">
+			<fruit type="SUNFLOWER" growthState="5"/>
+			<ground type="SOWN" angle="0" />
+			<spray type="NONE" level="0" />
+		</field>
+		<field fieldId="21" weedState="0">
+            <fruit type="SPELT" growthState="HARVESTREADY"/>
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+		<field fieldId="22" weedState="0">
+            <fruit type="SPELT" growthState="HARVESTREADY"/>
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+		<field fieldId="25" weedState="0">
+            <fruit type="WHEAT" growthState="HARVESTREADY"/>
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+		<field fieldId="23" weedState="0">
+            <fruit type="CANOLA" growthState="HARVESTREADY"/>
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="FERTILIZER" level="2" />
+        </field>
+		<field fieldId="28" weedState="0">
+			<fruit type="POTATO" growthState="HARVESTREADY"/>
+			<ground type="HARVEST_READY" angle="0" />
+			<spray type="NONE" level="0" />
+		</field>
+		<field fieldId="53" weedState="0">
+            <fruit type="SPELT" growthState="HARVESTREADY"/>
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+		<field fieldId="55" weedState="0">
+			<fruit type="POTATO" growthState="HARVESTREADY"/>
+			<ground type="HARVEST_READY" angle="0" />
+			<spray type="FERTILIZER" level="2" />
+		</field>
+		<field fieldId="81" weedState="1">
+			<fruit type="SUNFLOWER" growthState="5"/>
+			<ground type="SOWN" angle="0" />
+			<spray type="NONE" level="0" />
+		</field>
+    </fields>
+</map>

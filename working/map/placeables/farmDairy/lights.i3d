@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="lights.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.i3d"/>
+  </Files>
+
+
+  <Materials>
+  </Materials>
+
+
+  <Shapes>
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="lights" nodeId="89">
+      <TransformGroup name="realLights" nodeId="90">
+        <TransformGroup name="realLightsLow" nodeId="91">
+          <Light name="pointLightLow01" translation="-6.2 6.20681 6.37798" clipDistance="75" nodeId="92" type="point" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="7"/>
+          <Light name="pointLightLow02" translation="6.2 6.20681 6.37798" clipDistance="75" nodeId="93" type="point" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="7"/>
+        </TransformGroup>
+        <TransformGroup name="realLightsHigh" nodeId="94">
+          <Light name="spotLightHigh01" translation="-6.2 6.20681 6.37798" rotation="-90 0 0" clipDistance="75" nodeId="95" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="12" coneAngle="75" dropOff="4"/>
+          <Light name="spotLightHigh02" translation="6.2 6.20681 6.37798" rotation="-90 0 0" clipDistance="75" nodeId="96" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="12" coneAngle="75" dropOff="4"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="linkedLights" nodeId="97">
+        <ReferenceNode name="fluorescentTube50W" translation="-6.2 6.20681 6.37798" referenceId="1" referenceRuntimeLoaded="false" nodeId="105"/>
+        <ReferenceNode name="fluorescentTube50W_02" translation="6.2 6.20681 6.37798" referenceId="1" referenceRuntimeLoaded="false" nodeId="108"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

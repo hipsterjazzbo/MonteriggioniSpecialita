@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="tipOcclusionUpdateArea.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+  </Materials>
+
+
+  <Shapes>
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="tipOcclusionUpdateAreas" translation="0.698943 0 -3.66695" nodeId="134">
+      <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-1.48556 0 0.218749" nodeId="135">
+        <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="1.99731 0 15.9003" nodeId="136"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

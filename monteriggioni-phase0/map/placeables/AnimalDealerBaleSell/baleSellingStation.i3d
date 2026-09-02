@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="baleSellingStation.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shared/warningStripes_diffuse.png"/>
+    <File fileId="3" filename="$data/shared/warningStripes_normal.png"/>
+    <File fileId="4" filename="$data/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="baleSellingStation.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="baleSellingStation" nodeId="11">
+      <TransformGroup name="indoorAreas" nodeId="12">
+        <TransformGroup name="indoorAreaStart01" translation="-3.31693 0 6.58185" nodeId="13">
+          <TransformGroup name="indoorAreaWidth01" translation="0 0 7.7319" nodeId="14"/>
+          <TransformGroup name="indoorAreaHeight01" translation="9.75227 0 0" nodeId="15"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="16">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-5.7393 0 -15.117" nodeId="17">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="13.5081 0 29.7147" nodeId="18"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="sellingStation" translation="1.52028 0 10.4903" nodeId="19">
+        <Shape name="unloadTrigger" translation="0 0.1 0" rotation="0 90 0" shapeId="1" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="20" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+          <TransformGroup name="unloadTriggerMarker" translation="0.31618 -0.006362 0" nodeId="21"/>
+          <TransformGroup name="unloadTriggerAINode" translation="-1.09003 0 0" nodeId="22"/>
+        </Shape>
+        <TransformGroup name="warningStripes_unloading" rotation="0 180 0" nodeId="23">
+          <Shape name="warningStripes_palletSpawnArea" translation="0.076847 0.005 -0.402949" shapeId="2" clipDistance="300" nodeId="24" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="6"/>
+        </TransformGroup>
+        <Shape name="baleTrigger" translation="0 2.61904 0" rotation="0 90 0" shapeId="3" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000" nodeId="25" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="aiUnloadingSpline" translation="0 0.1 0" shapeId="4" nodeId="30" castsShadows="false" receiveShadows="false" distanceBlending="false"/>
+      </TransformGroup>
+      <TransformGroup name="teleportNode" translation="1.28477 0 18.2341" rotation="0 -90 0" nodeId="26"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

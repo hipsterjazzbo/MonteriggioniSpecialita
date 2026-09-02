@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<l10n>
+    
+	<texts>
+		<text name="fillType_silageMaize" 					text="Maize Silage" />
+		<text name="fillType_humusactive" 					text="Humus Activator" />
+		<text name="fillType_rye" 							text="Rye" />
+		<text name="fillType_triticale" 					text="Triticale" />
+		<text name="fillType_spelt" 						text="Spelt" />
+		<text name="fillType_vetchRye" 						text="Vetch Rye" />
+		<text name="fillType_greenRye" 						text="Green Rye" />
+		<text name="fillType_fieldGrass" 					text="Field Grass" />
+		<text name="fillType_mustard" 						text="Mustard" />
+		<text name="fillType_grapeSeedOil" 					text="Grape Seed Oil" />
+		<text name="fillType_grapeleatherette" 				text="Grape Leatherette" />
+		<text name="fillType_pasta" 						text="Pasta" />
+		<text name="fillType_gnocchi" 						text="Gnocchi" />
+		<text name="fillType_tricolore" 					text="Tricolour Pasta" />
+		<text name="fillType_pastaUovo" 					text="Egg Pasta" />
+		
+		<text name="hotspot_waterwell" 						text="Water well (Water Purchase Station)" />
+		<text name="hotspot_water" 							text="Water" />
+		
+		<text name="storeItem_cowBarn" 						text="Cow Barn" />
+		<text name="storeItem_farmDecoration" 				text="Farm Decoration" />
+		<text name="storeItem_chickenShed" 					text="Chicken Coop" />
+		<text name="storeItem_constructionSite" 			text="Construction Site" />
+		<text name="storeItem_containerHouse" 				text="Container House" />
+		<text name="storeItem_farmDairy" 					text="Farm Dairy" />
+		<text name="storeItem_grainMill" 					text="Grain Mill" />
+		<text name="storeItem_pallettStorage" 				text="Pallet Storage" />
+		<text name="storeItem_waterDistributor" 			text="Water Distributor" />
+		<text name="storeItem_extendedGreenHouse" 			text="Extended Greenhouse" />
+		<text name="storeItem_ridingArena" 					text="Riding Arena" />
+		<text name="storeItem_supermarket" 					text="Supermarket" />
+		<text name="storeItem_farmShed" 					text="Tuscan Shed" />
+		<text name="storeItem_vendesiSign" 					text="For Sale Sign" />
+		<text name="storeItem_pastaFactory" 				text="Pasta Factory" />
+		
+		<text name="sellStation_restaurant" 				text="Ristorante di Marco" />
+		<text name="sellStation_restaurant2" 				text="Ristorante a Centro" />
+		<text name="sellStation_wareHouseSilos" 			text="Consorzio Agrario Silos" />
+		<text name="sellStation_wareHouseDepot" 			text="Consorzio Agrario Depot" />
+		<text name="sellStation_fertilizerStation" 			text="Fertiliser Purchase Station" />
+		<text name="sellStation_seedStation" 				text="Seed Purchase Station" />
+		<text name="sellStation_liquidFertilizerStation" 	text="Liquid Fertiliser Purchase Station" />
+		<text name="sellStation_herbizideStation" 			text="Herbicide Purchase Station" />
+		
+		<text name="function_removeFarmDecoration" 			text="Remove farm decoration" />
+		<text name="function_removeDecoration" 				text="Remove decoration" />
+		<text name="function_waterWell" 					text="Fill water" />
+		<text name="function_waterDistributor" 				text="This production can distribute water. (put output mode to distribute)" />
+		<text name="function_removeVendesiSign" 			text="Remove sign" />
+		
+		<text name="ui_animalDealerBaleSell" 				text="Bale Sale" />
+	</texts>
+
+</l10n>
+

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="farm01decoration02.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="14" filename="$data/maps/mapEU/textures/props/constructionMaterial_diffuse.png"/>
+    <File fileId="15" filename="$data/maps/mapEU/textures/props/constructionMaterial_normal.png"/>
+    <File fileId="16" filename="$data/maps/mapEU/textures/props/constructionMaterial_specular.png"/>
+    <File fileId="1" filename="$data/objects/pallets/liquidTank/fertilizerTank_diffuse.png"/>
+    <File fileId="2" filename="$data/objects/pallets/liquidTank/fertilizerTank_normal.png"/>
+    <File fileId="3" filename="$data/objects/pallets/liquidTank/fertilizerTank_specular.png"/>
+    <File fileId="17" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="4" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/concreteMixer_diffuse.png"/>
+    <File fileId="5" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/concreteMixer_normal.png"/>
+    <File fileId="6" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/concreteMixer_specular.png"/>
+    <File fileId="11" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/fieldDrainageHoseTube01_diffuse.png"/>
+    <File fileId="12" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/fieldDrainageHoseTube01_normal.png"/>
+    <File fileId="13" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/fieldDrainageHoseTube01_specular.png"/>
+    <File fileId="7" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/metalTrashSet_diffuse.png"/>
+    <File fileId="8" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/metalTrashSet_normal.png"/>
+    <File fileId="9" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/metalTrashSet_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="concreteMixer_mat" materialId="5">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="constructionMaterial_mat" materialId="6" customShaderId="17">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+    </Material>
+    <Material name="fertilizerTank_mat" materialId="7">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="fieldDrainageHoseTube01_mat" materialId="8">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="10" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="metalTrashSet_mat" materialId="11">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="farm01decoration02.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="decoration" nodeId="37">
+      <Shape name="fertilizerTank_vis5" translation="14.736 0.0453377 -14.1317" rotation="0 -58.2345 0" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="7"/>
+      <Shape name="concreteMixer" translation="15.755 0.0399361 -12.3467" rotation="-4.55339e-07 -33.6128 2.43743e-07" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="154" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      <Shape name="oldEquipment01" lockedgroup="true" translation="-1.77301 -0.198864 2.14627" rotation="0 43.177 -0.0791295" shapeId="3" clipDistance="100" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="11">
+        <Shape name="col" translation="0.0541866 1.05958 -0.178544" shapeId="4" visibility="false" static="true" density="0.0001" nodeId="41" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      </Shape>
+      <Shape name="fieldDrainageHoseTube01" lockedgroup="true" translation="-4.70801 0.00123596 3.78525" rotation="0 -0 -0.0791294" shapeId="5" clipDistance="70" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="col" shapeId="6" static="true" clipDistance="50" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      </Shape>
+      <TransformGroup name="constructionMaterial08" lockedgroup="true" translation="-5.91901 0.106937 4.14127" lodDistance="0 12" clipDistance="90" nodeId="44">
+        <Shape name="LOD0" translation="0 0.215 0" shapeId="7" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="LOD1" translation="0 0.215 0" shapeId="8" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="col" translation="0 0.215 0" shapeId="9" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="47" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+      </TransformGroup>
+      <TransformGroup name="pileBricks_PREFAB" lockedgroup="true" translation="-6.70901 0.00123596 4.62025" rotation="3.11681e-11 -61.9624 -0.000167558" nodeId="48">
+        <TransformGroup name="constructionMaterial19" lockedgroup="true" translation="1.14441e-05 -7.62939e-06 0" rotation="1.11956e-12 -0 1.62844e-12" lodDistance="0 12" clipDistance="90" nodeId="49">
+          <Shape name="LOD0" shapeId="10" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="11" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="col" shapeId="12" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="52" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        </TransformGroup>
+        <TransformGroup name="constructionMaterial21" lockedgroup="true" translation="-0.400682 -7.62939e-06 -0.345322" rotation="1.23154e-12 -24.6227 3.13482e-12" lodDistance="0 12" clipDistance="90" nodeId="53">
+          <Shape name="LOD0" shapeId="13" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="14" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="col" shapeId="15" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="56" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        </TransformGroup>
+        <TransformGroup name="constructionMaterial22" lockedgroup="true" translation="-0.0737076 -7.62939e-06 -0.472717" rotation="1.12566e-12 5.9686 1.63732e-12" lodDistance="0 12" clipDistance="90" nodeId="57">
+          <Shape name="LOD0" shapeId="16" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="17" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="col" shapeId="18" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="60" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        </TransformGroup>
+        <TransformGroup name="constructionMaterial23" lockedgroup="true" translation="-0.300247 0.0630035 -0.0149078" rotation="-180 86.6896 -180" lodDistance="0 12" clipDistance="90" nodeId="61">
+          <Shape name="LOD0" shapeId="19" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="20" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="col" shapeId="21" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="64" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="constructionMaterial15" lockedgroup="true" translation="-7.34302 0.000637054 6.21025" rotation="180 70.1978 180" scale="1.41887 1.41887 1.41887" lodDistance="0 12" clipDistance="90" nodeId="65">
+        <Shape name="LOD0" shapeId="22" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="LOD1" shapeId="23" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="col" shapeId="24" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="68" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+      </TransformGroup>
+      <TransformGroup name="constructionMaterial14_PREFAB" lockedgroup="true" translation="-4.039 0.00353622 5.57526" rotation="-180 -0 180" nodeId="69">
+        <TransformGroup name="constructionMaterial19" lockedgroup="true" translation="3.02871 -0.00399141 1.49227" rotation="0.000152248 -40.2227 -0.000239889" lodDistance="0 12" clipDistance="90" nodeId="70">
+          <Shape name="LOD0" shapeId="10" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="LOD1" shapeId="11" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="col" shapeId="12" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="73" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="tipOcclusionUpdateAreas" nodeId="76">
+      <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-1.55674 0 0.104952" nodeId="77">
+        <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="-6.60342 0 8.55458" nodeId="78"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

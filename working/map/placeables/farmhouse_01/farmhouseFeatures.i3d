@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="farmhouseFeatures.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/maps/mapEU/textures/props/accessPointFence_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/mapEU/textures/props/accessPointFence_normal.png"/>
+    <File fileId="3" filename="$data/maps/mapEU/textures/props/accessPointFence_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="accessPointFence_mat" materialId="5">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="farmhouseFeatures.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="farmhouseFeatures" translation="0 0 6.50762e-08" nodeId="9">
+      <Camera name="sleepCamera" translation="29.5833 20.7622 60.6339" rotation="-20.0396 11.1042 -14.545" nodeId="10" fov="54.4322" nearClip="0.0559864" farClip="559.864" orthographicHeight="1"/>
+      <TransformGroup name="sleepTriggerMarker" translation="12.966 0.668721 -0.0210855" nodeId="12"/>
+      <TransformGroup name="spawnPoint" translation="12.9661 0.668721 -0.0210855" rotation="180 180 180" nodeId="13"/>
+      <Shape name="sleepingTrigger" translation="12.966 0.668721 -0.0210855" scale="0.1 0.3 0.15" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="11" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="wardrobeTriggerMarker" nodeId="16"/>
+      <Shape name="wardrobeTrigger" scale="0.3 1 0.5" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="15" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

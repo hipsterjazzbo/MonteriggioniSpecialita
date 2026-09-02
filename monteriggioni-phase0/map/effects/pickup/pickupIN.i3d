@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="pickupIN.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="11" filename="$data/effects/pickup/fillTypes/chaff_diffuse.png"/>
+    <File fileId="12" filename="$data/effects/pickup/fillTypes/forage_diffuse.png"/>
+    <File fileId="9" filename="$data/effects/pickup/fillTypes/grass_diffuse.png"/>
+    <File fileId="19" filename="$data/effects/pickup/fillTypes/greenbean_diffuse.png"/>
+    <File fileId="20" filename="$data/effects/pickup/fillTypes/greenbean_normal.png"/>
+    <File fileId="10" filename="$data/effects/pickup/fillTypes/hay_diffuse.png"/>
+    <File fileId="13" filename="$data/effects/pickup/fillTypes/mineralFeed_diffuse.png"/>
+    <File fileId="14" filename="$data/effects/pickup/fillTypes/mineralFeed_normal.png"/>
+    <File fileId="17" filename="$data/effects/pickup/fillTypes/pea_diffuse.png"/>
+    <File fileId="18" filename="$data/effects/pickup/fillTypes/pea_normal.png"/>
+    <File fileId="2" filename="$data/effects/pickup/fillTypes/shared_normal.png"/>
+    <File fileId="8" filename="$data/effects/pickup/fillTypes/silage_diffuse.png"/>
+    <File fileId="15" filename="$data/effects/pickup/fillTypes/spinach_diffuse.png"/>
+    <File fileId="16" filename="$data/effects/pickup/fillTypes/spinach_normal.png"/>
+    <File fileId="1" filename="$data/effects/pickup/fillTypes/straw_diffuse.png"/>
+    <File fileId="7" filename="$data/effects/pickup/shared/gradient_diffuse.png"/>
+    <File fileId="5" filename="$data/effects/pickup/sharedPickupArrayIN.png"/>
+    <File fileId="4" filename="$data/shaders/motionPathShader.xml"/>
+    <File fileId="3" filename="$data/shared/default_specular.png"/>
+    <File fileId="21" filename="fillTypes/rye_diffuse.png"/>
+    <File fileId="22" filename="fillTypes/spelt_diffuse.png"/>
+    <File fileId="23" filename="fillTypes/triticale_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="chaff_IN_mat" materialId="5" customShaderId="4" customShaderVariation="alphaMapGradient">
+      <Texture fileId="11"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="visibilityX" value="1.5 -1.5"/>
+    </Material>
+    <Material name="forage_IN_mat" materialId="6" customShaderId="4" customShaderVariation="alphaMapGradient">
+      <Texture fileId="12"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="visibilityX" value="1.5 -1.5"/>
+    </Material>
+    <Material name="grass_IN_mat" materialId="7" customShaderId="4" customShaderVariation="alphaMapGradient">
+      <Texture fileId="9"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="visibilityX" value="1.5 -1.5"/>
+    </Material>
+    <Material name="greenbean_IN_mat" materialId="8" customShaderId="4" customShaderVariation="alphaMapGradient">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+    </Material>
+    <Material name="hay_IN_mat" materialId="9" customShaderId="4" customShaderVariation="alphaMapGradient">
+      <Texture fileId="10"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="visibilityX" value="1.5 -1.5"/>
+    </Material>
+    <Material name="mineralFeed_IN_mat" materialId="10" customShaderId="4" customShaderVariation="alphaMapGradient">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="visibilityX" value="1.5 -1.5"/>
+    </Material>
+    <Material name="pea_IN_mat" materialId="11" customShaderId="4" customShaderVariation="alphaMapGradient">
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+    </Material>
+    <Material name="rye_IN_mat" materialId="12" customShaderId="4" customShaderVariation="alphaMapGradient">
+      <Texture fileId="21"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="visibilityX" value="1.5 -1.5"/>
+    </Material>
+    <Material name="silage_IN_mat" materialId="13" customShaderId="4" customShaderVariation="alphaMapGradient">
+      <Texture fileId="8"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="visibilityX" value="1.5 -1.5"/>
+    </Material>
+    <Material name="spelt_IN_mat" materialId="14" customShaderId="4" customShaderVariation="alphaMapGradient">
+      <Texture fileId="22"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="visibilityX" value="1.5 -1.5"/>
+    </Material>
+    <Material name="spinach_IN_mat" materialId="15" customShaderId="4" customShaderVariation="alphaMapGradient">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+    </Material>
+    <Material name="straw_IN_mat" materialId="16" customShaderId="4" customShaderVariation="alphaMapGradient">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="visibilityX" value="1.5 -1.5"/>
+    </Material>
+    <Material name="triticale_IN_mat" materialId="17" customShaderId="4" customShaderVariation="alphaMapGradient">
+      <Texture fileId="23"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="visibilityX" value="1.5 -1.5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pickupIN.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="pickupEffects_particleMeshesIN" nodeId="32">
+      <TransformGroup name="pickupEffects_particleMeshesIN_meshes" nodeId="33">
+        <Shape name="pickupEffects_particleMeshesIN_nr6_rl18_v1" shapeId="1" clipDistance="200" nodeId="34" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="16"/>
+        <Shape name="pickupEffects_particleMeshesIN_nr9_rl11_v1" shapeId="2" clipDistance="200" nodeId="35" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="16"/>
+        <Shape name="pickupEffects_particleMeshesIN_nr10_rl5_v1" shapeId="3" clipDistance="200" nodeId="36" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="16"/>
+        <Shape name="pickupEffects_particleMeshesIN_nr10_rl15_v1" shapeId="4" clipDistance="200" nodeId="37" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="16"/>
+        <Shape name="pickupEffects_particleMeshesIN_nr10_rl10_v1" shapeId="5" clipDistance="200" nodeId="38" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="16"/>
+        <Shape name="pickupEffects_particleMeshesIN_nr12_rl10_v1" shapeId="6" clipDistance="200" nodeId="39" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="16"/>
+        <Shape name="pickupEffects_particleMeshesIN_nr14_rl10_v1" shapeId="7" clipDistance="200" nodeId="40" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="16"/>
+        <Shape name="pickupEffects_particleMeshesIN_nr14_rl25_v1" shapeId="8" clipDistance="200" nodeId="41" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="16"/>
+        <Shape name="pickupEffects_particleMeshesIN_nr16_rl15_v1" shapeId="9" clipDistance="200" nodeId="42" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="16"/>
+        <Shape name="pickupEffects_particleMeshesIN_nr18_rl20_v1" shapeId="10" clipDistance="200" nodeId="43" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="16"/>
+        <Shape name="pickupEffects_particleMeshesIN_nr24_rl10_v1" shapeId="11" clipDistance="200" nodeId="44" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="16"/>
+        <Shape name="pickupEffects_particleMeshesIN_nr24_rl25_v1" shapeId="12" clipDistance="200" nodeId="45" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="16"/>
+      </TransformGroup>
+      <TransformGroup name="pickupEffects_particleMeshesIN_materials" nodeId="46">
+        <Shape name="straw" shapeId="13" clipDistance="30" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="16"/>
+        <Shape name="silage" shapeId="13" clipDistance="30" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="13"/>
+        <Shape name="grass_windrow" shapeId="13" clipDistance="30" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="dryGrass_windrow" shapeId="13" clipDistance="30" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="chaff" shapeId="13" clipDistance="30" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="forage" shapeId="13" clipDistance="30" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="mineralFeed" shapeId="13" clipDistance="30" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="spinach" shapeId="13" clipDistance="30" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="15"/>
+        <Shape name="pea" shapeId="13" clipDistance="30" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="11"/>
+        <Shape name="greenbean" shapeId="13" clipDistance="30" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="rye" shapeId="13" clipDistance="30" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        <Shape name="spelt" shapeId="13" clipDistance="30" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="14"/>
+        <Shape name="triticale" shapeId="13" clipDistance="30" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="17"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

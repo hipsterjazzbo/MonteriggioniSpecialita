@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<storeItems>
+<!-- PLANTS -->
+    <storeItem xmlFilename="$data/foliage/decoFoliage/paintable_decoGrassShortUS.xml" />
+    <storeItem xmlFilename="$data/foliage/decoFoliage/paintable_decoGrassMediumUS.xml" />
+    <storeItem xmlFilename="$data/foliage/meadow/meadowUS/paintable_meadow.xml" />
+	<storeItem xmlFilename="$data/foliage/decoBush/decoBushEU/paintable_boxWoodSmall.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushEU/paintable_boxWoodMedium.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushEU/paintable_boxWoodBig.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushEU/paintable_elderberryBushSmall01.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushEU/paintable_elderberryBushMedium.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushEU/paintable_elderberryBushBig.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushEU/paintable_ilexBushSmall01.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushEU/paintable_ilexBushMedium01.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushEU/paintable_ilexBushBig.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushEU/paintable_bushAspenSmall.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushEU/paintable_bushAspenMedium.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushEU/paintable_bushAspenBig.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushEU/paintable_shrubGeneric.xml" />
+	
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_common01.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_common02.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_common03.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_dynamite01.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_dynamite02.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_dynamite03.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_pawpaw01.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_pawpaw02.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_pawpaw03.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_waterElm01.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_waterElm02.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_waterElm03.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_wingedSumac01.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_witchHazel01.xml" />
+    <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_witchHazel02.xml" />
+	
+	<storeItem xmlFilename="map/prefabs/cypress/cypress_stage01.xml" />
+	<storeItem xmlFilename="map/prefabs/cypress/cypress_stage02.xml" />
+	<storeItem xmlFilename="map/prefabs/cypress/cypress_stage03.xml" />
+	<storeItem xmlFilename="map/prefabs/cypress/cypress_stage04.xml" />
+	
+<!-- Farm 01 -->
+	<storeItem xmlFilename="$data/placeables/brandless/dieselTanks/level02/dieselTanksLevel02.xml" />	
+	<storeItem xmlFilename="$data/placeables/mapUS/farmSilo/farmSilo.xml" />
+	<storeItem xmlFilename="map/placeables/farmhouse_01/farmhouseFeature.xml" />
+	<storeItem xmlFilename="map/placeables/farm01decoration/farm01decoration.xml" />
+	<storeItem xmlFilename="map/placeables/farm01decoration02/farm01decoration02.xml" />
+	<storeItem xmlFilename="map/placeables/oldWorkbench/oldWorkbench.xml" />
+	<storeItem xmlFilename="map/placeables/greenhouses/greenHousesTarpMedium.xml" />
+	
+	
+<!-- Farm 02 -->
+	<storeItem xmlFilename="map/placeables/farmhouse_03/farmhouseFeature.xml" />
+	<storeItem xmlFilename="$data/placeables/rudolfHormann/cowBarnBig/cowBarnBigVector.xml" />
+	<storeItem xmlFilename="$data/placeables/rudolfHormann/garageSmall/garageSmall.xml" />
+	<storeItem xmlFilename="$data/placeables/rudolfHormann/cargoHangarBig/cargoHangarBig.xml" />
+	<storeItem xmlFilename="$data/placeables/unia/farma/farma800/farma800.xml" />
+	<storeItem xmlFilename="$data/placeables/brandless/bunkerSilos/bunkerSiloMedium/bunkerSiloMedium.xml" />
+	<storeItem xmlFilename="$data/placeables/brandless/liquidManureTanks/baseTank/baseTank.xml" />
+	<storeItem xmlFilename="$data/placeables/rudolfHormann/chickenBarnBig/chickenBarnBig.xml" />
+	<storeItem xmlFilename="$data/placeables/meridian/fertilizerBins1620/fertilizerBins1620.xml" />
+	<storeItem xmlFilename="$data/placeables/meridian/fuelTank25000L/fuelTank25000L.xml" />
+	<storeItem xmlFilename="map/placeables/workshop/workshop.xml" />
+	<storeItem xmlFilename="$data/placeables/easySheds/easyShed03/easyShed03.xml" />
+	<storeItem xmlFilename="$data/placeables/easySheds/easyShed01/easyShed01.xml" />
+	
+	
+<!-- Farm 03 / HorseFarm -->
+	<storeItem xmlFilename="map/placeables/farmhouse_02/farmhouseFeature.xml" />
+	<storeItem xmlFilename="map/placeables/horseBarn/horseBarn.xml" />
+	<storeItem xmlFilename="map/placeables/horseBarnObjectStorage/horseBarnObjectStorage.xml" />
+	<storeItem xmlFilename="map/placeables/ridingArena/ridingArena.xml" />
+	<storeItem xmlFilename="map/placeables/farm03decoration/farm03decoration.xml" />
+	
+	
+<!-- Farm 04 -->
+	<storeItem xmlFilename="map/placeables/siloBuilding/siloBuilding.xml" />
+	<storeItem xmlFilename="map/placeables/farmhouse_04/farmHouse04.xml" />
+	<storeItem xmlFilename="map/placeables/farm04decoration01/farm04decoration01.xml" />
+	
+	
+<!-- Farm 05 / grape farm -->
+	<storeItem xmlFilename="map/placeables/farmhouse_05/farmhouseFeature.xml" />
+	<storeItem xmlFilename="map/placeables/farm05decoration01/farm05decoration01.xml" />
+	<storeItem xmlFilename="map/placeables/farm05decoration02/farm05decoration02.xml" />
+	<storeItem xmlFilename="map/placeables/tuscanFarmShed/tuscanFarmShed.xml" />
+
+
+<!-- Farm 06 -->
+	<storeItem xmlFilename="map/placeables/steelFrameCowShed/steelFrameCowShed.xml" />
+	<storeItem xmlFilename="map/placeables/steelFrameCowShed/steelFrameCowShedNoManure.xml" />
+	<storeItem xmlFilename="map/placeables/sheepGoatBarn/sheepGoatBarn.xml" />
+	<storeItem xmlFilename="map/placeables/chickenShed02/farmShed04.xml" />
+	<storeItem xmlFilename="map/placeables/farmGarage/farmGarage.xml" />
+	<storeItem xmlFilename="map/placeables/farmSiloBig/farmSiloBig.xml" />
+	<storeItem xmlFilename="map/placeables/farmDairy/farmDairy.xml" />
+	<storeItem xmlFilename="map/placeables/FS25_FarmhouseFR/farmhouseFR.xml" />
+	<storeItem xmlFilename="map/placeables/greenhouses/greenHouseGlassMedium.xml" />
+	<storeItem xmlFilename="map/placeables/abandonedBuildingDecoration/abandonedBuildingDecoration.xml" />
+	<storeItem xmlFilename="map/placeables/farm06decoration01/farm06decoration01.xml" />
+	<storeItem xmlFilename="map/placeables/farm06decoration02/farm06decoration02.xml" />
+	<storeItem xmlFilename="map/placeables/smallManurePlate/smallManurePlate.xml" />
+
+
+<!-- Farm 07 / gardener farm -->
+	<storeItem xmlFilename="map/placeables/gardenerObjectStorage/gardenerObjectStorage.xml" />
+	<storeItem xmlFilename="map/placeables/gardenerWaterDistributor/gardenerWaterDistributor.xml" />
+	<storeItem xmlFilename="map/placeables/farmhouse_07/farmhouseFeature.xml" />
+
+
+<!-- Container house -->
+	<storeItem xmlFilename="map/placeables/containerHouse/containerHouse.xml" />
+	
+
+<!-- Farm / grapes -->
+	
+
+
+<!-- COMMON -->
+
+	
+
+	<!-- PRODUCTION POINTS -->
+	<!--<storeItem xmlFilename="$data/placeables/mapUS/oilPlantUS/oilPlantUS.xml" />-->
+	<storeItem xmlFilename="map/placeables/oilPlant/oilPlant.xml" />
+	<storeItem xmlFilename="$data/placeables/planET/bga250kw/bga250kw.xml" />
+	<storeItem xmlFilename="$data/placeables/mapUS/tailorUS/tailorUS.xml" />
+	<storeItem xmlFilename="map/placeables/FS22_DairyEU/dairyEU.xml" />
+	<storeItem xmlFilename="map/placeables/FS22_GrainMillUS/flourMill.xml" />
+	<storeItem xmlFilename="map/placeables/sawmill/sawmill.xml" />
+	<storeItem xmlFilename="map/placeables/spinnery/spinnery.xml" />
+	<storeItem xmlFilename="map/placeables/bakery/bakery.xml" />
+	<storeItem xmlFilename="map/placeables/smallOilPress/smallOilPress.xml" />
+	<storeItem xmlFilename="map/placeables/pastaFactory/pastaFactory.xml" />
+	
+	
+	<!-- SELLING POINTS -->
+	<storeItem xmlFilename="map/placeables/sellingStationVehicles/sellingStationVehicles.xml" />
+	<storeItem xmlFilename="map/placeables/restaurant/restaurant.xml" />
+	<storeItem xmlFilename="map/placeables/restaurant2/restaurant.xml" />
+	<storeItem xmlFilename="map/placeables/supermarket/supermarket.xml" />
+	<storeItem xmlFilename="map/placeables/warehouseSilos/warehouseSilos.xml" />
+	<storeItem xmlFilename="map/placeables/AnimalDealerBaleSell/baleSellingStation.xml" />
+	<storeItem xmlFilename="$data/placeables/brandless/sellingStationGeneric/debrisCrusher/debrisCrusher.xml" />
+		
+	
+	<!-- BUYING POINTS -->
+	<storeItem xmlFilename="map/placeables/warehouseGasStation/gasStation01.xml" />
+	<storeItem xmlFilename="map/placeables/gasStation/gasStation02.xml" />
+	<storeItem xmlFilename="map/placeables/warehouseDepot/warehouseDepot.xml" />
+	<storeItem xmlFilename="map/placeables/buyingStations/fertilizerStation.xml" />
+	<storeItem xmlFilename="map/placeables/buyingStations/seedStation.xml" />
+	<storeItem xmlFilename="map/placeables/buyingStations/liquidFertilizerStation.xml" />
+	<storeItem xmlFilename="map/placeables/buyingStations/herbizideStation.xml" />
+	<storeItem xmlFilename="map/placeables/limeStation/limeStation.xml" />
+	<storeItem xmlFilename="$data/placeables/brandless/chargingStation/chargingStation.xml" />
+	<storeItem xmlFilename="$data/placeables/shared/buyingStations/buyingStationLiquidManure/buyingStationLiquidManure.xml" />
+	<storeItem xmlFilename="$data/placeables/shared/buyingStations/buyingStationManure/buyingStationManure.xml" />
+	<storeItem xmlFilename="map/placeables/fieldWaterWell/fieldWaterWell.xml" />
+	
+	
+	<storeItem xmlFilename="$data/placeables/planET/bgaBunkerSilo/bgaBunkerSilo.xml" />
+	<storeItem xmlFilename="$data/placeables/brandless/weighingStations/weighingStationSmall/weighingStationSmall.xml" />
+	<storeItem xmlFilename="$data/placeables/easySheds/easyShed01/easyShed01.xml" />
+	
+	<storeItem xmlFilename="map/placeables/constructionSite/constructionSite.xml" />
+	<storeItem xmlFilename="map/placeables/vendesiSign/vendesi01.xml" />
+	<storeItem xmlFilename="map/placeables/vendesiSign/vendesi02.xml" />
+	
+	
+	<!-- VEHICLES -->
+	<storeItem xmlFilename="map/vehicles/jungheinrich.xml"/>
+	<storeItem xmlFilename="map/vehicles/manitou.xml"/>
+	
+	<!-- Pallets -->
+	<storeItem xmlFilename="map/pallets/pasta/pastaPallet.xml" />
+	<storeItem xmlFilename="map/pallets/pasta/gnocchiPallet.xml" />
+	<storeItem xmlFilename="map/pallets/pasta/tricolorePallet.xml" />
+	<storeItem xmlFilename="map/pallets/pasta/pastaUovoPallet.xml" />
+	
+	
+	<!-- DECORATION -->
+    <!--<storeItem xmlFilename="$data/placeables/mapUS/stable02/stable02.xml" />--> <!-- showInStore false -->
+
+	
+</storeItems>

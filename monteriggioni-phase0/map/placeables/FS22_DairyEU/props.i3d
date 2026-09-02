@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="props.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="14" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="5" filename="$data/maps/textures/shared/props/airConditionUSA_c_diffuse.dds"/>
+    <File fileId="6" filename="$data/maps/textures/shared/props/airConditionUSA_c_normal.dds"/>
+    <File fileId="7" filename="$data/maps/textures/shared/props/airConditionUSA_c_specular.dds"/>
+    <File fileId="11" filename="../textures/props/airConditionerSet01Transparent_diffuse.png"/>
+    <File fileId="12" filename="../textures/props/airConditionerSet01Transparent_normal.png"/>
+    <File fileId="13" filename="../textures/props/airConditionerSet01Transparent_specular.png"/>
+    <File fileId="8" filename="../textures/props/airConditionerSet01_diffuse.png"/>
+    <File fileId="9" filename="../textures/props/airConditionerSet01_normal.png"/>
+    <File fileId="10" filename="../textures/props/airConditionerSet01_specular.png"/>
+    <File fileId="1" filename="$data/maps/mapEU/textures/props/auxialiarySet_diffuse.dds"/>
+    <File fileId="2" filename="$data/maps/mapEU/textures/props/auxialiarySet_normal.dds"/>
+    <File fileId="3" filename="$data/maps/mapEU/textures/props/auxialiarySet_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="airConditionerSet01_mat" materialId="5">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="airConditionerSet01Transparent_mat" materialId="6" customShaderId="14">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="airConditionUSA_c_mat" materialId="7">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="auxialiarySet_mat" materialId="8">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="props.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="props" nodeId="33">
+      <Shape name="chymney01" translation="-0.0999529 9.84327 1.13908" shapeId="1" clipDistance="70" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="col" translation="-4.32373e-07 0.510416 -7.17347e-08" shapeId="2" visibility="false" static="true" density="0.0001" nodeId="35" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      </Shape>
+      <Shape name="ventGridSmall" translation="-4.93589 0.4494 -8.89466" rotation="1.73028e-05 -90 0" shapeId="3" clipDistance="40" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      <Shape name="airConditionRoof" translation="-1.92614 5.11514 -10.5394" shapeId="4" clipDistance="120" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="7">
+        <Shape name="col" translation="0.0712576 0.846198 -0.44387" shapeId="5" visibility="false" static="true" nodeId="38" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      </Shape>
+      <Shape name="airConditioner01" translation="1.0596 3.79935 13" shapeId="6" static="true" nodeId="39" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9">
+        <Shape name="airConditioner01Vis" translation="0 0 0.155588" shapeId="7" clipDistance="100" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="5">
+          <Shape name="airConditioner01Transparent" shapeId="8" clipDistance="30" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="airConditioner01Fan" translation="-0.127224 0.0904741 0.0709861" shapeId="9" clipDistance="30" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </Shape>
+      </Shape>
+      <Shape name="airConditioner02" translation="9.11411 2.42997 -6.037" rotation="-0 90 0" shapeId="10" static="true" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9">
+        <Shape name="airConditioner02Vis" translation="0 0 0.155589" shapeId="11" clipDistance="100" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="5">
+          <Shape name="airConditioner02Transparent" shapeId="12" clipDistance="30" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="airConditioner02Fan" translation="-0.127993 0.0252306 0.0835043" shapeId="13" clipDistance="30" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </Shape>
+      </Shape>
+      <Shape name="chymney01" translation="-6.73758 8.75604 5.68575" shapeId="1" clipDistance="70" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="col" translation="-4.32373e-07 0.510416 -7.17347e-08" shapeId="2" visibility="false" static="true" density="0.0001" nodeId="48" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      </Shape>
+      <Shape name="ventGridSmall" translation="-7.88589 1.14405 -1.8374" rotation="1.73028e-05 -90 0" shapeId="3" clipDistance="40" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      <Shape name="chimneyMetal" translation="8.2456 2.90774 -14" rotation="-0 90 0" shapeId="14" clipDistance="65" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="col" translation="0.462254 -1.48314 -0.00473938" shapeId="15" visibility="false" static="true" density="0.0001" nodeId="51" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      </Shape>
+      <Shape name="wallVent02" translation="9.11411 3.63719 -4.03128" rotation="-0 90 0" shapeId="16" clipDistance="40" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      <Shape name="ventGridTiny" translation="0.355158 1.4733 -14" rotation="-180 0 -180" shapeId="17" clipDistance="40" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      <Shape name="ventGridSmall" translation="-7.88589 1.14882 11.8554" rotation="1.73028e-05 -90 0" shapeId="3" clipDistance="40" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      <Shape name="airConditioner03" translation="6.30738 3.12849 -14" rotation="180 0 -180" shapeId="18" static="true" nodeId="55" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9">
+        <Shape name="airConditioner03Vis" translation="0 0 0.155588" shapeId="19" clipDistance="100" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="5">
+          <Shape name="airConditioner03Transparent" shapeId="20" clipDistance="30" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="airConditioner03Fan01" translation="-0.126491 -0.213908 0.0835324" shapeId="21" clipDistance="30" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="airConditioner03Fan02" translation="-0.126491 0.318295 0.0835324" shapeId="22" clipDistance="30" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </Shape>
+      </Shape>
+      <Shape name="airConditioner03" translation="4.40055 3.12849 -14" rotation="180 0 -180" shapeId="18" static="true" nodeId="60" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9">
+        <Shape name="airConditioner03Vis" translation="0 0 0.155588" shapeId="19" clipDistance="100" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="5">
+          <Shape name="airConditioner03Transparent" shapeId="20" clipDistance="30" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="airConditioner03Fan01" translation="-0.126491 -0.213908 0.0835324" shapeId="21" clipDistance="30" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="airConditioner03Fan02" translation="-0.126491 0.318295 0.0835324" shapeId="22" clipDistance="30" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </Shape>
+      </Shape>
+      <Shape name="ventGridTiny" translation="2.58136 1.4733 -14" rotation="-180 0 -180" shapeId="17" clipDistance="40" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      <Shape name="airConditionRoof" translation="5.91404 5.11514 -10.5394" shapeId="4" clipDistance="120" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="7">
+        <Shape name="col" translation="0.0712576 0.846198 -0.44387" shapeId="5" visibility="false" static="true" nodeId="67" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      </Shape>
+      <Shape name="ventGridTiny" translation="9.11411 1.36127 -11.7111" rotation="-0 90 0" shapeId="17" clipDistance="40" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      <Shape name="wallVent02" translation="9.11411 3.63719 -7.97238" rotation="-0 90 0" shapeId="16" clipDistance="40" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      <Shape name="airConditioner01" translation="-0.707161 3.79935 13" shapeId="6" static="true" nodeId="70" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9">
+        <Shape name="airConditioner01Vis" translation="0 0 0.155588" shapeId="7" clipDistance="100" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="5">
+          <Shape name="airConditioner01Transparent" shapeId="8" clipDistance="30" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="airConditioner01Fan" translation="-0.127224 0.0904741 0.0709861" shapeId="9" clipDistance="30" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </Shape>
+      </Shape>
+      <Shape name="wallVent02" translation="4.11415 2.56973 10.1943" rotation="-0 90 0" shapeId="16" clipDistance="40" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="8"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

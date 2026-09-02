@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="farm03decoration.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="25" filename="$data/maps/mapAS/textures/terrain/dirt01_diffuse.png"/>
+    <File fileId="26" filename="$data/maps/mapAS/textures/terrain/dirt01_normal.png"/>
+    <File fileId="21" filename="$data/maps/mapEU/textures/buildings/infrastructure/dirtDecal_diffuse.png"/>
+    <File fileId="22" filename="$data/maps/mapEU/textures/buildings/infrastructure/dirtDecal_normal.png"/>
+    <File fileId="23" filename="$data/maps/mapEU/textures/buildings/infrastructure/dirtDecal_specular.png"/>
+    <File fileId="32" filename="$data/maps/mapUS/textures/terrain/gravelDirtMoss01_diffuse.png"/>
+    <File fileId="34" filename="$data/maps/textures/shared/tireTracksDecals_alpha.png"/>
+    <File fileId="29" filename="$data/maps/textures/shared/tireTracksDecals_diffuse.png"/>
+    <File fileId="35" filename="$data/maps/textures/shared/tireTracksDecals_height.png"/>
+    <File fileId="30" filename="$data/maps/textures/shared/tireTracksDecals_normal.png"/>
+    <File fileId="31" filename="$data/maps/textures/shared/tireTracksDecals_specular.png"/>
+    <File fileId="15" filename="$data/objects/bales/roundbales/roundbale125/bale_normal.png"/>
+    <File fileId="12" filename="$data/objects/bales/roundbales/roundbale125/fillTypes/hay_diffuse.dds"/>
+    <File fileId="13" filename="$data/objects/bales/roundbales/roundbale125/fillTypes/shared_normal.png"/>
+    <File fileId="18" filename="$data/objects/bales/roundbales/roundbale125/netWrap_diffuse.png"/>
+    <File fileId="19" filename="$data/objects/bales/roundbales/roundbale125/netWrap_normal.png"/>
+    <File fileId="16" filename="$data/objects/bales/roundbales/roundbaleWrapDefault_diffuse.png"/>
+    <File fileId="17" filename="$data/objects/bales/roundbales/roundbaleWrapDefault_normal.png"/>
+    <File fileId="1" filename="$data/placeables/brandless/baleFeedingPot/baleFeedingPotSquare.i3d"/>
+    <File fileId="2" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersHorse03_diffuse.png"/>
+    <File fileId="3" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersHorse03_normal.png"/>
+    <File fileId="4" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersHorse03_specular.png"/>
+    <File fileId="9" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="24" filename="$data/shaders/vertexPaintShader.xml"/>
+    <File fileId="14" filename="$data/shaders/wrapBaleShader.xml"/>
+    <File fileId="6" filename="../textures/tuscanFence_diffuse.dds"/>
+    <File fileId="7" filename="../textures/tuscanFence_normal.png"/>
+    <File fileId="8" filename="../textures/tuscanFence_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="animalFeedersHorse03_mat" materialId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="bale_mat" materialId="6" customShaderId="14">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Custommap name="baleNormalMap" fileId="15"/>
+      <Custommap name="wrapDiffuseMap" fileId="16"/>
+      <Custommap name="wrapNormalMap" fileId="17"/>
+      <Custommap name="netWrapDiffuseMap" fileId="18"/>
+      <Custommap name="netWrapNormalMap" fileId="19"/>
+    </Material>
+    <Material name="dirtDecal_mat" materialId="84" customShaderId="24" customShaderVariation="alphaNoise_terrainFormat">
+      <Texture fileId="21"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+      <Custommap name="mBlendedDiffuse" fileId="25"/>
+      <Custommap name="mBlendedNormal" fileId="26"/>
+      <CustomParameter name="colorTint" value="-0.02 -0.03 -0.04"/>
+      <CustomParameter name="alphaShift" value="0.25"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
+    <Material name="tireTracksDecals_mat" materialId="85" alphaBlending="true" customShaderId="24" customShaderVariation="alphaNoise_customParallax_alphaMap">
+      <Texture fileId="29"/>
+      <Normalmap fileId="30" bumpDepth="0.4"/>
+      <Glossmap fileId="31"/>
+      <Custommap name="mBlendedDiffuse" fileId="32"/>
+      <Custommap name="alphaMap" fileId="34"/>
+      <Custommap name="mParallaxMap" fileId="35"/>
+      <CustomParameter name="alphaShift" value="0.99"/>
+      <CustomParameter name="contrastLuminiosity" value="1 0.1"/>
+    </Material>
+    <Material name="tuscanFence_mat" materialId="8" customShaderId="9">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="tuscanFence_mat2" materialId="9" customShaderId="9" customShaderVariation="vertexOffset">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="141" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="farm03decoration.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="farm03Decoration" lockedgroup="true" nodeId="17">
+      <ReferenceNode name="baleFeedingPotSquare" translation="1.09165 -1.02963 1.1308" rotation="-3.94171e-05 -0 -2.83383e-05" referenceId="1" nodeId="23"/>
+      <Shape name="animalFeedersHorse03" translation="-2.37885 -0.706787 -2.39011" rotation="-0 90 0" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      <TransformGroup name="horseFence" lockedgroup="true" translation="-23.9839 -0.262569 -17.7623" rotation="-0 90 0" nodeId="26">
+        <TransformGroup name="fence" translation="0 0 -0.734375" nodeId="27">
+          <TransformGroup name="pole01" translation="7.62939e-06 0 -0.519806" nodeId="28">
+            <Shape name="col" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="29" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+            <Shape name="visual" shapeId="3" clipDistance="80" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          </TransformGroup>
+          <TransformGroup name="panels" translation="7.62939e-06 0 -0.506184" nodeId="31">
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="32">
+              <Shape name="col" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="33" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+              <Shape name="visual" shapeId="5" clipDistance="80" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="9"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" visibility="false" nodeId="35">
+              <Shape name="col" shapeId="4" static="true" density="0.0001" nodeId="36" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+              <Shape name="visual" shapeId="5" clipDistance="80" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="9"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" visibility="false" nodeId="38">
+              <Shape name="col" shapeId="4" static="true" density="0.0001" nodeId="39" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+              <Shape name="visual" translation="0 0 0.0085378" shapeId="5" clipDistance="80" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="9"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="pole01" translation="7.62939e-06 0 0.993347" visibility="false" nodeId="41">
+            <Shape name="col" shapeId="2" static="true" density="0.0001" nodeId="42" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+            <Shape name="visual" shapeId="3" clipDistance="80" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="fence" translation="0 0 0.734406" nodeId="44">
+          <TransformGroup name="pole01" translation="7.62939e-06 0 -0.519806" nodeId="45">
+            <Shape name="col" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="46" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+            <Shape name="visual" shapeId="3" clipDistance="80" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          </TransformGroup>
+          <TransformGroup name="panels" translation="7.62939e-06 0 -0.473633" nodeId="48">
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="49">
+              <Shape name="col" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="50" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+              <Shape name="visual" shapeId="5" clipDistance="80" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="9"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" visibility="false" nodeId="52">
+              <Shape name="col" shapeId="4" static="true" density="0.0001" nodeId="53" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+              <Shape name="visual" shapeId="5" clipDistance="80" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="9"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" visibility="false" nodeId="55">
+              <Shape name="col" shapeId="4" static="true" density="0.0001" nodeId="56" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+              <Shape name="visual" translation="0 0 0.0085378" shapeId="5" clipDistance="80" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="9"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="pole01" translation="7.62939e-06 0 0.966853" nodeId="58">
+            <Shape name="col" shapeId="2" static="true" density="0.0001" nodeId="59" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+            <Shape name="visual" shapeId="3" clipDistance="80" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="bale" lockedgroup="true" translation="0.769117 0.0472534 1.17899" rotation="90 -0 0" nodeId="116">
+        <Shape name="roundbale125_vis" translation="0 -4.13102e-09 0" shapeId="6" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="col" shapeId="7" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="140" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="141"/>
+      </TransformGroup>
+      <TransformGroup name="decals" translation="-20.0923 0.437778 3.24774" nodeId="89">
+        <Shape name="dirtDecal" translation="5.14395 0.299995 -15.7225" rotation="-6.48824e-15 89.1239 -1.13408e-09" shapeId="8" clipDistance="80" nodeId="90" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" renderedInViewports="false" decalLayer="3" materialIds="84"/>
+        <Shape name="dirtDecal" translation="-0.25676 0.299995 -17.6137" rotation="180 79.0154 -180" shapeId="8" clipDistance="80" nodeId="91" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" renderedInViewports="false" decalLayer="3" materialIds="84"/>
+        <Shape name="dirtDecal" translation="5.16719 0.299995 -17.0627" rotation="1.86153e-07 -20.4846 -6.55687e-08" shapeId="8" clipDistance="80" nodeId="92" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" renderedInViewports="false" decalLayer="3" materialIds="84"/>
+        <Shape name="dirtDecal" translation="-2.704 0.299995 3.44086" rotation="180 -2.97358 180" shapeId="8" clipDistance="80" nodeId="93" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" renderedInViewports="false" decalLayer="3" materialIds="84"/>
+        <Shape name="dirtDecal" translation="-2.45478 0.299995 11.1307" rotation="1.10319e-06 18.41 -3.0551e-05" shapeId="8" clipDistance="80" nodeId="94" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" renderedInViewports="false" decalLayer="3" materialIds="84"/>
+        <Shape name="dirtDecal" translation="-0.234108 0.299992 16.6387" rotation="1.22099e-06 -30.9875 -3.1528e-05" shapeId="8" clipDistance="80" nodeId="95" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" renderedInViewports="false" decalLayer="3" materialIds="84"/>
+        <Shape name="dirtDecal" translation="-0.329216 0.299995 3.95209" rotation="180 -2.97358 180" scale="1 1 1.1032" shapeId="8" clipDistance="80" nodeId="96" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" renderedInViewports="false" decalLayer="3" materialIds="84"/>
+        <Shape name="tireTracksDecalLong" translation="-2.72192 -0.700005 15.5199" rotation="2.73096e-12 -28.834 -2.73204e-05" shapeId="9" clipDistance="60" nodeId="97" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" renderedInViewports="false" decalLayer="1" materialIds="85"/>
+        <Shape name="tireTracksDecalLong" translation="-2.61302 -0.700005 16.9066" rotation="180 -4.62572 180" shapeId="9" clipDistance="60" nodeId="98" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" renderedInViewports="false" decalLayer="1" materialIds="85"/>
+        <Shape name="tireTracksDecalLong" translation="1.00269 -0.700005 -17.19" rotation="180 3.21703 180" shapeId="9" clipDistance="60" nodeId="99" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" renderedInViewports="false" decalLayer="1" materialIds="85"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="tipOcclusionUpdateAreas" translation="0.698943 0 -3.66695" nodeId="62">
+      <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-2.62104 -1 0.218749" nodeId="63">
+        <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="3.05669 -1 2.62499" nodeId="64"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

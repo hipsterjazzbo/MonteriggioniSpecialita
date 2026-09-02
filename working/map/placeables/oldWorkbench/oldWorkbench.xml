@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="workshop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_workshop</name>
+        <image>map/placeables/oldWorkbench/store_oldWorkbench.png</image>
+        <price>1000</price>
+        <functions>
+            <function>$l10n_function_workshop</function>
+        </functions>
+		<price>1000</price>
+        <dailyUpkeep>10</dailyUpkeep>
+        <lifetime>1000</lifetime>
+		<canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>tools</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>map/placeables/oldWorkbench/oldWorkbench.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp"/>
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="3" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="markerWrench" filename="$data/shared/assets/marker/markerIconWrench.i3d" />
+        <triggerMarker node="warningStripes"/>
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="SHOP" linkNode="vehicleTrigger" teleportNode="playerTrigger"/>
+    </hotspots>
+
+    <workshop>
+        <sellingPoint playerTriggerNode="playerTrigger" iconNode="markerWrench" sellTriggerNode="vehicleTrigger" ownWorkshop="true" mobileWorkshop="false" />
+    </workshop>
+
+    <i3dMappings>
+        <i3dMapping id="markerWrench" node="0>0|0" />
+        <i3dMapping id="warningStripes" node="0>0|1" />
+        <i3dMapping id="vehicleTrigger" node="0>0|2" />
+        <i3dMapping id="playerTrigger" node="0>0|3" />
+        <i3dMapping id="clearArea1Start" node="0>1|0" />
+        <i3dMapping id="clearArea1Width" node="0>1|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>1|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>2|0" />
+        <i3dMapping id="levelArea1Width" node="0>2|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>2|0|1" />
+        <i3dMapping id="indoorArea1Start" node="0>3|0" />
+        <i3dMapping id="indoorArea1Width" node="0>3|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>3|0|1" />
+        <i3dMapping id="testArea1Start" node="0>4|0" />
+        <i3dMapping id="testArea1End" node="0>4|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>5|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>5|0|0" />
+    </i3dMappings>
+</placeable>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cypress_stage01.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.8"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="$data/shaders/treeBranchShader.xml"/>
+    <File fileId="3" filename="$data/shaders/treeTrunkShader.xml"/>
+    <File fileId="9" filename="cypress1LOD_diffuse.png"/>
+    <File fileId="5" filename="cypressBranch_diffuse.png"/>
+    <File fileId="6" filename="cypressBranch_normal.png"/>
+    <File fileId="7" filename="cypressBranch_specular.png"/>
+    <File fileId="1" filename="cypressTrunk_diffuse.png"/>
+    <File fileId="2" filename="cypressTrunk_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cypress1LOD_mat" materialId="5">
+      <Texture fileId="9"/>
+    </Material>
+    <Material name="cypressBranch_mat" materialId="6" customShaderId="8">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="cypressTrunk_mat" materialId="7" customShaderId="3">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cypress_stage01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="cypress_stage01" lodDistance="0 100" clipDistance="600" nodeId="12">
+      <Shape name="LOD0" shapeId="1" static="true" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" angularDamping="0.15" rollingFriction="0.27" density="0.51" clipDistance="500" nodeId="13" castsShadows="true" receiveShadows="true" splitType="13" splitUvs="0 0 0.5 0.125 1.15" materialIds="7">
+        <Shape name="LOD0Attachments" shapeId="2" clipDistance="500" nodeId="14" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      </Shape>
+      <Shape name="LOD1" shapeId="3" clipDistance="600" nodeId="15" castsShadows="true" receiveShadows="true" materialIds="5"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

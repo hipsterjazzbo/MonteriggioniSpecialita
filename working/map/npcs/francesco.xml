@@ -1,0 +1,24 @@
+<npc>
+  <class>NPC</class>
+  <title>Francesco Galli</title>
+  <imageFilename>map/npcs/francesco.png</imageFilename>
+  <filename>$dataS/character/npc/npcBase.i3d</filename>
+  <sounds>   
+  </sounds>
+  <playerStyle filename="dataS/character/playerM/playerM.xml">
+    <bottom color="2" name="jeans"/>
+    <face color="1" name="head04"/>
+    <top color="2" name="collaredShirt"/>
+    <headgear color="12" name="ballcap"/>
+    <glasses color="1" name="classic"/>
+    <footwear color="9" name="sneakers"/>
+    <hairStyle color="18" name="hair02"/>
+  </playerStyle>
+  <interactionTrigger node="triggerNode"/>
+  <conversations>  
+  </conversations>
+  <i3dMappings>
+    <i3dMapping id="audioNode" node="0&gt;0"/>
+    <i3dMapping id="triggerNode" node="0&gt;1"/>
+  </i3dMappings>
+</npc>

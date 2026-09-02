@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="props.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.8"/>
+  </Asset>
+
+  <Files>
+    <File fileId="7" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="9" filename="$data/shared/default_normal.png"/>
+    <File fileId="18" filename="$data/shared/default_specular.png"/>
+    <File fileId="4" filename="$data/maps/textures/shared/props/airConditionUSA_alpha_diffuse.dds"/>
+    <File fileId="5" filename="$data/maps/textures/shared/props/airConditionUSA_alpha_normal.dds"/>
+    <File fileId="6" filename="$data/maps/textures/shared/props/airConditionUSA_alpha_specular.dds"/>
+    <File fileId="1" filename="$data/maps/textures/shared/props/airConditionUSA_b_diffuse.dds"/>
+    <File fileId="2" filename="$data/maps/textures/shared/props/airConditionUSA_b_normal.dds"/>
+    <File fileId="3" filename="$data/maps/textures/shared/props/airConditionUSA_b_specular.dds"/>
+    <File fileId="11" filename="$data/maps/textures/shared/props/airConditionUSA_c_diffuse.dds"/>
+    <File fileId="12" filename="$data/maps/textures/shared/props/airConditionUSA_c_normal.dds"/>
+    <File fileId="13" filename="$data/maps/textures/shared/props/airConditionUSA_c_specular.dds"/>
+    <File fileId="14" filename="$data/maps/mapEU/textures/props/auxialiarySet_diffuse.dds"/>
+    <File fileId="15" filename="$data/maps/mapEU/textures/props/auxialiarySet_normal.dds"/>
+    <File fileId="16" filename="$data/maps/mapEU/textures/props/auxialiarySet_specular.dds"/>
+    <File fileId="17" filename="$data/maps/mapEU/textures/props/auxiliaryDecals01_diffuse.dds"/>
+    <File fileId="8" filename="../textures/props/propsDecalsUS_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="airConditionUSA_alpha_mat" materialId="5" alphaBlending="true" customShaderId="7">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="airConditionUSA_b_mat" materialId="6">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="airConditionUSA_c_mat" materialId="7">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="auxialiarySet_mat" materialId="8">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+    </Material>
+    <Material name="auxiliaryDecals01_mat" materialId="9" alphaBlending="true" customShaderId="7">
+      <Texture fileId="17"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="18"/>
+    </Material>
+    <Material name="lambert1" materialId="10" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="propsDecalsUS_mat" materialId="11" alphaBlending="true" customShaderId="7">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="props.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="props" nodeId="30">
+      <Shape name="airConditionWall" translation="-2.01426 4.03012 7.04565" shapeId="1" clipDistance="120" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="rotor" translation="0 0 0.203397" shapeId="2" clipDistance="120" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="alpha" translation="0 0 0.203397" shapeId="3" clipDistance="50" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="decals" translation="0 0 0.203397" shapeId="4" clipDistance="50" nodeId="34" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+        <Shape name="col" translation="0.172867 -0.0164132 0.128737" shapeId="5" visibility="false" static="true" nodeId="35" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+      </Shape>
+      <Shape name="airConditionRoof" translation="-3.47856 4.67221 6.01411" shapeId="6" clipDistance="120" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="7">
+        <Shape name="decals" shapeId="7" clipDistance="50" nodeId="37" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+        <Shape name="col" translation="0.0712576 0.846198 -0.44387" shapeId="8" visibility="false" static="true" nodeId="38" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+      </Shape>
+      <Shape name="airConditionWall" translation="-7.04569 3.98914 3.609" rotation="-1.00179e-05 -90 0" shapeId="1" clipDistance="120" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="rotor" translation="0 0 0.203397" shapeId="2" clipDistance="120" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="alpha" translation="0 0 0.203397" shapeId="3" clipDistance="50" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="decals" translation="0 0 0.203397" shapeId="4" clipDistance="50" nodeId="42" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+        <Shape name="col" translation="0.172867 -0.0164132 0.128737" shapeId="5" visibility="false" static="true" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+      </Shape>
+      <Shape name="airConditionWall" translation="0.223201 3.9895 -7.0457" rotation="-180 -0 180" shapeId="1" clipDistance="120" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="rotor" translation="0 0 0.203397" shapeId="2" clipDistance="120" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="alpha" translation="0 0 0.203397" shapeId="3" clipDistance="50" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="decals" translation="0 0 0.203397" shapeId="4" clipDistance="50" nodeId="47" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+        <Shape name="col" translation="0.172867 -0.0164132 0.128737" shapeId="5" visibility="false" static="true" nodeId="48" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+      </Shape>
+      <Shape name="airConditionWall" translation="-1.83868 3.9895 -7.0457" rotation="-180 -0 180" shapeId="1" clipDistance="120" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="rotor" translation="0 0 0.203397" shapeId="2" clipDistance="120" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="alpha" translation="0 0 0.203397" shapeId="3" clipDistance="50" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="decals" translation="0 0 0.203397" shapeId="4" clipDistance="50" nodeId="52" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+        <Shape name="col" translation="0.172867 -0.0164132 0.128737" shapeId="5" visibility="false" static="true" nodeId="53" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+      </Shape>
+      <Shape name="airConditionRoof" translation="-5.58111 4.67221 6.01411" shapeId="6" clipDistance="120" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="7">
+        <Shape name="decals" shapeId="7" clipDistance="50" nodeId="55" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+        <Shape name="col" translation="0.0712576 0.846198 -0.44387" shapeId="8" visibility="false" static="true" nodeId="56" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+      </Shape>
+      <Shape name="chimneyMetal" translation="-6.91659 2.62643 1.7078" rotation="180 -0 -180" shapeId="9" clipDistance="65" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="col" translation="0.462254 -1.48314 -0.00473938" shapeId="10" visibility="false" static="true" density="0.0001" nodeId="58" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        <Shape name="dirt_decal" translation="0.0069814 0.273047 0.0099054" shapeId="11" clipDistance="30" nodeId="59" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9"/>
+      </Shape>
+      <Shape name="wallVent02" translation="7.0457 3.82275 3.7674" rotation="6.79387e-09 90 0" shapeId="12" clipDistance="40" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="dirt_decal" translation="-1.22012e-07 -2.68555e-08 0.00316836" shapeId="13" clipDistance="30" nodeId="61" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9"/>
+      </Shape>
+      <Shape name="wallVent02" translation="7.0457 3.82275 -4.1024" rotation="6.79387e-09 90 0" shapeId="12" clipDistance="40" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="dirt_decal" translation="-1.22012e-07 -2.68555e-08 0.00316836" shapeId="13" clipDistance="30" nodeId="63" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9"/>
+      </Shape>
+      <Shape name="ventGridTiny" translation="-6.91659 1.29271 4.0077" rotation="0 -90 0" shapeId="14" clipDistance="40" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="dirt_decal" translation="5.07742e-08 9.53674e-09 0.00166457" shapeId="15" clipDistance="30" nodeId="65" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9"/>
+      </Shape>
+      <Shape name="ventGridSmall" translation="4.61421 0.63378 6.98182" shapeId="16" clipDistance="40" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="dirt_decal" translation="0 9.53674e-09 0.00174108" shapeId="17" clipDistance="30" nodeId="67" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9"/>
+      </Shape>
+      <Shape name="ventGridSmall" translation="0.574235 0.63378 6.98182" shapeId="16" clipDistance="40" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="dirt_decal" translation="0 9.53674e-09 0.00174108" shapeId="17" clipDistance="30" nodeId="69" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9"/>
+      </Shape>
+      <Shape name="ventGridSmall" translation="-3.30561 0.634 6.98182" shapeId="16" clipDistance="40" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="dirt_decal" translation="0 9.53674e-09 0.00174108" shapeId="17" clipDistance="30" nodeId="71" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9"/>
+      </Shape>
+      <Shape name="ventGridSmall" translation="3.14336 0.634 -6.9819" rotation="180 -0 180" shapeId="16" clipDistance="40" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="dirt_decal" translation="0 9.53674e-09 0.00174108" shapeId="17" clipDistance="30" nodeId="73" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9"/>
+      </Shape>
+      <Shape name="ventGridSmall" translation="-0.923222 0.634 -6.9819" rotation="180 -0 180" shapeId="16" clipDistance="40" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="dirt_decal" translation="0 9.53674e-09 0.00174108" shapeId="17" clipDistance="30" nodeId="75" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9"/>
+      </Shape>
+      <Shape name="ventGridSmall" translation="-4.83459 0.634 -6.9819" rotation="180 -0 180" shapeId="16" clipDistance="40" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="dirt_decal" translation="0 9.53674e-09 0.00174108" shapeId="17" clipDistance="30" nodeId="77" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9"/>
+      </Shape>
+      <Shape name="ventGridTiny" translation="-6.91659 1.29271 5.89788" rotation="0 -90 0" shapeId="14" clipDistance="40" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="dirt_decal" translation="5.07742e-08 9.53674e-09 0.00166457" shapeId="15" clipDistance="30" nodeId="79" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

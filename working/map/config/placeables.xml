@@ -1,0 +1,928 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeables version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/savegame_placeables.xsd">
+    
+	<!-- Vehicle shop -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/sellingStationVehicles/sellingStationVehicles.xml" uniqueId="preplaced_sellingStationVehicles" position="178.26800537 28.07699966 -149.91213989" rotation="0 90 0"/>
+	
+	
+	<!-- Oilpress -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/oilPlant/oilPlant.xml" uniqueId="preplaced_oilPress" position="825.33898926 17.32679939 -72.78681946" rotation="0 23.76477242 0.00006068" canBeDeletedOverwrite="false" />    
+	
+	
+	<!-- Tailor -->
+	<placeable isPreplaced="true" filename="data/placeables/mapUS/tailorUS/tailorUS.xml" uniqueId="preplaced_tailor" position="-357.6539917 10.28457737 -862.78009033" rotation="-0.00000482 -60.00000381 0.00003137" canBeDeletedOverwrite="false">
+		<customImage filename="$mapdir$/map/placeables/store_tailor.dds"/>
+	</placeable>
+    
+	
+	<!-- BGA -->
+	<placeable isPreplaced="true" filename="data/placeables/planET/bga250kw/bga250kw.xml" uniqueId="preplaced_bga" position="-938.93865967 3.67328 -957.02258301" rotation="0 0 0" boughtWithFarmlandOverwrite="true" >
+		<productionPoint>
+            <storage boughtWithFarmlandOverwrite="true"/>
+        </productionPoint>
+    </placeable>
+    <placeable isPreplaced="true" filename="data/placeables/planET/bgaBunkerSilo/bgaBunkerSilo.xml" uniqueId="preplaced_bgaBunkerSilo" position="-924.63592529 3.66058517 -911.31292725" rotation="-179.99998474 0 179.99998474" boughtWithFarmlandOverwrite="true" />
+    <placeable isPreplaced="true" filename="data/placeables/brandless/weighingStations/weighingStationSmall/weighingStationSmall.xml" uniqueId="preplaced_bga_weighingStationSmall" position="-990.77630615 3.63927841 -927.72003174" rotation="0 180 0" boughtWithFarmlandOverwrite="true" />
+    <placeable isPreplaced="true" filename="data/placeables/easySheds/easyShed01/easyShed01.xml" uniqueId="preplaced_bga_easyShed01" position="-959.18170166 3.63927841 -905.11029053" rotation="0 180 0" boughtWithFarmlandOverwrite="true"/>
+   
+   
+	<!-- Farm 01 -->
+	<placeable isPreplaced="true" filename="data/placeables/brandless/dieselTanks/level02/dieselTanksLevel02.xml" uniqueId="preplaced_dieselTanks02_001" position="297.64575195 32.83584595 -276.42987061" rotation="-180 -28.94923973 -180" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="$moddir$FS25_SilosFS_crossplay/XML/Silos_25_Podajnik.xml" uniqueId="placeableacd2b7da3b89f825fc4d7e2e4e45be13" position="248.63665771 32.48600006 -323.61334229" rotation="0.00 45.00 0.00" boughtWithFarmlandOverwrite="true">
+        <configuration name="color" id="1" isActive="true"/>
+        <animatedObjects>
+            <animatedObject time="1.000000" direction="0"/>
+        </animatedObjects>
+        <silo>
+            <storage index="1" boughtWithFarmlandOverwrite="true"/>
+        </silo>
+    </placeable>
+    <placeable isPreplaced="true" filename="$moddir$FS25_SilosFS_crossplay/XML/Silos_25_Extension.xml" uniqueId="placeable33e96dbd23e4b9bb31f1bf81ce2a06c0" position="245.22639465 32.48400116 -324.72677612" rotation="0.00 45.00 0.00" boughtWithFarmlandOverwrite="true">
+        <configuration name="color" id="1" isActive="true"/>
+        <siloExtension boughtWithFarmlandOverwrite="true"/>
+    </placeable>
+	<placeable isPreplaced="true" filename="$moddir$FS25_SilosFS_crossplay/XML/Silos_25_Extension.xml" uniqueId="placeable33e96dbd23e4b9bb31f1bf81ce2a06c2" position="247.52346802 32.48400116 -327.02380371" rotation="0.00 45.00 0.00" boughtWithFarmlandOverwrite="true">
+        <configuration name="color" id="1" isActive="true"/>
+        <siloExtension boughtWithFarmlandOverwrite="true"/>
+    </placeable>
+	<placeable isPreplaced="true" filename="$moddir$FS25_Shed_Vologne/shedVologne.xml" uniqueId="preplaced_FS25_Shed_Vologne_001" position="273.07699585 32.80860138 -309.38400269" rotation="0 30 0" boughtWithFarmlandOverwrite="true" />
+    <placeable isPreplaced="true" filename="$mapdir$/map/placeables/oldWorkbench/oldWorkbench.xml" uniqueId="preplaced_workshop_002" position="268.06158447 32.8144989 -321.66235352" rotation="0 29.0739994 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/farm01decoration/farm01decoration.xml" uniqueId="preplaced_farmDecoration_001" position="273.52700806 32.8144989 -321.10800171" rotation="0 30 0" age="0.000000" price="-1000.000000" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/farm01decoration02/farm01decoration02.xml" uniqueId="preplaced_farmDecoration_002" position="286.76000977 32.81326294 -260.0022583" rotation="0 0 0" age="0.000000" price="-1000.000000" boughtWithFarmlandOverwrite="true" />
+	
+	<placeable filename="$mapdir$/map/placeables/greenhouses/greenHousesTarpMedium.xml" uniqueId="preplaced_greenHousesTarpMedium_001" position="238.69992065 33.04299927 -300.43490601" rotation="0 80.821 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable filename="$mapdir$/map/placeables/greenhouses/greenHousesTarpMedium.xml" uniqueId="preplaced_greenHousesTarpMedium_002" position="236.53013611 33.04299927 -281.70602417" rotation="0 80.821 0" boughtWithFarmlandOverwrite="true"/>
+	
+	<placeable isPreplaced="true" filename="$moddir$FS25_Average_Wooden_Shelter/Shelter.xml" uniqueId="preplaced_FS25_Average_Wooden_Shelter_001" position="293.84298706 33.01190186 -270.59899902" rotation="0.00 30.276 0.00" boughtWithFarmlandOverwrite="true">
+        <configuration name="solarPanels" id="1" isActive="true"/>
+    </placeable>
+    <placeable isPreplaced="true" filename="$moddir$FS25_Average_Wooden_Shelter/Shelter.xml" uniqueId="preplaced_FS25_Average_Wooden_Shelter_002" position="280.8460083 32.99539948 -263.01199341" rotation="0.00 30.276 0.00" boughtWithFarmlandOverwrite="true">
+        <configuration name="solarPanels" id="1" isActive="true"/>
+    </placeable>
+    <placeable filename="data/placeables/brandless/beeHives/beeHivePalletSpawner/beeHivePalletSpawner.xml" uniqueId="placeable307c5bf7b8d8e1cc93a43bc99ece4754" position="309.57348633 32.35 -312.54751587" rotation="0.00 37.102 0.00" age="0.000000" price="200.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/beeHives/beehiveGeneric02/beehiveGeneric02.xml" uniqueId="placeablea5a1afd58d4c088ea43ccaec76a0e016" position="295.250 32.792 -256.250" rotation="0.00 37.50 0.00" age="0.000000" price="3000.000000" boughtWithFarmlandOverwrite="true"/>
+    <placeable filename="data/placeables/brandless/beeHives/beehiveGeneric02/beehiveGeneric02.xml" uniqueId="placeablea5e919c43ba58e704811452802c67814" position="290.000 32.715 -253.250" rotation="0.00 37.50 0.00" age="0.000000" price="3000.000000" boughtWithFarmlandOverwrite="true"/>
+   
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/chickenShed02/farmShed04.xml" uniqueId="preplaced_chickenShed_001" position="268.70617676 32.70494843 -253.18569946" rotation="0 -90 0" boughtWithFarmlandOverwrite="true">
+		<husbandry globalProductionFactor="0.000000" productionFactor="0.000000"/>
+			<husbandryAnimals>
+				<clusters>
+					<animal subType="CHICKEN_ROOSTER" numAnimals="1" age="0" health="0" reproduction="0"/>
+					<animal subType="CHICKEN" numAnimals="15" age="6" health="0" reproduction="0"/>
+				</clusters>
+			</husbandryAnimals>
+	</placeable>
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/smallOilPress/smallOilPress.xml" uniqueId="preplaced_smallOilPress_001" position="251.96389771 32.69245529 -258.05352783" rotation="0 180 0" boughtWithFarmlandOverwrite="true" />
+    <placeable isPreplaced="true" filename="$mapdir$/map/placeables/farmhouse_01/farmhouseFeature.xml" uniqueId="preplaced_farmhouse_001" position="324.37200928 32.47399902 -302.75210571" rotation="179.99995422 -37.10229874 179.99996948" boughtWithFarmlandOverwrite="true" />
+    
+	
+	<!-- Dairy -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/FS22_DairyEU/dairyEU.xml" uniqueId="preplaced_dairy" position="532.51397705 24.15500069 -80.44507599" rotation="0 84.27098083 0" canBeDeletedOverwrite="false"/>
+    
+	
+	<!-- Gasstation -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/gasStation/gasStation02.xml" uniqueId="preplaced_gasStation" position="373.30560303 26.82744217 -83.54421234" rotation="0 0 0" canBeDeletedOverwrite="false"/>
+    
+	
+	<!-- Grainmill -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/FS22_GrainMillUS/flourMill.xml" uniqueId="preplaced_grainMill" position="722.28198242 17.32629967 -43.68650055" rotation="0 -66.69739532 0" canBeDeletedOverwrite="false"/>
+    
+	
+	<!-- Restaurant -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/restaurant/restaurant.xml" uniqueId="preplaced_restaurant" position="-31.23699951 48.05340195 356.07501221" rotation="0 90 0" canBeDeletedOverwrite="false"/>
+    
+	
+	<!-- Restaurant 2 -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/restaurant2/restaurant.xml" uniqueId="preplaced_restaurant2" position="-36.32087708 41.89364624 -539.83691406" rotation="0 -28.43816948 0" canBeDeletedOverwrite="false"/>
+   
+	
+	<!-- Warehouse area -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/supermarket/supermarket.xml" uniqueId="preplaced_supermarket" position="-545.59545898 5.45699978 -916.57287598" rotation="0 0 0" canBeDeletedOverwrite="false"/>
+    <placeable isPreplaced="true" filename="$mapdir$/map/placeables/warehouseSilos/warehouseSilos.xml" uniqueId="preplaced_warehouseSilos" position="-603.34881592 5.4474721 -944.99346924" rotation="180 0 180" canBeDeletedOverwrite="false"/>
+    <placeable isPreplaced="true" filename="$mapdir$/map/placeables/warehouseDepot/warehouseDepot.xml" uniqueId="preplaced_warehouseDepot" position="-584.69042969 5.35333729 -915.67852783" rotation="0 90 0" canBeDeletedOverwrite="false"/>
+    <placeable isPreplaced="true" filename="$mapdir$/map/placeables/warehouseGasStation/gasStation01.xml" uniqueId="preplaced_warehouseGasStation" position="-542.77600098 5.457 -948.35101318" rotation="0 -45 0" canBeDeletedOverwrite="false"/>
+    <placeable isPreplaced="true" filename="data/placeables/brandless/chargingStation/chargingStation.xml" uniqueId="preplaced_chargingStation" position="-548.87176514 5.44747066 -925.809021" rotation="0 180 0" canBeDeletedOverwrite="false"/>
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/limeStation/limeStation.xml" uniqueId="preplaced_limeStation" position="-572.81481934 5.44747162 -916.51135254" rotation="0 90 0" canBeDeletedOverwrite="false">
+		<customImage filename="$mapdir$/map/placeables/limeStation/store_WarehouseLimeStation.dds"/>
+	</placeable>
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/buyingStations/fertilizerStation.xml" uniqueId="preplaced_fertilizerStation" position="-604.33886719 5.44747162 -982.62261963" rotation="0 0 0" canBeDeletedOverwrite="false" />
+    <placeable isPreplaced="true" filename="$mapdir$/map/placeables/buyingStations/seedStation.xml" uniqueId="preplaced_seedStation" position="-595.32080078 5.44747162 -982.62261963" rotation="0 0 0" canBeDeletedOverwrite="false" />
+    <placeable isPreplaced="true" filename="$mapdir$/map/placeables/buyingStations/liquidFertilizerStation.xml" uniqueId="preplaced_liquidFertilizerStation" position="-619.38763428 5.44747162 -982.12579346" rotation="0 0 0" canBeDeletedOverwrite="false" />
+    <placeable isPreplaced="true" filename="$mapdir$/map/placeables/buyingStations/herbizideStation.xml" uniqueId="preplaced_herbizideStation" position="-572.33392334 5.44747066 -922.73510742" rotation="0 90 0" canBeDeletedOverwrite="false" />
+    
+
+	<!-- Animal dealer -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/AnimalDealerBaleSell/baleSellingStation.xml" uniqueId="preplaced_baleSellingStation" position="-389.59796143 8.69413948 -885.18121338" rotation="179.99998474 -45.00000381 -179.99998474" canBeDeletedOverwrite="false"/>
+    <placeable isPreplaced="true" filename="$moddir$FS25_Shed_Vologne/shedVologne.xml" uniqueId="preplaced_FS25_Shed_Vologne_002" position="-389.59796143 8.69413948 -885.18121338" rotation="179.99998474 -45.00000381 -179.99998474" canBeDeletedOverwrite="false"/>
+	<placeable isPreplaced="true" filename="data/placeables/shared/buyingStations/buyingStationLiquidManure/buyingStationLiquidManure.xml" uniqueId="preplaced_buyingStationLiquidManure" position="-355.9815979 8.6442337 -956.20922852" rotation="-179.99998474 16.60240936 -179.99998474" canBeDeletedOverwrite="false" >
+		<customImage filename="data/placeables/shared/buyingStations/buyingStationLiquidManure/mapIcon_buyingStationLiquidManure.png"/>
+	</placeable>
+	<placeable isPreplaced="true" filename="data/placeables/shared/buyingStations/buyingStationManure/buyingStationManure.xml" uniqueId="preplaced_buyingStationManure" position="-436.46298218 8.62134552 -971.14459229" rotation="-179.99996948 45.00000381 -179.99990845" canBeDeletedOverwrite="false" >
+		<customImage filename="data/placeables/shared/buyingStations/buyingStationManure/mapIcon_buyingStationManure.png"/>
+	</placeable>
+	
+	
+	<!-- Sawmill -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/sawmill/sawmill.xml" uniqueId="preplaced_sawmill" position="-90.5746994 57.43500137 765.76000977" rotation="0 31.08499908 0" canBeDeletedOverwrite="false"/>
+    
+	
+	<!-- Spinnery -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/spinnery/spinnery.xml" uniqueId="preplaced_spinnery" position="-535.13537598 6.37084532 -828.70489502" rotation="0 90 0" canBeDeletedOverwrite="false"/>
+	
+	
+	<!-- Grapes Farmland ? -->
+	<placeable filename="data/placeables/orchards/grape/grapeSingleton.xml" uniqueId="placeablef993de045a96a237c55319ba3c77e70b" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="0.000000" boughtWithFarmlandOverwrite="true">
+        <fence>
+            <segments>
+                <segment start="-199.25 -604" end="-268.25 -604"/>
+                <segment start="-268.25 -601" end="-199.25 -601"/>
+                <segment start="-199.25 -598" end="-268.25 -598"/>
+                <segment start="-268.25 -595" end="-199.25 -595"/>
+                <segment start="-199.25 -592" end="-268.25 -592"/>
+                <segment start="-268.25 -589" end="-199.25 -589"/>
+                <segment start="-199.25 -586" end="-268.25 -586"/>
+                <segment start="-268.25 -583" end="-199.25 -583"/>
+                <segment start="-199.25 -580" end="-268.25 -580"/>
+                <segment start="-268.25 -577" end="-199.25 -577"/>
+                <segment start="-199.25 -574" end="-268.25 -574"/>
+                <segment start="-265.25 -571" end="-199.25 -571"/>
+                <segment start="-265.25 -568" end="-196.25 -568"/>
+                <segment start="-196.25 -565" end="-262.25 -565"/>
+                <segment start="-262.25 -562" end="-193.25 -562"/>
+                <segment start="-193.25 -559" end="-259.25 -559"/>
+                <segment start="-259.25 -556" end="-190.25 -556"/>
+                <segment start="-190.25 -553" end="-256.25 -553"/>
+                <segment start="-256.25 -550" end="-187.25 -550"/>
+                <segment start="-187.25 -547" end="-253.25 -547"/>
+                <segment start="-253.25 -544" end="-184.25 -544"/>
+                <segment start="-184.25 -541" end="-250.25 -541"/>
+                <segment start="-250.25 -538" end="-181.25 -538"/>
+                <segment start="-181.25 -535" end="-247.25 -535"/>
+                <segment start="-247.25 -532" end="-178.25 -532"/>
+			</segments>
+        </fence>
+    </placeable>
+	
+	
+	<!-- Grapes Farmland ? -->
+	<placeable filename="data/placeables/orchards/grape/grapeSingleton.xml" uniqueId="grapes2" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="0.000000" boughtWithFarmlandOverwrite="true">
+        <fence>
+            <segments>
+                <segment start="-175.5 -524" end="-238.49950788747026 -524.2490099125987"/>
+                <segment start="-238.51136933363566 -521.24904687143" end="-175.5118614461654 -521.0000369588313"/>
+                <segment start="-175.52371369398722 -518.0000844690862" end="-235.52324501538746 -518.2372367667992"/>
+                <segment start="-232.53512726820597 -515.2254262659612" end="-175.53557251287572 -515.0001315831339"/>
+                <segment start="-175.54742585219034 -512.0001455042425" end="-232.54698060752057 -512.2254401870698"/>
+                <segment start="-175.5592819312919 -509.0001455042425" end="-229.55886012055214 -509.2135825721842"/>
+                <segment start="-226.25 -553" end="-256.25 -553"/>
+                <segment start="-223.25 -553" end="-226.25 -553" first="false"/>
+                <segment start="-175.57113801039347 -506.0001760218206" end="-229.5707161996537 -506.2136130897623"/>
+                <segment start="-175.58299408949503 -503.00020653939873" end="-226.58259571268525 -503.2017859924548"/>
+                <segment start="-226.59445344008097 -500.2018056604925" end="-175.59485181689075 -500.0002262074364"/>
+                <segment start="-175.60670624769816 -497.00023705697686" end="-223.60633130481835 -497.1899588951473"/>
+                <segment start="-223.61819611586222 -494.1899953577581" end="-175.61857105874202 -494.00027351958767"/>
+                <segment start="-175.63043366469034 -491.0002980921331" end="-220.63008215574052 -491.1781623154179"/>
+                <segment start="-220.64193879164347 -488.17818505502373" end="-175.6422903005933 -488.0003208317389"/>
+                <segment start="-175.65414582289347 -485.00035912728936" end="-217.65381774787363 -485.16636573568854"/>
+                <segment start="-214.6657049013547 -482.1545171374037" end="-175.66600954244456 -482.00036814389017"/>
+                <segment start="-175.67787323988566 -479.0003896448675" end="-214.6775685987958 -479.154538638381"/>
+                <segment start="-175.68972931898722 -476.0004201624456" end="-211.68944811182737 -476.1427115410735"/>
+                <segment start="-211.70131073988566 -473.1427236292425" end="-175.7015919470455 -473.0004322506146"/>
+                <segment start="-175.7134567359794 -470.00045068002373" end="-208.71319896274954 -470.1308844437659"/>
+                <segment start="-208.7250534156669 -467.1309133265081" end="-175.72531118889677 -467.0004795627659"/>
+                <segment start="-175.73716889418253 -464.00051171518" end="-205.73693455488265 -464.11908786403654"/>
+                <segment start="-202.74881135023722 -461.10726220346123" end="-175.7490222556071 -461.00054366949036"/>
+                <segment start="-175.76088105238566 -458.00057275033623" end="-202.76067014701576 -458.1072912843071"/>
+                <segment start="-199.77255402601847 -455.09545190072686" end="-175.77274149745836 -455.0005909816416"/>
+                <segment start="-175.78459321058878 -452.00060326791436" end="-199.7844057391489 -452.0954641869996"/>
+                <segment start="-196.79628144301066 -449.0836415979925" end="-175.79644548052056 -449.00063829379286"/>
+                <segment start="-175.8083053687919 -446.0006643030706" end="-196.808141331282 -446.08366760727023"/>
+                <segment start="-193.8200241187919 -443.0718312952581" end="-175.82016472237183 -443.00068560594417"/>
+            </segments>
+        </fence>
+    </placeable>
+	
+	
+	<!-- Farm 02 -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/farmhouse_03/farmhouseFeature.xml" uniqueId="preplaced_farmhouse_003" position="730.4130249 26 -295.22000122" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/> <!-- y=25.49430084 -->
+    <placeable filename="data/placeables/rudolfHormann/cowBarnBig/cowBarnBigVector.xml" uniqueId="placeable9d527efe2100ad9b1e1dea403951b31b" position="705.750 17.807 -410.500" rotation="0.00 -0.00 0.00" boughtWithFarmlandOverwrite="true">
+        <configuration name="color" id="1" isActive="false"/>
+        <configuration name="color" id="6" isActive="true"/>
+        <configuration name="solarPanels" id="1" isActive="true"/>
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="1.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.000000">
+            <storage boughtWithFarmlandOverwrite="true"/>
+        </husbandry>
+        <husbandryFence>
+            <fence>
+                <segment start="682.917 18.780 -423.141" end="683.000 17.800 -427.250" id="SEGMENT"/>
+                <segment start="683.000 17.800 -427.250" end="673.000 17.800 -427.250" id="SEGMENT"/>
+                <segment start="673.000 17.800 -427.250" end="672.750 13.876 -452.000" id="SEGMENT"/>
+                <segment start="672.750 13.876 -452.000" end="684.750 13.333 -458.500" id="SEGMENT"/>
+                <segment start="684.750 13.333 -458.500" end="703.250 12.690 -473.250" id="SEGMENT"/>
+                <segment start="703.250 12.690 -473.250" end="712.500 12.554 -480.000" id="SEGMENT"/>
+                <segment start="712.500 12.554 -480.000" end="717.000 12.680 -482.000" id="SEGMENT"/>
+                <segment start="717.000 12.680 -482.000" end="724.000 12.512 -486.000" id="SEGMENT"/>
+                <segment start="724.000 12.512 -486.000" end="736.250 12.497 -495.500" id="SEGMENT"/>
+                <segment start="736.250 12.497 -495.500" end="741.092 12.559 -494.417" id="SEGMENT"/>
+                <segment start="741.092 12.559 -494.417" end="750.262 13.199 -485.347" id="SEGMENT"/>
+                <segment start="750.262 13.199 -485.347" end="754.110 13.652 -483.305" id="SEGMENT"/>
+                <segment start="754.110 13.652 -483.305" end="758.679 13.859 -482.092" id="SEGMENT"/>
+                <segment start="758.679 13.859 -482.092" end="763.048 13.838 -482.546" id="SEGMENT"/>
+                <segment start="763.048 13.838 -482.546" end="767.699 13.563 -484.285" id="SEGMENT"/>
+                <segment start="767.699 13.563 -484.285" end="771.950 13.369 -486.470" id="SEGMENT"/>
+                <segment start="771.950 13.369 -486.470" end="775.663 13.260 -489.040" id="SEGMENT"/>
+                <segment start="775.663 13.260 -489.040" end="777.852 13.208 -491.014" id="SEGMENT"/>
+                <segment start="777.852 13.208 -491.014" end="780.675 13.165 -494.039" id="SEGMENT"/>
+                <segment start="780.675 13.165 -494.039" end="782.953 13.170 -495.725" id="SEGMENT"/>
+                <segment start="782.953 13.170 -495.725" end="787.517 13.147 -496.570" id="SEGMENT"/>
+                <segment start="787.517 13.147 -496.570" end="789.953 13.106 -495.219" id="SEGMENT"/>
+                <segment start="789.953 13.106 -495.219" end="791.033 13.086 -492.546" id="SEGMENT"/>
+                <segment start="791.033 13.086 -492.546" end="793.327 13.373 -479.694" id="SEGMENT"/>
+                <segment start="793.327 13.373 -479.694" end="794.108 13.525 -476.775" id="SEGMENT"/>
+                <segment start="794.108 13.525 -476.775" end="793.750 17.800 -422.500" id="SEGMENT"/>
+                <segment start="793.750 17.800 -422.500" end="728.917 17.807 -423.141" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="MEADOW" fillLevel="0.000000" capacity="30566.783203"/>
+        </husbandryMeadow>
+        <husbandryFeedingRobot>
+            <unloadingSpot index="1" fillLevel="0"/>
+            <unloadingSpot index="2" fillLevel="0"/>
+            <unloadingSpot index="3" fillLevel="0"/>
+            <unloadingSpot index="4" fillLevel="0"/>
+        </husbandryFeedingRobot>
+    </placeable>
+    <placeable modName="FS25_Old_Manure_Heap" filename="$moddir$FS25_Old_Manure_Heap/Old_Manure_Heap_MiddleExtension.xml" uniqueId="placeable8e52b0c78b67128a50d54279b5f3f9a2" position="691.750 17.800 -392.250" rotation="0.00 -0.00 0.00" age="0.000000" price="15000.000000" boughtWithFarmlandOverwrite="true">
+        <manureHeap manureToDrop="0" manureToPick="0"/>
+    </placeable>
+    <placeable filename="data/placeables/rudolfHormann/garageSmall/garageSmall.xml" uniqueId="placeable1d36fdc062221020b47f25cccc759893" position="803.39746094 19.81384277 -384.94223022" rotation="0.00 21.939 0.00" age="0.000000" price="106000.000000" boughtWithFarmlandOverwrite="true">
+        <configuration name="color" id="1" isActive="false"/>
+        <configuration name="color" id="6" isActive="true"/>
+        <configuration name="solarPanels" id="1" isActive="true"/>
+        <animatedObjects>
+            <animatedObject time="1.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+    </placeable>
+    <placeable filename="data/placeables/rudolfHormann/cargoHangarBig/cargoHangarBig.xml" uniqueId="placeableac8d15c60febf7bfdd728b8a112d3d53" position="843.26745605 19.81384277 -378.64526367" rotation="0.00 -51.336 0.00" age="0.000000" price="176000.000000" boughtWithFarmlandOverwrite="true">
+        <configuration name="color" id="1" isActive="false"/>
+        <configuration name="color" id="6" isActive="true"/>
+        <configuration name="solarPanels" id="1" isActive="true"/>
+    </placeable>
+    <placeable filename="data/placeables/unia/farma/farma800/farma800.xml" uniqueId="placeable5c837c95653289c7a82dadcee7a5f547" position="733.000 19.814 -336.750" rotation="-180.00 -22.50 -180.00" age="0.000000" price="147000.000000" boughtWithFarmlandOverwrite="true">
+        <silo>
+            <storage index="1" boughtWithFarmlandOverwrite="true"/>
+        </silo>
+    </placeable>
+    <placeable filename="data/placeables/brandless/bunkerSilos/bunkerSiloMedium/bunkerSiloMedium.xml" uniqueId="placeable6af1f6603ea404fdb444e82df28ba1a9" position="767.000 17.800 -416.500" rotation="-0.00 -90.00 0.00" age="0.000000" price="60000.000000" boughtWithFarmlandOverwrite="true">
+        <bunkerSilo state="0" fillLevel="0.000000" compactedFillLevel="0.000000" fermentingTime="0.000000" openedAtFront="false" openedAtBack="false"/>
+    </placeable>
+    <placeable filename="data/placeables/brandless/bunkerSilos/bunkerSiloMedium/bunkerSiloMedium.xml" uniqueId="placeable6374efc3d3d16241fcb1c95821d86b92" position="767.000 17.800 -408.000" rotation="0.00 -90.00 0.00" age="0.000000" price="60000.000000" boughtWithFarmlandOverwrite="true">
+        <bunkerSilo state="0" fillLevel="0.000000" compactedFillLevel="0.000000" fermentingTime="0.000000" openedAtFront="false" openedAtBack="false"/>
+    </placeable>
+	<placeable filename="data/placeables/easySheds/easyShed03/easyShed03.xml" uniqueId="preplaced_farm03_easyShed03" position="778.41003418 19.82147217 -334.37524414" rotation="0 22.5 0" boughtWithFarmlandOverwrite="true">
+        <configuration name="solarPanels" id="1" isActive="true"/>
+    </placeable>
+    <placeable filename="data/placeables/rudolfHormann/garageSmall/garageSmall.xml" uniqueId="placeable0b10c224c40ef9f706d90b9b10072246" position="818.250 19.814 -341.000" rotation="-180.00 -0.00 -180.00" age="0.000000" price="106000.000000" boughtWithFarmlandOverwrite="true">
+        <configuration name="color" id="1" isActive="false"/>
+        <configuration name="color" id="6" isActive="true"/>
+        <configuration name="solarPanels" id="1" isActive="true"/>
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+    </placeable>
+    <placeable filename="data/placeables/brandless/liquidManureTanks/baseTank/baseTank.xml" uniqueId="placeablee455371a0ac213ad12f42ec7ef97bd4c" position="814.000 17.800 -411.500" rotation="180.00 -82.50 180.00" age="0.000000" price="65000.000000" boughtWithFarmlandOverwrite="true">
+        <silo>
+            <storage index="1" boughtWithFarmlandOverwrite="true"/>
+        </silo>
+    </placeable>
+    <placeable filename="data/placeables/rudolfHormann/chickenBarnBig/chickenBarnBig.xml" uniqueId="placeabled1e9879cdbe0be0fbc11e7cf17d94257" position="863.500 19.806 -345.750" rotation="-180.00 -52.50 -180.00" age="0.000000" price="79000.000000" boughtWithFarmlandOverwrite="true">
+        <configuration name="color" id="1" isActive="false"/>
+        <configuration name="color" id="6" isActive="true"/>
+        <configuration name="solarPanels" id="1" isActive="true"/>
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.000000">
+            <storage boughtWithFarmlandOverwrite="true"/>
+        </husbandry>
+        <husbandryFence>
+            <fence>
+                <segment start="869.481 19.806 -348.525" end="871.000 19.806 -347.500" id="SEGMENT"/>
+                <segment start="871.000 19.806 -347.500" end="875.000 19.791 -351.250" id="SEGMENT"/>
+                <segment start="875.000 19.791 -351.250" end="880.000 19.165 -344.750" id="SEGMENT"/>
+                <segment start="880.000 19.165 -344.750" end="869.000 19.884 -330.750" id="SEGMENT"/>
+                <segment start="869.000 19.884 -330.750" end="866.600 19.855 -331.750" id="SEGMENT"/>
+                <segment start="866.600 19.855 -331.750" end="861.000 19.821 -332.000" id="SEGMENT"/>
+                <segment start="861.000 19.821 -332.000" end="860.750 19.806 -335.500" id="SEGMENT"/>
+                <segment start="860.750 19.806 -335.500" end="862.750 19.821 -336.500" id="SEGMENT"/>
+                <segment start="862.750 19.821 -336.500" end="862.176 19.806 -339.005" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+    </placeable>
+    <placeable filename="data/placeables/meridian/fertilizerBins1620/fertilizerBins1620.xml" uniqueId="placeable1cfad2618cc235fb98359fbd0e69db44" position="804.500 19.821 -345.500" rotation="180.00 -7.50 180.00" age="0.000000" price="23500.000000" boughtWithFarmlandOverwrite="true">
+        <silo>
+            <storage index="1" boughtWithFarmlandOverwrite="true"/>
+        </silo>
+    </placeable>
+	<placeable filename="data/placeables/unia/karma/karma16/karma16.xml" uniqueId="placeablef76f77f50503a819bee15a90818160b0" position="804.592 19.821 -338.599" rotation="0.00 -81.60 0.00" age="0.000000" price="16000.000000" boughtWithFarmlandOverwrite="true">
+        <silo>
+            <storage index="1" boughtWithFarmlandOverwrite="true" />
+        </silo>
+    </placeable>
+	<placeable filename="data/placeables/easySheds/easyShed01/easyShed01.xml" uniqueId="preplaced_easyShed01_001" position="708.52386475 17.79964828 -366.18032837" rotation="-180 -21.93899918 -180"  boughtWithFarmlandOverwrite="true">
+		<configuration name="solarPanels" id="1" isActive="true"/>
+	</placeable>
+    <placeable filename="data/placeables/meridian/fuelTank25000L/fuelTank25000L.xml" uniqueId="placeable5f3ad2759aaed12735522ec2aaf2cf4d" position="839.795 19.853 -378.270" rotation="0.00 -51.34 0.00" age="1.000000" price="26500.000000" boughtWithFarmlandOverwrite="true">
+        <silo>
+            <storage index="1" boughtWithFarmlandOverwrite="true"/>
+        </silo>
+    </placeable>
+    <placeable isPreplaced="true" filename="$mapdir$/map/placeables/workshop/workshop.xml" uniqueId="preplaced_workshop_001" position="831.36889648 19.84880447 -386.50231934" rotation="0 39.837 0" boughtWithFarmlandOverwrite="true"/>
+	
+	
+	<!-- Biomass heating plant -->
+	<placeable isPreplaced="true" filename="data/placeables/brandless/productionPointsGeneric/biomassHeatingPlant/biomassHeatingPlant.xml" uniqueId="preplaced_biomassHeatingPlant" position="474.87161255 29.22416687 -181.20657349" rotation="179.99998474 8.82308388 -179.99995422" />
+    
+	
+	<!-- Grapes Farmland ? -->
+	<placeable filename="data/placeables/orchards/grape/grapeSingleton.xml" uniqueId="grapes3" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="0.000000" boughtWithFarmlandOverwrite="true">
+        <fence>
+            <segments>
+                <segment start="-165.5 -713.5" end="-180.01060612567505 -728.6803264083985"/>
+                <segment start="-167.66861805834264 -711.4270562677607" end="-184.252167916257 -728.7760007345018"/>
+                <segment start="-186.42078480638952 -726.7030572443232" end="-169.83723494847513 -709.354112777582"/>
+                <segment start="-172.00585255541296 -707.2811822443232" end="-190.66234614556663 -726.798744769407"/>
+                <segment start="-192.83097157396764 -724.7258233576044" end="-174.17447798381397 -705.2082608325206"/>
+                <segment start="-176.34310231127233 -703.1353082208857" end="-199.14548336590457 -726.9901068626548"/>
+                <segment start="-201.31409535326452 -724.9171685724482" end="-178.51171429863228 -701.0623699306791"/>
+                <segment start="-180.68033680834264 -698.9894341974482" end="-205.55566159521416 -725.0128508975599"/>
+                <segment start="-207.72428212084264 -722.9399346857294" end="-182.84895733397116 -696.9165179856177"/>
+                <segment start="-185.01757130541296 -694.8435601740107" end="-211.96583982452378 -723.0355949324651"/>
+                <segment start="-214.1344536296317 -720.9626397638544" end="-187.18618511052088 -692.7706050054001"/>
+                <segment start="-189.35480580248327 -690.6976861505732" end="-218.3760180538334 -721.0583389673702"/>
+                <segment start="-220.54464039720983 -718.9854058771357" end="-191.52342814585973 -688.6247530603387"/>
+                <segment start="-193.69204029955358 -686.5518121271357" end="-224.78619628314297 -719.0810830022754"/>
+                <segment start="-226.9548119059989 -717.0081109552607" end="-195.86065592240948 -684.478840080121"/>
+                <segment start="-198.0292747966239 -682.4058770685419" end="-233.26931824469193 -719.2723840603669"/>
+                <segment start="-235.43793568529577 -717.1994561701044" end="-200.19789223722773 -680.3329491782795"/>
+                <segment start="-202.3665092936942 -678.2600030451044" end="-239.67949647400155 -717.295128095272"/>
+                <segment start="-241.84810719408483 -715.2221612482294" end="-204.5351200137775 -676.1870361980618"/>
+                <segment start="-206.70374379076452 -674.1140679865107" end="-244.01673097107184 -713.1491930366783"/>
+                <segment start="-248.25829396166296 -713.2448663263544" end="-208.8723630491163 -672.0411232178442"/>
+                <segment start="-211.04097828783483 -669.9681939630732" end="-250.42690920038143 -711.1719370715834"/>
+                <segment start="-252.59552845873327 -709.0989923029169" end="-213.20959754618667 -667.8952491944067"/>
+                <segment start="-215.37821278490514 -665.8223199396357" end="-256.837087429691 -709.1946811064886"/>
+                <segment start="-259.0057152263114 -707.1217584161982" end="-217.54684058152552 -663.7493972493453"/>
+                <segment start="-219.71546254076452 -661.6764459161982" end="-263.2472809177897 -707.2174251413937"/>
+                <segment start="-265.4159019938895 -705.1444634943232" end="-221.88408361686433 -659.6034842691276"/>
+                <segment start="-224.05269703783483 -657.5305108576044" end="-267.58451541486 -703.0714900828"/>
+                <segment start="-269.75312123217077 -700.9985284357294" end="-226.22130285514555 -655.4575492105339"/>
+                <segment start="-228.38991627611608 -653.3845757990107" end="-269.848790920902 -696.7569369658636"/>
+                <segment start="-269.9444530059734 -692.5153572604504" end="-230.5585220934268 -651.3116141519401"/>
+                <segment start="-232.72713551439733 -649.2386407404169" end="-261.74834776574744 -679.599293557214"/>
+                <segment start="-263.9169566680828 -677.5263435885754" end="-234.89574441673267 -647.1656907717784"/>
+                <segment start="-237.06437001146764 -645.0927667169794" end="-264.0126385305785 -673.2848014754338"/>
+                <segment start="-266.1812523356864 -671.2118463068232" end="-239.23298381657557 -643.0198115483688"/>
+                <segment start="-241.40160450853796 -640.9468926935419" end="-264.20398556317025 -664.801691335311"/>
+                <segment start="-266.37259755053014 -662.7287530451044" end="-243.5702164958979 -638.8739544033353"/>
+                <segment start="-264.39533314623327 -656.3185967951044" end="-245.73883955607963 -636.8010342700206"/>
+                <segment start="-247.90746388353796 -634.7280816583857" end="-266.56395747369163 -654.2456441834695"/>
+                <segment start="-264.586678361077 -647.8354424982294" end="-250.07607223540197 -632.6551160898309"/>
+                <segment start="-252.2446831218192 -630.5821465997919" end="-266.75528924749426 -645.7624730081905"/>
+                <segment start="-266.8509605876395 -641.5209283380732" end="-254.41329819420372 -628.5092199880173"/>
+                <segment start="-256.5819176188895 -626.4362725763544" end="-269.0195800123253 -639.4479809264103"/>
+                <segment start="-271.1882103434989 -637.3750543146357" end="-258.75054795006315 -624.3633459645798"/>
+                <segment start="-271.28388295092077 -633.1334771661982" end="-262.99210802196365 -624.4590049328276"/>
+                <segment start="-163.33138194165736 -715.5729437322393" end="-177.8419880673324 -730.7532701406378"/>
+                <segment start="-161.16275706372767 -717.6458807439581" end="-173.6004194571634 -730.6575890940139"/>
+                <segment start="-169.35886302075892 -730.5618963689581" end="-158.99414435956245 -719.7188060772448"/>
+                <segment start="-156.82552256665736 -721.7917547673956" end="-167.1902412278538 -732.6348450591088"/>
+            </segments>
+        </fence>
+    </placeable>
+	
+	
+	<!-- HorseFarm / Farm03 -->
+	<placeable filename="$mapdir$/map/placeables/horseBarn/horseBarn.xml" uniqueId="placeablef00a4a2edbbb4caadd3ab98961cf2786" position="-41.500 45.495 421.250" rotation="0.00 0.00 0.00" age="0.000000" price="110000.000000" boughtWithFarmlandOverwrite="true">
+        <configuration name="solarPanels" id="1" isActive="false"/>
+        <animatedObjects>
+            <animatedObject time="1.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
+            <storage boughtWithFarmlandOverwrite="true"/>
+        </husbandry>
+		<husbandryAnimals>
+            <clusters>
+                <animal subType="HORSE_PINTO" numAnimals="1" age="6" health="100" reproduction="0" name="Chance" fitness="100" riding="0" dirt="0"/>
+                <animal subType="HORSE_BAY" numAnimals="1" age="6" health="100" reproduction="0" name="Frosty" fitness="100" riding="0" dirt="0"/>
+                <animal subType="HORSE_BLACK" numAnimals="1" age="6" health="100" reproduction="0" name="Rusty" fitness="100" riding="0" dirt="0"/>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFence>
+            <fence>
+                <segment start="-35.750 45.495 409.332" end="-35.750 45.495 404.982" id="GATE4m">
+                    <animatedObject id="door01" time="0.000000" direction="0"/>
+                </segment>
+                <segment start="-35.750 45.495 404.982" end="-36.000 47.601 387.500" id="SEGMENT"/>
+                <segment start="-36.000 47.601 387.500" end="9.250 45.186 387.000" id="SEGMENT"/>
+                <segment start="9.250 45.186 387.000" end="20.500 44.583 402.000" id="SEGMENT"/>
+                <segment start="20.500 44.583 402.000" end="24.000 44.263 414.500" id="SEGMENT"/>
+                <segment start="24.000 44.263 414.500" end="11.000 44.251 470.000" id="SEGMENT"/>
+                <segment start="11.000 44.251 470.000" end="-35.750 43.816 455.750" id="SEGMENT"/>
+                <segment start="-35.750 43.816 455.750" end="-35.750 45.495 433.150" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+    </placeable>
+    <placeable modName="FS25_Old_Manure_Heap" filename="$moddir$FS25_Old_Manure_Heap/Old_Manure_Heap_Small2.xml" uniqueId="placeable39a96b29aa97d79bedabe46344d0f338" position="-39.250 45.495 440.750" rotation="-0.00 -90.00 0.00" age="0.000000" price="10000.000000" boughtWithFarmlandOverwrite="true">
+        <configuration name="solarPanels" id="1" isActive="true"/>
+        <manureHeap manureToDrop="1" manureToPick="0"/>
+    </placeable>
+	<placeable filename="$mapdir$/map/placeables/horseBarnObjectStorage/horseBarnObjectStorage.xml" position="-41.500 45.495 421.250" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="FS25_Average_Wooden_Shelter" filename="$moddir$FS25_Average_Wooden_Shelter/Shelter.xml" uniqueId="placeable7760bef1fe630658dbb9f39003338cde" position="-85 44.32540894 430.5" rotation="-0.00 -90.00 0.00" age="0.000000" price="12000.000000" boughtWithFarmlandOverwrite="true">
+        <configuration name="solarPanels" id="1" isActive="true"/>
+    </placeable>
+	<placeable modName="FS25_SilosFS_crossplay" filename="$moddir$FS25_SilosFS_crossplay/xml/Silos_14.xml" uniqueId="placeable_horseFarm_silo01" position="-67.46450806 44.70130539 418.17541504" rotation="0 -90 0" age="0.000000" price="13000.000000" boughtWithFarmlandOverwrite="true" />
+	
+	<placeable modName="FS25_SmallWoodenShed" filename="$moddir$FS25_SmallWoodenShed/SmallShed.xml" uniqueId="placeable_horseFarm_SmallShed" position="-86.84881592 44.71990585 410.67874146" rotation="0 71.82002258 0" age="0.000000" price="5000.000000" boughtWithFarmlandOverwrite="true"></placeable>
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/farmhouse_02/farmhouseFeature.xml" uniqueId="preplaced_farmhouse_002" position="-107.98420715 45.26714325 432.39361572" rotation="0 84.15299988 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/map/placeables/ridingArena/ridingArena.xml" uniqueId="preplaced_ridingArena" position="-78.32376099 45.4129982 390.48126221" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/map/placeables/farm03decoration/farm03decoration.xml" uniqueId="preplaced_farmDecoration_003" position="-24.45079994 45.75734329 420.00897217" rotation="0 0 0" age="0.000000" price="-1000.000000" boughtWithFarmlandOverwrite="true" />
+	
+	
+	<!-- Grapes Farmland 108 -->
+	<placeable filename="data/placeables/orchards/grape/grapeSingleton.xml" uniqueId="placeable4515bf4392287eb1712e9ddd959a34e6" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="0.000000" boughtWithFarmlandOverwrite="true">
+        <fence>
+            <segments>
+                <segment start="-202 -808.5" end="-174.67145174116075 -755.0851102213596"/>
+                <segment start="-177.34219224283828 -753.7186555948705" end="-204.67074050167753 -807.1335453735109"/>
+                <segment start="-207.3414903385414 -805.767117508933" end="-180.01294207970219 -752.3522277302926"/>
+                <segment start="-182.68368394205703 -750.9858064737767" end="-210.01223220089622 -804.4006962524171"/>
+                <segment start="-212.68298203776015 -803.0342683878393" end="-186.72086119186292 -752.2901230981311"/>
+                <segment start="-189.39160020182265 -750.9236726847142" end="-215.3537210477199 -801.6678179744225"/>
+                <segment start="-218.02445847818984 -800.3014192667455" end="-192.06233763229255 -749.5572739770372"/>
+                <segment start="-194.73307664225234 -748.1908235636205" end="-220.69519748814963 -798.9349688533288"/>
+                <segment start="-223.36593491861953 -797.5685701456517" end="-197.4038140727222 -746.8244248559434"/>
+                <segment start="-200.074553082682 -745.4579744425267" end="-226.03667392857932 -796.202119732235"/>
+                <segment start="-228.7074113590492 -794.835721024558" end="-204.11171792609383 -746.7623202237817"/>
+                <segment start="-206.78246934244765 -745.3959016886205" end="-231.378162775403 -793.4693024893968"/>
+                <segment start="-234.04890305826797 -792.1028719034642" end="-209.45320962531264 -744.0294711026879"/>
+                <segment start="-212.1239610416664 -742.6630525675267" end="-236.7196544746217 -790.736453368303"/>
+                <segment start="-239.39039475748672 -789.3700227823705" end="-216.1611287374734 -743.9673664705261"/>
+                <segment start="-218.83187730143203 -742.6009187784643" end="-242.06114332144534 -788.0035750903087"/>
+                <segment start="-244.73188645670547 -786.6371736612768" end="-221.50262043669215 -741.2345173494325"/>
+                <segment start="-224.17336900065078 -739.8680696573706" end="-247.4026350206641 -785.2707259692149"/>
+                <segment start="-250.07337815592422 -783.9043245401831" end="-228.21053954885286 -741.1724127172708"/>
+                <segment start="-230.8812852604164 -739.8059969034642" end="-252.74412386748776 -782.5379087263765"/>
+                <segment start="-255.41486985514297 -781.1714754190892" end="-233.5520312480716 -738.439563596177"/>
+                <segment start="-236.22277695963515 -737.0731477823705" end="-258.0856155667065 -779.8050596052827"/>
+                <segment start="-260.75634629557265 -778.4386262979955" end="-240.25993510144323 -738.3774589640152"/>
+                <segment start="-242.93067796061172 -737.011013993308" end="-263.42708915474117 -777.0721813272883"/>
+                <segment start="-266.0978379947914 -775.7057771769017" end="-245.601426800662 -735.6446098429215"/>
+                <segment start="-248.27216965983047 -734.2781648722143" end="-268.76858085395986 -774.3393322061946"/>
+                <segment start="-271.43932969401015 -772.9729280558081" end="-252.30934591282272 -735.5825052107598"/>
+                <segment start="-254.9800859195961 -734.2160921183081" end="-274.11006970078347 -771.6065149633564"/>
+                <segment start="-276.7808213932289 -770.2400789347143" end="-257.6508376120415 -732.849656089666"/>
+                <segment start="-260.3215928776039 -731.4832429972143" end="-279.4515766587913 -768.8736658422627"/>
+                <segment start="-282.12231309244765 -767.5072298136206" end="-265.7251841371442 -735.4582959464364"/>
+                <segment start="-262.9923387272133 -730.1167879190893" end="-265.72519355309714 -735.4582768969534"/>
+                <segment start="-265.66308457682265 -728.7503328409643" end="-284.7930683580097 -766.1407556860128"/>
+                <segment start="-287.4638047916664 -764.7743196573706" end="-268.33382101047937 -727.3838968123222"/>
+                <segment start="-271.0045762760414 -726.0174837198706" end="-290.1345600572285 -763.407906564919"/>
+                <segment start="-292.80529649088515 -762.0414705362768" end="-273.67531270969806 -724.6510476912284"/>
+                <segment start="-295.47604234049453 -760.6750154581518" end="-276.3460585593074 -723.2845926131034"/>
+            </segments>
+        </fence>
+    </placeable>
+	
+	
+	<!-- Grapes Farmland 114 -->
+	<placeable filename="data/placeables/orchards/grape/grapeSingleton.xml" uniqueId="placeable4148c9b390d5302ebf12f5605cfa0ce7" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="0.000000" boughtWithFarmlandOverwrite="true">
+        <fence>
+            <segments>
+                <segment start="461.5 708.5" end="566.8979608292905 751.9427192176935"/>
+                <segment start="565.7547197656528 754.7163795715767" end="460.3567589363623 711.2736603538832"/>
+                <segment start="459.21352103518404 714.0473121887642" end="564.6114818644745 757.4900314064577"/>
+                <segment start="563.4682817773715 760.2636818176704" end="458.0703209480811 716.820962599977"/>
+                <segment start="456.9270830469028 719.5946144348579" end="562.3250438761933 763.0373336525514"/>
+                <segment start="561.1818437890903 765.8109840637642" end="461.3311440560783 724.6547237522651"/>
+                <segment start="460.18791678713717 727.4283546692329" end="562.8122470682885 769.7278444338292"/>
+                <segment start="561.6690264062778 772.5014747864204" end="459.04469612512656 730.2019850218242"/>
+                <segment start="457.9014787988559 732.9755958801704" end="560.5258090800071 775.2750856447667"/>
+                <segment start="559.3825884179965 778.0487159973579" end="462.3055192331238 738.0356851389561"/>
+                <segment start="461.16228202151217 740.8093361145454" end="561.0129817545242 781.9655964260445"/>
+                <segment start="559.869771035184 784.7392067200142" end="460.019071302172 743.5829464085151"/>
+                <segment start="458.8758440332309 746.3565773254829" end="558.7265437662429 787.5128376369819"/>
+                <segment start="557.5833330469028 790.2864479309517" end="463.2798944101692 751.416646525647"/>
+                <segment start="462.1366777734653 754.1902565247017" end="559.2137469583381 794.2032873831035"/>
+                <segment start="558.0705156640903 796.9769386536079" end="460.9934464792175 756.9639077952061"/>
+                <segment start="459.8502092676059 759.7375587707954" end="556.9272784524787 799.7505896291973"/>
+                <segment start="555.784077675809 802.5242408997017" end="464.25426958721465 764.7976689474942"/>
+                <segment start="463.1110430078403 767.5712990051704" end="557.4144816445739 806.4411004104751"/>
+                <segment start="556.2712602929965 809.2147316223579" end="461.9678216562629 770.3449302170533"/>
+                <segment start="460.82460501955904 773.1185402161079" end="555.1280436562927 811.9883416214126"/>
+                <segment start="553.9848223047153 814.7619728332954" end="465.22864476426014 778.1786303341852"/>
+                <segment start="464.0854082422153 780.9522804504829" end="555.6152163308096 818.6788524026904"/>
+                <segment start="554.4720049219028 821.4524635559517" end="462.94219683330846 783.7258916037442"/>
+                <segment start="461.79897025393404 786.4995216614204" end="553.3287783425284 824.2260936136279"/>
+                <segment start="552.1855669336215 826.9997047668892" end="466.2030199413056 791.5595917208761"/>
+                <segment start="465.0598039941684 794.3332008606392" end="553.8159815346236 830.9165433597494"/>
+                <segment start="552.672749550809 833.6901954895454" end="463.9165720103539 797.1068529904352"/>
+                <segment start="462.77333548830904 799.8805031067329" end="551.5295130287642 836.4638456058432"/>
+                <segment start="550.3863115625278 839.2374977356392" end="467.1773951183511 804.9406141427233"/>
+                <segment start="466.0341692285434 807.7142433411079" end="527.0540412876063 832.8652913092462"/>
+                <segment start="517.5899248437778 832.2092384582954" end="464.89094442913256 810.4878788494487"/>
+                <segment start="463.74770072268404 813.2614845520454" end="491.4840062040763 824.6937790830174"/>
+            </segments>
+        </fence>
+    </placeable>
+	
+	
+	<!-- construction site -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/constructionSite/constructionSite.xml" uniqueId="preplaced_constructionSite"  position="445.21142578 25.17242432 -87.46202087" rotation="0 0 0" age="0.000000" price="-10000.000000" boughtWithFarmlandOverwrite="true"/>
+    
+	
+	<!-- Container house -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/containerHouse/containerHouse.xml" uniqueId="preplaced_containerHouse" position="-212.6182251 59.90976715 845.0390625" rotation="179.99998474 -29.67217827 179.99998474" boughtWithFarmlandOverwrite="true"/>
+	
+	
+	<!-- Stone/lime station west -->
+	<placeable isPreplaced="true" filename="data/placeables/brandless/sellingStationGeneric/debrisCrusher/debrisCrusher.xml" uniqueId="preplaced_stoneCrusher" position="804.13897705 17.75105095 5.96880007" rotation="180 0 180" canBeDeletedOverwrite="false">
+		<customImage filename="$mapdir$/map/placeables/store_stoneCrusher.png"/>
+	</placeable>
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/limeStation/limeStation.xml" uniqueId="preplaced_limeStation02" position="790.10534668 17.3342514 -4.89302683" rotation="0 0 0" canBeDeletedOverwrite="false">
+		<customImage filename="$mapdir$/map/placeables/limeStation/store_limeStation02.dds"/>
+	</placeable>
+	
+	
+	<!-- Olives Farmland 118 -->
+	<placeable modName="FS25_Olives" filename="$moddir$FS25_Olives/xml/oliveSingleton.xml" uniqueId="placeablec634ccced25dee35c830b329b631333f" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="0.000000" boughtWithFarmlandOverwrite="true">
+        <fence>
+            <segments>
+                <segment start="-154.16339111328125 -475.3681640625" end="-91.16355337443068 -475.51114965093535"/>
+                <segment start="-151.53961181640625 -486.4696350097656" end="-115.54008772417691 -486.6547434455506"/>
+                <segment start="-149.1759033203125 -496.5208435058594" end="-122.17615222535086 -496.63677801374007"/>
+                <segment start="-152.1486053466797 -506.38067626953125" end="-134.14866210324647 -506.42587840645865"/>
+                <segment start="-147.0793914794922 -466.61981201171875" end="-75.08034188919854 -466.2498686451934"/>
+                <segment start="-75.0803451538086 -466.2498779296875" end="-30.080939159875065 -466.01866332560917" first="false"/>
+                <segment start="-139.88961791992188 -456.547119140625" end="-76.89068977387421 -456.91461396932874"/>
+                <segment start="-76.89068603515625 -456.91461181640625" end="-31.89145164512221 -457.1771081226232" first="false"/>
+                <segment start="-135.0452880859375 -447.0230407714844" end="-81.08897801048901 -449.1948149406963"/>
+            </segments>
+        </fence>
+    </placeable>
+	
+	
+	<!-- Olives Farmland 119 -->
+	<placeable modName="FS25_Olives" filename="$moddir$FS25_Olives/xml/oliveSingleton.xml" uniqueId="placeable89067e8d2a454775026065e156ad2598" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="0.000000" boughtWithFarmlandOverwrite="true">
+        <fence>
+            <segments>
+                <segment start="444.52081298828125 -13.547840118408203" end="516.5191632326218 -13.06043669899442"/>
+                <segment start="444.58173841570795 -22.54763389895078" end="516.5800886600485 -22.060230479536997"/>
+                <segment start="444.64265150164545 -31.547427905298438" end="516.641001745986 -31.060024485884654"/>
+                <segment start="444.70356458758295 -40.54722191164609" end="516.7019148319235 -40.0598184922323"/>
+                <segment start="512.275634765625 -3.744368314743042" end="476.28262193799117 -3.035123935290593"/>
+            </segments>
+        </fence>
+    </placeable>
+	
+	
+	<!-- Olives Farmland 107 -->
+	<placeable modName="FS25_Olives" filename="$moddir$FS25_Olives/xml/oliveSingleton.xml" uniqueId="placeable25752068b8ad95f30276bf2f95f7740f" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="0.000000" boughtWithFarmlandOverwrite="true">
+        <fence>
+            <segments>
+                <segment start="-166.41456604003906 -688.3241577148438" end="-238.69444567706637 -620.6734444912802"/>
+                <segment start="-216.2826385498047 -627.7398681640625" end="-163.8315962064852 -677.0641842475046"/>
+                <segment start="-173.6233367919922 -653.6903686523438" end="-206.54471267611825 -623.0116625209554"/>
+                <segment start="-187.2791290283203 -628.657470703125" end="-166.9417514523544 -646.4167238780926"/>
+                <segment start="-177.0537109375 -626.1301879882812" end="-168.098762377186 -627.0295746026636"/>
+            </segments>
+        </fence>
+    </placeable>
+	
+	
+	<!-- Grapes Farmland 115 -->
+    <placeable filename="data/placeables/orchards/grape/grapeSingleton.xml" uniqueId="placeable18d096a68addf90ff31d451d65dc1524" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="0.000000" boughtWithFarmlandOverwrite="true">
+        <fence>
+            <segments>
+                <segment start="696.6008911132812 330.677978515625" end="683.7767819337098 357.798860207606"/>
+                <segment start="681.75 362" end="655.7861359449137 416.0913834480964"/>
+                <segment start="699.3129792824793 331.9603894335821" end="686.4888701029079 359.08127112556315"/>
+                <segment start="702.0250764504481 333.2427991015509" end="689.2009672708766 360.3636807935319"/>
+                <segment start="704.7371736184168 334.5252087695196" end="691.9130644388454 361.64609046150065"/>
+                <segment start="707.4492707863856 335.8076184374884" end="694.6251616068141 362.9285001294694"/>
+                <segment start="710.1613679543543 337.0900281054571" end="697.3372587747829 364.21090979743815"/>
+                <segment start="712.8734651223231 338.3724377734259" end="700.0493559427516 365.4933194654069"/>
+                <segment start="715.5855622902918 339.6548474413946" end="702.7614531107204 366.77572913337565"/>
+                <segment start="717.0152497902918 343.6493542773321" end="705.4735515286775 368.058147800115"/>
+                <segment start="719.7273469582606 344.9317639453009" end="708.1856486966462 369.3405574680838"/>
+                <segment start="722.4394441262293 346.2141736132696" end="710.897745864615 370.6229671360525"/>
+                <segment start="723.8691316262293 350.2086804492071" end="713.6098442825721 371.9053858027919"/>
+                <segment start="726.5812287941981 351.49109011717593" end="716.3219414505409 373.18779547076076"/>
+                <segment start="728.0109162941981 355.4855969531134" end="719.034039868498 374.4702141375001"/>
+                <segment start="730.7230134621668 356.7680066210822" end="721.7461370364667 375.7526238054689"/>
+                <segment start="733.4351106301356 358.05041628905093" end="724.4582342044355 377.03503347343764"/>
+                <segment start="684.4545691724048 363.2981932027543" end="658.4907051173185 417.3895766508507"/>
+                <segment start="687.1591590161548 364.5963804586137" end="661.1952949610685 418.6877639067101"/>
+                <segment start="689.8637488599048 365.89456771447306" end="663.8998848048185 419.98595116256945"/>
+                <segment start="692.5683387036548 367.19275497033243" end="666.6044746485685 421.2841384184288"/>
+                <segment start="695.2729285474048 368.4909422261918" end="669.3090644923185 422.5823256742882"/>
+                <segment start="697.9775183911548 369.7891294820512" end="672.0136543360685 423.8805129301476"/>
+                <segment start="674.7182410474048 425.17871688439493" end="700.6821051024912 371.08733343629854"/>
+                <segment start="703.3866980786548 372.38553451134806" end="677.4228340235685 426.47691795944445"/>
+                <segment start="680.1274207349048 427.7751219136918" end="706.0912847899912 373.6837384655954"/>
+                <segment start="708.7958777661548 374.98193954064493" end="682.8320137110685 429.0733229887413"/>
+                <segment start="685.5366004224048 430.3715269429887" end="711.5004644774912 376.2801434948923"/>
+                <segment start="714.2050574536548 377.5783445699418" end="688.2411933985685 431.6697280180382"/>
+                <segment start="690.9457801099048 432.96793197228556" end="716.9096441649912 378.87654852418916"/>
+                <segment start="719.6142371411548 380.1747495992387" end="693.6503730860685 434.2661330473351"/>
+                <segment start="696.3549597974048 435.56433700158243" end="722.3188238524912 381.47295355348604"/>
+                <segment start="694 440.75" end="661.4346036428358 508.3110461738182"/>
+                <segment start="658.7321895007035 507.00841930196344" end="691.2975858578677 439.4473731281452"/>
+                <segment start="688.5951655749222 438.14477184102594" end="656.029769217758 505.7058180148441"/>
+                <segment start="653.3273433092972 504.40319469258844" end="685.8927396664615 436.8421485187703"/>
+                <segment start="683.190319383516 435.53954723165094" end="650.6249230263518 503.1005934054691"/>
+                <segment start="650.527721727266 496.39309337422907" end="680.4878863758571 434.23693089431634"/>
+                <segment start="677.7854731921097 432.93432262227594" end="650.4305402520918 489.6856014082832"/>
+                <segment start="650.3333247546097 482.9781153468853" end="675.0830259860546 431.63172025478354"/>
+                <segment start="672.3805659655472 430.32909801290094" end="650.2360964426755 476.27060941109727"/>
+                <segment start="650.1388667467972 469.56310680196344" end="669.6781045610959 429.02647909767256"/>
+                <segment start="666.9756587389847 427.72387340352594" end="650.0416526332593 462.8556174139114"/>
+                <segment start="664.2732051257035 426.42126109883844" end="649.9444307285512 456.1481214153184"/>
+                <segment start="649.8472407702347 449.4406092433697" end="661.5707834588139 425.11863262079515"/>
+                <segment start="658.8683589342972 423.8160059718853" end="649.7500479542912 442.7330989005544"/>
+                <segment start="656.165905321016 422.5133936671978" end="649.6528260495832 436.02560290196146"/>
+                <segment start="653.4634517077347 421.2107813625103" end="649.555604144875 429.31810690336846"/>
+            </segments>
+        </fence>
+    </placeable>
+	
+	
+	<!-- Olives Farmland 120 -->
+	<placeable modName="FS25_Olives" filename="$moddir$FS25_Olives/xml/oliveSingleton.xml" uniqueId="placeableb3766e73218662f78cba27f90c9afc7e" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="0.000000" boughtWithFarmlandOverwrite="true">
+        <fence>
+            <segments>
+                <segment start="98 -534" end="98.49262721218811 -650.9989628946762"/>
+                <segment start="88.49437713623047 -645.4561767578125" end="87.69091556555252 -519.4587384921698"/>
+                <segment start="78.17195129394531 -645.7412109375" end="78.34593215880325 -519.7413310539912"/>
+            </segments>
+        </fence>
+    </placeable>
+	
+	
+	<!-- Olives Farmland 121 -->
+	<placeable modName="FS25_Olives" filename="$moddir$FS25_Olives/xml/oliveSingleton.xml" uniqueId="placeable733d61ff4747249a76157ab1de3d009f" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="0.000000" boughtWithFarmlandOverwrite="true">
+        <fence>
+            <segments>
+                <segment start="98.34395599365234 -659.3553466796875" end="98.46437275129838 -704.3551855661156"/>
+                <segment start="88.35481262207031 -659.5791015625" end="88.75486882467912 -758.5782932512949"/>
+                <segment start="78.5709457397461 -659.746337890625" end="78.31361622624358 -749.7459700094369"/>
+                <segment start="69.5709825278649 -659.7206049392747" end="69.33938596571264 -740.7202738462055"/>
+                <segment start="60.475181579589844 -659.8301391601562" end="60.52704985180709 -722.8301178084251"/>
+                <segment start="98.46437072753906 -704.3551635742188" end="98.48845407906826 -713.3551313515044" first="false"/>
+            </segments>
+        </fence>
+    </placeable>
+	
+	
+	<!-- Fence country property - hill house -->
+	<placeable filename="data/placeables/brandless/fences/EU/fence02/fence02.xml" uniqueId="placeabled5822bd2401a29543349c73dba0dd96e" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="70.000000" farmId="50">
+        <newFence>
+            <segment start="-29.486 33.780 -476.350" end="-32.612 31.120 -450.930" id="SEGMENT"/>
+            <segment start="-32.612 31.120 -450.930" end="-11.282 30.205 -429.269" id="SEGMENT"/>
+            <segment start="-11.282 30.205 -429.269" end="13.996 29.170 -406.767" id="SEGMENT"/>
+            <segment start="13.996 29.170 -406.767" end="17.386 29.038 -405.347" id="SEGMENT"/>
+        </newFence>
+    </placeable>
+	
+	
+	<!-- farm 05 / grape farm / grape production -->
+	<placeable isPreplaced="true" filename="$moddir$FS25_Raisinproductionpack/xml/bigraisinfactoryRPPEU_medium.xml" uniqueId="preplaced_FS25_Raisinproduction" position="567.96502686 33.7757988 201.2559967" rotation="0 -90 0" boughtWithFarmlandOverwrite="false" canBeDeletedOverwrite="false">
+        <productionPoint>
+            <storage boughtWithFarmlandOverwrite="false"/>
+        </productionPoint>
+    </placeable>
+	
+	<!-- Grapes farm 05 -->
+	<placeable filename="data/placeables/orchards/grape/grapeSingleton.xml" uniqueId="placeable508456ec1cc3a730e3e8901d94f8c47c" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="0.000000" boughtWithFarmlandOverwrite="true">
+        <fence>
+            <segments>
+                <segment start="516 79.25" end="516.2483430093947 154.24958883720421"/>
+                <segment start="518.9999835534882 79.24006627962422" end="519.2483265628829 154.23965511682843"/>
+                <segment start="522.2483356042694 154.22972082063984" end="521.9999925948747 79.23013198343564"/>
+                <segment start="524.9999835534882 79.22019933626484" end="525.2483265628829 154.21978817346903"/>
+                <segment start="528.2483356042694 154.20985387728047" end="527.9999925948747 79.21026504007627"/>
+                <segment start="530.9999835534882 79.20033239290547" end="531.2483265628829 154.19992123010968"/>
+                <segment start="534.2483356042694 154.1899869339211" end="533.9999925948747 79.19039809671689"/>
+                <segment start="536.9999835534882 79.18046544954609" end="537.2483265628829 154.1800542867503"/>
+                <segment start="540.2483356042694 154.17011999056172" end="539.9999925948747 79.17053115335752"/>
+                <segment start="542.9999835534882 79.16059850618672" end="543.2483265628829 154.16018734339093"/>
+                <segment start="546.2483356042694 154.15025304720234" end="545.9999925948747 79.15066420999814"/>
+                <segment start="548.9999835534882 79.14073156282734" end="549.2483265628829 154.14032040003156"/>
+                <segment start="552.2483356042694 154.13038610384297" end="551.9999925948747 79.13079726663877"/>
+                <segment start="554.9999835534882 79.12086461946797" end="555.2483265628829 154.12045345667218"/>
+                <segment start="558.2483356042694 154.1105191604836" end="557.9999925948747 79.11093032327939"/>
+                <segment start="560.9999835534882 79.10099767610859" end="561.2284591221313 148.10061940633645"/>
+                <segment start="564.2185044229561 145.09069918121418" end="563.9999625746888 79.09106100447448"/>
+                <segment start="566.9999225183319 79.08113073274922" end="567.1985969258477 139.08080180251258"/>
+                <segment start="570.1787095010811 133.07090853180011" end="569.9999025343169 79.07120456901309"/>
+                <segment start="572.9998614831757 79.06127141878437" end="573.1588010091883 127.06100827459505"/>
+                <segment start="576.1389145792061 121.05111025299152" end="575.999842493945 79.05134050415717"/>
+                <segment start="578.9998004480194 79.04140447542498" end="579.1190050925288 115.041207117283"/>
+                <segment start="582.0991196573311 109.0313043447884" end="581.9997824535733 79.03146880990671"/>
+                <segment start="584.9997394128632 79.02153753206562" end="585.0792091758694 103.02140595997096"/>
+                <segment start="588.0593247354561 97.0115060659798" end="587.9997224132014 79.01160474505079"/>
+                <segment start="590.9996783777069 79.00167058870625" end="591.03941325921 91.00160480265892"/>
+                <segment start="594.0195298135811 84.99170778717121" end="593.9996623728296 78.99174068019487"/>
+                <segment start="513.2483684972931 154.2595217330711" end="513.0496940897773 94.25985066330773"/>
+                <segment start="510.1093304113556 112.26968408658672" end="510.2484024966166 154.26945383542107"/>
+                <segment start="507.24842953244934 154.27938867643047" end="507.1590260490672 127.27953669503695"/>
+                <segment start="504.198762422747 139.2893972543327" end="504.2484310246259 154.28931502177355"/>
+            </segments>
+        </fence>
+    </placeable>
+	
+	<placeable isPreplaced="true" filename="$moddir$FS25_Average_Wooden_Shelter/Shelter.xml" uniqueId="preplaced_FS25_Average_Wooden_Shelter_004" position="608.76037598 33.74648666 212.75559998" rotation="-180 60 -180" boughtWithFarmlandOverwrite="true">
+        <configuration name="solarPanels" id="1" isActive="true"/>
+    </placeable>
+    <placeable isPreplaced="true" filename="$moddir$FS25_Average_Wooden_Shelter/Shelter.xml" uniqueId="preplaced_FS25_Average_Wooden_Shelter_005" position="613.50189209 33.74648666 231.79542542" rotation="0.00 90 0.00" boughtWithFarmlandOverwrite="true">
+        <configuration name="solarPanels" id="1" isActive="true"/>
+    </placeable>
+	<placeable isPreplaced="true" filename="data/placeables/brandless/dieselTanks/level02/dieselTanksLevel02.xml" uniqueId="preplaced_dieselTanks02_002" position="609.38922119 33.73565674 223.08963013" rotation="0 -90 0" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/farm05decoration01/farm05decoration01.xml" uniqueId="preplaced_farm05Decoration_001" position="611.97967529 33.75952911 224.27442932" rotation="0 0 0" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/farm05decoration02/farm05decoration02.xml" uniqueId="preplaced_farm05Decoration_002" position="578.18011475 34.46820831 223.77365112" rotation="0 0 0" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/tuscanFarmShed/tuscanFarmShed.xml" uniqueId="preplaced_tuscanFarmShed_001" position="582.2210083 33.76804352 211.27087402" rotation="0 180 0" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/tuscanFarmShed/tuscanFarmShed.xml" uniqueId="preplaced_tuscanFarmShed_002" position="555.25897217 34.46006012 221.70916748" rotation="0 90 0" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/farmhouse_05/farmhouseFeature.xml" uniqueId="preplaced_farmhouse_005" position="539.22698975 32.92021179 171.89976501" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="FS25_SmallWoodenShed" filename="$moddir$FS25_SmallWoodenShed/SmallShed.xml" uniqueId="placeable_farm05_SmallShed" position="590.65509033 33.77584457 212.44371033" rotation="0 180 0" boughtWithFarmlandOverwrite="true" />
+	
+	
+	<!-- nursery/gardener farm 07 -->
+	<placeable modName="FS25_GreenHouseTree" filename="$moddir$FS25_GreenHouseTree/serre/greenhouseTree.xml" uniqueId="preplaced_FS25_greenhouseTree_001" position="-90 50.25400162 286" rotation="0 180 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="FS25_GreenHouseTree" filename="$moddir$FS25_GreenHouseTree/serre/greenhouseTree.xml" uniqueId="preplaced_FS25_greenhouseTree_002" position="-78 50.25400162 286" rotation="0 180 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable modName="FS25_GreenHouseTree" filename="$moddir$FS25_GreenHouseTree/serre/treeProd.xml" uniqueId="preplaced_FS25_treeProd_001" position="-118.60800171 50.25400162 215.69999695" rotation="0 90 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable modName="FS25_GreenHouseTree" filename="$moddir$FS25_GreenHouseTree/serre/greenhouse.xml" uniqueId="preplaced_FS25_greenhouseTree_003" position="-128 50.25400162 250" rotation="0 -90 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable modName="FS25_GreenHouseTree" filename="$moddir$FS25_GreenHouseTree/serre/greenhouse.xml" uniqueId="preplaced_FS25_greenhouseTree_004" position="-128 50.25400162 267" rotation="0 -90 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable modName="FS25_GreenHouseTree" filename="$moddir$FS25_GreenHouseTree/serre/greenhouse.xml" uniqueId="preplaced_FS25_greenhouseTree_005" position="-128 50.25400162 284" rotation="0 -90 0" boughtWithFarmlandOverwrite="true"/>
+	
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/gardenerObjectStorage/gardenerObjectStorage.xml" uniqueId="preplaced_gardener_objectStorage" position="-149.14199829 50.23270035 227.037323" rotation="180 0 180" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/gardenerWaterDistributor/gardenerWaterDistributor.xml" uniqueId="preplaced_gardener_waterDistributor" position="-111.83599854 50.42493439 184.5067749" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/farmhouse_07/farmhouseFeature.xml" uniqueId="preplaced_farmhouse_007" position="-57.45536423 50.88257217 229.7474823" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+    
+	
+	<!-- grape productions selling point -->
+	<placeable isPreplaced="true" filename="$moddir$FS25_Raisinproductionpack/xml/sellingpointRPP.xml" uniqueId="preplaced_FS25_Raisinsellingpoint" position="299.18273926 27.94689941 -120.26581573" rotation="-180 -80 -180" boughtWithFarmlandOverwrite="false" canBeDeletedOverwrite="false" />
+	
+	<!-- pasta production -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/pastaFactory/pastaFactory.xml" uniqueId="preplaced_pastaFactory" position="665.16998291 19.76810074 12.54389954" rotation="0 0 0" boughtWithFarmlandOverwrite="false" canBeDeletedOverwrite="false"/>
+	
+	
+	<!-- bakery -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/bakery/bakery.xml" uniqueId="preplaced_bakery" position="-440.64871216 15.2063179 -787.83013916" rotation="0 30 0" boughtWithFarmlandOverwrite="false"/>
+		
+	
+	<!-- public WaterWell -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/fieldWaterWell/fieldWaterWell.xml" uniqueId="preplaced_fieldWaterWell" position="-204.17282104 46.89537811 46.88051605" rotation="-179.99998474 -16.99114799 -179.99998474" boughtWithFarmlandOverwrite="false"/>
+	
+	
+	<!-- common -->
+	<placeable modName="FS25_SmallWoodenShed" filename="$moddir$FS25_SmallWoodenShed/SmallShed.xml" uniqueId="placeable_residentHomeCarport" position="311.55545044 29.48282814 -147.35429382" rotation="0 79.61000824 0"/>
+	<placeable modName="FS25_SmallWoodenShed" filename="$moddir$FS25_SmallWoodenShed/SmallShed.xml" uniqueId="placeable_SmallShed02" position="94.64918518 31.99803352 -527.52935791" rotation="0 -69.96968079 0" age="0.000000" price="5000.000000" boughtWithFarmlandOverwrite="true" canBeDeletedOverwrite="false"></placeable>
+	
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/vendesiSign/vendesi01.xml" uniqueId="placeable_vendesi01" position="704.76098633 19.3022995 58.39720154" rotation="0 78.11029816 0" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/vendesiSign/vendesi02.xml" uniqueId="placeable_vendesi02" position="748.48510742 12.6666708 -586.97167969" rotation="-180 70.88805389 -180" boughtWithFarmlandOverwrite="true" />
+	
+	
+	<!-- farm 06 -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/chickenShed02/farmShed04.xml" uniqueId="preplaced_chickenShed_002" position="-582.07336426 38.35100174 21.00020027" rotation="0 180 0" boughtWithFarmlandOverwrite="true">
+		<husbandry globalProductionFactor="0.000000" productionFactor="0.000000"/>
+			<husbandryAnimals>
+				<clusters>
+					<animal subType="CHICKEN_ROOSTER" numAnimals="1" age="0" health="0" reproduction="0"/>
+					<animal subType="CHICKEN" numAnimals="20" age="6" health="0" reproduction="0"/>
+				</clusters>
+			</husbandryAnimals>
+	</placeable>
+    <placeable isPreplaced="true" filename="$mapdir$/map/placeables/FS25_FarmhouseFR/farmhouseFR.xml" uniqueId="placeable_farmhouseFR" position="-593.23199463 37.18579865 -4.62801981" rotation="0 180 0" age="0.000000" price="50000.000000" boughtWithFarmlandOverwrite="true" />
+	<placeable modName="FS25_smallRusticBaleShed" filename="$moddir$FS25_smallRusticBaleShed/smallRusticBaleShed.xml" uniqueId="placeable_smallRusticBaleShed" position="-558.95098877 38.69778061 68.07479858" rotation="0 0 0" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="$moddir$FS25_Shed_Vologne/shedVologne.xml" uniqueId="preplaced_FS25_Shed_Vologne_003" position="-575.87902832 38.4391861 38.75630188" rotation="0 180 0" boughtWithFarmlandOverwrite="true" />
+	<placeable modName="FS25_Old_Structure_Pack" filename="$moddir$FS25_Old_Structure_Pack/old_structure_1.xml" uniqueId="preplaced_FS25_Old_Structure_Pack_001" position="-585.20001221 39.33599854 42.30210114" rotation="0 90 0" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/farmGarage/farmGarage.xml" uniqueId="placeable_farmGarage" position="-545.52520752 38.97499847 4.18778992" rotation="0 -90 0" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="$moddir$FS25_Average_Wooden_Shelter/Shelter.xml" uniqueId="preplaced_FS25_Average_Wooden_Shelter_006" position="-545.82202148 38.87060165 70.11499786" rotation="0 0 0" boughtWithFarmlandOverwrite="true">
+        <configuration name="solarPanels" id="1" isActive="true"/>
+    </placeable>
+	<placeable isPreplaced="true" filename="$moddir$FS25_Average_Wooden_Shelter/Shelter.xml" uniqueId="preplaced_FS25_Average_Wooden_Shelter_007" position="-598.63897705 37.22900009 69.11125183" rotation="0 -90 0" boughtWithFarmlandOverwrite="true">
+        <configuration name="solarPanels" id="1" isActive="true"/>
+    </placeable>
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/farmSiloBig/farmSiloBig.xml" uniqueId="preplaced_farmSiloBig_001" position="-577.13702393 37.45619965 67.70970154" rotation="0 0 0" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/farmDairy/farmDairy.xml" uniqueId="preplaced_farmDairy" position="-542.45098877 39.02500153 7.98605013" rotation="0 0 0" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="data/placeables/brandless/dieselTanks/level01/dieselTanksLevel01.xml" uniqueId="preplaced_dieselTanks01_001" position="-584.70483398 38.3693161 34.2614975" rotation="0 180 0" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/oldWorkbench/oldWorkbench.xml" uniqueId="preplaced_workshop_003" position="-577.92877197 38.42984772 52.08649826" rotation="0 180 0" boughtWithFarmlandOverwrite="true"/> 
+	<placeable filename="$mapdir$/map/placeables/greenhouses/greenHouseGlassMedium.xml" uniqueId="preplaced_greenHouseGlassMedium_001" position="-615.83898926 37.00370026 62.82559967" rotation="0 90 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable filename="$mapdir$/map/placeables/greenhouses/greenHouseGlassMedium.xml" uniqueId="preplaced_greenHouseGlassMedium_002" position="-615.83898926 36.79339981 76.53659821" rotation="0 90 0" boughtWithFarmlandOverwrite="true"/>
+	
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/abandonedBuildingDecoration/abandonedBuildingDecoration.xml" uniqueId="preplaced_abandonedBuildingDecoration_001" position="-560.5 37.32379913 -24.9204998" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/farm06decoration01/farm06decoration01.xml" uniqueId="preplaced_farm06decoration01" position="-600.56402588 36.89400101 11.71879959" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/farm06decoration02/farm06decoration02.xml" uniqueId="preplaced_farm06decoration02" position="-577.16766357 38.42984772 45.09168243" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	
+    <placeable filename="$mapdir$/map/placeables/sheepGoatBarn/sheepGoatBarn.xml" uniqueId="placeablefa70aacf9a6652d28ced2648c9e9a219" position="-598.000 37.896 41.000" rotation="0.00 -0.00 0.00" age="0.000000" price="48000.000000" boughtWithFarmlandOverwrite="true">
+        <configuration name="solarPanels" id="1" isActive="true"/>
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="1.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000"/>
+        <husbandryAnimals>
+            <clusters>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFence>
+            <fence>
+                <segment start="-596.513 37.701 49.798" end="-597.000 37.232 56.000" id="SEGMENT"/>
+                <segment start="-597.000 37.232 56.000" end="-631.250 36.040 55.500" id="SEGMENT"/>
+                <segment start="-631.250 36.040 55.500" end="-631.000 36.431 25.000" id="SEGMENT"/>
+                <segment start="-631.000 36.431 25.000" end="-627.320 36.573 22.240" id="SEGMENT"/>
+                <segment start="-627.320 36.573 22.240" end="-600.750 37.707 22.750" id="SEGMENT"/>
+                <segment start="-600.750 37.707 22.750" end="-600.800 37.850 34.859" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="0.000000" capacity="9880.000000"/>
+        </husbandryMeadow>
+    </placeable>
+	<placeable filename="$mapdir$/map/placeables/smallManurePlate/smallManurePlate.xml" uniqueId="placeable_smallManurePlate" position="-594.60424805 37.81907272 52.87362289" rotation="0 90 0" boughtWithFarmlandOverwrite="true">
+        <manureHeap manureToDrop="1" manureToPick="1"/>
+    </placeable>
+	
+	
+	
+	<placeable filename="$mapdir$/map/placeables/steelFrameCowShed/steelFrameCowShed.xml" uniqueId="placeable4259b534ddb7df4ae18d7dd025ce87eb" position="-548.250 39.071 39.000" rotation="0.00 -0.00 0.00" age="0.000000" price="100000.000000" boughtWithFarmlandOverwrite="true">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.000000" productionFactor="0.000000">
+            <storage boughtWithFarmlandOverwrite="true" />
+        </husbandry>
+        <husbandryFence>
+            <fence>
+                <segment start="-537.629 39.161 26.871" end="-537.500 38.956 -7.500" id="SEGMENT"/>
+                <segment start="-537.500 38.956 -7.500" end="-513.000 40.633 -7.250" id="SEGMENT"/>
+                <segment start="-513.000 40.633 -7.250" end="-512.750 40.948 73.000" id="SEGMENT"/>
+                <segment start="-512.750 40.948 73.000" end="-537.500 38.735 73.000" id="SEGMENT"/>
+                <segment start="-537.500 38.735 73.000" end="-537.629 39.076 51.108" id="SEGMENT"/>
+            </fence>
+        </husbandryFence>
+        <husbandryMeadow>
+            <fillType name="GRASS_WINDROW" fillLevel="0.000000" capacity="24200.000000"/>
+        </husbandryMeadow>
+        <manureHeap manureToDrop="0" manureToPick="0"/>
+    </placeable>
+	
+	
+	<!-- farm 04 -->
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/siloBuilding/siloBuilding.xml" uniqueId="preplaced_siloBuilding_001" position="-529.05200195 23.92609978 -490.29901123" rotation="0 -90 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/farmhouse_04/farmHouse04.xml" uniqueId="preplaced_farmhouse_004" position="-517.99450684 23.89340019 -501.15447998" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/farm04decoration01/farm04decoration01.xml" uniqueId="preplaced_farm04decoration01" position="-518.97003174 24.05381393 -504.91757202" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/tuscanFarmShed/tuscanFarmShed.xml" uniqueId="preplaced_tuscanFarmShed_003" position="-508.20657349 23.53530121 -505.93817139" rotation="0 -90 0" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/tuscanFarmShed/tuscanFarmShed.xml" uniqueId="preplaced_tuscanFarmShed_004" position="-527.79400635 23.55450058 -482.62298584" rotation="0 0 0" boughtWithFarmlandOverwrite="true" />
+	<placeable modName="FS25_SmallWoodenShed" filename="$moddir$FS25_SmallWoodenShed/SmallShed.xml" uniqueId="placeable_farm04_SmallShed" position="-508.09130859 23.78007317 -497.31387329" rotation="0 90 0" boughtWithFarmlandOverwrite="true" />
+	<placeable isPreplaced="true" filename="$mapdir$/map/placeables/chickenShed02/farmShed04.xml" uniqueId="preplaced_chickenShed_003" position="-495.74856567 23.51556587 -476.67419434" rotation="0 -15.836 0" boughtWithFarmlandOverwrite="true">
+		<husbandry globalProductionFactor="0.000000" productionFactor="0.000000"/>
+			<husbandryAnimals>
+				<clusters>
+					<animal subType="CHICKEN_ROOSTER" numAnimals="1" age="0" health="0" reproduction="0"/>
+					<animal subType="CHICKEN" numAnimals="10" age="6" health="0" reproduction="0"/>
+				</clusters>
+			</husbandryAnimals>
+	</placeable>
+	
+	
+</placeables>

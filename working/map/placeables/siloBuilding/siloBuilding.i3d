@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="siloBuilding.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.8"/>
+  </Asset>
+
+  <Files>
+    <File fileId="45" filename="$data/maps/mapEU/textures/damagedPlaster03_diffuse.png"/>
+    <File fileId="46" filename="$data/maps/mapEU/textures/damagedPlaster_normal.png"/>
+    <File fileId="47" filename="$data/maps/mapEU/textures/damagedPlaster_specular.png"/>
+    <File fileId="38" filename="$data/maps/mapUS/textures/buildings/fishHachery/fishHatchery_diffuse.png"/>
+    <File fileId="44" filename="$data/maps/mapUS/textures/buildings/fishHachery/fishHatchery_height.png"/>
+    <File fileId="41" filename="$data/maps/mapUS/textures/buildings/fishHachery/fishHatchery_mask.png"/>
+    <File fileId="39" filename="$data/maps/mapUS/textures/buildings/fishHachery/fishHatchery_normal.png"/>
+    <File fileId="40" filename="$data/maps/mapUS/textures/buildings/fishHachery/fishHatchery_specular.png"/>
+    <File fileId="28" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorPropsTile_diffuse.png"/>
+    <File fileId="29" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorPropsTile_normal.png"/>
+    <File fileId="30" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorPropsTile_specular.png"/>
+    <File fileId="32" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorProps_diffuse.png"/>
+    <File fileId="33" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorProps_normal.png"/>
+    <File fileId="34" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorProps_specular.png"/>
+    <File fileId="17" filename="$data/maps/textures/shared/default_normal.dds"/>
+    <File fileId="42" filename="$data/maps/textures/shared/mapLeaksFR_diffuse.png"/>
+    <File fileId="43" filename="$data/maps/textures/shared/mapRust_diffuse.png"/>
+    <File fileId="24" filename="$data/maps/textures/shared/props/icicles_diffuse.dds"/>
+    <File fileId="25" filename="$data/maps/textures/shared/props/icicles_normal.dds"/>
+    <File fileId="26" filename="$data/maps/textures/shared/props/icicles_specular.dds"/>
+    <File fileId="52" filename="$data/maps/textures/shared/rustLeaksDecals_diffuse.png"/>
+    <File fileId="53" filename="$data/maps/textures/shared/rustLeaksDecals_normal.png"/>
+    <File fileId="54" filename="$data/maps/textures/shared/rustLeaksDecals_specular.png"/>
+    <File fileId="20" filename="$data/maps/textures/shared/snow_diffuse.dds"/>
+    <File fileId="21" filename="$data/maps/textures/shared/snow_normal.dds"/>
+    <File fileId="10" filename="$data/maps/textures/shared/snow_specular.png"/>
+    <File fileId="35" filename="$data/placeables/brandless/hayLoft/hayBlower_diffuse.png"/>
+    <File fileId="36" filename="$data/placeables/brandless/hayLoft/hayBlower_normal.png"/>
+    <File fileId="37" filename="$data/placeables/brandless/hayLoft/hayBlower_specular.png"/>
+    <File fileId="13" filename="$data/placeables/mapEU/carpenter/windowsGlass01_diffuse.dds"/>
+    <File fileId="14" filename="$data/placeables/mapEU/carpenter/windowsGlass01_normal.dds"/>
+    <File fileId="15" filename="$data/placeables/mapEU/carpenter/windowsGlass01_specular.dds"/>
+    <File fileId="6" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="55" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="18" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="31" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="22" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="48" filename="$data/shaders/vertexPaintShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+    <File fileId="12" filename="../../prefabs/FS22_MapFR/textures/oldFarmBuilding01_height.png"/>
+    <File fileId="7" filename="../../prefabs/FS22_MapFR/textures/oldFarmBuilding02_mask.png"/>
+    <File fileId="3" filename="../../prefabs/FS22_MapFR/textures/oldFarmBuildings_diffuse.png"/>
+    <File fileId="4" filename="../../prefabs/FS22_MapFR/textures/oldFarmBuildings_normal.png"/>
+    <File fileId="5" filename="../../prefabs/FS22_MapFR/textures/oldFarmBuildings_specular.png"/>
+    <File fileId="19" filename="../../prefabs/FS22_MapFR/textures/windowsRoomInteriorsDay_diffuse.png"/>
+    <File fileId="16" filename="../../prefabs/FS22_MapFR/textures/windowsRoomInteriorsNight_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="damagedPlaster03_mat" materialId="5" customShaderId="48" customShaderVariation="alphaNoise">
+      <Texture fileId="45"/>
+      <Normalmap fileId="46"/>
+      <Glossmap fileId="47"/>
+    </Material>
+    <Material name="fishHatchery_mat" materialId="6" customShaderId="6" customShaderVariation="customParallax">
+      <Texture fileId="38"/>
+      <Normalmap fileId="39"/>
+      <Glossmap fileId="40"/>
+      <Custommap name="mMaskMap" fileId="41"/>
+      <Custommap name="mDirtDiffuse" fileId="42"/>
+      <Custommap name="mMossDiffuse" fileId="43"/>
+      <Custommap name="mParallaxMap" fileId="44"/>
+    </Material>
+    <Material name="grainElevatorProps_mat" materialId="7" customShaderId="31">
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+      <Glossmap fileId="34"/>
+    </Material>
+    <Material name="grainElevatorPropsTile_mat" materialId="8" customShaderId="31">
+      <Texture fileId="28"/>
+      <Normalmap fileId="29"/>
+      <Glossmap fileId="30"/>
+    </Material>
+    <Material name="grainElevatorPropsTile_mat" materialId="9" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="hayBlower_mat" materialId="10" customShaderId="31">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <Glossmap fileId="37"/>
+    </Material>
+    <Material name="icicles_mat" materialId="11" alphaBlending="true" customShaderId="22" customShaderVariation="icicle">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="26"/>
+      <Refractionmap coeff="1" bumpScale="0.1" withSSRData="false"/>
+    </Material>
+    <Material name="lambert1" materialId="12" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert2" materialId="13" diffuseColor="0.501961 0.501961 0.501961 1">
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="oldFarmBuildings_mat" materialId="14" customShaderId="6" customShaderVariation="customParallax">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4" bumpDepth="1.5"/>
+      <Glossmap fileId="5"/>
+      <Custommap name="mMaskMap" fileId="7"/>
+      <Custommap name="mParallaxMap" fileId="12"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.32 0.1"/>
+    </Material>
+    <Material name="rustLeaksDecals_mat" materialId="15" customShaderId="55">
+      <Texture fileId="52"/>
+      <Normalmap fileId="53"/>
+      <Glossmap fileId="54"/>
+    </Material>
+    <Material name="snow_mat" materialId="16" customShaderId="22">
+      <Texture fileId="20"/>
+      <Normalmap fileId="21" bumpDepth="0.5"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="17" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="windowsGlass01_mat" materialId="18" alphaBlending="true">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14" bumpDepth="0.25"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="windowsRoomInteriorsNight_mat" materialId="19" customShaderId="18" customShaderVariation="alphaTestDisable_extraBaseMap">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Custommap name="mExtraBaseMap" fileId="19"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="siloBuilding.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="siloBuilding" lockedgroup="true" nodeId="50">
+      <TransformGroup name="clearAreas" nodeId="51">
+        <TransformGroup name="clearAreaStart01" translation="-7.509 0 -13.0782" nodeId="52">
+          <TransformGroup name="clearAreaWidth01" translation="0 0 25.2472" nodeId="53"/>
+          <TransformGroup name="clearAreaHeight01" translation="12.31 0 0" nodeId="54"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" nodeId="55">
+        <TransformGroup name="levelAreaStart01" translation="-7.50904 0 -13.0782" nodeId="56">
+          <TransformGroup name="levelAreaWidth01" translation="0 0 25.2472" nodeId="57"/>
+          <TransformGroup name="levelAreaHeight01" translation="12.31 0 0" nodeId="58"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="59">
+        <TransformGroup name="testAreaStart01" translation="-7.509 0 -13.0782" nodeId="60">
+          <TransformGroup name="testAreaEnd01" translation="11.5898 6.06981 25.2472" rotation="1.5e-05 0 0" nodeId="61"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="62">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-7.509 0 -13.0782" nodeId="63">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="11.625 0 25.2472" nodeId="64"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="loadingStation" translation="-0.415 1.434 13.555" nodeId="65">
+        <TransformGroup name="loadingTriggers" translation="0.650963 1.538 -24.6499" rotation="0 180 0" nodeId="66">
+          <Shape name="loadingTrigger" translation="0.002711 0.495517 0.44969" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="67" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+          <TransformGroup name="dischargeNode" nodeId="68"/>
+          <TransformGroup name="dischargeEffect" translation="0 -0.105872 0.450763" nodeId="69">
+            <Shape name="pipeEffect" translation="-1.59917e-22 0.664788 -3.09939e-09" rotation="90 0 0" scale="1.5 1.5 1" shapeId="2" clipDistance="300" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="13"/>
+            <Shape name="pipeEffectSmoke" translation="0 -2.56733 0" shapeId="3" clipDistance="100" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="13"/>
+          </TransformGroup>
+          <TransformGroup name="aiLoadingNode" translation="0 -3.70297 0.537158" rotation="0 -90 0" nodeId="72"/>
+        </TransformGroup>
+        <TransformGroup name="markerLoading" translation="0.615057 -1.29638 -25.2027" rotation="0 90 0" nodeId="73"/>
+      </TransformGroup>
+      <TransformGroup name="unloadingStation" translation="-0.879339 0 0.0340478" rotation="0 90 0" scale="1.3 1 1.1" nodeId="74">
+        <Shape name="exactFillRootNode" translation="4.59622 0.1111 -4.4403" scale="0.515549 0.384835 1" shapeId="4" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="75" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <TransformGroup name="grainGutterLinkNode" translation="0.005935 -0.159928 -4.02928" scale="0.65 0.65 0.65" nodeId="76"/>
+        <TransformGroup name="aiUnloadingNode" translation="4.858 0 -5.36736" rotation="0 -90 0" nodeId="77"/>
+        <TransformGroup name="markerUnloading" translation="4.85844 0 -4.52731" rotation="0 -90 0" nodeId="78"/>
+      </TransformGroup>
+      <TransformGroup name="mapPosition" translation="-5.29501 0 0.0981814" nodeId="79"/>
+      <TransformGroup name="storage" nodeId="80"/>
+      <Shape name="infoTrigger" translation="-1.66542 0 -12.3676" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="81" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      <Shape name="aiSpline" translation="-0.294607 0 -1.78238" shapeId="6" nodeId="82" castsShadows="false" receiveShadows="false"/>
+      <TransformGroup name="teleportNode" translation="-7.67151 0 0.0465692" rotation="0 90 0" nodeId="84"/>
+      <TransformGroup name="visuals" clipDistance="300" nodeId="85">
+        <TransformGroup name="oldFarmBuilding02" lockedgroup="true" translation="1.07184e-05 0 3.4925e-12" lodDistance="0 150" static="true" nodeId="86">
+          <Shape name="LOD0" shapeId="7" clipDistance="175" nodeId="87" castsShadows="true" receiveShadows="true" materialIds="14">
+            <Shape name="glass" shapeId="8" clipDistance="175" nodeId="88" castsShadows="true" receiveShadows="true" materialIds="18"/>
+            <TransformGroup name="illum" nodeId="89">
+              <TransformGroup name="selfIllum" nodeId="90">
+                <Shape name="interiorDay" shapeId="9" clipDistance="175" nodeId="91" castsShadows="true" receiveShadows="true" materialIds="19" weatherRequiredMask="0x40" renderInvisible="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="winter" static="true" nodeId="92" weatherRequiredMask="0x400">
+              <Shape name="snow" shapeId="10" clipDistance="150" nodeId="93" castsShadows="true" receiveShadows="true" materialIds="16" weatherRequiredMask="0x400"/>
+              <Shape name="icicles" shapeId="11" clipDistance="80" nodeId="94" castsShadows="true" receiveShadows="true" materialIds="11"/>
+            </TransformGroup>
+            <Shape name="collisionMesh" shapeId="12" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="300" nodeId="95" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
+          </Shape>
+          <Shape name="LOD1" shapeId="13" clipDistance="800" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="14">
+            <Shape name="interiorDay_LOD" shapeId="14" clipDistance="800" nodeId="97" castsShadows="true" receiveShadows="true" materialIds="19" weatherRequiredMask="0x40" renderInvisible="true"/>
+          </Shape>
+          <Shape name="occluderMesh" shapeId="15" static="true" density="0.0001" clipDistance="300" nodeId="98" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true" materialIds="12"/>
+        </TransformGroup>
+        <Shape name="cooperSilo" translation="0.238511 2.58348 -8.46094" shapeId="16" clipDistance="350" nodeId="99" castsShadows="true" receiveShadows="true" materialIds="8,7"/>
+        <TransformGroup name="hayBlower" lockedgroup="true" translation="-4.02327 4.57764e-05 -6.04266" nodeId="100">
+          <Shape name="pipe" translation="0.00626326 0.0730008 0.00308752" rotation="-0 -90 0" shapeId="17" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="350" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          <Shape name="siloBlower" translation="-0.118 0.00222968 -0.48" scale="0.9 1 0.9" shapeId="18" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="102" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        </TransformGroup>
+        <TransformGroup name="silo" lockedgroup="true" translation="-1.8561 1.95326 -6.04871" lodDistance="0 100" lodBlending="false" nodeId="103">
+          <TransformGroup name="LOD0" scale="1.5 1.5 1.5" nodeId="104">
+            <Shape name="props" shapeId="19" nodeId="105" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="tile3" shapeId="20" nodeId="106" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="tile1" shapeId="21" nodeId="107" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <TransformGroup name="decals" nodeId="108">
+              <Shape name="plasterDecals" shapeId="22" clipDistance="100" nodeId="109" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="5"/>
+              <Shape name="rustDecals" translation="-0.605664 0 0" shapeId="23" clipDistance="100" nodeId="110" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="15"/>
+            </TransformGroup>
+            <TransformGroup name="transform20" nodeId="111">
+              <Shape name="col" shapeId="24" nodeId="112" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+            </TransformGroup>
+            <Shape name="tilingprops" translation="288.569 -19.7281 -33.845" scale="0.5 0.5 0.5" shapeId="25" nodeId="113" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          </TransformGroup>
+          <TransformGroup name="LOD1" scale="1.5 1.5 1.5" clipDistance="800" nodeId="114">
+            <Shape name="tile3" shapeId="26" nodeId="115" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="tile1" shapeId="27" nodeId="116" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="tilingprops" shapeId="28" nodeId="117" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collision" nodeId="118">
+        <Shape name="tipCollision" translation="-1.94228 0.0331209 -4.85885" scale="11.126 0.01 17.022" shapeId="29" visibility="false" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="119" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="17"/>
+        <Shape name="col" translation="0.254195 1.62605 -7.24878" scale="2.56345 3.23821 1" shapeId="29" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="120" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
+        <Shape name="col" translation="0.234412 2.26303 -9.01644" rotation="-46.4644 -0 0" scale="0.4 4.16961 0.4" shapeId="29" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="121" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" nodeId="137">
+        <TransformGroup name="indoorAreaStart01" translation="-6.88995 0 -7.9434" nodeId="138">
+          <TransformGroup name="indoorAreaWidth01" translation="0 0 3.081" nodeId="139"/>
+          <TransformGroup name="indoorAreaHeight01" translation="3.21981 0 0" nodeId="140"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

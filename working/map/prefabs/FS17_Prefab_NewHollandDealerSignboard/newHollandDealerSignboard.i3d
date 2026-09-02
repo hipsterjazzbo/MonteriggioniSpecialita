@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="newHollandDealerSignboard.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="6" filename="$data/shared/default_normal.dds"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.dds"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.dds"/>
+    <File fileId="1" filename="textures/newHollandDealerSignboard_diffuse.dds"/>
+    <File fileId="2" filename="textures/newHollandDealerSignboard_normal.dds"/>
+    <File fileId="3" filename="textures/newHollandDealerSignboard_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default_mat" materialId="5" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="nhSign_mat" materialId="61" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+    </Material>
+    <Material name="nhSign_mat" materialId="31" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="newHollandDealerSignboard.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="newHollandDealerSignboard" nodeId="12">
+      <Shape name="rod" translation="0 -0.25 0" shapeId="1" clipDistance="500" nodeId="13" castsShadows="true" receiveShadows="true" materialIds="61">
+        <Shape name="signboard" translation="0.0133295 10.694 0" shapeId="2" clipDistance="500" nodeId="14" castsShadows="true" receiveShadows="true" materialIds="31">
+          <Shape name="signboardCollision" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="15" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="5"/>
+        </Shape>
+        <Shape name="rodCollision" translation="0 5 0" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="16" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="5"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

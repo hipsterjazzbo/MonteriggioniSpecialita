@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="greenhouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_extendedGreenHouse</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>map/placeables/greenhouses/store_greenHousesTarpMedium.dds</image>
+        <price>18000</price>
+        <dailyUpkeep>50</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>greenhouses</tab>
+        </brush>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+    </storeData>
+
+    <base>
+        <filename>map/placeables/greenhouses/greenHousesTarpMedium.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+        </testAreas>
+
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01"/>
+		<indoorArea startNode="indoorAreaStart02" widthNode="indoorAreaWidth02" heightNode="indoorAreaHeight02"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+
+        <splines>
+            <spline node="aiSpline" />
+        </splines>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="teleportNode" />
+    </hotspots>
+	
+	<dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="props" filename="map/placeables/greenhouses/greenHouseProps02.i3d" />
+    </dynamicallyLoadedParts>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconWrench.i3d" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconWater.i3d"  adjustToGround="true" />
+		<triggerMarker node="unloadTriggerMarker2" filename="$data/shared/assets/marker/markerIconUnload.i3d"  adjustToGround="true" />
+		<triggerMarker node="unloadTriggerMarker3" filename="$data/shared/assets/marker/markerIconUnload.i3d"  adjustToGround="true" />
+    </triggerMarkers>
+
+    <greenhouse>
+        <plants>
+            <plant fillType="LETTUCE"      xmlFilename="$data/placeables/brandless/greenhouses/vegetables/lettuce/lettuce.xml" />
+            <plant fillType="STRAWBERRY"   xmlFilename="$data/placeables/brandless/greenhouses/vegetables/strawberry/strawberry.xml" />
+            <plant fillType="TOMATO"       xmlFilename="$data/placeables/brandless/greenhouses/vegetables/tomatoes/tomatoes.xml" />
+            <plant fillType="SPRING_ONION" xmlFilename="$data/placeables/brandless/greenhouses/vegetables/springOnion/springOnion.xml" />
+            <plant fillType="NAPACABBAGE"  xmlFilename="$data/placeables/brandless/greenhouses/vegetables/napaCabbage/napaCabbage.xml" />
+            <plant fillType="CHILLI"       xmlFilename="$data/placeables/brandless/greenhouses/vegetables/chilli/chilli.xml" />
+            <plant fillType="GARLIC"       xmlFilename="$data/placeables/brandless/greenhouses/vegetables/garlic/garlic.xml" />
+        </plants>
+
+        <plantSpaces>
+            <spacesParent node="plantNodes" useRandomYRot="true" />
+        </plantSpaces>
+
+        <sounds>
+            <watering template="defaultSprayer" linkNode="0>" loops="0" />
+        </sounds>
+    </greenhouse>
+
+    <productionPoint productionType="GREENHOUSE" turnedOnByDefault="true" startOnCreate="true">
+        <productions>
+            <production id="tomato_fertilizer" name="%s (%s)" params="$l10n_fillType_tomato|$l10n_fillType_fertilizer" cyclesPerHour="22" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="6" />
+                    <input fillType="SEEDS" amount="1" />
+                    <input fillType="FERTILIZER" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="TOMATO" amount="11" />
+                </outputs>
+            </production>
+            <production id="tomato_manure" name="%s (%s)" params="$l10n_fillType_tomato|$l10n_fillType_manure" cyclesPerHour="22" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="6" />
+                    <input fillType="SEEDS" amount="1" />
+                    <input fillType="MANURE" amount="4" />
+                </inputs>
+                <outputs>
+                    <output fillType="TOMATO" amount="8" />
+                </outputs>
+            </production>
+            <production id="lettuce_fertilizer" name="%s (%s)" params="$l10n_fillType_lettuce|$l10n_fillType_fertilizer" cyclesPerHour="22" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="9" />
+                    <input fillType="SEEDS" amount="1" />
+                    <input fillType="FERTILIZER" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="LETTUCE" amount="12" />
+                </outputs>
+            </production>
+            <production id="lettuce_manure" name="%s (%s)" params="$l10n_fillType_lettuce|$l10n_fillType_manure" cyclesPerHour="22" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="9" />
+                    <input fillType="SEEDS" amount="1" />
+                    <input fillType="MANURE" amount="4" />
+                </inputs>
+                <outputs>
+                    <output fillType="LETTUCE" amount="9" />
+                </outputs>
+            </production>
+            <production id="strawberry_fertilizer" name="%s (%s)" params="$l10n_fillType_strawberry|$l10n_fillType_fertilizer" cyclesPerHour="22" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="SEEDS" amount="1" />
+                    <input fillType="FERTILIZER" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="STRAWBERRY" amount="14" />
+                </outputs>
+            </production>
+            <production id="strawberry_manure" name="%s (%s)" params="$l10n_fillType_strawberry|$l10n_fillType_manure" cyclesPerHour="22" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="SEEDS" amount="1" />
+                    <input fillType="MANURE" amount="4" />
+                </inputs>
+                <outputs>
+                    <output fillType="STRAWBERRY" amount="9" />
+                </outputs>
+            </production>
+            <production id="springOnion_fertilizer" name="%s (%s)" params="$l10n_fillType_springOnion|$l10n_fillType_fertilizer" cyclesPerHour="22" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="7" />
+                    <input fillType="SEEDS" amount="2" />
+                    <input fillType="FERTILIZER" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="SPRING_ONION" amount="22" />
+                </outputs>
+            </production>
+            <production id="springOnion_manure" name="%s (%s)" params="$l10n_fillType_springOnion|$l10n_fillType_manure" cyclesPerHour="22" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="7" />
+                    <input fillType="SEEDS" amount="2" />
+                    <input fillType="MANURE" amount="4" />
+                </inputs>
+                <outputs>
+                    <output fillType="SPRING_ONION" amount="19" />
+                </outputs>
+            </production>
+            <production id="napaCabbage_fertilizer" name="%s (%s)" params="$l10n_fillType_napaCabbage|$l10n_fillType_fertilizer" cyclesPerHour="22" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="SEEDS" amount="2" />
+                    <input fillType="FERTILIZER" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="NAPACABBAGE" amount="24" />
+                </outputs>
+            </production>
+            <production id="napaCabbage_manure" name="%s (%s)" params="$l10n_fillType_napaCabbage|$l10n_fillType_manure" cyclesPerHour="22" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="SEEDS" amount="2" />
+                    <input fillType="MANURE" amount="4" />
+                </inputs>
+                <outputs>
+                    <output fillType="NAPACABBAGE" amount="22" />
+                </outputs>
+            </production>
+            <production id="chilli_fertilizer" name="%s (%s)" params="$l10n_fillType_chilli|$l10n_fillType_fertilizer" cyclesPerHour="22" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="SEEDS" amount="2" />
+                    <input fillType="FERTILIZER" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHILLI" amount="14" />
+                </outputs>
+            </production>
+            <production id="chilli_manure" name="%s (%s)" params="$l10n_fillType_chilli|$l10n_fillType_manure" cyclesPerHour="22" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="SEEDS" amount="2" />
+                    <input fillType="MANURE" amount="4" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHILLI" amount="12" />
+                </outputs>
+            </production>
+            <production id="garlic_fertilizer" name="%s (%s)" params="$l10n_fillType_garlic|$l10n_fillType_fertilizer" cyclesPerHour="22" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="SEEDS" amount="2" />
+                    <input fillType="FERTILIZER" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="GARLIC" amount="14" />
+                </outputs>
+            </production>
+            <production id="garlic_manure" name="%s (%s)" params="$l10n_fillType_garlic|$l10n_fillType_manure" cyclesPerHour="22" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="SEEDS" amount="2" />
+                    <input fillType="MANURE" amount="4" />
+                </inputs>
+                <outputs>
+                    <output fillType="GARLIC" amount="9" />
+                </outputs>
+            </production>
+        </productions>
+
+        <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false">
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypes="WATER FERTILIZER SEEDS" aiNode="unloadTriggerAINode"/>
+			<unloadTrigger exactFillRootNode="exactFillRootNode2" fillTypes="MANURE" aiNode="unloadTriggerAINode2"/>
+        </sellingStation>
+
+        <loadingStation fillTypes="WATER" supportsExtension="true" />
+		<loadingStation fillTypes="MANURE" supportsExtension="true" />
+        <loadingStation fillTypes="FERTILIZER" supportsExtension="true" />
+        <loadingStation fillTypes="SEEDS" supportsExtension="true" />
+
+        <palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="spawnPlaceStart01" endNode="spawnPlaceEnd01" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <storage node="storage" isExtension="false" fillTypes="WATER" fillLevelSyncThreshold="10" >
+            <capacity fillType="WATER"        capacity="10000" />
+            <capacity fillType="LETTUCE"      capacity="14000" />
+            <capacity fillType="TOMATO"       capacity="14000" />
+            <capacity fillType="STRAWBERRY"   capacity="14000" />
+            <capacity fillType="SPRING_ONION" capacity="14000" />
+            <capacity fillType="NAPACABBAGE"  capacity="14000" />
+            <capacity fillType="CHILLI"       capacity="14000" />
+            <capacity fillType="GARLIC"       capacity="14000" />
+			<capacity fillType="MANURE"       capacity="10000" />
+            <capacity fillType="SEEDS"        capacity="5000" />
+			<capacity fillType="FERTILIZER"   capacity="5000" />
+			
+			<fillPlane maxY="0.9" fillType="MANURE" node="manure_plane" minY="-0.056"/>
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+    </productionPoint>
+
+    <animatedObjects>
+        <animatedObject saveId="door1" >
+            <animation duration="3">
+                <part node="door1Left">
+                    <keyFrame time="0.1" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 100 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door1Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door1" template="glassDoorLoop" />
+                <negEnd linkNode="door1" template="metalDoorsClose" />
+                <posEnd linkNode="door1" template="metalDoorsOpen" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="door2" >
+            <animation duration="3">
+                <part node="door2Right">
+                    <keyFrame time="0.1" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 100 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door2Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door2" template="glassDoorLoop" />
+                <negEnd linkNode="door2" template="metalDoorsClose" />
+                <posEnd linkNode="door2" template="metalDoorsOpen" />
+            </sounds>
+        </animatedObject>
+    </animatedObjects>
+
+    <i3dMappings>
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="levelAreaStart01" node="0>1|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>1|0|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>1|0|1" />
+        <i3dMapping id="indoorAreaStart01" node="0>2|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>2|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>2|0|1" />
+		<i3dMapping id="indoorAreaStart02" node="0>2|1" />
+        <i3dMapping id="indoorAreaWidth02" node="0>2|1|0" />
+        <i3dMapping id="indoorAreaHeight02" node="0>2|1|1" />
+        <i3dMapping id="testAreaStart01" node="0>3|0" />
+        <i3dMapping id="testAreaEnd01" node="0>3|0|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>4|0|0" />
+        <i3dMapping id="plantNodes" node="0>5|1" />
+        <i3dMapping id="palletSpawner" node="0>5|3" />
+        <i3dMapping id="spawnPlaceStart01" node="0>5|3|0" />
+        <i3dMapping id="spawnPlaceEnd01" node="0>5|3|0|0" />
+        <i3dMapping id="sellingStation" node="0>5|4" />
+        <i3dMapping id="exactFillRootNode" node="0>5|4|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>5|4|1" />
+        <i3dMapping id="unloadTriggerAINode" node="0>5|4|2" />
+        <i3dMapping id="aiSpline" node="0>5|4|3" />
+		<i3dMapping id="exactFillRootNode2" node="0>5|4|4" />
+        <i3dMapping id="unloadTriggerMarker2" node="0>5|4|5" />
+        <i3dMapping id="unloadTriggerAINode2" node="0>5|4|6" />
+		<i3dMapping id="unloadTriggerMarker3" node="0>5|4|7" />
+        <i3dMapping id="storage" node="0>5|5" />
+        <i3dMapping id="playerTrigger" node="0>5|6" />
+        <i3dMapping id="playerTriggerMarker" node="0>5|7" />
+        <i3dMapping id="teleportNode" node="0>5|8" />
+        <i3dMapping id="door1" node="0>6|0" />
+        <i3dMapping id="door1Left" node="0>6|0|0" />
+        <i3dMapping id="door1Trigger" node="0>6|0|1" />
+        <i3dMapping id="door2" node="0>6|1" />
+        <i3dMapping id="door2Right" node="0>6|1|0" />
+        <i3dMapping id="door2Trigger" node="0>6|1|1" />
+        <i3dMapping id="warningStripes" node="0>7" />
+        <i3dMapping id="infoTrigger" node="0>8" />
+		<i3dMapping id="manure_plane" node="0>9|4" />
+		<i3dMapping id="props" node="0>9|5" />
+    </i3dMappings>
+</placeable>

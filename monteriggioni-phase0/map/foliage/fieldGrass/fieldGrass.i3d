@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="fieldGrass.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="21" filename="$data/foliage/meadow/meadowEU/meadowEURollerLOD1_fmask.png"/>
+    <File fileId="22" filename="$data/foliage/meadow/meadowEU/meadowEURollerLOD1_mask.png"/>
+    <File fileId="20" filename="$data/foliage/meadow/meadowEU/meadowEURollerLOD1_normal.png"/>
+    <File fileId="14" filename="$data/foliage/meadow/meadowEU/meadowLOD_mask.png"/>
+    <File fileId="13" filename="$data/foliage/meadow/meadowEU/meadowLOD_normal.png"/>
+    <File fileId="3" filename="$data/foliage/meadow/meadowEU/meadow_fmask.png"/>
+    <File fileId="7" filename="$data/foliage/meadow/meadowEU/meadow_mask.png"/>
+    <File fileId="2" filename="$data/foliage/meadow/meadowEU/meadow_normal.png"/>
+    <File fileId="17" filename="$data/foliage/meadow/meadowUS/grassHarvestReadyLOD_fmask.png"/>
+    <File fileId="18" filename="$data/foliage/meadow/meadowUS/grassHarvestReadyLOD_mask.png"/>
+    <File fileId="16" filename="$data/foliage/meadow/meadowUS/grassHarvestReadyLOD_normal.png"/>
+    <File fileId="10" filename="$data/foliage/meadow/meadowUS/meadowUS_fmask.png"/>
+    <File fileId="11" filename="$data/foliage/meadow/meadowUS/meadowUS_mask.png"/>
+    <File fileId="9" filename="$data/foliage/meadow/meadowUS/meadowUS_normal.png"/>
+    <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+    <File fileId="15" filename="fieldGrassHarvestReadyLOD_diffuse.png"/>
+    <File fileId="12" filename="fieldGrassLOD_diffuse.png"/>
+    <File fileId="19" filename="fieldGrassRollerLOD1_diffuse.png"/>
+    <File fileId="1" filename="fieldGrass_diffuse.png"/>
+    <File fileId="8" filename="grass_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="grassHarvestReadyLOD_mat" materialId="41" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="mMaskMap" fileId="18"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="meadow_mat" materialId="42" customShaderId="4" customShaderVariation="SEASONAL">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="7"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="meadowEURollerLOD1_mat" materialId="43" customShaderId="4" customShaderVariation="SEASONAL">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <Custommap name="mMaskMap" fileId="22"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="meadowLOD_mat" materialId="44" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="14"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="meadowUS_mat" materialId="45" customShaderId="4" customShaderVariation="SEASONAL">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+      <Custommap name="mMaskMap" fileId="11"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="fieldGrass.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="fieldGrass" nodeId="59">
+      <TransformGroup name="LOD0" nodeId="60">
+        <Shape name="greenSmall" shapeId="1" clipDistance="500" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="42"/>
+        <Shape name="greenMiddle" shapeId="2" clipDistance="500" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="42"/>
+        <Shape name="harvestReady1" shapeId="3" clipDistance="500" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="42"/>
+        <Shape name="harvestReady2" shapeId="4" nodeId="64" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="45"/>
+        <Shape name="cut" shapeId="5" clipDistance="500" nodeId="65" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="42"/>
+        <Shape name="roller" shapeId="6" clipDistance="500" nodeId="66" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="42"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="67">
+        <Shape name="greenSmall" shapeId="7" clipDistance="500" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="44"/>
+        <Shape name="greenMiddle" shapeId="8" clipDistance="500" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="44"/>
+        <Shape name="harvestReady1" shapeId="9" clipDistance="500" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="44"/>
+        <Shape name="harvestReady2" shapeId="10" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="41"/>
+        <Shape name="cut" shapeId="11" clipDistance="500" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="44"/>
+        <Shape name="roller" shapeId="12" clipDistance="500" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="43"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

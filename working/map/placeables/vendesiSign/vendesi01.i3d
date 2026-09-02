@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="vendesi01.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.8"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shared/default_normal.png"/>
+    <File fileId="6" filename="$data/shared/default_specular.png"/>
+    <File fileId="1" filename="$data/shared/detailLibrary/metallic/metalGalvanized_diffuse.dds"/>
+    <File fileId="2" filename="$data/shared/detailLibrary/metallic/metalGalvanized_normal.dds"/>
+    <File fileId="3" filename="$data/shared/detailLibrary/metallic/rough_specular.dds"/>
+    <File fileId="4" filename="vendesi_immobiliare_messina512b.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="sign_mat" materialId="5">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="6">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="vendesi01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="signBig" lockedgroup="true" clipDistance="300" nodeId="10">
+      <TransformGroup name="clearAreas" nodeId="11">
+        <TransformGroup name="clearAreaStart01" translation="-0.195 0 1.29071" nodeId="12">
+          <TransformGroup name="clearAreaWidth01" translation="0 0 -2.72655" nodeId="13"/>
+          <TransformGroup name="clearAreaHeight01" translation="0.278 0 0" nodeId="14"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" nodeId="15">
+        <TransformGroup name="levelAreaStart01" translation="-0.195314 0 1.29071" nodeId="16">
+          <TransformGroup name="levelAreaWidth01" translation="0 0 -2.72655" nodeId="17"/>
+          <TransformGroup name="levelAreaHeight01" translation="0.277643 0 0" nodeId="18"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="paintAreas" nodeId="19">
+        <TransformGroup name="paintAreaStart01" translation="-0.195 0 1.29071" nodeId="20">
+          <TransformGroup name="paintAreaWidth01" translation="0 0 -2.72655" nodeId="21"/>
+          <TransformGroup name="paintAreaHeight01" translation="0.277643 0 0" nodeId="22"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" nodeId="23">
+        <TransformGroup name="indoorAreaStart01" translation="-0.195 0 1.29071" nodeId="24">
+          <TransformGroup name="indoorAreaWidth01" translation="0 0 -2.72655" nodeId="25"/>
+          <TransformGroup name="indoorAreaHeight01" translation="0.278 0 0" nodeId="26"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="27">
+        <TransformGroup name="testAreaStart01" translation="-0.195 0 1.29071" nodeId="28">
+          <TransformGroup name="testAreaEnd01" translation="0.35 0 -2.72655" nodeId="29"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="30">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-0.195 0 1.29071" nodeId="31">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="0.349598 0 -2.72655" nodeId="32"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="visual" nodeId="33">
+        <Shape name="Sign" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="plane" translation="-0.0121493 0.812579 -0.0144849" shapeId="2" nodeId="35" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="6"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

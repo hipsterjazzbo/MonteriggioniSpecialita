@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+	<animatedObjects>
+		<!-- BGA -->
+		<animatedObject index="BGAGate" >
+            <animation duration="3.5">
+                <part node="0">
+                    <keyFrame time="0.0" rotation="180 180 180"/>
+                    <keyFrame time="1.0" rotation="180 77 180"/>
+                </part>
+                <part node="1">
+                    <keyFrame time="0.0" rotation="-180 -180 180"/>
+                    <keyFrame time="1.0" rotation="-180 -77 180"/>
+                </part>
+			</animation>
+			<controls triggerNode="2" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate"/>
+			<!--<openingHours startTime="9" endTime="18" disableIfClosed="true" closedText="$l10n_closedText_default"/>-->
+			<sounds>
+				<moving linkNode="1" template="metalDoorSqueaksSmall" />
+				<posEnd linkNode="1" template="metalDoorsOpen" />
+				<negEnd linkNode="1" template="metalDoorCloseRandom" />
+			</sounds>
+        </animatedObject>
+		
+		<!-- farm 02 -->
+		<animatedObject index="farm2houseGateLeft" >
+            <animation duration="3.5">
+                <part node="0">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 90 0"/>
+                </part>
+                <part node="1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -90 0"/>
+                </part>
+			</animation>
+			<controls triggerNode="4" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate"/>
+			<!--<openingHours startTime="9" endTime="18" disableIfClosed="true" closedText="$l10n_closedText_default"/>-->
+			<sounds>
+				<moving linkNode="1" template="metalDoorSqueaksSmall" />
+				<posEnd linkNode="1" template="metalDoorsOpen" />
+				<negEnd linkNode="1" template="metalDoorCloseRandom" />
+			</sounds>
+        </animatedObject>
+		<animatedObject index="farm2houseGateRight" >
+            <animation duration="3.5">
+                <part node="0">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 90 0"/>
+                </part>
+                <part node="1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -90 0"/>
+                </part>
+			</animation>
+			<controls triggerNode="4" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate"/>
+			<!--<openingHours startTime="9" endTime="18" disableIfClosed="true" closedText="$l10n_closedText_default"/>-->
+			<sounds>
+				<moving linkNode="1" template="metalDoorSqueaksSmall" />
+				<posEnd linkNode="1" template="metalDoorsOpen" />
+				<negEnd linkNode="1" template="metalDoorCloseRandom" />
+			</sounds>
+        </animatedObject>
+		
+		<!-- Farm 01 -->
+		<animatedObject index="farm01Gate" >
+            <animation duration="3.5">
+                <part node="0">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 100 0"/>
+                </part>
+                <part node="1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -100 0"/>
+                </part>
+			</animation>
+			<controls triggerNode="3" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate"/>
+			<sounds>
+				<moving linkNode="1" template="metalDoorSqueaksSmall" />
+				<posEnd linkNode="1" template="metalDoorsOpen" />
+				<negEnd linkNode="1" template="metalDoorCloseRandom" />
+			</sounds>
+        </animatedObject>
+		
+		
+		<!-- gardener / nursery -->
+		
+		<!-- big Garage Building -->
+		<animatedObject saveId="garage_doors_1" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -90"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" pitchScale="0.8"/>
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" />
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="garage_doors_2" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -90"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" pitchScale="0.8"/>
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" />
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="garage_doors_3" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -90"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" pitchScale="0.8"/>
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" />
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="garage_doors_4" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -90"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" pitchScale="0.8"/>
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" />
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="garage_doors_5" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -90"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" pitchScale="0.8"/>
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" />
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="garage_doors_6" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -90"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" pitchScale="0.8"/>
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" />
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="garage_doors_7" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -90"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" pitchScale="0.8"/>
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" />
+        </sounds>
+    </animatedObject>
+	<animatedObject saveId="garage_doors_8" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 -90" />
+                <keyFrame time="1" rotation="0 0 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_closeDoor" negText="action_openDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" pitchScale="0.8"/>
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" />
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="garage_doors_9" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 -90" />
+                <keyFrame time="1" rotation="0 0 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_closeDoor" negText="action_openDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" pitchScale="0.8"/>
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" />
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="garage_doors_10" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 -90" />
+                <keyFrame time="1" rotation="0 0 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_closeDoor" negText="action_openDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" pitchScale="0.8"/>
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" />
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="garage_doors_11" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -90"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" pitchScale="0.8"/>
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" />
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="garage_doors_12" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -90"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" pitchScale="0.8"/>
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" />
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="garage_doors_13" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -90"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" pitchScale="0.8"/>
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" />
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="garage_doors_14" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 0 -90"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" pitchScale="0.8"/>
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" />
+        </sounds>
+    </animatedObject>
+	
+    <animatedObject saveId="big_garage_doors_1" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+            <part node="1|1">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 90 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" />
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" loops="1"/>
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="big_garage_doors_2" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+            <part node="1|1">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 90 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" />
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" loops="1"/>
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="big_garage_doors_3" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+            <part node="1|1">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 90 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" />
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" loops="1"/>
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="big_garage_doors_4" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+            <part node="1|1">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 90 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" />
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" loops="1"/>
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="big_garage_doors_5" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+            <part node="1|1">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 90 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" />
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" loops="1"/>
+        </sounds>
+    </animatedObject>
+	<animatedObject saveId="big_garage_doors_6" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+            <part node="1|1">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 90 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" />
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" loops="1"/>
+        </sounds>
+    </animatedObject>
+	<animatedObject saveId="big_garage_doors_7" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+            <part node="1|1">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 90 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" />
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" loops="1"/>
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="big_garage_doors_8" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+            <part node="1|1">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 90 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" />
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" loops="1"/>
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="big_garage_doors_9" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+            <part node="1|1">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 90 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" />
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" loops="1"/>
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="big_garage_doors_10" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+            <part node="1|1">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 90 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" />
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" loops="1"/>
+        </sounds>
+    </animatedObject>
+    <animatedObject saveId="big_garage_doors_11" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+            <part node="1|1">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 90 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" />
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" loops="1"/>
+        </sounds>
+    </animatedObject>
+	<animatedObject saveId="big_garage_doors_12" >
+        <animation duration="4">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+            <part node="1|1">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 90 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1" file="map/audio/metalDoorBigLoop.wav" loops="0" />
+            <posEnd linkNode="1" file="map/audio/gateBigOpen.wav" />
+            <negEnd linkNode="1" file="map/audio/gateBigClose.wav" loops="1"/>
+        </sounds>
+    </animatedObject>
+   
+    <animatedObject saveId="normal_door_1" >
+        <animation duration="3">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1|0" template="metalDoorsLoop" loops="0" volumeScale="0.2"/>
+            <posEnd linkNode="1|0" template="metalDoorsOpen" />
+            <negEnd linkNode="1|0" template="metalDoorsClose" />
+        </sounds>
+    </animatedObject>
+	<animatedObject saveId="normal_door_2" >
+        <animation duration="3">
+            <part node="1|0">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+        <sounds>
+            <moving linkNode="1|0" template="metalDoorsLoop" loops="0" volumeScale="0.2"/>
+            <posEnd linkNode="1|0" template="metalDoorsOpen" />
+            <negEnd linkNode="1|0" template="metalDoorsClose" />
+        </sounds>
+    </animatedObject>
+	
+	<animatedObject saveId="garage_light_1" >
+      <animation duration="0.1">
+        <part node="1|0"> <!--index of Lever of the Lightswitch-->
+            <keyFrame time="0" rotation="0 0 0" />
+            <keyFrame time="1" rotation="-90 0 0" />
+        </part>
+        <part node="2|0|0"> <!--index of TG with realLights and emmisive shape-->
+            <keyFrame time="0.5" visibility="false" />
+            <keyFrame time="0.55" visibility="true" />
+        </part>
+        <part node="2|1|0"> <!--index of TG with realLights and emmisive shape-->
+            <keyFrame time="0.5" visibility="false" />
+            <keyFrame time="0.55" visibility="true" />
+        </part>
+        <part node="2|2|0"> <!--index of TG with realLights and emmisive shape-->
+            <keyFrame time="0.5" visibility="false" />
+            <keyFrame time="0.55" visibility="true" />
+        </part>
+        <part node="2|3|0"> <!--index of TG with realLights and emmisive shape-->
+            <keyFrame time="0.5" visibility="false" />
+            <keyFrame time="0.55" visibility="true" />
+        </part>
+        </animation>
+       <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_turnOnLight" negText="action_turnOffLight" />
+        <sounds>
+            <moving linkNode="1|0" template="lizardFloodLight" loops="1" supportsReverb="false"/>
+        </sounds>
+    </animatedObject>
+	<animatedObject saveId="garage_light_2" >
+      <animation duration="0.1">
+        <part node="1|0"> <!--index of Lever of the Lightswitch-->
+            <keyFrame time="0" rotation="0 0 0" />
+            <keyFrame time="1" rotation="-90 0 0" />
+        </part>
+        <part node="2|0|0"> <!--index of TG with realLights and emmisive shape-->
+            <keyFrame time="0.5" visibility="false" />
+            <keyFrame time="0.55" visibility="true" />
+        </part>
+        <part node="2|1|0"> <!--index of TG with realLights and emmisive shape-->
+            <keyFrame time="0.5" visibility="false" />
+            <keyFrame time="0.55" visibility="true" />
+        </part>
+        <part node="2|2|0"> <!--index of TG with realLights and emmisive shape-->
+            <keyFrame time="0.5" visibility="false" />
+            <keyFrame time="0.55" visibility="true" />
+        </part>
+        <part node="2|3|0"> <!--index of TG with realLights and emmisive shape-->
+            <keyFrame time="0.5" visibility="false" />
+            <keyFrame time="0.55" visibility="true" />
+        </part>
+        </animation>
+       <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_turnOnLight" negText="action_turnOffLight" />
+        <sounds>
+            <moving linkNode="1|0" template="lizardFloodLight" loops="1" supportsReverb="false"/>
+        </sounds>
+    </animatedObject>
+	
+	<animatedObject saveId="longgate_1" >
+        <animation duration="8">
+            <part node="0">
+                <keyFrame time="0" translation="-5.317 0.877 0"  />
+				<keyFrame time="1" translation="1.811 0.877 0" />
+            </part>
+        </animation>
+        <controls triggerNode="1" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+        <sounds>
+            <moving linkNode="1" template="slidingGateMetalLoop" loops="0" />
+            <posEnd linkNode="1" template="slidingGateMetalOpen" />
+            <negEnd linkNode="1" template="slidingGateMetalClose" />
+        </sounds>
+    </animatedObject>
+	<animatedObject saveId="longgate_2" >
+        <animation duration="8">
+            <part node="0">
+                <keyFrame time="0" translation="-5.317 0.877 0"  />
+				<keyFrame time="1" translation="1.811 0.877 0" />
+            </part>
+        </animation>
+        <controls triggerNode="1" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+        <sounds>
+            <moving linkNode="1" template="slidingGateMetalLoop" loops="0" />
+            <posEnd linkNode="1" template="slidingGateMetalOpen" />
+            <negEnd linkNode="1" template="slidingGateMetalClose" />
+        </sounds>
+    </animatedObject>
+		
+
+	</animatedObjects>

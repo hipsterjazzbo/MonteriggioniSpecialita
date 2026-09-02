@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="farmhouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_object_farmhouse</name>
+        <functions>
+            <function>$l10n_function_farmHouse</function>
+        </functions>
+        <image>map/placeables/FS25_FarmhouseFR/store_farmhouseFR.png</image>
+		<canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <price>50000</price>
+        <dailyUpkeep>150</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>farmhouses</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>farmhouses</tab>
+        </brush>
+		<canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+    </storeData>
+
+    <base>
+        <filename>map/placeables/FS25_FarmhouseFR/farmhouseFR.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+		<boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testAreaStart1" endNode="testAreaEnd1"/>
+        </testAreas>
+		<sounds>
+            <place template="medImp" pitchScale="1.2"/>
+        </sounds>
+    </placement>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1"/>
+    </tipOcclusionUpdateAreas>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart1" widthNode="clearAreaWidth1" heightNode="clearAreaHeight1"/>
+    </clearAreas>
+
+	<leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="levelAreaStart1" widthNode="levelAreaWidth1" heightNode="levelAreaHeight1" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart1" widthNode="indoorAreaWidth1" heightNode="indoorAreaHeight1" />
+    </indoorAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart1" endNode="tipOcclusionUpdateAreaEnd1"/>
+        </updateAreas>
+    </ai>
+	
+	<hotspots>
+        <hotspot type="FARM" linkNode="0>" teleportNode="spawnPoint" />
+    </hotspots>
+	
+    <farmhouse spawnNode="spawnPoint">
+        <sleeping triggerNode="sleepTrigger" cameraNode="sleepCameraNode"/>
+    </farmhouse>
+
+    <wardrobe triggerNode="wardrobeTrigger"/>
+
+    <triggerMarkers>
+        <triggerMarker node="sleepTriggerMarker" 	filename="$data/shared/assets/marker/markerIconSleep.i3d"/>
+        <triggerMarker node="wardrobeTriggerMarker" filename="$data/shared/assets/marker/markerIconWardrobe.i3d"/>
+    </triggerMarkers>
+
+    <lights>
+        <group activateText="$l10n_action_turnOnLight" deactivateText="$l10n_action_turnOffLight" triggerNode="lightTrigger">
+            <sounds>
+                <toggle template="lizardFloodLight" innerRadius="20" outerRadius="500" volumeScale="0.2"/>
+            </sounds>
+        </group>
+
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/garageCeilingLamp.xml" linkNode="garageCeilingLamp1" />
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/garageCeilingLamp.xml" linkNode="garageCeilingLamp2" />
+
+        <realLights>
+            <low>
+                <light node="realLightsLow"/>
+            </low>
+            <high>
+                <light node="realLightsHigh"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <animatedObjects>
+        <animatedObject saveId="slidingDoorGarage">
+            <animation duration="3">
+                <part node="garageDoorUpper">
+                    <keyFrame time="0.0" translation="0 1.45 0"/>
+                    <keyFrame time="1.0" translation="0 3 0"/>
+                </part>
+                <part node="garageDoorLower">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 2.9 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="garagePlayerTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor"/>
+            <sounds>
+                <moving linkNode="garageDoor" template="slidingGateWoodLoop"/>
+                <posEnd linkNode="garageDoor" template="woodDoorOpen"/>
+                <negEnd linkNode="garageDoor" template="woodDoorClose"/>
+            </sounds>
+        </animatedObject>
+    </animatedObjects>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="map/placeables/FS25_FarmhouseFR/garageProps.i3d" node="0" linkNode="props"/>
+    </dynamicallyLoadedParts>
+
+    <i3dMappings>
+        <i3dMapping id="props" node="0>0|1" />
+        <i3dMapping id="realLightsLow" node="0>1|0|0" />
+        <i3dMapping id="realLightsHigh" node="0>1|0|1" />
+        <i3dMapping id="garageCeilingLamp1" node="0>1|1|0" />
+        <i3dMapping id="garageCeilingLamp2" node="0>1|1|1" />
+        <i3dMapping id="lightTrigger" node="0>1|2|0" />
+        <i3dMapping id="sleepTrigger" node="0>2|0|0" />
+        <i3dMapping id="sleepTriggerMarker" node="0>2|0|1" />
+        <i3dMapping id="sleepCameraNode" node="0>2|0|2" />
+        <i3dMapping id="spawnPoint" node="0>2|0|3" />
+        <i3dMapping id="wardrobeTrigger" node="0>2|1|0" />
+        <i3dMapping id="wardrobeTriggerMarker" node="0>2|1|1" />
+        <i3dMapping id="garageDoor" node="0>3|0" />
+        <i3dMapping id="garageDoorUpper" node="0>3|0|0" />
+        <i3dMapping id="garageDoorLower" node="0>3|0|1" />
+        <i3dMapping id="garagePlayerTrigger" node="0>3|0|2" />
+        <i3dMapping id="clearAreaStart1" node="0>4|0" />
+        <i3dMapping id="clearAreaWidth1" node="0>4|0|0" />
+        <i3dMapping id="clearAreaHeight1" node="0>4|0|1" />
+        <i3dMapping id="levelAreaStart1" node="0>5|0" />
+        <i3dMapping id="levelAreaWidth1" node="0>5|0|0" />
+        <i3dMapping id="levelAreaHeight1" node="0>5|0|1" />
+        <i3dMapping id="indoorAreaStart1" node="0>6|0" />
+        <i3dMapping id="indoorAreaWidth1" node="0>6|0|0" />
+        <i3dMapping id="indoorAreaHeight1" node="0>6|0|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart1" node="0>7|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd1" node="0>7|0|0" />
+        <i3dMapping id="testAreaStart1" node="0>8|0" />
+        <i3dMapping id="testAreaEnd1" node="0>8|0|0" />
+    </i3dMappings>
+</placeable>

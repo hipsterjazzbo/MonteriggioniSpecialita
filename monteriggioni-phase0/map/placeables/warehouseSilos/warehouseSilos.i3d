@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="warehouseSilos.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.11"/>
+  </Asset>
+
+  <Files>
+    <File fileId="19" filename="$data/placeables/neuero/shared/neueroSilosDecal_diffuse.png"/>
+    <File fileId="4" filename="$data/placeables/neuero/shared/neueroSilos_diffuse.png"/>
+    <File fileId="8" filename="$data/placeables/neuero/shared/neueroSilos_mask.png"/>
+    <File fileId="5" filename="$data/placeables/neuero/shared/neueroSilos_normal.png"/>
+    <File fileId="6" filename="$data/placeables/neuero/shared/neueroSilos_specular.png"/>
+    <File fileId="13" filename="$data/placeables/unia/shared/uniaSilosGrid_diffuse.png"/>
+    <File fileId="14" filename="$data/placeables/unia/shared/uniaSilosGrid_normal.png"/>
+    <File fileId="15" filename="$data/placeables/unia/shared/uniaSilosGrid_specular.png"/>
+    <File fileId="7" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="20" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="24" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="16" filename="$data/shared/assets/assetLibraryDecals_diffuse.png"/>
+    <File fileId="17" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
+    <File fileId="18" filename="$data/shared/assets/assetLibraryDecals_vmask.png"/>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+    <File fileId="26" filename="$data/shared/default_specular.png"/>
+    <File fileId="21" filename="$data/shared/detailLibrary/metallic/metalGalvanized_diffuse.dds"/>
+    <File fileId="22" filename="$data/shared/detailLibrary/metallic/metalGalvanized_normal.dds"/>
+    <File fileId="23" filename="$data/shared/detailLibrary/metallic/rough_specular.dds"/>
+    <File fileId="27" filename="../warehouseDepot/gelb.dds"/>
+    <File fileId="25" filename="../warehouseDepot/logo_round.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="assetLibraryDecals_mat" materialId="5">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="lambert2" materialId="7" diffuseColor="0.501961 0.501961 0.501961 1">
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="letter_mat" materialId="8" customShaderId="24">
+      <Texture fileId="27"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="26"/>
+    </Material>
+    <Material name="neueroSilos_mat" materialId="9" customShaderId="7">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+      <Custommap name="mMaskMap" fileId="8"/>
+    </Material>
+    <Material name="neueroSilosDecal_mat" materialId="10" alphaBlending="true" customShaderId="20">
+      <Texture fileId="19"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="sign_mat" materialId="11" customShaderId="24">
+      <Texture fileId="21"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+    </Material>
+    <Material name="uniaSilosGrid_mat" materialId="12">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="13">
+      <Texture fileId="25"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="26"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="366" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="warehouseSilos.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="nl1622_16000" nodeId="54">
+      <TransformGroup name="clearAreas" nodeId="55">
+        <TransformGroup name="clearAreaStart01" translation="-8 0 -56" nodeId="56">
+          <TransformGroup name="clearAreaWidth01" translation="0 0 64" nodeId="57"/>
+          <TransformGroup name="clearAreaHeight01" translation="32 0 0" nodeId="58"/>
+        </TransformGroup>
+        <TransformGroup name="clearAreaStart02" translation="-6 0 6" nodeId="59">
+          <TransformGroup name="clearAreaWidth02" translation="0 0 14" nodeId="60"/>
+          <TransformGroup name="clearAreaHeight02" translation="10 0 0" nodeId="61"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" nodeId="62">
+        <TransformGroup name="levelAreaStart01" translation="-10 0 -58" nodeId="63">
+          <TransformGroup name="levelAreaWidth01" translation="0 0 68" nodeId="64"/>
+          <TransformGroup name="levelAreaHeight01" translation="36 0 0" nodeId="65"/>
+        </TransformGroup>
+        <TransformGroup name="levelAreaStart02" translation="-8 0 6" nodeId="66">
+          <TransformGroup name="levelAreaWidth02" translation="0 0 16" nodeId="67"/>
+          <TransformGroup name="levelAreaHeight02" translation="14 0 0" nodeId="68"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="69">
+        <TransformGroup name="testAreaStart01" translation="-8 0 -56" nodeId="70">
+          <TransformGroup name="testAreaEnd01" translation="32 29 64" nodeId="71"/>
+        </TransformGroup>
+        <TransformGroup name="testAreaStart02" translation="-6 0 6" nodeId="72">
+          <TransformGroup name="testAreaEnd02" translation="10 10 14" nodeId="73"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="74">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-8 0 -56" nodeId="75">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="32 0 76" nodeId="76"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="lights" nodeId="77">
+        <TransformGroup name="realLights" nodeId="78">
+          <TransformGroup name="realLightsLow" nodeId="79">
+            <Light name="pointLight3" translation="-1.54811 4.20472 16.9808" clipDistance="75" nodeId="80" type="point" color="0.07 0.07 0.07" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLight4" translation="-1.54811 4.20472 14.4909" clipDistance="75" nodeId="81" type="point" color="0.07 0.07 0.07" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLight5" translation="-1.54811 4.20472 12.1141" clipDistance="75" nodeId="82" type="point" color="0.07 0.07 0.07" emitDiffuse="true" emitSpecular="true" range="18"/>
+          </TransformGroup>
+          <TransformGroup name="realLightsHigh" nodeId="83">
+            <Light name="realLightsHigh01" translation="0.276417 6.08676 16.9808" rotation="-90 0 0" clipDistance="75" nodeId="84" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="10" coneAngle="130" dropOff="4"/>
+            <Light name="realLightsHigh02" translation="0.276417 6.08676 12.0535" rotation="-90 0 0" clipDistance="75" nodeId="85" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="10" coneAngle="130" dropOff="4"/>
+            <Light name="realLightsHigh03" translation="-1.54811 6.08889 12.0535" rotation="-90 0 0" clipDistance="75" nodeId="86" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="10" coneAngle="130" dropOff="4"/>
+            <Light name="realLightsHigh04" translation="-1.54811 6.08889 16.9808" rotation="-90 0 0" clipDistance="75" nodeId="87" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="10" coneAngle="130" dropOff="4"/>
+            <Light name="pointLight01" translation="-1.54811 4.20472 16.9808" clipDistance="75" nodeId="88" type="point" color="0.07 0.07 0.07" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLight1" translation="-1.54811 4.20472 14.4909" clipDistance="75" nodeId="89" type="point" color="0.07 0.07 0.07" emitDiffuse="true" emitSpecular="true" range="18"/>
+            <Light name="pointLight2" translation="-1.54811 4.20472 12.1141" clipDistance="75" nodeId="90" type="point" color="0.07 0.07 0.07" emitDiffuse="true" emitSpecular="true" range="18"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="linkNodes" nodeId="91">
+          <TransformGroup name="lightNode01" translation="0.276417 6.08676 16.9808" nodeId="92"/>
+          <TransformGroup name="lightNode02" translation="0.276417 6.08676 12.0535" nodeId="93"/>
+          <TransformGroup name="lightNode03" translation="-1.54811 6.08889 12.0535" nodeId="94"/>
+          <TransformGroup name="lightNode04" translation="-1.54811 6.08889 16.9808" nodeId="95"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="silo" nodeId="96">
+        <TransformGroup name="mapPosition" translation="-0.178355 0.178836 12.3732" nodeId="97"/>
+        <TransformGroup name="storage" nodeId="98"/>
+        <TransformGroup name="loadingStation" translation="-0.01187 4.98041 12.2658" visibility="false" nodeId="99">
+          <TransformGroup name="loadingTriggers" translation="0 -0.215055 0" nodeId="100">
+            <Shape name="loadingTrigger" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="101" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <TransformGroup name="dischargeNode" nodeId="102"/>
+            <TransformGroup name="dischargeEffect" nodeId="103">
+              <Shape name="pipeEffect" rotation="90 0 0" shapeId="2" clipDistance="300" nodeId="104" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="pipeEffectSmoke" translation="0 -2.56733 0" shapeId="3" clipDistance="100" nodeId="105" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </TransformGroup>
+            <TransformGroup name="aiLoadingNode" translation="0.01187 -3.98236 -0.051731" rotation="0 -90 0" nodeId="106"/>
+          </TransformGroup>
+          <Shape name="aiLoadingSpline" translation="-0.491926 -4.72358 -0.005076" shapeId="4" visibility="false" nodeId="107" castsShadows="false" receiveShadows="false"/>
+        </TransformGroup>
+        <TransformGroup name="unloadingStation" translation="-0.629605 -0.507578 14.5546" nodeId="109">
+          <Shape name="exactFillRootNode" rotation="0 90 0" shapeId="5" static="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="110" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="aiUnloadingNode" translation="0.629605 1.29057 2.26764" rotation="0 -90 0" nodeId="111"/>
+          <Shape name="aiUnloadingSpline" translation="0.125808 0.666578 2.37538" shapeId="6" visibility="false" nodeId="112" castsShadows="false" receiveShadows="false"/>
+        </TransformGroup>
+        <Shape name="infoTrigger" translation="-0.928198 1.73466 14.181" shapeId="7" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="113" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        <Shape name="palletTrigger" translation="-0.535215 1.04606 14.5545" shapeId="8" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="365" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="366"/>
+      </TransformGroup>
+      <TransformGroup name="marker" translation="0 0 12.2577" nodeId="114">
+        <TransformGroup name="markerLoading" visibility="false" nodeId="115"/>
+        <TransformGroup name="markerUnloading" translation="0 0 4.67648" nodeId="116"/>
+      </TransformGroup>
+      <TransformGroup name="visuals_lod" lodDistance="0 100" nodeId="117">
+        <TransformGroup name="nl1622_16000_lod0" translation="0 -0.159 0" nodeId="118">
+          <TransformGroup name="silo1" nodeId="119">
+            <Shape name="silo1" shapeId="9" clipDistance="300" nodeId="120" castsShadows="true" receiveShadows="true" skinBindNodeIds="120 124 131 134 138 142 145 149 156 159 163 168 172 179 182 186 190 193 197 204 207 211 283 285 287 289 291 293 295 297 299 301" materialIds="9">
+              <Shape name="grid" translation="4e-06 19.1558 3.7e-05" shapeId="10" clipDistance="30" nodeId="121" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              <Shape name="screws" translation="0 -0.5 4.1e-05" shapeId="11" clipDistance="50" nodeId="122" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              <Shape name="decal1" translation="0 17.5311 -4.2e-05" shapeId="12" clipDistance="300" nodeId="123" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="10"/>
+            </Shape>
+            <TransformGroup name="silo1Top" translation="0 22.3251 0" clipDistance="300" nodeId="124">
+              <Shape name="screws" shapeId="13" clipDistance="50" nodeId="125" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo1BridgeAttacher" translation="0.000808 19.9465 7.29365" clipDistance="300" nodeId="126">
+              <Shape name="screws" shapeId="14" clipDistance="50" nodeId="127" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo1BridgeLadder" translation="-0.001596 19.943 -8.00034" clipDistance="300" nodeId="128">
+              <Shape name="grid" shapeId="15" clipDistance="100" nodeId="129" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              <Shape name="rivets" shapeId="16" clipDistance="100" nodeId="130" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo1BottomPipe" translation="-0.336974 0.534924 -8.07801" clipDistance="300" nodeId="131">
+              <Shape name="screws" shapeId="17" clipDistance="25" nodeId="132" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="silo2" translation="-8 0 -16" nodeId="133">
+            <TransformGroup name="silo2" translation="8 0 0" rotation="0 202.55 0" clipDistance="300" nodeId="134">
+              <Shape name="decal5" translation="0 17.5311 0" shapeId="12" clipDistance="300" nodeId="135" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="10"/>
+              <Shape name="grid" translation="4e-06 19.1558 3.7e-05" shapeId="10" clipDistance="30" nodeId="136" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              <Shape name="screws" translation="0 -0.5 4.1e-05" shapeId="11" clipDistance="50" nodeId="137" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo2Top" translation="8 22.3251 0" clipDistance="300" nodeId="138">
+              <Shape name="screws" shapeId="13" clipDistance="50" nodeId="139" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo2BridgeAttacher" translation="8 19.9465 -7.29927" rotation="0 180 0" clipDistance="300" nodeId="140">
+              <Shape name="screws" shapeId="14" clipDistance="50" nodeId="141" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo2BottomPipe" translation="7.66303 0.534924 -8.04169" clipDistance="300" nodeId="142">
+              <Shape name="screws" shapeId="17" clipDistance="25" nodeId="143" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="silo3" translation="-8 0 -16" nodeId="144">
+            <TransformGroup name="silo3" translation="8 0 -16" clipDistance="300" nodeId="145">
+              <Shape name="decal6" translation="0 17.5311 0" shapeId="12" clipDistance="300" nodeId="146" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="10"/>
+              <Shape name="grid" translation="4e-06 19.1558 3.7e-05" shapeId="10" clipDistance="30" nodeId="147" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              <Shape name="screws" translation="0 -0.5 4.1e-05" shapeId="11" clipDistance="50" nodeId="148" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo3Top" translation="8 22.3251 -16" clipDistance="300" nodeId="149">
+              <Shape name="screws" shapeId="13" clipDistance="50" nodeId="150" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo3BridgeAttacher" translation="8.00081 19.9465 -8.70635" clipDistance="300" nodeId="151">
+              <Shape name="screws" shapeId="14" clipDistance="50" nodeId="152" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo3BridgeLadder" translation="7.99983 19.943 -24.0082" clipDistance="300" nodeId="153">
+              <Shape name="grid" shapeId="15" clipDistance="100" nodeId="154" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              <Shape name="rivets" shapeId="16" clipDistance="100" nodeId="155" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo3BottomPIpe" translation="7.66303 0.534924 -24.1175" clipDistance="300" nodeId="156">
+              <Shape name="screws" shapeId="17" clipDistance="25" nodeId="157" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="silo4" translation="-8 0 -16" nodeId="158">
+            <TransformGroup name="silo4" translation="8 0 -32" rotation="0 202.55 0" clipDistance="300" nodeId="159">
+              <Shape name="decal7" translation="0 17.5311 0" shapeId="12" clipDistance="300" nodeId="160" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="10"/>
+              <Shape name="grid" translation="4e-06 19.1558 3.7e-05" shapeId="10" clipDistance="30" nodeId="161" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              <Shape name="screws" translation="0 -0.5 4.1e-05" shapeId="11" clipDistance="50" nodeId="162" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo4Top" translation="8 22.3251 -32" clipDistance="300" nodeId="163">
+              <Shape name="screws" shapeId="13" clipDistance="50" nodeId="164" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo4BridgeAttacher" translation="8.00081 19.9465 -39.3034" rotation="0 180 0" clipDistance="300" nodeId="165">
+              <Shape name="screws" shapeId="14" clipDistance="50" nodeId="166" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="silo5" translation="23.6233 0 -16" nodeId="167">
+            <TransformGroup name="silo5" translation="-8 0 16" clipDistance="300" nodeId="168">
+              <Shape name="decal" translation="0 17.5311 0" shapeId="12" clipDistance="300" nodeId="169" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="10"/>
+              <Shape name="grid" translation="4e-06 19.1558 3.7e-05" shapeId="10" clipDistance="30" nodeId="170" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              <Shape name="screws" translation="0 -0.5 4.1e-05" shapeId="11" clipDistance="50" nodeId="171" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo5Top" translation="-8 22.3251 16" clipDistance="300" nodeId="172">
+              <Shape name="screws" shapeId="13" clipDistance="50" nodeId="173" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo5BridgeAttacher" translation="-7.99919 19.9465 23.2936" clipDistance="300" nodeId="174">
+              <Shape name="screws" shapeId="14" clipDistance="50" nodeId="175" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo5BridgeLadder" translation="-7.995 19.943 7.9997" clipDistance="300" nodeId="176">
+              <Shape name="grid" shapeId="15" clipDistance="100" nodeId="177" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              <Shape name="rivets" shapeId="16" clipDistance="100" nodeId="178" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo5BottomPipe" translation="-7.62947 0.534924 7.92203" clipDistance="300" nodeId="179">
+              <Shape name="screws" shapeId="17" clipDistance="25" nodeId="180" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="silo6" translation="23.6233 0 -16" nodeId="181">
+            <TransformGroup name="silo6" translation="-8 0 0" rotation="0 202.55 0" clipDistance="300" nodeId="182">
+              <Shape name="decal2" translation="0 17.531 0" shapeId="12" clipDistance="300" nodeId="183" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="10"/>
+              <Shape name="grid" translation="4e-06 19.1558 3.7e-05" shapeId="10" clipDistance="30" nodeId="184" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              <Shape name="screws" translation="0 -0.5 4.1e-05" shapeId="11" clipDistance="50" nodeId="185" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo6Top" translation="-8 22.3251 0" clipDistance="300" nodeId="186">
+              <Shape name="screws" shapeId="13" clipDistance="50" nodeId="187" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo6BridgeAttacher" translation="-7.99919 19.9465 -7.29114" rotation="0 180 0" clipDistance="300" nodeId="188">
+              <Shape name="screws" shapeId="14" clipDistance="50" nodeId="189" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo6BottomPipe" translation="-7.62947 0.534924 -8.04164" clipDistance="300" nodeId="190">
+              <Shape name="screws" shapeId="17" clipDistance="25" nodeId="191" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="silo7" translation="23.6233 0 -16" nodeId="192">
+            <TransformGroup name="silo7" translation="-8 0 -16" clipDistance="300" nodeId="193">
+              <Shape name="decal3" translation="0 17.5311 0" shapeId="12" clipDistance="300" nodeId="194" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="10"/>
+              <Shape name="grid" translation="4e-06 19.1558 3.7e-05" shapeId="10" clipDistance="30" nodeId="195" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              <Shape name="screws" translation="0 -0.5 4.1e-05" shapeId="11" clipDistance="50" nodeId="196" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo7Top" translation="-8 22.3251 -16" clipDistance="300" nodeId="197">
+              <Shape name="screws" shapeId="13" clipDistance="50" nodeId="198" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo7BridgeAttacher" translation="-7.99919 19.9465 -8.70635" clipDistance="300" nodeId="199">
+              <Shape name="screws" shapeId="14" clipDistance="50" nodeId="200" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo7BridgeLadder" translation="-7.99523 19.943 -24.008" clipDistance="300" nodeId="201">
+              <Shape name="grid" shapeId="15" clipDistance="100" nodeId="202" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              <Shape name="rivets" shapeId="16" clipDistance="100" nodeId="203" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo7BottomPIpe" translation="-7.62947 0.534924 -24.1174" clipDistance="300" nodeId="204">
+              <Shape name="screws" shapeId="17" clipDistance="25" nodeId="205" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="silo8" translation="23.6233 0 -16" nodeId="206">
+            <TransformGroup name="silo8" translation="-8 0 -32" rotation="0 202.55 0" clipDistance="300" nodeId="207">
+              <Shape name="decal4" translation="0 17.5311 0" shapeId="12" clipDistance="300" nodeId="208" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="10"/>
+              <Shape name="grid" translation="4e-06 19.1558 3.7e-05" shapeId="10" clipDistance="30" nodeId="209" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              <Shape name="screws" translation="0 -0.5 4.1e-05" shapeId="11" clipDistance="50" nodeId="210" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo8Top" translation="-8 22.3251 -32" clipDistance="300" nodeId="211">
+              <Shape name="screws" shapeId="13" clipDistance="50" nodeId="212" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="silo8BridgeAttacher" translation="-7.99919 19.9465 -39.3034" rotation="0 180 0" clipDistance="300" nodeId="213">
+              <Shape name="screws" shapeId="14" clipDistance="50" nodeId="214" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="bridge" translation="7.66183 0 -16.032" nodeId="215">
+            <TransformGroup name="bridgeLeft" translation="-7.77691 0 16.032" nodeId="216">
+              <TransformGroup name="bridgeLeftStart" translation="-0.157948 24.0809 6.60433" clipDistance="300" nodeId="217">
+                <Shape name="scews" shapeId="18" clipDistance="30" nodeId="218" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeLeft1" translation="-0.15795 24.6539 5.63651" clipDistance="300" nodeId="219">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="220" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeLeft2" translation="-0.15795 24.6539 -1.36349" clipDistance="300" nodeId="221">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="222" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeLeft3" translation="-0.15795 24.6539 -8.36349" clipDistance="300" nodeId="223">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="224" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeLeft4" translation="-0.15795 24.6539 -15.3635" clipDistance="300" nodeId="225">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="226" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeLeft5" translation="-0.15795 24.6539 -22.3635" clipDistance="300" nodeId="227">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="228" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeLeft6" translation="-0.15795 24.6539 -29.3635" clipDistance="300" nodeId="229">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="230" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeLeft7" translation="-0.15795 24.6539 -36.3635" clipDistance="300" nodeId="231">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="232" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeLeft8" translation="-0.15795 24.6539 -43.3635" clipDistance="300" nodeId="233">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="234" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeLeft9" translation="-0.158 24.0809 -52.1137" clipDistance="300" nodeId="235">
+                <Shape name="screws" shapeId="20" clipDistance="30" nodeId="236" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeLeftEnd" translation="-0.158 24.0809 -54.835" rotation="0 180 0" clipDistance="300" nodeId="237">
+                <Shape name="scews" shapeId="18" clipDistance="30" nodeId="238" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeLeftConnector" translation="-0.158 24.0809 -53.8697" clipDistance="300" nodeId="239">
+                <Shape name="screws" translation="0 -1.9e-05 1.2e-05" shapeId="21" clipDistance="30" nodeId="240" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="bridgeRight" translation="-7.77691 0 16.032" nodeId="241">
+              <TransformGroup name="bridgeRightStart" translation="15.4572 24.0809 6.60433" clipDistance="300" nodeId="242">
+                <Shape name="scews" shapeId="18" clipDistance="30" nodeId="243" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeRight1" translation="15.4565 24.6539 5.63651" clipDistance="300" nodeId="244">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="245" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeRight2" translation="15.4565 24.6539 -1.36349" clipDistance="300" nodeId="246">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="247" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeRight3" translation="15.4565 24.6539 -8.36349" clipDistance="300" nodeId="248">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="249" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeRight4" translation="15.4565 24.6539 -15.3635" clipDistance="300" nodeId="250">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="251" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeRight5" translation="15.4565 24.6539 -22.3635" clipDistance="300" nodeId="252">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="253" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeRight6" translation="15.4565 24.6539 -29.3635" clipDistance="300" nodeId="254">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="255" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeRight7" translation="15.4565 24.6539 -36.3635" clipDistance="300" nodeId="256">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="257" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeRight8" translation="15.4565 24.6539 -43.3635" clipDistance="300" nodeId="258">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="259" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeRight9" translation="15.456 24.0809 -52.1137" clipDistance="300" nodeId="260">
+                <Shape name="screws" shapeId="20" clipDistance="30" nodeId="261" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeRightEnd" translation="15.4572 24.0809 -54.835" rotation="0 180 0" clipDistance="300" nodeId="262">
+                <Shape name="scews" shapeId="18" clipDistance="30" nodeId="263" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeRightConnector" translation="15.456 24.0809 -53.8697" clipDistance="300" nodeId="264">
+                <Shape name="screws" translation="0 -1.9e-05 1.2e-05" shapeId="21" clipDistance="30" nodeId="265" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="bridgeFront" translation="-7.77691 0 16.032" nodeId="266">
+              <TransformGroup name="bridgeFrontStart" translation="1.42627 24.0809 6.60433" rotation="0 -90 0" clipDistance="300" nodeId="267">
+                <Shape name="scews" shapeId="18" clipDistance="30" nodeId="268" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeFront1" translation="2.39988 24.6539 6.60433" rotation="0 -90 0" clipDistance="300" nodeId="269">
+                <Shape name="screws" translation="2e-06 -0.573069 -3.5" shapeId="19" clipDistance="30" nodeId="270" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeFront2" translation="11.1497 24.0809 6.60433" rotation="0 -90 0" clipDistance="300" nodeId="271">
+                <Shape name="screws" shapeId="20" clipDistance="30" nodeId="272" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeFrontEnd" translation="13.8734 24.0809 6.60433" rotation="0 90 0" clipDistance="300" nodeId="273">
+                <Shape name="scews" shapeId="18" clipDistance="30" nodeId="274" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+              <TransformGroup name="bridgeFrontConnector" translation="12.9037 24.0809 6.60436" rotation="0 -90 0" clipDistance="300" nodeId="275">
+                <Shape name="screws" translation="0 -1.9e-05 1.2e-05" shapeId="22" clipDistance="30" nodeId="276" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="ladder" translation="17.6882 9.38552 -8.01203" shapeId="23" clipDistance="300" nodeId="277" castsShadows="true" receiveShadows="true" skinBindNodeIds="277 126 128 140 151 153 165 174 176 188 199 201 213 217 219 221 223 225 227 229 231 233 235 237 239 242 244 246 248 250 252 254 256 258 260 262 264 267 269 271 273 275 281 303 306 308 310 312 314 316 318 320 322 324 326 328 331 334 336" materialIds="9">
+            <Shape name="screws" shapeId="24" clipDistance="50" nodeId="278" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="grid" translation="0.3875 2.27219 -0.335858" shapeId="25" clipDistance="30" nodeId="279" castsShadows="true" receiveShadows="true" materialIds="12"/>
+          </Shape>
+          <TransformGroup name="pipeLeft" translation="0.4 0 0" nodeId="280">
+            <TransformGroup name="pipeLeftStart" translation="-0.400584 23.8364 5.58238" clipDistance="300" nodeId="281">
+              <Shape name="rivets" translation="2e-06 -0.000725 0.549692" shapeId="26" clipDistance="100" nodeId="282" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft1" translation="-0.400584 23.8364 5.58238" clipDistance="300" nodeId="283">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="284" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft2" translation="-0.400584 23.8364 0.332376" clipDistance="300" nodeId="285">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="286" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft3" translation="-0.400584 23.8364 -4.91762" clipDistance="300" nodeId="287">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="288" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft4" translation="-0.400584 23.8364 -10.1676" clipDistance="300" nodeId="289">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="290" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft5" translation="-0.400584 23.8364 -15.4176" clipDistance="300" nodeId="291">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="292" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft6" translation="-0.400584 23.8364 -20.6676" clipDistance="300" nodeId="293">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="294" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft7" translation="-0.400584 23.8364 -25.9176" clipDistance="300" nodeId="295">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="296" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft8" translation="-0.400584 23.8364 -31.1676" clipDistance="300" nodeId="297">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="298" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft9" translation="-0.400584 23.8364 -36.4176" clipDistance="300" nodeId="299">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="300" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft10" translation="-0.400584 23.8364 -41.6676" clipDistance="300" nodeId="301">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="302" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeftEnd" translation="-0.400584 23.8364 -46.4035" clipDistance="300" nodeId="303">
+              <Shape name="rivets" translation="-3e-06 -0.004225 -0.9875" shapeId="28" clipDistance="100" nodeId="304" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="pipeRight" translation="16.03 0 0" nodeId="305">
+            <TransformGroup name="pipeLeftStart1" translation="-0.400584 23.8364 5.58238" clipDistance="300" nodeId="306">
+              <Shape name="rivets" translation="2e-06 -0.000725 0.549692" shapeId="26" clipDistance="100" nodeId="307" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft11" translation="-0.400584 23.8364 5.58238" clipDistance="300" nodeId="308">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="309" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft12" translation="-0.400584 23.8364 0.332376" clipDistance="300" nodeId="310">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="311" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft13" translation="-0.400584 23.8364 -4.91762" clipDistance="300" nodeId="312">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="313" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft14" translation="-0.400584 23.8364 -10.1676" clipDistance="300" nodeId="314">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="315" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft15" translation="-0.400584 23.8364 -15.4176" clipDistance="300" nodeId="316">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="317" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft16" translation="-0.400584 23.8364 -20.6676" clipDistance="300" nodeId="318">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="319" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft17" translation="-0.400584 23.8364 -25.9176" clipDistance="300" nodeId="320">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="321" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft18" translation="-0.400584 23.8364 -31.1676" clipDistance="300" nodeId="322">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="323" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft19" translation="-0.400584 23.8364 -36.4176" clipDistance="300" nodeId="324">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="325" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeft20" translation="-0.400584 23.8364 -41.6676" clipDistance="300" nodeId="326">
+              <Shape name="screws" translation="-1e-06 -0.004222 -2.62932" shapeId="27" clipDistance="30" nodeId="327" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="pipeLeftEnd1" translation="-0.400584 23.8364 -46.4035" clipDistance="300" nodeId="328">
+              <Shape name="rivets" translation="-3e-06 -0.004225 -0.9875" shapeId="28" clipDistance="100" nodeId="329" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="pipeVertical" nodeId="330">
+            <TransformGroup name="pipesTop" translation="-0.434193 18.0976 8.47228" clipDistance="300" nodeId="331">
+              <Shape name="grid" translation="-0.440577 9.20915 -0.831374" shapeId="29" clipDistance="20" nodeId="332" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              <Shape name="screws" translation="-0.385262 7.49212 -0.887999" shapeId="30" clipDistance="50" nodeId="333" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="siloPipes" translation="-0.705144 8.43712 9.17604" clipDistance="300" nodeId="334">
+              <Shape name="screws" translation="0.001545 2.91524 -1.41841" shapeId="31" clipDistance="50" nodeId="335" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="station" translation="-0.637398 3.89994 13.8368" clipDistance="300" nodeId="336">
+            <Shape name="decals" translation="-0.000617 0.055285 0.724329" shapeId="32" clipDistance="30" nodeId="337" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="5"/>
+            <Shape name="grid" translation="-1.2e-05 -3.70036 0.724331" shapeId="33" clipDistance="30" nodeId="338" castsShadows="true" receiveShadows="true" materialIds="12"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="nl1622_16000_lod1" translation="0 -0.159 0" nodeId="339">
+          <Shape name="siloLod" shapeId="34" clipDistance="500" nodeId="340" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        </TransformGroup>
+        <Shape name="Sign" translation="-0.568152 6.79106 14.5241" scale="1 2 2" shapeId="35" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="450" nodeId="341" castsShadows="true" receiveShadows="true" materialIds="11">
+          <Shape name="plane" translation="-0.115675 2.4325 1.17853e-08" rotation="0 -90 90" scale="2.4 1 2.4" shapeId="36" nodeId="342" castsShadows="true" receiveShadows="true" materialIds="13"/>
+          <Shape name="plane" translation="-0.0381026 2.4325 1.17853e-08" rotation="0 90 -90" scale="2.4 1 2.4" shapeId="36" nodeId="343" castsShadows="true" receiveShadows="true" materialIds="13"/>
+        </Shape>
+        <TransformGroup name="GroupName" translation="-5.04585 16.9783 -47.8883" rotation="0 45 0" clipDistance="450" nodeId="344">
+          <Shape name="Sign" translation="-1.28936 0 1.396" scale="1 2 2" shapeId="35" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="345" castsShadows="true" receiveShadows="true" materialIds="11">
+            <Shape name="plane" translation="-0.115675 2.4325 1.17853e-08" rotation="0 -90 90" scale="2.4 1 2.4" shapeId="36" nodeId="346" castsShadows="true" receiveShadows="true" materialIds="13"/>
+          </Shape>
+          <Shape name="Sign" translation="1.28936 0 -1.39601" rotation="-0 -90 0" scale="1 2 2" shapeId="35" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="347" castsShadows="true" receiveShadows="true" materialIds="11">
+            <Shape name="plane" translation="-0.115675 2.4325 1.17853e-08" rotation="0 -90 90" scale="2.4 1 2.4" shapeId="36" nodeId="348" castsShadows="true" receiveShadows="true" materialIds="13"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="GroupName" translation="20.6943 16.9783 -48.0269" rotation="0 -135 0" clipDistance="450" nodeId="349">
+          <Shape name="Sign" translation="-1.28936 0 1.396" scale="1 2 2" shapeId="35" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="350" castsShadows="true" receiveShadows="true" materialIds="11">
+            <Shape name="plane" translation="-0.115675 2.4325 1.17853e-08" rotation="0 -90 90" scale="2.4 1 2.4" shapeId="36" nodeId="351" castsShadows="true" receiveShadows="true" materialIds="13"/>
+          </Shape>
+          <Shape name="Sign" translation="1.28936 0 -1.39601" rotation="-0 -90 0" scale="1 2 2" shapeId="35" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="352" castsShadows="true" receiveShadows="true" materialIds="11">
+            <Shape name="plane" translation="-0.115675 2.4325 1.17853e-08" rotation="0 -90 90" scale="2.4 1 2.4" shapeId="36" nodeId="353" castsShadows="true" receiveShadows="true" materialIds="13"/>
+          </Shape>
+        </TransformGroup>
+        <Shape name="Consorzio agrario" translation="-0.92 23.32 -42.1714" shapeId="37" nodeId="354" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="collisions" nodeId="355">
+        <Shape name="collision" translation="7.93634 13.4862 -17.8302" shapeId="38" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="356" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        <Shape name="tipCollision" translation="7.85459 0 -17.8342" shapeId="39" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="357" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+      </TransformGroup>
+      <Shape name="occluderMesh" shapeId="40" clipDistance="500" nodeId="358" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true" materialIds="6"/>
+      <TransformGroup name="indoorAreas" nodeId="359">
+        <TransformGroup name="indoorAreaStart01" translation="-5.2938 0 9.12758" nodeId="360">
+          <TransformGroup name="indoorAreaWidth01" translation="0 0 11.2103" nodeId="361"/>
+          <TransformGroup name="indoorAreaHeight01" translation="8.73427 0 0" nodeId="362"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

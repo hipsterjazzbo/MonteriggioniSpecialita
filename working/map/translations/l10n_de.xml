@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<l10n>
+
+    <texts>
+		<text name="fillType_silageMaize" 					text="Silage Mais" />
+		<text name="fillType_humusactive" 					text="Humusaktiv" />
+		<text name="fillType_rye" 							text="Roggen" />
+		<text name="fillType_triticale" 					text="Triticale" />
+		<text name="fillType_spelt" 						text="Dinkel" />
+		<text name="fillType_vetchRye" 						text="Wickroggen" />
+		<text name="fillType_greenRye" 						text="Grünroggen" />
+		<text name="fillType_fieldGrass" 					text="Ackergras" />
+		<text name="fillType_mustard" 						text="Senf" />
+		<text name="fillType_grapeSeedOil" 					text="Traubenkernöl" />
+		<text name="fillType_grapeleatherette" 				text="Kunstleder aus Trauben" />
+		<text name="fillType_pasta" 						text="Nudeln" />
+		<text name="fillType_gnocchi" 						text="Gnocchi" />
+		<text name="fillType_tricolore" 					text="Dreifärbige Nudeln" />
+		<text name="fillType_pastaUovo" 					text="Nudeln mit Ei" />
+		
+		<text name="hotspot_waterwell" 						text="Feldbrunnen (Wasser kaufen)" />
+		<text name="hotspot_water" 							text="Wasserstelle" />
+		
+		<text name="storeItem_cowBarn" 						text="Kuhstall" />
+		<text name="storeItem_farmDecoration" 				text="Hofdekoration" />
+		<text name="storeItem_chickenShed" 					text="Hühnerstall" />
+		<text name="storeItem_constructionSite" 			text="Baustelle" />
+		<text name="storeItem_containerHouse" 				text="Container Haus" />
+		<text name="storeItem_farmDairy" 					text="Hofmolkerei" />
+		<text name="storeItem_grainMill" 					text="Getreidemühle" />
+		<text name="storeItem_pallettStorage" 				text="Pallettenlager" />
+		<text name="storeItem_waterDistributor" 			text="Wasserverteiler" />
+		<text name="storeItem_extendedGreenHouse" 			text="angepasstes Gewächshaus" />
+		<text name="storeItem_ridingArena" 					text="Reitplatz" />
+		<text name="storeItem_supermarket" 					text="Supermarkt" />
+		<text name="storeItem_farmShed" 					text="Toskanischer Schuppen" />
+		<text name="storeItem_vendesiSign" 					text="Zu Verkaufen Schild" />
+		<text name="storeItem_pastaFactory" 				text="Nudelfabrik" />
+		
+		<text name="sellStation_restaurant" 				text="Ristorante di marco" />
+		<text name="sellStation_restaurant2" 				text="Ristorante a centro" />
+		<text name="sellStation_wareHouseSilos" 			text="Consorzio agrario Silos" />
+		<text name="sellStation_wareHouseDepot" 			text="Consorzio agrario Depot" />
+		<text name="sellStation_fertilizerStation" 			text="Dünger Kaufstation" />
+		<text name="sellStation_seedStation" 				text="Saatgut Kaufstation" />
+		<text name="sellStation_liquidFertilizerStation" 	text="Flüssigdünger Kaufstation" />
+		<text name="sellStation_herbizideStation" 			text="Herbizid Kaufstation" />
+		
+		<text name="function_removeFarmDecoration" 			text="Hofdekoration entfernen" />
+		<text name="function_removeDecoration" 				text="Dekoration entfernen" />
+		<text name="function_waterWell" 					text="Wasser auffüllen" />
+		<text name="function_waterDistributor" 				text="Diese Produktion kann Wasser verteilen. (Ausgangsmodus = Verteilen)" />
+		<text name="function_removeVendesiSign" 			text="Schild entfernen" />
+		
+		<text name="ui_animalDealerBaleSell" 				text="Ballen Verkauf" />
+	
+    </texts>
+</l10n>

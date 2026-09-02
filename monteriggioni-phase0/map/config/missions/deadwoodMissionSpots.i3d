@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="deadwoodMissionSpots.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.8"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+  </Materials>
+
+
+  <Shapes>
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="deadwoodMissionSpots" nodeId="170540">
+      <TransformGroup name="spot01" translation="-416.247 36.5508 792.627" nodeId="170543"/>
+      <TransformGroup name="spot02" translation="-154.123 59.7023 862.394" nodeId="170544"/>
+      <TransformGroup name="spot03" translation="27.1942 59.9816 762.659" nodeId="170545"/>
+      <TransformGroup name="spot04" translation="6.58586 56.9933 655.15" nodeId="170546"/>
+      <TransformGroup name="spot05" translation="57.0861 53.9698 600.272" nodeId="170547"/>
+      <TransformGroup name="spot06" translation="699.222 24.5672 -798.106" nodeId="170556"/>
+      <TransformGroup name="spot07" translation="650.282 26.1157 -822.204" nodeId="170557"/>
+      <TransformGroup name="spot08" translation="252.008 21.1943 -866.98" nodeId="170558"/>
+      <TransformGroup name="spot09" translation="208.571 19.5201 -936.295" nodeId="170559"/>
+      <TransformGroup name="spot10" translation="-226.138 24.4057 -873.219" nodeId="170562"/>
+      <TransformGroup name="spot11" translation="-305.444 16.4451 -837.548" nodeId="170563"/>
+      <TransformGroup name="spot12" translation="-440.742 28.7934 -416.108" nodeId="170564"/>
+      <TransformGroup name="spot13" translation="-335.111 37.2207 -128.388" nodeId="170565"/>
+      <TransformGroup name="spot14" translation="-73.8115 30.6686 -77.3444" nodeId="170656"/>
+      <TransformGroup name="spot15" translation="-19.259 39.6059 95.8828" nodeId="170663"/>
+      <TransformGroup name="spot16" translation="-441.442 40.4974 -67.8602" nodeId="170664"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="170543">
+      <Attribute name="radius" type="float" value="75"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170544">
+      <Attribute name="radius" type="float" value="75"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170545">
+      <Attribute name="radius" type="float" value="75"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170546">
+      <Attribute name="radius" type="float" value="75"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170547">
+      <Attribute name="radius" type="float" value="75"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170556">
+      <Attribute name="radius" type="float" value="109"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170557">
+      <Attribute name="radius" type="float" value="70"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170558">
+      <Attribute name="radius" type="float" value="70"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170559">
+      <Attribute name="radius" type="float" value="70"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170562">
+      <Attribute name="radius" type="float" value="70"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170563">
+      <Attribute name="radius" type="float" value="70"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170564">
+      <Attribute name="radius" type="float" value="70"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170565">
+      <Attribute name="radius" type="float" value="70"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170656">
+      <Attribute name="radius" type="float" value="70"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170663">
+      <Attribute name="radius" type="float" value="70"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170664">
+      <Attribute name="radius" type="float" value="70"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

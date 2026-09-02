@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="farmhouseFeatures.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="UnnamedMaterial" materialId="5" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="farmhouseFeatures.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="farmhouseFeatures" nodeId="9">
+      <Camera name="sleepCamera" translation="14.7028 10.5147 -25.7618" rotation="176.407 47.3876 -158.651" nodeId="10" fov="54.4322" nearClip="0.0559864" farClip="559.864" orthographicHeight="1"/>
+      <TransformGroup name="sleepTriggerMarker" translation="-7.32378 0 -2.22831" nodeId="11"/>
+      <TransformGroup name="spawnPoint" translation="-7.32378 0.796829 -4.50025" rotation="180 180 180" nodeId="12"/>
+      <Shape name="sleepingTrigger" translation="-7.324 0.796829 -2.22831" scale="0.0217884 0.235783 0.0274246" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="13" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="wardrobeTriggerMarker" translation="6.99279 0 -1.25069" nodeId="14"/>
+      <Shape name="wardrobeTrigger" translation="6.993 0.691171 -1.25069" scale="0.125407 0.554625 0.25583" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="15" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

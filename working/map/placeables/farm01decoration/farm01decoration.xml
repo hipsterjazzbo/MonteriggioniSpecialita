@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="simplePlaceable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_farmDecoration</name>
+        <functions>
+            <function>$l10n_function_removeFarmDecoration</function>
+        </functions>
+        <image>map/placeables/farm01decoration/store_farm01decoration.png</image>
+        <price>1000</price>
+		<canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>decoration</category>
+    </storeData>
+
+    <base>
+        <filename>map/placeables/farm01decoration/farm01decoration.i3d</filename>
+		<boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+    </clearAreas>
+
+    <leveling requireLeveling="false" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+    </leveling>
+
+    <indoorAreas>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+      <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>  
+    </ai>
+
+    <i3dMappings>
+		<i3dMapping id="tipOcclusionUpdateAreaStart01" node="1>0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="1>0|0" />
+    </i3dMappings>
+</placeable>

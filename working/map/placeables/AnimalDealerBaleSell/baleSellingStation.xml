@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_ui_animalDealerBaleSell</name>
+        <image>map/placeables/AnimalDealerBaleSell/store_animalDealerBaleSell.png</image>
+        <price>0</price>
+		<dailyUpkeep>200</dailyUpkeep>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>map/placeables/AnimalDealerBaleSell/baleSellingStation.i3d</filename>
+		<canBeDeleted>false</canBeDeleted>
+		<canBeRenamed>false</canBeRenamed>
+		<boughtWithFarmland>false</boughtWithFarmland>
+    </base>
+
+    <clearAreas/>
+    <leveling/>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+		<splines>
+            <spline node="aiUnloadingSpline" maxWidth="4.2"/>
+        </splines>
+    </ai>
+
+    <sellingStation node="sellingStationBales" supportsExtension="false" litersForFullPriceDrop="100000" fullPriceRecoverHours="48">
+        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="STRAW DRYGRASS_WINDROW GRASS_WINDROW SILAGE SUGARBEET_CUT FORAGE" />
+        <baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="10000" aiNode="unloadTriggerAINode" fillTypes="STRAW DRYGRASS_WINDROW GRASS_WINDROW SILAGE SUGARBEET_CUT FORAGE"/>
+        <fillType name="STRAW"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="DRYGRASS_WINDROW" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="GRASS_WINDROW"    priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SILAGE"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SUGARBEET_CUT"    priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="FORAGE"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+    </sellingStation>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes_unloading"/>
+        <triggerMarker node="unloadTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconUnload.i3d"/>
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="unloadTriggerMarker" teleportNode="unloadTriggerMarker" />
+        <hotspot type="SHOP_ANIMAL" linkNode="teleportNode" teleportNode="teleportNode" text="$l10n_animals_dealer" />
+    </hotspots>
+
+    <i3dMappings>
+        <i3dMapping id="indoorAreaStart01" node="0>0|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>1|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>1|0|0" />
+		<i3dMapping id="sellingStation" node="0>2" />
+        <i3dMapping id="unloadTrigger" node="0>2|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>2|0|0" />
+        <i3dMapping id="unloadTriggerAINode" node="0>2|0|1" />
+        <i3dMapping id="warningStripes_unloading" node="0>2|1" />
+        <i3dMapping id="baleTrigger" node="0>2|2" />
+        <i3dMapping id="aiUnloadingSpline" node="0>2|3" />
+        <i3dMapping id="teleportNode" node="0>3" />
+    </i3dMappings>
+</placeable>

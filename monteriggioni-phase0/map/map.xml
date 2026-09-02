@@ -1,0 +1,331 @@
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" width="2048" height="2048" imageFilename="map/overview.dds" mapFieldColor="0.1500 0.1195 0.0953" mapGrassFieldColor="0.1470 0.1441 0.0823" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mission00.xsd">
+    <filename>map/map.i3d</filename>
+    
+    <culling xzOffset="100" />
+    <densityMap revision="1" />
+    <terrainLodTexture revision="1" />
+    <splitShapes revision="1" />
+    <tipCollision revision="1" />
+    <placementCollision revision="1" />
+    <navigationCollision revision="1" />
+
+    <shop filename="$data/store/ui/shop.xml" />
+    <storeItems filename="map/config/storeItems.xml" />
+
+    <guidedTours>
+        
+    </guidedTours>
+
+    <sounds filename="map/config/sounds.xml" />
+    <environment filename="map/config/environment_monteriggioni.xml" />
+	<weed filename="$data/maps/mapEU/config/weed.xml" />
+    <fieldGround filename="map/config/fieldGround.xml" />
+    <farmlands filename="map/config/farmlands.xml" />
+    <fields filename="map/config/fields.xml" />
+    <aiSystem filename="map/config/aiSystem.xml" />
+	<trafficSystem filename="map/config/trafficSystem.xml" />
+
+    <animals filename="map/config/animals.xml">
+        <names filename="$dataS/character/animalNames.xml" />
+        <food filename="map/config/animalFood.xml" />
+    </animals>
+
+    <npcs filename="map/config/npcs.xml" />
+	<licensePlates filename="map/licensePlatesIT/licensePlates.xml" />
+	
+    <wildlife filename="$data/animals/wildlife/wildlife.xml" />
+	<helpline filename="$dataS/helpLine.xml" />
+    <gameplayHints filename="$dataS/gameplayHints.xml" />
+
+	
+    <missions vehicleFilename="$dataS/missionVehicles.xml">
+        <deadwoodMission treeType="DEADWOOD">
+            <spots filename="map/config/missions/deadwoodMissionSpots.i3d" />
+        </deadwoodMission>
+        <treeTransportMission treeType="TRANSPORT">
+            <spots filename="map/config/missions/transportSpots.i3d" />
+        </treeTransportMission>
+    </missions>
+
+	<treeTypes filename="map/config/maps_treeTypes.xml" maxNumTrees="20000"/>
+    <bales filename="$data/maps/maps_bales.xml" />
+	<motionPathEffects filename="map/xml/motionPathEffects.xml"/>
+
+	
+	<fillTypes filename="map/config/maps_fillTypes.xml" />
+    <fruitTypes filename="map/config/maps_fruitTypes.xml" />
+    <densityMapHeightTypes filename="map/config/maps_densityMapHeightTypes.xml" />
+
+	<hotspots>
+        <placeableHotspot type="LOADING" text="$l10n_hotspot_water" worldPosition="836.95019531 -153.32897949" teleportWorldPosition="836.95019531 14.05390739 -153.32897949" imageFilename="textures/mapHotspots.dds"  imageUVs="538 792 205 205"/>	
+    </hotspots>
+
+    <additionalFiles>
+        <additionalFile filename="$data/shared/materialHolders/tensionBelts/tensionBeltMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/tireTrackMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/waterSimulationMaterialHolder.i3d" />
+        <additionalFile filename="$data/fillPlanes/fillPlane_materialHolder.i3d" />
+        <additionalFile filename="$data/objects/bales/wrapBale_materialHolder.i3d" />
+        <additionalFile filename="$data/effects/effects.xml" />
+    </additionalFiles>
+
+    
+    <decoFoliages>
+        <decoFoliage layerName="decoFoliage" startChannel="0" numChannels="4" mowable="true" />
+        <decoFoliage layerName="forestPlants" startChannel="0" numChannels="4" mowable="true" />
+        <decoFoliage layerName="waterPlants" startChannel="0" numChannels="4" mowable="true" />
+        <decoFoliage layerName="decoBushUS" startChannel="0" numChannels="4" />
+        <decoFoliage layerName="decoBush" startChannel="0" numChannels="4" />
+
+        <mapping name="grassShort" layerName="decoFoliage" state="9" />
+    </decoFoliages>
+
+    <paintableFoliages>
+        <paintableFoliage layerName="meadow" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoBushUS" startChannel="0" numStateChannels="4" />
+		<paintableFoliage layerName="decoBush" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoFoliage" startChannel="0" numStateChannels="4" />
+    </paintableFoliages>
+
+    
+    <groundTypeMappings>
+    
+        <groundTypeMapping type="dirt" 			title="$l10n_groundType_dirt" 			layer="MUDLIGHT" />
+    
+        <groundTypeMapping type="asphalt" 		title="$l10n_groundType_asphalt" 		layer="ASPHALT" />
+        <groundTypeMapping type="gravel" 		title="$l10n_groundType_gravel" 		layer="GRAVELSMALL" />
+        <groundTypeMapping type="grass" 		title="$l10n_groundType_grass" 			layer="GRASS" />
+        <groundTypeMapping type="animalMud" 	title="$l10n_groundType_animalMud" 		layer="MUD_TRACKS" />
+        <groundTypeMapping type="concrete" 		title="$l10n_groundType_concrete" 		layer="CONCRETE" />
+    
+        <groundTypeMapping type="forestGround" 	title="$l10n_groundType_forestGround" 	layer="FOREST_GRASS" />
+        <groundTypeMapping type="rock" 			title="$l10n_groundType_rock" 			layer="MOUNTAINROCK" />
+        <groundTypeMapping type="tiles01" 		title="$l10n_groundType_cobblestones" 	layer="ROCK_FLOOR_TILES" />
+        <groundTypeMapping type="tiles02" 		title="$l10n_groundType_flagstones" 	layer="ROCK_FLOOR_TILES_PATTERN" />
+		
+		<!-- Custom -->
+		<groundTypeMapping type="rocktrail" 			title="$l10n_groundType_gravel" 		layer="ROCK_TRAIL" />
+        <groundTypeMapping type="gravel_stone" 			title="$l10n_groundType_gravel" 		layer="GRAVEL_STONE" />
+		<groundTypeMapping type="moss_pebbles" 			title="$l10n_groundType_gravel" 		layer="MOSS_PEBBLES" />
+       
+		<groundTypeMapping type="dirt_eu" 				title="$l10n_groundType_dirt" 			layer="DIRT_EU" />
+		<groundTypeMapping type="tiles03" 				title="$l10n_groundType_flagstones" 	layer="ROCK_FLOOR_TILES_SQUARE" />
+		<groundTypeMapping type="concrete_shattered" 	title="$l10n_groundType_concrete" 		layer="CONCRETE_SHATTERED" />
+		<groundTypeMapping type="concrete_pebbles" 		title="$l10n_groundType_concrete" 		layer="CONCRETE_PEBBLES" />
+		<groundTypeMapping type="concrete_dirt" 		title="$l10n_groundType_concrete" 		layer="CONCRETE_DIRT" />
+		<groundTypeMapping type="asphalt_cracks" 		title="$l10n_groundType_asphalt" 		layer="ASPHALT_CRACKS" />
+        <groundTypeMapping type="asphalt_dark" 			title="$l10n_groundType_asphalt" 		layer="ASPHALT_DARK" />
+		<groundTypeMapping type="asphalt_dusty" 		title="$l10n_groundType_asphalt" 		layer="ASPHALT_DUSTY" />
+        
+    </groundTypeMappings>
+	
+	<precisionFarming>
+        <soilMap filename="$data/maps/mapEU/data/soilMap.grle"/> 	<!-- DIESEN PFAD ANPASSEN WENN DIE KARTE ÜBER EINE EIGENE soilMap.grle VERFÜGT --> 
+																	<!-- ADJUST THIS PATH IF THE MAP HAS ITS OWN soilMap.grle -->
+		
+		<cropSensor fruitTypes="MEADOW RYE TRITICALE SPELT GREENRYE VETCHRYE SILAGEMAIZE FIELDGRASS"/>
+
+        <npcTramlines fruitTypes="RYE TRITICALE SPELT VETCHRYE GREENRYE WHEAT BARLEY OAT CANOLA OAT SOYBEAN SORGHUM PEA GREENBEAN SPINACH" workingWidth="27"/>    
+        
+		<fruitRequirements>
+            <fruitRequirement fruitTypeName="RYE">
+                <soil soilTypeIndex="1" targetLevel="130" reduction="110" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="150" reduction="130" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="170" reduction="150" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="140" reduction="120" yieldPotential="0.9"/>
+            </fruitRequirement>	
+			<fruitRequirement fruitTypeName="TRITICALE">	
+                <soil soilTypeIndex="1" targetLevel="150" reduction="130" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="170" reduction="150" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="190" reduction="170" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="160" reduction="140" yieldPotential="0.9"/>
+            </fruitRequirement>             	
+			<fruitRequirement fruitTypeName="SPELT">	
+                <soil soilTypeIndex="1" targetLevel="140" reduction="120" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="160" reduction="140" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="180" reduction="160" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="150" reduction="130" yieldPotential="0.9"/>
+            </fruitRequirement> 		
+			
+            <fruitRequirement fruitTypeName="GREENRYE">
+                <soil soilTypeIndex="1" targetLevel="80" reduction="40" reductionForage="40"    yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="90" reduction="60" reductionForage="60"    yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="100" reduction="70" reductionForage="70"    yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="110" reduction="40" reductionForage="40"    yieldPotential="0.9"/>
+            </fruitRequirement>             
+            <fruitRequirement fruitTypeName="VETCHRYE">
+                <soil soilTypeIndex="1" targetLevel="80" reduction="40" reductionForage="40"    yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="90" reduction="60" reductionForage="60"    yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="100" reduction="70" reductionForage="70"    yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="110" reduction="40" reductionForage="40"    yieldPotential="0.9"/>
+            </fruitRequirement> 
+            
+            <fruitRequirement fruitTypeName="SILAGEMAIZE">
+                <soil soilTypeIndex="1" targetLevel="120" reduction="80"  reductionForage="100" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="160" reduction="120" reductionForage="140" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="200" reduction="150" reductionForage="180" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="180" reduction="110" reductionForage="140" yieldPotential="0.9"/>
+            </fruitRequirement>    
+
+            <fruitRequirement fruitTypeName="HUMUSACTIVE" availableAsDefaultRate="false">
+                <soil soilTypeIndex="1" targetLevel="0" reduction="0" 		yieldPotential="0.5"/>
+                <soil soilTypeIndex="2" targetLevel="0" reduction="0" 		yieldPotential="0.5"/>
+                <soil soilTypeIndex="3" targetLevel="0" reduction="0" 		yieldPotential="0.5"/>
+                <soil soilTypeIndex="4" targetLevel="0" reduction="0" 		yieldPotential="0.5"/>
+            </fruitRequirement>            
+			<fruitRequirement fruitTypeName="MUSTARD" availableAsDefaultRate="false">
+                <soil soilTypeIndex="1" targetLevel="0" reduction="0" 		yieldPotential="0"/>
+                <soil soilTypeIndex="2" targetLevel="0" reduction="0" 		yieldPotential="0"/>
+                <soil soilTypeIndex="3" targetLevel="0" reduction="0" 		yieldPotential="0"/>
+                <soil soilTypeIndex="4" targetLevel="0" reduction="0" 		yieldPotential="0"/>
+            </fruitRequirement>
+            
+            <fruitRequirement fruitTypeName="FIELDGRASS" alwaysAllowFertilization="true" >
+                <soil soilTypeIndex="1" targetLevel="50" reduction="40" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="55" reduction="40" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="65" reduction="50" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="65" reduction="55" yieldPotential="0.9"/>
+            </fruitRequirement>
+        </fruitRequirements>
+        
+		<seedRateMap>
+            <fruitTypes>
+                <fruitType name="POTATO">
+                    <seedRates rates="8 9 10" usages="0.1848 0.3733 0.4312"/>
+
+                    <soilTypes>
+                        <soilType index="1" yields="0.875 1.000 1.125"/>
+                        <soilType index="2" yields="0.950 1.000 1.000"/>
+                        <soilType index="3" yields="1.000 1.000 1.000"/>
+                        <soilType index="4" yields="0.777 1.000 1.111"/>
+                    </soilTypes>
+                </fruitType>
+                <fruitType name="RYE">
+                    <seedRates rates="250 300 350" usages="0.010330 0.012330 0.014330"/>
+        
+                    <soilTypes>
+                        <soilType index="1" yields="1.000 1.000 1.000"/>
+                        <soilType index="2" yields="0.950 1.000 1.000"/>
+                        <soilType index="3" yields="0.950 1.000 1.000"/>
+                        <soilType index="4" yields="0.777 1.000 1.111"/>
+                    </soilTypes>
+                </fruitType>  
+                <fruitType name="TRITICALE">
+                    <seedRates rates="200 300 360" usages="0.014440 0.016440 0.018440"/>
+        
+                    <soilTypes>
+                        <soilType index="1" yields="1.000 1.000 1.000"/>
+                        <soilType index="2" yields="0.950 1.000 1.000"/>
+                        <soilType index="3" yields="0.950 1.000 1.000"/>
+                        <soilType index="4" yields="0.777 1.000 1.111"/>
+                    </soilTypes>
+                </fruitType>           
+                <fruitType name="SPELT">
+                    <seedRates rates="180 260 340" usages="0.022440 0.025440 0.028440"/>
+        
+                    <soilTypes>
+                        <soilType index="1" yields="1.000 1.000 1.000"/>
+                        <soilType index="2" yields="0.950 1.000 1.000"/>
+                        <soilType index="3" yields="0.950 1.000 1.000"/>
+                        <soilType index="4" yields="0.777 1.000 1.111"/>
+                    </soilTypes>
+                </fruitType>
+                <fruitType name="GREENRYE">
+                    <seedRates rates="200 250 300" usages="0.02 0.03 0.04"/>
+
+                    <soilTypes>
+                        <soilType index="1" yields="1.000 1.000 1.000"/>
+                        <soilType index="2" yields="0.950 1.000 1.000"/>
+                        <soilType index="3" yields="0.950 1.000 1.000"/>
+                        <soilType index="4" yields="0.777 1.000 1.111"/>
+                    </soilTypes>
+                </fruitType>				
+                <fruitType name="VETCHRYE">
+                    <seedRates rates="180 230 280" usages="0.02 0.03 0.04"/>
+
+                    <soilTypes>
+                        <soilType index="1" yields="1.000 1.000 1.000"/>
+                        <soilType index="2" yields="0.950 1.000 1.000"/>
+                        <soilType index="3" yields="0.950 1.000 1.000"/>
+                        <soilType index="4" yields="0.777 1.000 1.111"/>
+                    </soilTypes>
+                </fruitType>
+                <fruitType name="SILAGEMAIZE">
+                    <seedRates rates="8 10 12" usages="0.004241 0.005371 0.006361"/>
+
+                    <soilTypes>
+                        <soilType index="1" yields="0.875 1.000 1.125"/>
+                        <soilType index="2" yields="0.950 1.000 1.000"/>
+                        <soilType index="3" yields="1.000 1.000 1.000"/>
+                        <soilType index="4" yields="0.777 1.000 1.111"/>
+                    </soilTypes>
+                </fruitType>  
+                <fruitType name="GRASS">
+                    <seedRates rates="1667 2000 2000" usages="0.005556 0.006667 0.006667"/>
+
+                    <soilTypes>
+                        <soilType index="1" yields="0.875 1.000 1.125"/>
+                        <soilType index="2" yields="0.950 1.000 1.000"/>
+                        <soilType index="3" yields="1.000 1.000 1.000"/>
+                        <soilType index="4" yields="0.777 1.000 1.111"/>
+                    </soilTypes>
+                </fruitType>
+                <fruitType name="MEADOW">
+                    <seedRates rates="1667 2000 2000" usages="0.005556 0.006667 0.006667"/>
+
+                    <soilTypes>
+                        <soilType index="1" yields="0.875 1.000 1.125"/>
+                        <soilType index="2" yields="0.950 1.000 1.000"/>
+                        <soilType index="3" yields="1.000 1.000 1.000"/>
+                        <soilType index="4" yields="0.777 1.000 1.111"/>
+                    </soilTypes>
+                </fruitType>
+                <fruitType name="FIELDGRASS">
+                    <seedRates rates="1667 2000 2000" usages="0.005556 0.006667 0.006667"/>
+
+                    <soilTypes>
+                        <soilType index="1" yields="0.875 1.000 1.125"/>
+                        <soilType index="2" yields="0.950 1.000 1.000"/>
+                        <soilType index="3" yields="1.000 1.000 1.000"/>
+                        <soilType index="4" yields="0.777 1.000 1.111"/>
+                    </soilTypes>
+                </fruitType>
+				
+            <!-- Cover crops -->
+                <fruitType name="HUMUSACTIVE">
+                    <seedRates rates="30 35 40" usages="0.003 0.004 0.005"/>
+                    
+                    <soilTypes>
+                        <soilType index="1" yields="1.000 1.000 1.000"/>
+                        <soilType index="2" yields="0.950 1.000 1.000"/>
+                        <soilType index="3" yields="0.875 1.000 1.125"/>
+                        <soilType index="4" yields="0.777 1.000 1.111"/>
+                    </soilTypes>                    
+                </fruitType>                
+                <fruitType name="MUSTARD">
+                    <seedRates rates="20 30 40" usages="0.003 0.004 0.005"/>
+                    
+                    <soilTypes>
+                        <soilType index="1" yields="1.000 1.000 1.000"/>
+                        <soilType index="2" yields="0.950 1.000 1.000"/>
+                        <soilType index="3" yields="0.875 1.000 1.125"/>
+                        <soilType index="4" yields="0.777 1.000 1.111"/>
+                    </soilTypes>                    
+                </fruitType>     
+                
+            </fruitTypes>
+        </seedRateMap>
+		
+		<subsidies>
+            <coverCropBonus>
+                <fruitType name="OILSEEDRADISH" bonusPerHa="100 75 50" />
+                <fruitType name="MUSTARD" bonusPerHa="200 150 100" />
+                <fruitType name="HUMUSACTIVE" bonusPerHa="250 200 150" />
+            </coverCropBonus>
+        </subsidies>
+		 
+	</precisionFarming>
+    <vertexBufferMemoryUsage>54449664</vertexBufferMemoryUsage>
+    <indexBufferMemoryUsage>10966016</indexBufferMemoryUsage>
+    <textureMemoryUsage>964952064</textureMemoryUsage>
+</map>

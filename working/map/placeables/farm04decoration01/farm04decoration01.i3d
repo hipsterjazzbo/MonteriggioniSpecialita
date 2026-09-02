@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="farm04decoration01.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="65" filename="$data/maps/mapAS/textures/props/metalTools/metalTools02.i3d"/>
+    <File fileId="58" filename="$data/maps/mapAS/textures/props/pallet03.i3d"/>
+    <File fileId="52" filename="$data/maps/mapEU/textures/props/constructionMaterial_diffuse.png"/>
+    <File fileId="53" filename="$data/maps/mapEU/textures/props/constructionMaterial_normal.png"/>
+    <File fileId="54" filename="$data/maps/mapEU/textures/props/constructionMaterial_specular.png"/>
+    <File fileId="62" filename="$data/maps/mapEU/textures/props/firewood_diffuse.png"/>
+    <File fileId="63" filename="$data/maps/mapEU/textures/props/firewood_normal.png"/>
+    <File fileId="64" filename="$data/maps/mapEU/textures/props/firewood_specular.png"/>
+    <File fileId="41" filename="$data/maps/mapEU/textures/props/flowerGeraniumLOD_diffuse.png"/>
+    <File fileId="35" filename="$data/maps/mapEU/textures/props/flowerGeraniumPot_diffuse.png"/>
+    <File fileId="36" filename="$data/maps/mapEU/textures/props/flowerGeraniumPot_normal.png"/>
+    <File fileId="37" filename="$data/maps/mapEU/textures/props/flowerGeraniumPot_specular.png"/>
+    <File fileId="38" filename="$data/maps/mapEU/textures/props/flowerGeranium_diffuse.png"/>
+    <File fileId="39" filename="$data/maps/mapEU/textures/props/flowerGeranium_normal.png"/>
+    <File fileId="40" filename="$data/maps/mapEU/textures/props/flowerGeranium_specular.png"/>
+    <File fileId="29" filename="$data/maps/mapEU/textures/props/flowerPotsLargeFlowersLOD_diffuse.png"/>
+    <File fileId="26" filename="$data/maps/mapEU/textures/props/flowerPotsLargeFlowers_diffuse.png"/>
+    <File fileId="27" filename="$data/maps/mapEU/textures/props/flowerPotsLargeFlowers_normal.png"/>
+    <File fileId="28" filename="$data/maps/mapEU/textures/props/flowerPotsLargeFlowers_specular.png"/>
+    <File fileId="32" filename="$data/maps/mapEU/textures/props/flowerPotsLarge_diffuse.png"/>
+    <File fileId="33" filename="$data/maps/mapEU/textures/props/flowerPotsLarge_normal.png"/>
+    <File fileId="34" filename="$data/maps/mapEU/textures/props/flowerPotsLarge_specular.png"/>
+    <File fileId="46" filename="$data/maps/mapEU/textures/props/garbageContainers_diffuse.png"/>
+    <File fileId="50" filename="$data/maps/mapEU/textures/props/garbageContainers_mask.png"/>
+    <File fileId="47" filename="$data/maps/mapEU/textures/props/garbageContainers_normal.png"/>
+    <File fileId="48" filename="$data/maps/mapEU/textures/props/garbageContainers_specular.png"/>
+    <File fileId="2" filename="$data/maps/mapEU/textures/props/gardenTools_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/mapEU/textures/props/gardenTools_normal.png"/>
+    <File fileId="4" filename="$data/maps/mapEU/textures/props/gardenTools_specular.png"/>
+    <File fileId="59" filename="$data/maps/mapEU/textures/props/logStores_diffuse.png"/>
+    <File fileId="60" filename="$data/maps/mapEU/textures/props/logStores_normal.png"/>
+    <File fileId="61" filename="$data/maps/mapEU/textures/props/logStores_specular.png"/>
+    <File fileId="25" filename="$data/maps/mapUS/textures/props/flowerPot06.i3d"/>
+    <File fileId="6" filename="$data/maps/mapUS/textures/props/gameplay/collectibles/grainCleaner_diffuse.png"/>
+    <File fileId="7" filename="$data/maps/mapUS/textures/props/gameplay/collectibles/grainCleaner_normal.png"/>
+    <File fileId="8" filename="$data/maps/mapUS/textures/props/gameplay/collectibles/grainCleaner_specular.png"/>
+    <File fileId="15" filename="$data/maps/mapUS/textures/props/gameplay/collectibles/grainKicker_diffuse.png"/>
+    <File fileId="16" filename="$data/maps/mapUS/textures/props/gameplay/collectibles/grainKicker_normal.png"/>
+    <File fileId="17" filename="$data/maps/mapUS/textures/props/gameplay/collectibles/grainKicker_specular.png"/>
+    <File fileId="12" filename="$data/maps/mapUS/textures/props/gameplay/collectibles/threshingMachineGrid_diffuse.png"/>
+    <File fileId="13" filename="$data/maps/mapUS/textures/props/gameplay/collectibles/threshingMachineGrid_normal.png"/>
+    <File fileId="14" filename="$data/maps/mapUS/textures/props/gameplay/collectibles/threshingMachineGrid_specular.png"/>
+    <File fileId="9" filename="$data/maps/mapUS/textures/props/gameplay/collectibles/threshingMachine_diffuse.png"/>
+    <File fileId="10" filename="$data/maps/mapUS/textures/props/gameplay/collectibles/threshingMachine_normal.png"/>
+    <File fileId="11" filename="$data/maps/mapUS/textures/props/gameplay/collectibles/threshingMachine_specular.png"/>
+    <File fileId="43" filename="$data/maps/mapUS/textures/props/gameplay/collectibles/wheelBarrowContainer_diffuse.png"/>
+    <File fileId="44" filename="$data/maps/mapUS/textures/props/gameplay/collectibles/wheelBarrowContainer_normal.png"/>
+    <File fileId="45" filename="$data/maps/mapUS/textures/props/gameplay/collectibles/wheelBarrowContainer_specular.png"/>
+    <File fileId="55" filename="$data/maps/mapUS/textures/props/ironWheels_diffuse.png"/>
+    <File fileId="56" filename="$data/maps/mapUS/textures/props/ironWheels_normal.png"/>
+    <File fileId="57" filename="$data/maps/mapUS/textures/props/ironWheels_specular.png"/>
+    <File fileId="51" filename="$data/maps/mapUS/textures/props/trashcan03.i3d"/>
+    <File fileId="1" filename="$data/maps/mapUS/textures/props/trashcanStorage02.i3d"/>
+    <File fileId="31" filename="$data/shaders/billboardShader.xml"/>
+    <File fileId="49" filename="$data/shaders/colorShader.xml"/>
+    <File fileId="22" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="42" filename="$data/shared/default_normal.png"/>
+    <File fileId="19" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/streetFlowerPot01_diffuse.png"/>
+    <File fileId="20" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/streetFlowerPot01_normal.png"/>
+    <File fileId="21" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/streetFlowerPot01_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="constructionMaterial_mat" materialId="5" customShaderId="22">
+      <Texture fileId="52"/>
+      <Normalmap fileId="53"/>
+      <Glossmap fileId="54"/>
+    </Material>
+    <Material name="firewood_mat" materialId="6">
+      <Texture fileId="62"/>
+      <Normalmap fileId="63"/>
+      <Glossmap fileId="64"/>
+    </Material>
+    <Material name="flowerGeranium_mat" materialId="7">
+      <Texture fileId="38"/>
+      <Normalmap fileId="39"/>
+      <Glossmap fileId="40"/>
+    </Material>
+    <Material name="flowerGeraniumLOD_mat" materialId="8" customShaderId="31">
+      <Texture fileId="41"/>
+      <Normalmap fileId="42"/>
+    </Material>
+    <Material name="flowerGeraniumPot_mat" materialId="9">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <Glossmap fileId="37"/>
+    </Material>
+    <Material name="flowerPotsLarge_mat" materialId="10" customShaderId="22">
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+      <Glossmap fileId="34"/>
+    </Material>
+    <Material name="flowerPotsLargeFlowers_mat" materialId="11">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+    </Material>
+    <Material name="flowerPotsLargeFlowersLOD_mat" materialId="12" specularColor="0.501961 1 0.501961" customShaderId="31">
+      <Texture fileId="29"/>
+    </Material>
+    <Material name="garbageContainers_mat" materialId="13" customShaderId="49" customShaderVariation="CUSTOM_MASK">
+      <Texture fileId="46"/>
+      <Normalmap fileId="47"/>
+      <Glossmap fileId="48"/>
+      <Custommap name="mCustomMask" fileId="50"/>
+      <CustomParameter name="color" value="0.5 0 0"/>
+    </Material>
+    <Material name="gardenTools_mat" materialId="14">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="grainCleaner_mat" materialId="15">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="grainElevatorPropsTile_mat" materialId="16" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="grainKicker_mat" materialId="17">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+    </Material>
+    <Material name="ironWheels_mat" materialId="18" customShaderId="22">
+      <Texture fileId="55"/>
+      <Normalmap fileId="56"/>
+      <Glossmap fileId="57"/>
+    </Material>
+    <Material name="lambert1" materialId="19" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="logStores_mat" materialId="20" customShaderId="22">
+      <Texture fileId="59"/>
+      <Normalmap fileId="60"/>
+      <Glossmap fileId="61"/>
+    </Material>
+    <Material name="streetFlowerPot01_mat" materialId="21" customShaderId="22">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+    </Material>
+    <Material name="threshingMachine_mat" materialId="22">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="threshingMachineGrid_mat" materialId="23">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+    </Material>
+    <Material name="wheelBarrowContainer_mat" materialId="24">
+      <Texture fileId="43"/>
+      <Normalmap fileId="44"/>
+      <Glossmap fileId="45"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="farm04decoration01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="decoration" lockedgroup="true" nodeId="81">
+      <TransformGroup name="trashcanStorage_PREFAB" lockedgroup="true" translation="12.8349 -0.127668 15.4985" rotation="-1.39153e-07 -90 0" nodeId="82">
+        <ReferenceNode name="trashcanStorage02" translation="0 0 2.67029e-05" rotation="-4.07111e-13 -0 -5.47055e-13" referenceId="1" nodeId="88"/>
+        <TransformGroup name="shovel1" lockedgroup="true" translation="-0.361847 0.171043 -0.226322" rotation="-5.33336 69.6064 1.01383e-05" scale="1.25 1.25 1.25" lodDistance="0 8" clipDistance="60" nodeId="93">
+          <Shape name="LOD0" shapeId="1" nodeId="94" castsShadows="true" receiveShadows="true" materialIds="14">
+            <Shape name="collision" translation="0 0 -0.03906" shapeId="2" static="true" collisionFilterMask="0xfffffbff" nodeId="95" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="16"/>
+          </Shape>
+          <Shape name="LOD1" shapeId="3" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="14"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="grainCleaner" lockedgroup="true" translation="-20.3987 -0.127668 6.43179" rotation="180 -1.45359 -180" lodDistance="0 8" lodBlending="false" clipDistance="75" nodeId="97">
+        <Shape name="LOD0" shapeId="4" nodeId="98" castsShadows="true" receiveShadows="true" materialIds="15">
+          <Shape name="col" shapeId="5" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="99" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="16"/>
+        </Shape>
+        <Shape name="LOD1" shapeId="6" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="15"/>
+      </TransformGroup>
+      <TransformGroup name="threshingMachine" lockedgroup="true" translation="11.4978 -0.127668 -5.77435" rotation="3.84271e-06 19.7636 2.88439e-06" lodDistance="0 9" lodBlending="false" clipDistance="60" nodeId="101">
+        <Shape name="LOD0" shapeId="7" nodeId="102" castsShadows="true" receiveShadows="true" materialIds="22">
+          <Shape name="grid" shapeId="8" nodeId="103" castsShadows="true" receiveShadows="true" materialIds="23"/>
+          <Shape name="col" shapeId="9" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="104" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="16"/>
+        </Shape>
+        <Shape name="LOD1" shapeId="10" nodeId="105" castsShadows="true" receiveShadows="true" materialIds="22"/>
+      </TransformGroup>
+      <TransformGroup name="grainKicker" lockedgroup="true" translation="10.3282 -0.127668 -5.82944" rotation="180 -80.0672 180" lodDistance="0 10" lodBlending="false" clipDistance="65" nodeId="106">
+        <Shape name="LOD0" shapeId="11" nodeId="107" castsShadows="true" receiveShadows="true" materialIds="17">
+          <Shape name="col" shapeId="12" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="108" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="16"/>
+        </Shape>
+        <Shape name="LOD1" shapeId="13" nodeId="109" castsShadows="true" receiveShadows="true" materialIds="17"/>
+      </TransformGroup>
+      <Shape name="streetFlowerPot01" lockedgroup="true" translation="-13.3085 -0.129986 0.141235" shapeId="14" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="110" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19">
+        <Shape name="streetFlowerPot01_vis" shapeId="15" clipDistance="70" nodeId="111" castsShadows="true" receiveShadows="true" materialIds="21"/>
+        <Shape name="streetFlowerPot01_flowers" shapeId="16" clipDistance="70" nodeId="112" castsShadows="true" receiveShadows="true" materialIds="21" weatherPreventMask="0x400"/>
+      </Shape>
+      <TransformGroup name="flowerPot06_PREFAB" lockedgroup="true" translation="-14.0806 -0.173225 -3.00531" rotation="-180 -44.5088 180" nodeId="113">
+        <ReferenceNode name="flowerPot06" translation="0 0 2.28882e-05" rotation="5.59778e-13 -2.13443e-06 -1.59028e-13" referenceId="25" nodeId="119"/>
+        <TransformGroup name="potBig01_lod" lockedgroup="true" translation="-0.00708008 0.490948 0.00486755" rotation="-180 -7.00044 -180" lodDistance="0 25" clipDistance="85" nodeId="124">
+          <Shape name="LOD0" shapeId="17" nodeId="125" castsShadows="true" receiveShadows="true" materialIds="11" weatherPreventMask="0x400"/>
+          <Shape name="LOD1" translation="-0.011061 0 -0.008362" shapeId="18" nodeId="126" castsShadows="true" receiveShadows="true" materialIds="12" weatherPreventMask="0x400"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="potSmall03" lockedgroup="true" translation="-15.8629 -0.127668 6.09598" rotation="5.00935e-06 0.721 5.07199e-06" lodDistance="0 25" clipDistance="85" nodeId="127">
+        <Shape name="LOD0" translation="0 0.138405 0" shapeId="19" nodeId="128" castsShadows="true" receiveShadows="true" materialIds="10">
+          <Shape name="flowers" translation="0.018456 0.272046 -0.022329" shapeId="20" nodeId="129" castsShadows="true" receiveShadows="true" materialIds="11" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="LOD1" translation="0.007602 0.265718 0.005911" shapeId="21" nodeId="130" castsShadows="true" receiveShadows="true" materialIds="12">
+          <Shape name="flowers" shapeId="22" nodeId="131" castsShadows="true" receiveShadows="true" materialIds="12" weatherPreventMask="0x400"/>
+        </Shape>
+        <Shape name="collision" shapeId="23" static="true" collisionFilterMask="0xfffffbff" nodeId="132" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="16"/>
+      </TransformGroup>
+      <TransformGroup name="flowerGeraniumPotSquare" lockedgroup="true" translation="-14.6935 1.25864 -3.9332" rotation="-0 90 0" clipDistance="75" nodeId="133">
+        <TransformGroup name="visual_lod" lodDistance="0 15" nodeId="134">
+          <Shape name="LOD0" shapeId="24" nodeId="135" castsShadows="true" receiveShadows="true" materialIds="9">
+            <Shape name="flowerGeraniumRoundPlants" translation="0.015447 0.26436 0.008575" shapeId="25" nodeId="136" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </Shape>
+          <Shape name="LOD1" translation="0.010672 0.198678 0" shapeId="26" nodeId="137" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="wheelBarrowContainer" lockedgroup="true" translation="15.4647 -0.223215 -4.02438" rotation="-178.735 69.8029 178.566" lodDistance="0 8" lodBlending="false" clipDistance="50" nodeId="138">
+        <Shape name="LOD0" shapeId="27" nodeId="139" castsShadows="true" receiveShadows="true" materialIds="24">
+          <Shape name="col" shapeId="28" static="true" collisionFilterMask="0xfffffbff" nodeId="140" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="16"/>
+        </Shape>
+        <Shape name="LOD1" shapeId="29" nodeId="141" castsShadows="true" receiveShadows="true" materialIds="24"/>
+      </TransformGroup>
+      <TransformGroup name="garbageContainer01" lockedgroup="true" translation="7.13171 -0.127668 1.15115" rotation="0 -83.1921 -9.90103e-10" lodDistance="0 20" clipDistance="80" nodeId="142">
+        <Shape name="LOD0" shapeId="30" nodeId="143" castsShadows="true" receiveShadows="true" materialIds="13"/>
+        <Shape name="LOD1" shapeId="31" nodeId="144" castsShadows="true" receiveShadows="true" materialIds="13"/>
+        <Shape name="col" shapeId="32" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="145" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19"/>
+      </TransformGroup>
+      <ReferenceNode name="trashcan03" translation="7.36136 -0.127668 -0.0113831" rotation="-180 28.0359 -180" scale="0.866759 0.866759 0.866759" referenceId="51" nodeId="151"/>
+      <TransformGroup name="trashHeap_PREFAB" lockedgroup="true" translation="13.726 0.122906 -6.74084" rotation="15.4589 82.1089 23.2499" nodeId="156">
+        <TransformGroup name="constructionMaterial15" lockedgroup="true" translation="0 0 1.52588e-05" rotation="-3.00864e-07 1.20346e-06 -1.24106e-06" scale="1.41887 1.41887 1.41887" lodDistance="0 12" clipDistance="90" nodeId="157">
+          <Shape name="LOD0" shapeId="33" nodeId="158" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="LOD1" shapeId="34" nodeId="159" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="col" shapeId="35" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="160" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="16"/>
+        </TransformGroup>
+        <TransformGroup name="ironWheelMedium" lockedgroup="true" translation="0.755738 0.684411 -1.02061" rotation="-30.1319 0.739927 -80.5243" lodDistance="0 12" lodBlending="false" clipDistance="80" nodeId="161">
+          <Shape name="LOD0" shapeId="36" nodeId="162" castsShadows="true" receiveShadows="true" materialIds="18"/>
+          <Shape name="LOD1" shapeId="37" nodeId="163" castsShadows="true" receiveShadows="true" materialIds="18"/>
+          <Shape name="col" shapeId="38" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="164" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19"/>
+        </TransformGroup>
+        <TransformGroup name="ironWheelSmall" lockedgroup="true" translation="0.234396 0.84599 -0.125815" rotation="-11.813 57.5533 -5.71844" lodDistance="0 10" lodBlending="false" clipDistance="65" nodeId="165">
+          <Shape name="LOD0" shapeId="39" nodeId="166" castsShadows="true" receiveShadows="true" materialIds="18"/>
+          <Shape name="LOD1" shapeId="40" nodeId="167" castsShadows="true" receiveShadows="true" materialIds="18"/>
+          <Shape name="col" shapeId="41" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="168" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19"/>
+        </TransformGroup>
+        <ReferenceNode name="pallet03" translation="-1.52741 0.659003 -0.0468528" rotation="-115.457 -75.5903 42.5914" referenceId="58" nodeId="176"/>
+        <TransformGroup name="ironWheelBig" lockedgroup="true" translation="-0.810955 1.15524 1.2152" rotation="-173.994 21.9072 -148.516" lodDistance="0 15" lodBlending="false" clipDistance="90" nodeId="182">
+          <Shape name="LOD0" shapeId="42" nodeId="183" castsShadows="true" receiveShadows="true" materialIds="18"/>
+          <Shape name="LOD1" shapeId="43" nodeId="184" castsShadows="true" receiveShadows="true" materialIds="18"/>
+          <Shape name="col" shapeId="44" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="185" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="logStore_PREFAB" lockedgroup="true" translation="-14.0397 -0.178051 -9.13303" rotation="-4.60302e-06 90 0" nodeId="186">
+        <TransformGroup name="logStore02_PREFAB" lockedgroup="true" translation="0 0 -7.62939e-06" rotation="0 -2.13443e-07 -3.56222e-13" nodeId="187">
+          <TransformGroup name="logStore02" lockedgroup="true" lodDistance="0 20" clipDistance="180" nodeId="188">
+            <Shape name="LOD0" shapeId="45" nodeId="189" castsShadows="true" receiveShadows="true" materialIds="20">
+              <Shape name="logStore02_detail" shapeId="46" clipDistance="12" nodeId="190" castsShadows="true" receiveShadows="true" materialIds="20"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="47" nodeId="191" castsShadows="true" receiveShadows="true" materialIds="20"/>
+            <Shape name="col" shapeId="48" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="192" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19"/>
+          </TransformGroup>
+          <TransformGroup name="firewoodStack02" lockedgroup="true" translation="0.622009 0.130898 0.012001" lodDistance="0 25" clipDistance="300" nodeId="193">
+            <Shape name="firewood2" shapeId="49" nodeId="194" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="firewood2_LOD" shapeId="50" clipDistance="135" nodeId="195" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="col" translation="0 0.457731 0" shapeId="51" visibility="false" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="196" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19"/>
+          </TransformGroup>
+          <TransformGroup name="firewoodStack01" lockedgroup="true" translation="-0.597992 0.130898 -0.0620041" lodDistance="0 25" clipDistance="300" nodeId="197">
+            <Shape name="firewood1" shapeId="52" nodeId="198" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="firewood1_LOD" shapeId="53" clipDistance="135" nodeId="199" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="col" translation="-0.00196 0.308977 -0.002754" shapeId="54" visibility="false" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="200" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="firewoodStumpAxe_PREFAB" lockedgroup="true" translation="0.994559 -0.0103303 1.03985" rotation="-1.85499e-06 50.4374 -1.5071e-05" nodeId="201">
+          <Shape name="firewoodStump02" translation="0 0 -3.23834e-06" rotation="0 -0 3.42326e-19" shapeId="55" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" clipDistance="80" nodeId="202" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <ReferenceNode name="axe" translation="-0.0468039 0.716295 -0.268971" rotation="82.3808 27.7878 -91.8318" scale="1.12605 1 1" referenceId="65" nodeId="208"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="tipOcclusionUpdateAreas" translation="0.698943 0 -3.66695" nodeId="716">
+      <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="10.0205 0 -3.1935" nodeId="717">
+        <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="3.53068 0 1.46638" nodeId="718"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="carrotHaulm" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="4" filename="$data/foliage/carrot/carrotHaulm_alpha.png" />
+    <File fileId="1" filename="$data/foliage/carrot/carrotHaulm_diffuse.png" />
+    <File fileId="2" filename="$data/foliage/carrot/carrotHaulm_normal.png" />
+    <File fileId="3" filename="$data/shaders/solidFoliageShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="carrotHaulm_mat" materialId="1" specularColor="0 0 0" customShaderId="3" customShaderVariation="ALPHA_MAP">
+      <CustomParameter name="snowScale" value="0.45"/>
+      <Custommap name="alphaMap" fileId="4"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="carrotHaulm.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="haulm" shapeId="1" castsShadows="false" receiveShadows="true" materialIds="1" clipDistance="500" nodeId="1"/>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

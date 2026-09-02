@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_sawmill</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>map/placeables/sawmill/store_sawmill.png</image>
+        <price>300000</price>
+		<dailyUpkeep>1000</dailyUpkeep>
+        <showInStore>false</showInStore>
+        <canBeSold>true</canBeSold>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>map/placeables/sawmill/sawmill.i3d</filename>
+        <canBeRenamed>false</canBeRenamed>
+        <canBeDeleted>false</canBeDeleted>
+    </base>
+
+    <clearAreas/>
+    <leveling/>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01"/>
+        <indoorArea startNode="indoorAreaStart02" widthNode="indoorAreaWidth02" heightNode="indoorAreaHeight02"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <dynamicallyLoadedParts>
+    </dynamicallyLoadedParts>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="false">
+            <production id="boards" name="%s (%s)" params="$l10n_fillType_boards|$l10n_fillType_wood" cyclesPerHour="1" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="WOOD" amount="416" />
+                </inputs>
+                <outputs>
+                    <output fillType="BOARDS"    amount="410" />
+                    <output fillType="WOODCHIPS" amount="120" />
+                </outputs>
+            </production>
+
+            <production id="planks" name="%s (%s)" params="$l10n_fillType_planks|$l10n_fillType_wood" cyclesPerHour="1" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="WOOD" amount="416" />
+                </inputs>
+                <outputs>
+                    <output fillType="PLANKS"    amount="275" />
+                    <output fillType="WOODCHIPS" amount="120" />
+                </outputs>
+            </production>
+
+            <production id="woodBeam" name="%s (%s)" params="$l10n_fillType_woodBeam|$l10n_fillType_wood" cyclesPerHour="1" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="WOOD" amount="416" />
+                </inputs>
+                <outputs>
+                    <output fillType="WOODBEAM"  amount="183" />
+                    <output fillType="WOODCHIPS" amount="150" />
+                </outputs>
+            </production>
+
+            <production id="prefabWall" name="%s (%s)" params="$l10n_fillType_prefabWall|$l10n_fillType_wood" cyclesPerHour="1.4" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="WOOD" amount="412" />
+                </inputs>
+                <outputs>
+                    <output fillType="PREFABWALL" amount="100" />
+                </outputs>
+            </production>
+        </productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50" >
+            <capacity fillType="WOOD"       capacity="140000" />
+            <capacity fillType="BOARDS"     capacity="100000" />
+            <capacity fillType="PLANKS"     capacity="70000" />
+            <capacity fillType="WOODBEAM"   capacity="45000" />
+            <capacity fillType="PREFABWALL" capacity="35000" />
+            <capacity fillType="WOODCHIPS"  capacity="200000" />
+        </storage>
+
+        <sellingStation node="sellingStation" supportsExtension="false">
+            <woodTrigger fillTypes="WOOD" aiNode="unloadTriggerAINode" triggerNode="woodTrigger" activationTriggerNode="woodActivationTrigger"/>
+        </sellingStation>
+		
+		<loadingStation node="loadingStation" supportsExtension="false">
+            <loadTrigger fillTypes="WOODCHIPS" triggerNode="loadTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode"/>
+        </loadingStation>
+
+        <palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="palletAreaStart01" endNode="palletAreaEnd01" fillTypes="WOODBEAM PLANKS BOARDS PREFABWALL" />
+                <spawnPlace startNode="palletAreaStart02" endNode="palletAreaEnd02" fillTypes="WOODBEAM PLANKS BOARDS PREFABWALL" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <playerTrigger node="playerTrigger" />
+
+        <sounds>
+            <!--<idle   template="carpenterIdle" linkNodeOffset="17 0 -5" innerRadius="5" outerRadius="60"/>
+            <active template="carpenterWork" linkNodeOffset="17 0 -5" innerRadius="5" outerRadius="60"/>-->
+			<idle file="$data/placeables/brandless/productionPointsGeneric/sawmillPlaceable/sounds/sawIdle.wav"  linkNodeOffset="-2 0 11" loops="0" pitchScale="0.8" innerRadius="5" outerRadius="40">
+                <volume indoor="0.15" outdoor="0.6"/>
+            </idle>
+            <active file="$data/placeables/brandless/productionPointsGeneric/sawmillPlaceable/sounds/sawWork.wav" linkNodeOffset="-2 0 11" loops="0" innerRadius="5" outerRadius="50">
+                <volume indoor="0.6" outdoor="1.6"/>
+                <lowpassCutoffFrequency indoor="1000" outdoor="20000" />
+                <lowpassGain indoor="0.5" outdoor="1" />
+            </active>
+        </sounds>
+    </productionPoint>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes01"    		  adjustToGround="true" />
+        <triggerMarker node="warningStripes02"    		  adjustToGround="true" />
+        <triggerMarker node="playerTriggerMarker"         adjustToGround="true" filename="$data/shared/assets/marker/markerIconWrench.i3d"/>
+        <triggerMarker node="unloadTriggerMarker"         adjustToGround="true" filename="$data/shared/assets/marker/markerIconUnload.i3d"/>
+        <triggerMarker node="woodActivationTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconExclamationMark.i3d"/>
+		<triggerMarker node="warningStripes_woodChips"    adjustToGround="true"/>
+		<triggerMarker node="warningStripes_woodChips" 	  adjustToGround="true" filename="$data/shared/assets/marker/markerIconLoad.i3d"/>
+	</triggerMarkers>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="playerTriggerMarker" />
+    </hotspots>
+
+    <i3dMappings>
+        <i3dMapping id="sawmill" node="0>" />
+        <i3dMapping id="indoorAreaStart01" node="0>0|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="indoorAreaStart02" node="0>0|1" />
+        <i3dMapping id="indoorAreaWidth02" node="0>0|1|0" />
+        <i3dMapping id="indoorAreaHeight02" node="0>0|1|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>1|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>1|0|0" />
+        <i3dMapping id="infoTrigger" node="0>2" />
+        <i3dMapping id="sellingStation" node="0>3" />
+        <i3dMapping id="unloadTrigger" node="0>3|0" />
+        <i3dMapping id="unloadTriggerAINode" node="0>3|1" />
+        <i3dMapping id="unloadTriggerMarker" node="0>3|2" />
+        <i3dMapping id="woodTrigger" node="0>3|3" />
+        <i3dMapping id="warningStripes_unloading" node="0>3|4" />
+        <i3dMapping id="warningStripes02" node="0>3|4|0" />
+        <i3dMapping id="woodActivationTrigger" node="0>3|5" />
+        <i3dMapping id="woodActivationTriggerMarker" node="0>3|5|0" />
+        <i3dMapping id="playerTrigger" node="0>4|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>4|0|0" />
+        <i3dMapping id="smokeEffectShape01" node="0>4|1|0" />
+        <i3dMapping id="smokeEffectChimneyShape01" node="0>4|1|1" />
+        <i3dMapping id="smokeEffectChimneyShape02" node="0>4|1|2" />
+        <i3dMapping id="palletSpawner" node="0>5" />
+        <i3dMapping id="palletAreaStart01" node="0>5|0" />
+        <i3dMapping id="palletAreaEnd01" node="0>5|0|0" />
+        <i3dMapping id="palletAreaStart02" node="0>5|1" />
+        <i3dMapping id="palletAreaEnd02" node="0>5|1|0" />
+        <i3dMapping id="warningStripes01" node="0>5|2" />
+		<i3dMapping id="warningStripes_woodChips" node="0>6|0" />
+        <i3dMapping id="loadTrigger" node="0>6|1" />
+        <i3dMapping id="dischargeNode" node="0>6|2" />
+    </i3dMappings>
+</placeable>

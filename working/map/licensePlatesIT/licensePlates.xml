@@ -1,0 +1,500 @@
+<licensePlates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/mapLicensePlates.xsd">
+    <!--<font name="LICENSE_PLATE_IT" />-->
+	 <font name="LICENSE_PLATE_PL" />
+
+    <licensePlate filename="map/licensePlatesIT/licensePlatesIT.i3d" node="2" type="ELONGATEDFRONT" width="0.360" height="0.11">
+        <font size="0.06" scaleX="0.85" scaleY="1"/>
+
+        <variations>
+            <variation> <!-- Dal 1999 a oggi una banda di colore blu (MM-000MM) -->
+                <value node="0|0" posX="-0.1032" numerical="false" alphabetical="true" />
+                <value node="0|1" posX="-0.0705" numerical="false" alphabetical="true" />
+
+                <value node="0|2" posX="-0.0217" numerical="true"  alphabetical="false" nextSection="true"/>
+                <value node="0|3" posX="0.0102"  numerical="true"  alphabetical="false" />
+                <value node="0|4" posX="0.0423"  numerical="true"  alphabetical="false" />
+
+                <value node="0|5" posX="0.0743"  numerical="false" alphabetical="true" nextSection="true" />
+                <value node="0|6" posX="0.1067"  numerical="false" alphabetical="true" />
+
+                <value node="0|10" posX="-0.0461" posZ="0.0" position="ANY" />
+
+                <value node="1|0"   position="ANY"/>
+                <value node="1|1"   position="NONE"/>
+                <value node="1|2"   position="NONE"/>
+                <value node="1|3"   position="NONE"/>
+                <value node="1|0|0" position="ANY"/>
+                <value node="1|0|1" position="ANY"/>
+                <value node="1|0|2" position="ANY"/>
+                <value node="2|0"   position="ANY"/>
+                <value node="2|1"   position="NONE"/>
+                <value node="2|2"   position="NONE"/>
+
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0.0123 0.1413 0.5776"/>
+                </material>
+            </variation>
+            <variation> <!-- Dal 1999 a oggi (MM-000MM) -->
+                <value node="0|0" posX="-0.1353" numerical="false" alphabetical="true" />
+                <value node="0|1" posX="-0.1026" numerical="false" alphabetical="true" />
+
+                <value node="0|2" posX="-0.0323" numerical="true"  alphabetical="false" nextSection="true"/>
+                <value node="0|3" posX="0.0008"  numerical="true"  alphabetical="false" />
+                <value node="0|4" posX="0.0340"  numerical="true"  alphabetical="false" />
+
+                <value node="0|5" posX="0.1024"  numerical="false" alphabetical="true" nextSection="true" />
+                <value node="0|6" posX="0.1356"  numerical="false" alphabetical="true" />
+
+                <value node="0|10" posX="-0.0674" posZ="0.0" position="ANY" />
+
+                <value node="1|0"   position="ANY"/>
+                <value node="1|1"   position="NONE"/>
+                <value node="1|2"   position="NONE"/>
+                <value node="1|3"   position="NONE"/>
+                <value node="1|0|0" position="NONE"/>
+                <value node="1|0|1" position="NONE"/>
+                <value node="1|0|2" position="NONE"/>
+                <value node="2|0"   position="ANY"/>
+                <value node="2|1"   position="NONE"/>
+                <value node="2|2"   position="NONE"/>
+
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="1.0000 1.0000 1.0000"/>
+                </material>
+            </variation>
+
+            <variation> <!-- Rimorchi (MM-00000) -->
+                <value node="0|0" posX="-0.1309" posZ="0.0120" numerical="false" alphabetical="true" />
+                <value node="0|1" posX="-0.0936" posZ="0.0120" numerical="false" alphabetical="true" />
+
+                <value node="0|2" posX="-0.0140" posZ="0.0120" numerical="true"  alphabetical="false" nextSection="true"/>
+                <value node="0|3" posX="0.0223"  posZ="0.0120" numerical="true"  alphabetical="false" />
+                <value node="0|4" posX="0.0587"  posZ="0.0120" numerical="true"  alphabetical="false" />
+                <value node="0|5" posX="0.0951"  posZ="0.0120" numerical="true"  alphabetical="false" />
+                <value node="0|6" posX="0.1316"  posZ="0.0120" numerical="true"  alphabetical="false" />
+
+                <value node="0|10" posX="-0.0596" posZ="0.0120" position="ANY" />
+
+                <value node="0|9|0" character="R" locked="true" />
+                <value node="0|9|1" character="I" locked="true" />
+                <value node="0|9|2" character="M" locked="true" />
+                <value node="0|9|3" character="O" locked="true" />
+                <value node="0|9|4" character="R" locked="true" />
+                <value node="0|9|5" character="C" locked="true" />
+                <value node="0|9|6" character="H" locked="true" />
+                <value node="0|9|7" character="I" locked="true" />
+                <value node="0|9|8" character="O" locked="true" />
+
+                <value node="1|0"   position="NONE"/>
+                <value node="1|1"   position="ANY"/>
+                <value node="1|2"   position="NONE"/>
+                <value node="1|3"   position="NONE"/>
+                <value node="1|0|0" position="NONE"/>
+                <value node="1|0|1" position="NONE"/>
+                <value node="1|0|2" position="NONE"/>
+                <value node="2|0"   position="NONE"/>
+                <value node="2|1"   position="ANY"/>
+                <value node="2|2"   position="NONE"/>
+
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="1.0000 1.0000 1.0000"/>
+                </material>
+            </variation>
+
+            <variation> <!-- Macchine agricole (MM-000-M) -->
+                <value node="0|0" posX="-0.0591" posZ="-0.0366"  numerical="false" alphabetical="true" />
+                <value node="0|1" posX="-0.0191" posZ="-0.0366"  numerical="false" alphabetical="true" />
+
+                <value node="0|2" posX="0.0587"  posZ="-0.0366"  numerical="true"  alphabetical="false" nextSection="true" />
+                <value node="0|3" posX="-0.0585" posZ="0.0370" numerical="true"  alphabetical="false" />
+                <value node="0|4" posX="0.0000"  posZ="0.0370" numerical="true"  alphabetical="false" />
+
+                <value node="0|5" posX="0.0581"  posZ="0.0370" numerical="false" alphabetical="true" nextSection="true" />
+
+                <value node="0|10" posX="0.0196" posZ="-0.0539" position="ANY" />
+
+                <value node="1|0"   position="NONE"/>
+                <value node="1|1"   position="NONE"/>
+                <value node="1|2"   position="NONE"/>
+                <value node="1|3"   position="ANY"/>
+                <value node="1|0|0" position="NONE"/>
+                <value node="1|0|1" position="NONE"/>
+                <value node="1|0|2" position="NONE"/>
+                <value node="2|0"   position="NONE"/>
+                <value node="2|1"   position="NONE"/>
+                <value node="2|2"   position="ANY"/>
+            </variation>
+
+            <variation> <!-- Rimorchi agricoli (MM-000-M) -->
+                <value node="0|0" posX="-0.1324" posZ="0.0176" numerical="false" alphabetical="true" />
+                <value node="0|1" posX="-0.0959" posZ="0.0176" numerical="false" alphabetical="true" />
+
+                <value node="0|2" posX="-0.0039" posZ="0.0176" numerical="true"  alphabetical="false" nextSection="true" />
+                <value node="0|3" posX="0.0324"  posZ="0.0176" numerical="true"  alphabetical="false" />
+                <value node="0|4" posX="0.0688"  posZ="0.0176" numerical="true"  alphabetical="false" />
+
+                <value node="0|5" posX="0.1405"  posZ="0.0176" numerical="false" alphabetical="true" nextSection="true" />
+
+                <value node="0|10" posX="-0.0545" posZ="0.0176" position="ANY" />
+
+                <value node="0|9|0" character="R" locked="true" />
+                <value node="0|9|1" character="I" locked="true" />
+                <value node="0|9|2" character="M" locked="true" />
+                <value node="0|9|3" character="." locked="true" />
+                <value node="0|9|4" character="A" locked="true" />
+                <value node="0|9|5" character="G" locked="true" />
+                <value node="0|9|6" character="R" locked="true" />
+                <value node="0|9|7" character="." locked="true" />
+
+                <value node="1|0"   position="NONE"/>
+                <value node="1|1"   position="NONE"/>
+                <value node="1|2"   position="ANY"/>
+                <value node="1|3"   position="NONE"/>
+                <value node="1|0|0" position="NONE"/>
+                <value node="1|0|1" position="NONE"/>
+                <value node="1|0|2" position="NONE"/>
+                <value node="2|0"   position="NONE"/>
+                <value node="2|1"   position="ANY"/>
+                <value node="2|2"   position="NONE"/>
+            </variation>
+        </variations>
+
+        <frame node="2" widthOffset="0.005" heightOffsetTop="0.005" heightOffsetBot="0.015"/>
+    </licensePlate>
+
+    <licensePlate filename="map/licensePlatesIT/licensePlatesIT.i3d" node="0" type="ELONGATED" width="0.52" height="0.11">
+        <font size="0.082" scaleX="0.85" scaleY="1"/>
+
+        <variations>
+            <variation> <!-- Dal 1999 a oggi una banda di colore blu (MM-000MM) -->
+                <value node="0|0" posX="-0.1715" numerical="false" alphabetical="true" />
+                <value node="0|1" posX="-0.1205" numerical="false" alphabetical="true" />
+
+                <value node="0|2" posX="-0.0368" numerical="true"  alphabetical="false" nextSection="true"/>
+                <value node="0|3" posX="0.0121"  numerical="true"  alphabetical="false" />
+                <value node="0|4" posX="0.0611"  numerical="true"  alphabetical="false" />
+
+                <value node="0|5" posX="0.1164"  numerical="false" alphabetical="true" nextSection="true" />
+                <value node="0|6" posX="0.1674"  numerical="false" alphabetical="true" />
+
+                <value node="0|10" posX="-0.0786" posZ="0.0" position="ANY" />
+
+                <value node="1|0"   position="ANY"/>
+                <value node="1|1"   position="NONE"/>
+                <value node="1|2"   position="NONE"/>
+                <value node="1|3"   position="NONE"/>
+                <value node="1|0|0" position="ANY"/>
+                <value node="1|0|1" position="ANY"/>
+                <value node="1|0|2" position="ANY"/>
+                <value node="2|0"   position="ANY"/>
+                <value node="2|1"   position="NONE"/>
+                <value node="2|2"   position="NONE"/>
+
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0.0123 0.1413 0.5776"/>
+                </material>
+            </variation>
+            <variation> <!-- Dal 1999 a oggi (MM-000MM) -->
+                <value node="0|0" posX="-0.1938" numerical="false" alphabetical="true" />
+                <value node="0|1" posX="-0.1428" numerical="false" alphabetical="true" />
+
+                <value node="0|2" posX="-0.0456" numerical="true"  alphabetical="false" nextSection="true"/>
+                <value node="0|3" posX="0.0033"  numerical="true"  alphabetical="false" />
+                <value node="0|4" posX="0.0523"  numerical="true"  alphabetical="false" />
+
+                <value node="0|5" posX="0.1382"  numerical="false" alphabetical="true" nextSection="true" />
+                <value node="0|6" posX="0.1936"  numerical="false" alphabetical="true" />
+
+                <value node="0|10" posX="-0.0941" posZ="0.0" position="ANY" />
+
+                <value node="1|0"   position="ANY"/>
+                <value node="1|1"   position="NONE"/>
+                <value node="1|2"   position="NONE"/>
+                <value node="1|3"   position="NONE"/>
+                <value node="1|0|0" position="NONE"/>
+                <value node="1|0|1" position="NONE"/>
+                <value node="1|0|2" position="NONE"/>
+                <value node="2|0"   position="ANY"/>
+                <value node="2|1"   position="NONE"/>
+                <value node="2|2"   position="NONE"/>
+
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="1.0000 1.0000 1.0000"/>
+                </material>
+            </variation>
+
+            <variation> <!-- Rimorchi (MM-00000) -->
+                <value node="0|0" posX="-0.1309" posZ="0.0120" numerical="false" alphabetical="true" />
+                <value node="0|1" posX="-0.0936" posZ="0.0120" numerical="false" alphabetical="true" />
+
+                <value node="0|2" posX="-0.0140" posZ="0.0120" numerical="true"  alphabetical="false" nextSection="true"/>
+                <value node="0|3" posX="0.0223"  posZ="0.0120" numerical="true"  alphabetical="false" />
+                <value node="0|4" posX="0.0587"  posZ="0.0120" numerical="true"  alphabetical="false" />
+                <value node="0|5" posX="0.0951"  posZ="0.0120" numerical="true"  alphabetical="false" />
+                <value node="0|6" posX="0.1316"  posZ="0.0120" numerical="true"  alphabetical="false" />
+
+                <value node="0|10" posX="-0.0596" posZ="0.0120" position="ANY" />
+
+                <value node="0|9|0" character="R" locked="true" />
+                <value node="0|9|1" character="I" locked="true" />
+                <value node="0|9|2" character="M" locked="true" />
+                <value node="0|9|3" character="O" locked="true" />
+                <value node="0|9|4" character="R" locked="true" />
+                <value node="0|9|5" character="C" locked="true" />
+                <value node="0|9|6" character="H" locked="true" />
+                <value node="0|9|7" character="I" locked="true" />
+                <value node="0|9|8" character="O" locked="true" />
+
+                <value node="1|0"   position="NONE"/>
+                <value node="1|1"   position="ANY"/>
+                <value node="1|2"   position="NONE"/>
+                <value node="1|3"   position="NONE"/>
+                <value node="1|0|0" position="NONE"/>
+                <value node="1|0|1" position="NONE"/>
+                <value node="1|0|2" position="NONE"/>
+                <value node="2|0"   position="NONE"/>
+                <value node="2|1"   position="ANY"/>
+                <value node="2|2"   position="NONE"/>
+
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="1.0000 1.0000 1.0000"/>
+                </material>
+            </variation>
+
+            <variation> <!-- Macchine agricole (MM-000-M) -->
+                <value node="0|0" posX="-0.0591" posZ="-0.0366"  numerical="false" alphabetical="true" />
+                <value node="0|1" posX="-0.0191" posZ="-0.0366"  numerical="false" alphabetical="true" />
+
+                <value node="0|2" posX="0.0587"  posZ="-0.0366"  numerical="true"  alphabetical="false" nextSection="true" />
+                <value node="0|3" posX="-0.0585" posZ="0.0370" numerical="true"  alphabetical="false" />
+                <value node="0|4" posX="0.0000"  posZ="0.0370" numerical="true"  alphabetical="false" />
+
+                <value node="0|5" posX="0.0581"  posZ="0.0370" numerical="false" alphabetical="true" nextSection="true" />
+
+                <value node="0|10" posX="0.0196" posZ="-0.0539" position="ANY" />
+
+                <value node="1|0"   position="NONE"/>
+                <value node="1|1"   position="NONE"/>
+                <value node="1|2"   position="NONE"/>
+                <value node="1|3"   position="ANY"/>
+                <value node="1|0|0" position="NONE"/>
+                <value node="1|0|1" position="NONE"/>
+                <value node="1|0|2" position="NONE"/>
+                <value node="2|0"   position="NONE"/>
+                <value node="2|1"   position="NONE"/>
+                <value node="2|2"   position="ANY"/>
+            </variation>
+
+            <variation> <!-- Rimorchi agricoli (MM-000-M) -->
+                <value node="0|0" posX="-0.1324" posZ="0.0176" numerical="false" alphabetical="true" />
+                <value node="0|1" posX="-0.0959" posZ="0.0176" numerical="false" alphabetical="true" />
+
+                <value node="0|2" posX="-0.0039" posZ="0.0176" numerical="true"  alphabetical="false" nextSection="true" />
+                <value node="0|3" posX="0.0324"  posZ="0.0176" numerical="true"  alphabetical="false" />
+                <value node="0|4" posX="0.0688"  posZ="0.0176" numerical="true"  alphabetical="false" />
+
+                <value node="0|5" posX="0.1405"  posZ="0.0176" numerical="false" alphabetical="true" nextSection="true" />
+
+                <value node="0|10" posX="-0.0545" posZ="0.0176" position="ANY" />
+
+                <value node="0|9|0" character="R" locked="true" />
+                <value node="0|9|1" character="I" locked="true" />
+                <value node="0|9|2" character="M" locked="true" />
+                <value node="0|9|3" character="." locked="true" />
+                <value node="0|9|4" character="A" locked="true" />
+                <value node="0|9|5" character="G" locked="true" />
+                <value node="0|9|6" character="R" locked="true" />
+                <value node="0|9|7" character="." locked="true" />
+
+                <value node="1|0"   position="NONE"/>
+                <value node="1|1"   position="NONE"/>
+                <value node="1|2"   position="ANY"/>
+                <value node="1|3"   position="NONE"/>
+                <value node="1|0|0" position="NONE"/>
+                <value node="1|0|1" position="NONE"/>
+                <value node="1|0|2" position="NONE"/>
+                <value node="2|0"   position="NONE"/>
+                <value node="2|1"   position="ANY"/>
+                <value node="2|2"   position="NONE"/>
+            </variation>
+        </variations>
+
+        <frame node="2" widthOffset="0.005" heightOffsetTop="0.005" heightOffsetBot="0.015"/>
+    </licensePlate>
+
+    <licensePlate filename="map/licensePlatesIT/licensePlatesIT.i3d" node="1" type="SQUARISH" width="0.297" height="0.214">
+        <font size="0.07" scaleX="0.85" scaleY="1"/>
+
+        <variations>
+            <variation> <!-- Dal 1999 a oggi una banda di colore blu (MM-000MM) -->
+                <value node="0|0" posX="-0.0234" numerical="false" alphabetical="true" />
+                <value node="0|1" posX="0.0233"  numerical="false" alphabetical="true" />
+
+                <value node="0|2" posX="-0.1108" numerical="true"  alphabetical="false" nextSection="true"/>
+                <value node="0|3" posX="-0.0650" numerical="true"  alphabetical="false" />
+                <value node="0|4" posX="-0.0193" numerical="true"  alphabetical="false" />
+
+                <value node="0|5" posX="0.0626"  numerical="false" alphabetical="true" nextSection="true" />
+                <value node="0|6" posX="0.1090"  numerical="false" alphabetical="true" />
+
+                <value node="0|10" posX="0.0216" posY="-0.0498" position="ANY" />
+
+                <value node="1|0"   position="ANY"/>
+                <value node="1|1"   position="NONE"/>
+                <value node="1|2"   position="NONE"/>
+                <value node="1|3"   position="NONE"/>
+                <value node="1|4"   position="NONE"/>
+                <value node="1|0|0" position="ANY"/>
+                <value node="1|0|1" position="ANY"/>
+                <value node="1|0|2" position="ANY"/>
+                <value node="2|0"   position="ANY"/>
+                <value node="2|1"   position="NONE"/>
+                <value node="2|2"   position="NONE"/>
+                <value node="2|3"   position="NONE"/>
+
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="0.0123 0.1413 0.5776"/>
+                </material>
+            </variation>
+            <variation> <!-- Dal 1999 a oggi (MM-000MM) -->
+                <value node="0|0" posX="-0.0234" numerical="false" alphabetical="true" />
+                <value node="0|1" posX="0.0233"  numerical="false" alphabetical="true" />
+
+                <value node="0|2" posX="-0.1033" numerical="true"  alphabetical="false" nextSection="true"/>
+                <value node="0|3" posX="-0.0575" numerical="true"  alphabetical="false" />
+                <value node="0|4" posX="-0.0117" numerical="true"  alphabetical="false" />
+
+                <value node="0|5" posX="0.0569"  numerical="false" alphabetical="true" nextSection="true" />
+                <value node="0|6" posX="0.1033"  numerical="false" alphabetical="true" />
+
+                <value node="0|10" posX="0.0937" posY="0.0493" position="ANY" />
+
+                <value node="1|0"   position="NONE"/>
+                <value node="1|1"   position="ANY"/>
+                <value node="1|2"   position="NONE"/>
+                <value node="1|3"   position="NONE"/>
+                <value node="1|4"   position="NONE"/>
+                <value node="1|0|0" position="NONE"/>
+                <value node="1|0|1" position="NONE"/>
+                <value node="1|0|2" position="NONE"/>
+                <value node="2|0"   position="NONE"/>
+                <value node="2|1"   position="ANY"/>
+                <value node="2|2"   position="NONE"/>
+                <value node="2|3"   position="NONE"/>
+
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="1.0000 1.0000 1.0000"/>
+                </material>
+            </variation>
+
+            <variation> <!-- Rimorchi (MM-00000) -->
+                <value node="0|0" posX="-0.1309" posY="-0.0120" numerical="false" alphabetical="true" />
+                <value node="0|1" posX="-0.0936" posY="-0.0120" numerical="false" alphabetical="true" />
+
+                <value node="0|2" posX="-0.0140" posY="-0.0120" numerical="true"  alphabetical="false" nextSection="true"/>
+                <value node="0|3" posX="0.0223"  posY="-0.0120" numerical="true"  alphabetical="false" />
+                <value node="0|4" posX="0.0587"  posY="-0.0120" numerical="true"  alphabetical="false" />
+                <value node="0|5" posX="0.0951"  posY="-0.0120" numerical="true"  alphabetical="false" />
+                <value node="0|6" posX="0.1316"  posY="-0.0120" numerical="true"  alphabetical="false" />
+
+                <value node="0|10" posX="-0.0596" posY="-0.0120" position="ANY" />
+
+                <value node="0|9|0" character="R" locked="true" />
+                <value node="0|9|1" character="I" locked="true" />
+                <value node="0|9|2" character="M" locked="true" />
+                <value node="0|9|3" character="O" locked="true" />
+                <value node="0|9|4" character="R" locked="true" />
+                <value node="0|9|5" character="C" locked="true" />
+                <value node="0|9|6" character="H" locked="true" />
+                <value node="0|9|7" character="I" locked="true" />
+                <value node="0|9|8" character="O" locked="true" />
+
+                <value node="1|0"   position="NONE"/>
+                <value node="1|1"   position="NONE"/>
+                <value node="1|2"   position="ANY"/>
+                <value node="1|3"   position="NONE"/>
+                <value node="1|4"   position="NONE"/>
+                <value node="1|0|0" position="NONE"/>
+                <value node="1|0|1" position="NONE"/>
+                <value node="1|0|2" position="NONE"/>
+                <value node="2|0"   position="NONE"/>
+                <value node="2|1"   position="NONE"/>
+                <value node="2|2"   position="ANY"/>
+                <value node="2|3"   position="NONE"/>
+
+                <material materialSlotName="licensePlateBlueBackground_mat">
+                    <colorScale value="1.0000 1.0000 1.0000"/>
+                </material>
+            </variation>
+
+            <variation> <!-- Macchine agricole (MM-000-M) -->
+                <value node="0|0" posX="-0.0591" posY="0.0366"  numerical="false" alphabetical="true" />
+                <value node="0|1" posX="-0.0191" posY="0.0366"  numerical="false" alphabetical="true" />
+
+                <value node="0|2" posX="0.0587"  posY="0.0366"  numerical="true"  alphabetical="false" nextSection="true" />
+                <value node="0|3" posX="-0.0585" posY="-0.0370" numerical="true"  alphabetical="false" />
+                <value node="0|4" posX="0.0000"  posY="-0.0370" numerical="true"  alphabetical="false" />
+
+                <value node="0|5" posX="0.0581"  posY="-0.0370" numerical="false" alphabetical="true" nextSection="true" />
+
+                <value node="0|10" posX="0.0196" posY="0.0539" position="ANY" />
+
+                <value node="1|0"   position="NONE"/>
+                <value node="1|1"   position="NONE"/>
+                <value node="1|2"   position="NONE"/>
+                <value node="1|3"   position="NONE"/>
+                <value node="1|4"   position="ANY"/>
+                <value node="1|0|0" position="NONE"/>
+                <value node="1|0|1" position="NONE"/>
+                <value node="1|0|2" position="NONE"/>
+                <value node="2|0"   position="NONE"/>
+                <value node="2|1"   position="NONE"/>
+                <value node="2|2"   position="NONE"/>
+                <value node="2|3"   position="ANY"/>
+            </variation>
+
+            <variation> <!-- Rimorchi agricoli (MM-000-M) -->
+                <value node="0|0" posX="-0.1324" posY="-0.0176" numerical="false" alphabetical="true" />
+                <value node="0|1" posX="-0.0959" posY="-0.0176" numerical="false" alphabetical="true" />
+
+                <value node="0|2" posX="-0.0039" posY="-0.0176" numerical="true"  alphabetical="false" nextSection="true" />
+                <value node="0|3" posX="0.0324"  posY="-0.0176" numerical="true"  alphabetical="false" />
+                <value node="0|4" posX="0.0688"  posY="-0.0176" numerical="true"  alphabetical="false" />
+
+                <value node="0|5" posX="0.1405"  posY="-0.0176" numerical="false" alphabetical="true" nextSection="true" />
+
+                <value node="0|10" posX="-0.0545" posY="-0.0176" position="ANY" />
+
+                <value node="0|9|0" character="R" locked="true" />
+                <value node="0|9|1" character="I" locked="true" />
+                <value node="0|9|2" character="M" locked="true" />
+                <value node="0|9|3" character="." locked="true" />
+                <value node="0|9|4" character="A" locked="true" />
+                <value node="0|9|5" character="G" locked="true" />
+                <value node="0|9|6" character="R" locked="true" />
+                <value node="0|9|7" character="." locked="true" />
+
+                <value node="1|0"   position="NONE"/>
+                <value node="1|1"   position="NONE"/>
+                <value node="1|2"   position="NONE"/>
+                <value node="1|3"   position="ANY"/>
+                <value node="1|4"   position="NONE"/>
+                <value node="1|0|0" position="NONE"/>
+                <value node="1|0|1" position="NONE"/>
+                <value node="1|0|2" position="NONE"/>
+                <value node="2|0"   position="NONE"/>
+                <value node="2|1"   position="NONE"/>
+                <value node="2|2"   position="ANY"/>
+                <value node="2|3"   position="NONE"/>
+            </variation>
+        </variations>
+
+        <frame node="2" widthOffset="0.005" heightOffsetTop="0.005" heightOffsetBot="0.015"/>
+    </licensePlate>
+
+    <colorConfigurations materialName="licensePlateColored_mat" useDefaultColors="true">
+        <colorConfiguration name="$l10n_ui_colorBlack" color="0.0212 0.0212 0.0212"/>
+    </colorConfigurations>
+
+    <placement defaultType="both"/>
+</licensePlates>

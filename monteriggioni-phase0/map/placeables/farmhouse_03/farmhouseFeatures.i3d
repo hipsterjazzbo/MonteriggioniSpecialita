@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="farmhouseFeatures.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/maps/mapEU/textures/props/accessPointFence_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/mapEU/textures/props/accessPointFence_normal.png"/>
+    <File fileId="3" filename="$data/maps/mapEU/textures/props/accessPointFence_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="accessPointFence_mat" materialId="5">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="farmhouseFeatures.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="farmhouseFeatures" nodeId="9">
+      <Camera name="sleepCamera" translation="-93.8554 14.1532 25.416" rotation="-86.1339 -61.6482 79.0872" nodeId="10" fov="54.4322" nearClip="0.0559864" farClip="559.864" orthographicHeight="1"/>
+      <TransformGroup name="sleepTriggerMarker" translation="-7.90083 -4.10969 1.00726" nodeId="11"/>
+      <TransformGroup name="spawnPoint" translation="-8.76257 -4.08096 4.40674" rotation="5.00896e-06 -5.00896e-06 5.00896e-06" nodeId="12"/>
+      <Shape name="sleepingTrigger" translation="-7.901 -2.77803 1.00726" scale="0.0217884 0.235783 0.0274246" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="13" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="wardrobeTriggerMarker" translation="-1.27374 -4.10711 12.2065" nodeId="14"/>
+      <Shape name="wardrobeTrigger" translation="-1.274 -2.94258 12.2065" scale="0.125407 0.554625 0.25583" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="15" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

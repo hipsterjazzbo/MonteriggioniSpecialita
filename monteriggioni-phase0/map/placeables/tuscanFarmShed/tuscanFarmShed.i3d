@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="tuscanFarmShed.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.8"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="1" filename="../../prefabs/FS22_MapFR/textures/countryBuildings_diffuse.png"/>
+    <File fileId="10" filename="../../prefabs/FS22_MapFR/textures/countryBuildings_height.png"/>
+    <File fileId="2" filename="../../prefabs/FS22_MapFR/textures/countryBuildings_normal.png"/>
+    <File fileId="3" filename="../../prefabs/FS22_MapFR/textures/countryBuildings_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Material.001" materialId="5" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mParallaxMap" fileId="10"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="tuscanFarmShed.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="tuscanFarmShed" nodeId="8">
+      <TransformGroup name="clearAreas" nodeId="9">
+        <TransformGroup name="clearAreaStart01" translation="-3.94884 0 -4.36543" nodeId="10">
+          <TransformGroup name="clearAreaWidth01" translation="0 0 7.50249" nodeId="11"/>
+          <TransformGroup name="clearAreaHeight01" translation="7.84383 0 0" nodeId="12"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" nodeId="13">
+        <TransformGroup name="levelAreaStart01" translation="-6.07645 0 -6.14829" nodeId="14">
+          <TransformGroup name="levelAreaWidth01" translation="0 0 11.4431" nodeId="15"/>
+          <TransformGroup name="levelAreaHeight01" translation="12.0356 0 0" nodeId="16"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="paintAreas" nodeId="17">
+        <TransformGroup name="paintAreaStart01" translation="-4.86573 0 -5.15042" nodeId="18">
+          <TransformGroup name="paintAreaWidth01" translation="0 0 9.17751" nodeId="19"/>
+          <TransformGroup name="paintAreaHeight01" translation="9.54419 0 0" nodeId="20"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" nodeId="21">
+        <TransformGroup name="indoorAreaStart01" translation="-4.02744 0 -4.2607" nodeId="22">
+          <TransformGroup name="indoorAreaWidth01" translation="0 0 7.32497" nodeId="23"/>
+          <TransformGroup name="indoorAreaHeight01" translation="7.82756 0 0" nodeId="24"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="25">
+        <TransformGroup name="testAreaStart01" translation="-4.37645 0 -4.66521" nodeId="26">
+          <TransformGroup name="testAreaEnd01" translation="8.78832 5.43946 7.84281" nodeId="27"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="28">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-4.01659 0 -4.27228" nodeId="29">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="8.01527 0 7.13886" nodeId="30"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="visual" nodeId="31">
+        <TransformGroup name="shedBuilding" lockedgroup="true" nodeId="32">
+          <Shape name="countryBuilding06_shed" translation="0 -0.21101 0" scale="1.25 1.45 1" shapeId="1" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

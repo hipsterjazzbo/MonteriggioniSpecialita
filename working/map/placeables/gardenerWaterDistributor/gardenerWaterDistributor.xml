@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_waterDistributor</name>
+        <functions>
+			<function>$l10n_function_waterDistributor</function>
+		</functions>
+		<image>map/placeables/gardenerWaterDistributor/store_gardenerWaterDistributor.dds</image>
+        <price>5000</price>
+		<dailyUpkeep>50</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+		<canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+    </storeData>
+
+    <base>
+        <filename>map/placeables/gardenerWaterDistributor/gardenerWaterDistributor.i3d</filename>
+		<canBeRenamed>true</canBeRenamed>
+		<boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp"/>
+        </sounds>
+    </placement>
+	
+	<hotspots>
+        <hotspot type="UNLOADING" linkNode="hotspotMarker" teleportNode="teleportNode"/>
+    </hotspots>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="3" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+	<productionPoint>
+		<productions sharedThroughputCapacity="false">
+			<production id="water" name="%s" params="$l10n_fillType_water" cyclesPerHour="1" costsPerActiveHour="5">
+				<inputs>
+					<input fillType="WATER" amount="1" />
+				</inputs>
+				<outputs>
+					<output fillType="WATER" amount="1" />
+				</outputs>
+			</production>
+		</productions>
+		
+		<storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="WATER"  capacity="100000" />
+        </storage>
+		
+		<sellingStation node="sellingStation" supportsExtension="false">
+            <unloadTrigger exactFillRootNode="exactFillRootNode" aiNode="aiNodeUnlading" fillTypes="WATER">
+			</unloadTrigger>        
+        </sellingStation>
+
+        <loadingStation fillTypes="WATER" supportsExtension="false" />
+
+        <playerTrigger node="playerTrigger" />
+		
+		<sounds>
+            <idle   template="placeableSmallIdleGeneric" linkNode="0>"/>
+            <active template="placeableSmallWorkGeneric" linkNode="0>"/>
+        </sounds>
+	</productionPoint>
+	
+	<triggerMarkers>
+        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true"/>
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconWrench.i3d"/>
+    </triggerMarkers>
+
+    <i3dMappings>
+		<i3dMapping id="clearArea1Start" node="0>3|0" />
+        <i3dMapping id="clearArea1Width" node="0>3|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>3|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>4|0" />
+        <i3dMapping id="levelArea1Width" node="0>4|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>4|0|1" />
+        <i3dMapping id="indoorArea1Start" node="0>5|0" />
+        <i3dMapping id="indoorArea1Width" node="0>5|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>5|0|1" />
+        <i3dMapping id="testArea1Start" node="0>6|0" />
+        <i3dMapping id="testArea1End" node="0>6|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>7|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>7|0|0" />
+		<i3dMapping id="waterTankLevel02" node="0>9|0" />
+        <i3dMapping id="infoTrigger" node="0>12" />
+        <i3dMapping id="teleportNode" node="0>11" />
+        <i3dMapping id="hotspotMarker" node="0>11" />
+        <i3dMapping id="exactFillRootNode" node="0>13|0" />
+        <i3dMapping id="markerUnloading" node="0>13|1" />
+        <i3dMapping id="aiNodeUnlading" node="0>13|2" />
+        <i3dMapping id="playerTrigger" node="0>14|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>14|0|0" />
+        <i3dMapping id="loadingTrigger" node="0>15|0" />
+        <i3dMapping id="aiNodeLoading" node="0>15|1" />
+    </i3dMappings>
+</placeable>

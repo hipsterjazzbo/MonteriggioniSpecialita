@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="restaurant.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.7"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/shared/warningStripes_diffuse.png"/>
+    <File fileId="2" filename="$data/shared/warningStripes_normal.png"/>
+    <File fileId="3" filename="$data/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="door" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="6" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="7">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="restaurant.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="restaurant" lodDistance="0 160" nodeId="14">
+      <TransformGroup name="tipOcclusionUpdateAreas" translation="-1.15078e-06 0 -4.76837e-07" nodeId="15">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-10.0588 0 -0.0662514" nodeId="16">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="-5.50892 0 -7.03165" nodeId="17"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="warningStripes" translation="-9.00605 0 -4.08774" rotation="-0 -90 0" nodeId="18">
+        <Shape name="warningStripes01" translation="0.499789 0.01 2.99993" shapeId="1" clipDistance="100" nodeId="19" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="7"/>
+      </TransformGroup>
+      <TransformGroup name="sellingStation" translation="-9.006 0 -4.08774" rotation="0 270 0" nodeId="20">
+        <Shape name="exactFillRootNode" translation="0.5 0.01 3" shapeId="2" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="21" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="palletTrigger" translation="0.5 0.01 3" shapeId="3" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="unloadTriggerMarker" translation="0.5 0 3" nodeId="23"/>
+        <TransformGroup name="unloadTriggerAINode" translation="0.5 0 3" rotation="0 90 0" nodeId="24"/>
+        <Shape name="aiUnloadingSpline" translation="-2.09245 0 3" rotation="0 180 0" shapeId="4" nodeId="25" castsShadows="false" receiveShadows="false"/>
+      </TransformGroup>
+      <TransformGroup name="tipCollision" nodeId="27">
+        <Shape name="tipCollision" translation="-12.662 0 -3.15148" scale="6.23455 1 8.80463" shapeId="5" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="28" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

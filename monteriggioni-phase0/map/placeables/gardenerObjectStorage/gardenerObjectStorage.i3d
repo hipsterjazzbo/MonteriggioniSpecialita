@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="gardenerObjectStorage.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.11"/>
+  </Asset>
+
+  <Files>
+    <File fileId="11" filename="$data/maps/mapEU/textures/props/constructionFenceGrid_diffuse.dds"/>
+    <File fileId="12" filename="$data/maps/mapEU/textures/props/constructionFenceGrid_normal.dds"/>
+    <File fileId="13" filename="$data/maps/mapEU/textures/props/constructionFenceGrid_specular.dds"/>
+    <File fileId="5" filename="$data/maps/mapEU/textures/props/constructionFence_diffuse.dds"/>
+    <File fileId="6" filename="$data/maps/mapEU/textures/props/constructionFence_normal.dds"/>
+    <File fileId="7" filename="$data/maps/mapEU/textures/props/constructionFence_specular.dds"/>
+    <File fileId="14" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="8" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="2" filename="$data/shared/warningStripes_diffuse.png"/>
+    <File fileId="3" filename="$data/shared/warningStripes_normal.png"/>
+    <File fileId="4" filename="$data/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="constructionFence_mat" materialId="5" customShaderId="8">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="constructionFenceAlpha_mat" materialId="6" alphaBlending="true" customShaderId="14">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="8">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="gardenerObjectStorage.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="objectStorage" lockedgroup="true" rotation="0 -1.86693e-05 0" clipDistance="500" nodeId="18">
+      <TransformGroup name="objectStorage" translation="-8.15438 0 -22.6851" nodeId="19">
+        <TransformGroup name="areas" nodeId="20">
+          <TransformGroup name="spawnAreaStart01" translation="6.98422 0 4.06874" rotation="0 -90 0" nodeId="21">
+            <TransformGroup name="spawnAreaEnd01" translation="5.86007 6.67244e-14 4.17468" nodeId="22"/>
+          </TransformGroup>
+          <TransformGroup name="storageAreaStart01" translation="8.15427 0 11.5355" rotation="0 -90 0" nodeId="23">
+            <TransformGroup name="storageAreaEnd01" translation="2.87244 -1.182e-05 5.21511" nodeId="24"/>
+          </TransformGroup>
+          <TransformGroup name="storageAreaStart02" translation="8.15427 0 14.7885" rotation="-0 -90 0" nodeId="25">
+            <TransformGroup name="storageAreaEnd02" translation="2.87244 -1.182e-05 5.21511" nodeId="26"/>
+          </TransformGroup>
+          <TransformGroup name="storageAreaStart03" translation="8.15427 0 18.036" rotation="-0 -90 0" nodeId="27">
+            <TransformGroup name="storageAreaEnd03" translation="2.87244 -1.182e-05 5.21511" nodeId="28"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape name="objectTrigger" translation="0.225211 1.06692 14.4973" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="29" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        <Shape name="playerTrigger" translation="3.37374 0.857671 10.0212" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="30" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7">
+          <TransformGroup name="playerTriggerMarker" nodeId="31"/>
+        </Shape>
+        <Shape name="infoTrigger" translation="2.15422 1.45632 12.4934" scale="0.547279 1 0.7" shapeId="3" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="32" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        <TransformGroup name="decals" translation="4.83063 0 12.5781" rotation="0 90 0" nodeId="33"/>
+        <TransformGroup name="objectTriggerMarker" translation="0.247297 0.01 14.5258" nodeId="34"/>
+        <Shape name="warningStripes" translation="-0.466 0.01 14.5258" rotation="0 89.3353 6.52774e-09" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="35" castsShadows="false" receiveShadows="true" terrainDecal="true" renderedInViewports="false" materialIds="8"/>
+        <Shape name="warningStripes" translation="4.1951 0.01 7.38055" rotation="0 89.3353 6.52774e-09" shapeId="4" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="36" castsShadows="false" receiveShadows="true" terrainDecal="true" renderedInViewports="false" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="props" translation="-2.72633 0.230911 -6.81723" nodeId="37">
+        <TransformGroup name="constructionFence" translation="-2.51376 -0.282211 -1.54128" rotation="-1.45567e-12 90 0" scale="0.8 0.8 0.8" nodeId="38">
+          <Shape name="constructionFence" lockedgroup="true" shapeId="5" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="5">
+            <Shape name="constructionFenceGrid" shapeId="6" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </Shape>
+          <Shape name="constructionFenceFoundation" lockedgroup="true" translation="0.346809 -2.06805e-24 -0.00115909" rotation="0 90 0" shapeId="7" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="constructionFenceCoupling" lockedgroup="true" translation="0 1.7 0" shapeId="8" static="true" clipDistance="50" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="constructionFenceFoundation" lockedgroup="true" translation="3.02061 2.56326e-07 -0.00308738" rotation="8.65141e-06 90 -2.23118e-05" shapeId="7" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="constructionFence" translation="-2.51376 -0.282211 1.71312" rotation="-1.45567e-12 90 0" scale="0.8 0.8 0.8" nodeId="44">
+          <Shape name="constructionFence" lockedgroup="true" shapeId="5" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="5">
+            <Shape name="constructionFenceGrid" shapeId="6" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </Shape>
+          <Shape name="constructionFenceFoundation" lockedgroup="true" translation="0.346809 -2.06805e-24 -0.00115909" rotation="0 90 0" shapeId="7" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="constructionFenceCoupling" lockedgroup="true" translation="0 1.7 0" shapeId="8" static="true" clipDistance="50" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="constructionFenceFoundation" lockedgroup="true" translation="3.02061 2.56326e-07 -0.00308738" rotation="8.65141e-06 90 -2.23118e-05" shapeId="7" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="constructionFence" translation="-2.51376 -0.282211 4.97183" rotation="-1.45567e-12 90 0" scale="0.8 0.8 0.8" nodeId="50">
+          <Shape name="constructionFence" lockedgroup="true" shapeId="5" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="5">
+            <Shape name="constructionFenceGrid" shapeId="6" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </Shape>
+          <Shape name="constructionFenceFoundation" lockedgroup="true" translation="0.346809 -2.06805e-24 -0.00115909" rotation="0 90 0" shapeId="7" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="constructionFenceCoupling" lockedgroup="true" translation="0 1.7 0" shapeId="8" static="true" clipDistance="50" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="constructionFenceFoundation" lockedgroup="true" translation="3.02061 2.56326e-07 -0.00308738" rotation="8.65141e-06 90 -2.23118e-05" shapeId="7" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

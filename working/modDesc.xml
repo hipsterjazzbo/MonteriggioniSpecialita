@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="109" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>HornFarmerModding</author>
+    <version>1.0.0.3</version>
+    <title>
+        <en>Monteriggioni Specialità</en>
+    </title>
+    <description>
+		<en><![CDATA[Surrounded by gentle hills, cypress-lined roads, and historic stone walls, this map offers authentic farming in one of the most picturesque regions of Italy. Experience the charm of the Tuscan countryside with a map inspired by the area around the medieval town of Monteriggioni.
+
+The map is not a 1:1 recreation of the region, but it is strongly inspired by it. Some areas have been faithfully reproduced, while others are fictional. To reflect the typical Tuscan landscape, most fields are planted with grain and grass at the start of a new game — but you can grow any crop you like on your own land.
+
+There are 129 purchasable plots, divided into:
+- 8 farms (partially removable, including a small oil press or a farm dairy)
+- 78 fields (0.5 – 7 ha)
+- 15 meadows
+- 10 forests
+- 6 empty plots
+- 5 olive groves
+- 7 vineyards
+
+What awaits you on this map:
+- Multifruit (including Spelt, Triticale, Rye, Grain maize, Green rye, Vetch rye, Field grass, Silage maize, Humus activator, and Mustard as a cover crop)
+- Cypress trees added to the construction menu
+- More terrain/soil angles
+- Custom environment data for the Monteriggioni region (snow, rain, temperatures, etc.)
+- Customized greenhouses
+- Customized productions
+- Customized animal barns (horses and sheep/goats produce manure)
+
+CHANGELOG Version 1.0.0.3:
+- The bakery's unloading trigger has been repaired.
+- The ability to unload olive crates at the oil mill, the small oil mill and the Consorzio Agrario silos has been added. This ensures compatibility with the "Olive Harvest Trailer" mod.
+- Added the option to feed chickens triticale, rye and spelt.
+- Added the option to feed pigs triticale and spelt.
+
+CHANGELOG Version 1.0.0.2:
+
+- The dairy's unloading trigger has been repaired. (Unloading was not possible.)
+- Problems with the bunker silos on Farm 2 have been resolved. Unloading of chopped material was not possible.
+- Faulty triggers for the object storage at the horse stable and the nursery have been fixed.
+- A few log warnings and errors that sometimes occurred during the harvest of corn and the additional fruits have been fixed.
+
+CHANGELOG Version 1.0.0.1:
+- Trigger for slurry fixed at the cowshed on Farm 6.
+- Farm dairy removed from build mode
+- BGA (biogas plant) price increased and some buildings are now sellable.
+- Machine spawn areas at the shop have been adjusted to accommodate more machines.
+- A second version of the cowshed has been added to the building menu, without an integrated manure heap (the manure heap must be placed manually).
+
+]]></en>
+<de><![CDATA[Umgeben von sanften Hügeln, Zypressen gesäumten Straßen und historischen Steinmauern bietet diese Karte authentische Landwirtschaft in einer der malerischsten Regionen Italiens. Erlebe den Charme der toskanischen Landschaft mit dieser Karte, die von der Gegend um die mittelalterliche Stadt Monteriggioni inspiriert ist.
+
+Die Karte ist kein 100% Nachbau der Gegend aber sehr stark inspiriert durch die Region, manche Gebiete sind getreu dem Original nachgebaut worden aber andere frei erfunden. Um dem typischen Landschaftsbild zu entsprechen werden am Spielstart hauptsächlich Getreide und Gras auf den Feldern gepflanzt sein. Man kann aber auf eigenen Feldern alle Früchte anpflanzen.
+
+Es gibt 129 kaufbare Flächen welche sich unterteilen in:
+- 8 Bauernhöfe (teilweise entfernbar, inkl. kleiner Ölpresse oder Hofmolkerei)
+- 78 Felder (0,5 - 7 ha)
+- 15 Wiesen
+- 10 Wälder
+- 6 leere kaufbare Flächen
+- 5 Olivenfelder
+- 7 Weinberge
+
+Was dich auf der Map erwartet:
+- Multifrucht (zusätzlich Dinkel, Triticale, Roggen, Körnermais, Grünroggen, Wickroggen, Feldgras, Silagemais, Humusaktiv und Senf als Zwischenfrucht)
+- Zypressen wurden dem Baumenü hinzugefügt
+- mehr Terrainwinkel
+- Speziell angepasste Umweltdaten für die Region Monteriggioni (Schnee, Regen, Temperaturen usw.)
+- Angepasste Gewächshäuser
+- Angepasste Produktionen
+- Angepasste Tierställe (Pferde und Schafe/Ziegen produzieren Mist)
+
+CHANGELOG Version 1.0.0.3:
+- Der Abladetrigger der Bäckerei wurde repariert.
+- Olivenkisten können nun an der Ölmühle, der kleinen Ölmühle und den Silos des Consorzio Agrario entladen werden. Dies gewährleistet die Kompatibilität mit der Mod „Olive Harvest Trailer“.
+- Hühner können nun mit Triticale, Roggen und Dinkel gefüttert werden.
+- Schweine können nun mit Triticale und Dinkel gefüttert werden.
+
+CHANGELOG Version 1.0.0.2:
+- Abladetrigger der Molkerei repariert. (abladen war nicht möglich)
+- Probleme mit den Bunkersilos auf Farm 2 behoben. Abladen von Häckselgut war nicht möglich.
+- Fehlerhafter Trigger des Objektlager am Pferdestall und der Gärtnerei repariert.
+- Es wurden ein paar Log Warnungen und Fehler beseitigt die bei der Ernte von Mais und den zusätzlichen Früchten manchmal auftraten.
+
+CHANGELOG Version 1.0.0.1:
+- Gülletrigger der Farm 6 repariert.
+- Hofmolkerei von Farm 6 wurde aus dem Baumodus entfernt.
+- BGA Grundstückskaufpreis erhöht, manche Gebäude sind nun verkaufbar.
+- Maschinen Spawn Bereiche beim Shop wurden angepasst, um für mehr Maschinen Platz zu haben.
+- Im Baumenü wurde eine zweite Version des Kuhstalls hinzugefügt ohne integriertem Misthaufen (Misthaufen muss selbst plaziert werden)
+
+]]></de>
+<fr><![CDATA[Entourée de collines douces, de routes bordées de cyprès et de murs en pierre historiques, cette carte offre une agriculture authentique dans l’une des régions les plus pittoresques d’Italie. Découvrez le charme de la campagne toscane avec cette carte inspirée de la région autour de la ville médiévale de Monteriggioni.
+
+La carte n’est pas une reconstitution exacte de la région, mais elle s’en inspire fortement. Certaines zones ont été fidèlement reproduites, tandis que d’autres sont inventées. Afin de refléter le paysage typique de la Toscane, la plupart des champs sont plantés de céréales et d’herbe au début du jeu, mais vous pouvez cultiver toutes les plantes que vous souhaitez sur vos propres terres.
+
+Il y a 129 parcelles achetables, réparties comme suit :
+- 8 fermes (partiellement démontables, incluant un petit pressoir à huile ou une laiterie de ferme)
+- 78 champs (0,5 – 7 ha)
+- 15 prairies
+- 10 forêts
+- 6 terrains vides achetables
+- 5 champs d’oliviers
+- 7 vignobles
+
+Ce qui vous attend sur la carte :
+- Multi-fruits (y compris épeautre, triticale, seigle, maïs grain, seigle vert, seigle vesce, herbe des champs, maïs ensilage, humus actif et moutarde comme culture intermédiaire)
+- Cyprès ajoutés au menu de construction
+- Plus d’angles de terrain
+- Données environnementales personnalisées pour la région de Monteriggioni (neige, pluie, températures, etc.)
+- Serres personnalisées
+- Productions personnalisées
+- Étables personnalisées (les chevaux et les moutons/chèvres produisent du fumier)
+
+CHANGELOG Version 1.0.0.3:
+- Le mécanisme de déchargement de la boulangerie a été réparé.
+- Il est désormais possible de décharger les caisses d'olives au moulin à huile, au petit moulin à huile et aux silos du Consorzio Agrario. Ceci assure la compatibilité avec le mod « Olive Harvest Trailer ».
+- Il est désormais possible de nourrir les poulets avec du triticale, du seigle et de l'épeautre.
+- Il est désormais possible de nourrir les porcs avec du triticale et de l'épeautre.
+
+CHANGELOG Version 1.0.0.2:
+- Le mécanisme de déchargement de la laiterie a été réparé. (Le déchargement était impossible.)
+- Les problèmes liés aux silos-bunkers de la ferme 2 ont été résolus. Le déchargement des matériaux broyés était impossible.
+- Les déclencheurs défectueux pour le stockage des objets dans l'écurie et à la pouponnière ont été réparés.
+- Quelques avertissements et erreurs de journalisation qui survenaient parfois lors de la récolte du maïs et des autres fruits ont été corrigés.
+
+CHANGELOG Version 1.0.0.1:
+- Déclencheur pour lisier, réparé à l'étable à vaches, à la ferme 6.
+- La laiterie de la ferme 6 a été retirée du mode construction.
+- Le prix de l'usine de biogaz a augmenté et les bâtiments sont maintenant à vendre.
+- Les zones d'apparition des machines dans la boutique ont été modifiées pour accueillir davantage de machines.
+- Une deuxième version de l'étable a été ajoutée au menu de construction, sans tas de fumier intégré (le tas de fumier doit être placé manuellement).
+
+]]></fr>
+<it><![CDATA[Circondata da dolci colline, strade fiancheggiate da cipressi e antichi muri in pietra, questa mappa offre un’agricoltura autentica in una delle regioni più pittoresche d’Italia. Vivi il fascino della campagna toscana con questa mappa ispirata all’area intorno alla città medievale di Monteriggioni.
+
+La mappa non è una ricostruzione al 100% della regione, ma ne è fortemente ispirata. Alcune zone sono state riprodotte fedelmente, mentre altre sono di fantasia. Per rispecchiare il tipico paesaggio toscano, all’inizio del gioco la maggior parte dei campi sarà seminata con cereali e erba, ma è possibile coltivare qualsiasi tipo di pianta sui propri terreni.
+
+Ci sono 129 terreni acquistabili, suddivisi in:
+- 8 fattorie (in parte rimovibili, inclusi un piccolo frantoio o un caseificio agricolo)
+- 78 campi (0,5 – 7 ha)
+- 15 prati
+- 10 foreste
+- 6 terreni vuoti acquistabili
+- 5 oliveti
+- 7 vigneti
+
+Cosa ti aspetta nella mappa:
+- Colture multiple (in aggiunta farro, triticale, segale, mais da granella, segale verde, segale veccia, erba da campo, mais insilato, humus attivo e senape come coltura intermedia)
+- Cipressi aggiunti al menu di costruzione
+- Maggiori angoli del terreno
+- Dati ambientali personalizzati per la regione di Monteriggioni (neve, pioggia, temperature, ecc.)
+- Serre personalizzate
+- Produzioni personalizzate
+- Stalle personalizzate (cavalli e pecore/capre producono letame)
+
+CHANGELOG Version 1.0.0.3:
+- Il meccanismo di scarico del panificio è stato riparato.
+- È stata aggiunta la possibilità di scaricare le casse di olive presso il frantoio, il piccolo frantoio e i silos del Consorzio Agrario. Questo garantisce la compatibilità con la mod "Olive Harvest Trailer".
+- Aggiunta l'opzione per nutrire i polli con triticale, segale e farro.
+- Aggiunta l'opzione per nutrire i maiali con triticale e farro.
+
+CHANGELOG Version 1.0.0.2:
+- Il grilletto di scarico del caseificio è stato riparato. (Lo scarico non era possibile)
+- I problemi con i silos del bunker della Fattoria 2 sono stati risolti. Non era possibile scaricare il materiale triturato.
+- Sono stati riparati i dispositivi di attivazione difettosi per lo stoccaggio degli oggetti nella stalla dei cavalli e nel vivaio.
+- Sono stati corretti alcuni avvisi di registro ed errori che a volte si verificavano durante la raccolta del mais e dei frutti aggiuntivi.
+
+CHANGELOG Version 1.0.0.1:
+- Interruttore per liquame, riparato nella stalla delle mucche, alla fattoria 6
+- Il caseificio nella Fattoria 6 è stato rimosso dalla modalità di costruzione.
+- Il prezzo dell'impianto a biogas è aumentato e gli edifici sono ora in vendita.
+- Le aree di spawn delle macchine nel negozio sono state modificate per ospitare più macchine.
+- È stata aggiunta al menu degli edifici una seconda versione della stalla, senza cumulo di letame integrato (il cumulo di letame deve essere posizionato manualmente).
+
+]]></it>
+    </description>
+
+    <iconFilename>icon_Monteriggioni.dds</iconFilename>
+    <multiplayer supported="true"/>
+
+    <maps>
+        <map id="MonteriggioniSpecialita0" configFilename="map/map.xml" defaultVehiclesXMLFilename="map/config/vehicles.xml" defaultPlaceablesXMLFilename="map/config/placeables.xml" defaultHandToolsXMLFilename="map/config/handTools.xml" defaultItemsXMLFilename="map/config/items.xml">
+            <title>
+                <en>Monteriggioni Specialità</en>
+            </title>
+            <description>
+                <en>Welcome to the heart of Tuscany</en>
+				<de>Willkommen im Herzen der Toskana</de>
+				<fr>Bienvenue au cœur de la Toscane</fr>
+				<it>Benvenuti nel cuore della Toscana</it>
+            </description>
+            <iconFilename>preview.png</iconFilename>
+        </map>
+    </maps>
+
+	<l10n filenamePrefix="map/translations/l10n"/>
+
+	<placeableTypes>
+        <type name="cowHusbandryBarnMilkManure" parent="cowHusbandryBarnMilk" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="manureHeap" />
+        </type>
+		<type name="sheepGoatBarnManure" parent="placeable" filename="$dataS/scripts/placeables/Placeable.lua">
+			<specialization name="placement" />
+			<specialization name="animatedObjects" />
+			<specialization name="hotspots" />
+			<specialization name="leveling" />
+			<specialization name="foliageAreas" />
+			<specialization name="triggerMarkers" />
+			<specialization name="indoorAreas" />
+			<specialization name="dynamicallyLoadedParts"/>
+			<specialization name="husbandry" />
+			<specialization name="husbandryAnimals" />
+			<specialization name="husbandryFood" />
+			<specialization name="husbandryWater" />
+			<specialization name="husbandryStraw" />
+			<specialization name="husbandryMeadow"/>
+			<specialization name="husbandryPallets" />
+			<specialization name="husbandryFence"/>
+			<specialization name="infoTrigger" />
+			<specialization name="lights"/>
+			<specialization name="ai" />
+		</type>
+    </placeableTypes>
+
+	<dependencies>
+        <dependency>FS25_Shed_Vologne</dependency>
+		<dependency>FS25_Old_Structure_Pack</dependency>
+		<dependency>FS25_Average_Wooden_Shelter</dependency>
+		<dependency>FS25_Old_Manure_Heap</dependency>
+		<dependency>FS25_NewHollandTX32</dependency>
+		<dependency>FS25_SmallWoodenShed</dependency>
+		<dependency>FS25_Olives</dependency>
+		<dependency>FS25_Raisinproductionpack</dependency>
+		<dependency>FS25_GreenHouseTree</dependency>
+		<dependency>FS25_smallRusticBaleShed</dependency>
+		<dependency>FS25_SilosFS_crossplay</dependency>
+    </dependencies>
+
+</modDesc>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="fieldWaterWell.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="9" filename="backflowUSset_diffuse.png"/>
+    <File fileId="10" filename="backflowUSset_normal.png"/>
+    <File fileId="11" filename="backflowUSset_specular.png"/>
+    <File fileId="5" filename="fieldRainwaterDrainage01_diffuse.png"/>
+    <File fileId="6" filename="fieldRainwaterDrainage01_normal.png"/>
+    <File fileId="7" filename="fieldRainwaterDrainage01_specular.png"/>
+    <File fileId="2" filename="manHoleSet01_diffuse.png"/>
+    <File fileId="3" filename="manHoleSet01_normal.png"/>
+    <File fileId="4" filename="manHoleSet01_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="backflowUSset_mat" materialId="5">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="fieldRainwaterDrainage01_mat" materialId="6">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="manHoleSet01_mat" materialId="9">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="fieldWaterWell.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="fieldWaterWell" lockedgroup="true" nodeId="17">
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="18">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-2.72925 0 -2.56684" nodeId="19">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="4.85775 0 4.51365" nodeId="20"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="loadingStation" nodeId="21">
+        <Shape name="fillTrigger" translation="1.85 2.47514 0" scale="0.25 0.5 0.5" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+        <TransformGroup name="loadingMarker" translation="2.44031 3.37559 0" nodeId="23"/>
+        <TransformGroup name="teleportNode" translation="3.235 0 -0.153715" rotation="0 180 0" nodeId="24"/>
+        <TransformGroup name="aiNode" translation="4.90972 0 -0.153715" rotation="0 180 0" nodeId="40"/>
+      </TransformGroup>
+      <TransformGroup name="visual" nodeId="25">
+        <Shape name="manHoleRound02Vis" translation="0 1.18207 0" scale="2 1 2" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="60" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="fieldRainwaterDrainage01" lockedgroup="true" shapeId="3" clipDistance="70" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="col" shapeId="4" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="28" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        </Shape>
+        <Shape name="backflowMediumUS" lockedgroup="true" translation="0.6 1.11966 0.0590956" rotation="-0 -90 0" scale="0.8 0.8 0.8" shapeId="5" clipDistance="100" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="5">
+          <Shape name="col" translation="0.0089687 0.692853 0" shapeId="6" visibility="false" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="30" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        </Shape>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

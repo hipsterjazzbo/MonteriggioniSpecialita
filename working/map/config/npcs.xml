@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/npcs.xsd">
+    <npcs>
+        <npc name="GRANDPA">$dataS2/npc/grandpa/grandpa.xml</npc>
+        <npc name="FORESTER">$dataS2/npc/forester/forester.xml</npc>
+        <npc name="FARMER">$dataS2/npc/farmer/farmer.xml</npc>
+        <npc name="HELPER">$dataS2/npc/helper/helper.xml</npc>
+        <npc name="ANIMAL_DEALER">$dataS2/npc/animalDealer/animalDealer.xml</npc>
+		
+		<npc name="stefano">map/npcs/stefano.xml</npc>
+		<npc name="francesco">map/npcs/francesco.xml</npc>
+		<npc name="maria">map/npcs/maria.xml</npc>
+		<npc name="sofia">map/npcs/sofia.xml</npc>
+		<npc name="fabio">map/npcs/fabio.xml</npc>
+    </npcs>
+</map>

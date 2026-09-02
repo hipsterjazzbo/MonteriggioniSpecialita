@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="objectStorage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_pallettStorage</name>
+        <functions>
+            <function>$l10n_function_objectStorage</function>
+        </functions>
+        <image>map/placeables/gardenerObjectStorage/store_gardenerObjectStorage.dds</image>
+        <price>1000</price>
+        <dailyUpkeep>30</dailyUpkeep>
+		<canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>storages</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>silos</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>map/placeables/gardenerObjectStorage/gardenerObjectStorage.i3d</filename>
+		<boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <deletedNodes>
+
+    </deletedNodes>
+
+    <dynamicallyLoadedParts>
+    </dynamicallyLoadedParts>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+        </testAreas>
+
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+
+    </indoorAreas>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes" />
+		<triggerMarker node="warningStripes2" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconLoad.i3d"   adjustToGround="true" />
+        <triggerMarker node="objectTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <tipOcclusionUpdateAreas>
+
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas/>
+    </ai>
+
+    <hotspots>
+        <hotspot type="LOADING" linkNode="objectTrigger" teleportNode="playerTriggerMarker"/>
+    </hotspots>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <objectStorage supportsBales="false" supportsPallets="true" maxLength="4" maxWidth="6" maxHeight="4" capacity="30">
+        <playerTrigger node="playerTrigger" />
+        <objectTrigger node="objectTrigger" />
+        <spawnAreas>
+            <spawnArea startNode="spawnAreaStart01" endNode="spawnAreaEnd01"/>
+        </spawnAreas>
+        <storageAreas>
+            <storageArea startNode="storageAreaStart01" endNode="storageAreaEnd01"  maxHeight="3"/>
+			<storageArea startNode="storageAreaStart02" endNode="storageAreaEnd02"  maxHeight="3"/>
+			<storageArea startNode="storageAreaStart03" endNode="storageAreaEnd03"  maxHeight="3"/>
+        </storageAreas>
+    </objectStorage>
+
+    <i3dMappings>
+        <i3dMapping id="objectStorage" node="0>0" />
+        <i3dMapping id="spawnAreaStart01" node="0>0|0|0" />
+        <i3dMapping id="spawnAreaEnd01" node="0>0|0|0|0" />
+        <i3dMapping id="storageAreaStart01" node="0>0|0|1" />
+		<i3dMapping id="storageAreaStart02" node="0>0|0|2" />
+		<i3dMapping id="storageAreaStart03" node="0>0|0|3" />
+        <i3dMapping id="storageAreaEnd01" node="0>0|0|1|0" />
+		<i3dMapping id="storageAreaEnd02" node="0>0|0|2|0" />
+		<i3dMapping id="storageAreaEnd03" node="0>0|0|3|0" />
+        <i3dMapping id="objectTrigger" node="0>0|1" />
+        <i3dMapping id="playerTrigger" node="0>0|2" />
+        <i3dMapping id="playerTriggerMarker" node="0>0|2|0" />
+        <i3dMapping id="infoTrigger" node="0>0|3" />
+        <!--<i3dMapping id="stopCrossing01" node="0>0|4|0" />
+        <i3dMapping id="stopCrossing02" node="0>0|4|1" />
+        <i3dMapping id="stopCrossing03" node="0>0|4|2" />-->
+        <i3dMapping id="objectTriggerMarker" node="0>0|5" />
+        <i3dMapping id="warningStripes" node="0>0|6" />
+		<i3dMapping id="warningStripes2" node="0>0|7" />
+    </i3dMappings>
+</placeable>

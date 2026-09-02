@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="electricityPoleWallMount.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="5" filename="$data/maps/textures/shared/default_specular.dds"/>
+        <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+        <File fileId="1" filename="textures/slupyNowe_albedo.dds"/>
+        <File fileId="10" filename="textures/slupyNowe_height.dds"/>
+        <File fileId="2" filename="textures/slupyNowe_normal.dds"/>
+        <File fileId="3" filename="textures/slupyNowe_specular.dds"/>
+    </Files>
+    <Materials>
+        <Material name="i3d_default_material" materialId="6" diffuseColor="0.8 0.8 0.8 1" specularColor="0.6 1 0"/>
+        <Material name="newPoles_mat" materialId="10" customShaderId="4" customShaderVariation="customParallax">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+            <Custommap name="mMaskMap" fileId="5"/>
+            <Custommap name="mParallaxMap" fileId="10"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="electricityPoleWallMount.i3d.shapes"/>
+    <Scene>
+        <TransformGroup name="nowe" translation="-4.00882 -0.5 0.870981" nodeId="5554">
+            <TransformGroup name="nascienne" nodeId="5555">
+                <Shape name="hakNaSciane2" translation="0.940869 2.91256 -8.49433e-08" rotation="-6.83019e-06 180 0" shapeId="1" clipDistance="80" nodeId="5556" castsShadows="true" receiveShadows="true" materialIds="10">
+                    <Shape name="uchwytKrancowyPrzylacza2" translation="-1.1306e-07 2.59419e-16 -0.116255" rotation="-10 0 0" shapeId="2" clipDistance="150" nodeId="5557" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                </Shape>
+                <Shape name="hakNaSciane4" translation="1.17166 2.91256 -8.49433e-08" rotation="-6.83019e-06 180 0" shapeId="1" clipDistance="80" nodeId="5558" castsShadows="true" receiveShadows="true" materialIds="10">
+                    <Shape name="uchwytKrancowyPrzylacza4" translation="-1.1306e-07 2.59419e-16 -0.116255" rotation="-10 0 0" shapeId="3" clipDistance="150" nodeId="5559" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                </Shape>
+            </TransformGroup>
+            <TransformGroup name="wysiegniki" nodeId="5560">
+                <Shape name="wysiegnikNowy2" translation="1.02156 0.174885 -0.4" rotation="-6.83019e-06 -0 0" shapeId="4" clipDistance="150" nodeId="5561" castsShadows="true" receiveShadows="true" materialIds="10">
+                    <Shape name="wysiegnikcol2" shapeId="5" static="true" nodeId="5562" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="6"/>
+                    <Shape name="kotwaKrotka" translation="0.816526 2.94869 0.00114499" rotation="-6.83019e-06 180 0" shapeId="6" clipDistance="80" nodeId="5563" castsShadows="true" receiveShadows="true" materialIds="10">
+                        <Shape name="uchwytKrancowyPrzylacza2" translation="-1.1306e-07 2.59419e-16 -0.116255" rotation="-10 0 0" shapeId="2" clipDistance="150" nodeId="5564" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                    </Shape>
+                </Shape>
+                <Shape name="wysiegnikNowy4" translation="1.02156 0.174885 -1.27709" rotation="-6.83019e-06 -0 0" shapeId="4" clipDistance="150" nodeId="5565" castsShadows="true" receiveShadows="true" materialIds="10">
+                    <Shape name="wysiegnikcol2" shapeId="5" static="true" nodeId="5566" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="6"/>
+                    <Shape name="kotwaKrotka" translation="0.816526 2.94869 0.00114499" rotation="-6.83019e-06 180 0" shapeId="6" clipDistance="80" nodeId="5567" castsShadows="true" receiveShadows="true" materialIds="10">
+                        <Shape name="uchwytKrancowyPrzylacza4" translation="-1.1306e-07 2.59419e-16 -0.116255" rotation="-10 0 0" shapeId="3" clipDistance="150" nodeId="5568" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                    </Shape>
+                </Shape>
+            </TransformGroup>
+        </TransformGroup>
+    </Scene>
+</i3D>

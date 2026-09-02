@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="workshop.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="9" filename="$data/maps/mapAS/textures/props/canister.i3d"/>
+    <File fileId="8" filename="$data/maps/mapEU/textures/props/workBench02.i3d"/>
+    <File fileId="19" filename="$data/placeables/mapEU/pianoFactory/props/batteryCharger_diffuse.png"/>
+    <File fileId="20" filename="$data/placeables/mapEU/pianoFactory/props/batteryCharger_normal.png"/>
+    <File fileId="21" filename="$data/placeables/mapEU/pianoFactory/props/batteryCharger_specular.png"/>
+    <File fileId="5" filename="$data/placeables/mapEU/pianoFactory/props/cabinetWorkbench_diffuse.png"/>
+    <File fileId="6" filename="$data/placeables/mapEU/pianoFactory/props/cabinetWorkbench_normal.png"/>
+    <File fileId="7" filename="$data/placeables/mapEU/pianoFactory/props/cabinetWorkbench_specular.png"/>
+    <File fileId="10" filename="$data/placeables/mapEU/pianoFactory/props/oilCan_diffuse.png"/>
+    <File fileId="11" filename="$data/placeables/mapEU/pianoFactory/props/oilCan_normal.png"/>
+    <File fileId="12" filename="$data/placeables/mapEU/pianoFactory/props/oilCan_specular.png"/>
+    <File fileId="16" filename="$data/placeables/mapEU/pianoFactory/props/oiler_diffuse.png"/>
+    <File fileId="17" filename="$data/placeables/mapEU/pianoFactory/props/oiler_normal.png"/>
+    <File fileId="18" filename="$data/placeables/mapEU/pianoFactory/props/oiler_specular.png"/>
+    <File fileId="1" filename="$data/shared/warningStripes_diffuse.dds"/>
+    <File fileId="2" filename="$data/shared/warningStripes_normal.dds"/>
+    <File fileId="3" filename="$data/shared/warningStripes_specular.dds"/>
+    <File fileId="22" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/benchDrill_diffuse.png"/>
+    <File fileId="23" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/benchDrill_normal.png"/>
+    <File fileId="24" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/benchDrill_specular.png"/>
+    <File fileId="25" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/carJack_diffuse.png"/>
+    <File fileId="26" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/carJack_normal.png"/>
+    <File fileId="27" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/carJack_specular.png"/>
+    <File fileId="13" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/extensionCord_diffuse.png"/>
+    <File fileId="14" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/extensionCord_normal.png"/>
+    <File fileId="15" filename="../../prefabs/FS25_Deko_Accessories_XXL_prefab/textures/extensionCord_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="batteryCharger_mat" materialId="5">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+    </Material>
+    <Material name="benchDrill_mat" materialId="6">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+    </Material>
+    <Material name="cabinetWorkbench_mat" materialId="7">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="carJack_mat" materialId="8">
+      <Texture fileId="25"/>
+      <Normalmap fileId="26"/>
+      <Glossmap fileId="27"/>
+    </Material>
+    <Material name="extensionCords_mat" materialId="9">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="lambert1" materialId="10" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="oilCan_mat" materialId="11">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="oiler_mat" materialId="12">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+    </Material>
+    <Material name="toolBox_mat" materialId="13">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="workshop.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="workbench" nodeId="33">
+      <TransformGroup name="workshop" nodeId="34">
+        <TransformGroup name="markerWrench" translation="0.185437 0 1.51744" nodeId="35"/>
+        <Shape name="warningStripes" translation="0 0 0.590708" scale="0.5 1 0.25" shapeId="1" clipDistance="100" nodeId="36" castsShadows="false" receiveShadows="true" materialIds="13">
+          <Shape name="warningStripes" translation="0 0 14.9969" shapeId="1" clipDistance="100" nodeId="37" castsShadows="false" receiveShadows="true" materialIds="13"/>
+        </Shape>
+        <Shape name="vehicleTrigger" translation="-1.90534 0 -1.47992" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" clipDistance="300" nodeId="38" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        <Shape name="playerTrigger" translation="0 0 1.71874" shapeId="3" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" clipDistance="300" nodeId="39" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+      </TransformGroup>
+      <Shape name="bench" translation="-7.39515e-06 0 0.000366211" rotation="0 -1.36604e-05 0" shapeId="4" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="7"/>
+      <ReferenceNode name="workBench02" translation="3.78997 0 0.312988" rotation="-5.34402e-07 -1.36604e-05 0" scale="1.2 1.2 1.2" referenceId="8" nodeId="47"/>
+      <ReferenceNode name="canister" translation="1.42199 0 -0.076004" rotation="1.062e-05 26.7864 2.52871e-06" referenceId="9" nodeId="58"/>
+      <Shape name="oilCan02_vis" translation="-1.021 1.1535 -0.106003" rotation="2.06255e-07 -38.664 0" shapeId="5" clipDistance="20" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="11"/>
+      <Shape name="extensionCordRolledShort" lockedgroup="true" translation="0.894951 1.1535 0.147995" rotation="-180 -51.336 180" shapeId="6" static="true" density="0.0001" nodeId="64" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10">
+        <Shape name="visual" translation="0 0 8.88178e-18" shapeId="7" clipDistance="80" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      </Shape>
+      <Shape name="oilcan" translation="-0.760017 1.1535 -0.00100708" rotation="180 36.4071 180" shapeId="8" clipDistance="60" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="12"/>
+      <Shape name="extensionCordStandReel" lockedgroup="true" translation="1.88494 0 0.0540009" rotation="-4.00112e-05 -85.5141 4.37998e-05" shapeId="9" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="67" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10">
+        <Shape name="visual" shapeId="10" clipDistance="80" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      </Shape>
+      <Shape name="loader" translation="-0.113044 1.1535 -0.173004" rotation="-3.39753e-09 -4.68021 2.77218e-10" shapeId="11" clipDistance="50" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      <Shape name="benchDrill" lockedgroup="true" translation="3.00195 0.936298 0.185989" rotation="1.00179e-05 -2.36783e-05 -4.37897e-13" scale="1.25 1.25 1.25" shapeId="12" static="true" density="0.0001" nodeId="70" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10">
+        <Shape name="standVisual" translation="0 0 0.124585" shapeId="13" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="tableVisual" translation="-1.19209e-08 0.332812 0" shapeId="14" clipDistance="30" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="wheelVisual" translation="0.0494055 0.797719 0.151897" shapeId="15" clipDistance="30" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      </Shape>
+      <Shape name="carJack" lockedgroup="true" translation="-1.69001 0 0.0169983" rotation="0 -67.7121 0" shapeId="16" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="74" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10">
+        <Shape name="visual" shapeId="17" clipDistance="50" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="visualLever" translation="1.19209e-08 0.140731 0.271" rotation="34.409 -0 -2.84978e-12" shapeId="18" clipDistance="50" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

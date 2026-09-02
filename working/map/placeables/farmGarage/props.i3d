@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="props.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.8"/>
+  </Asset>
+
+  <Files>
+    <File fileId="20" filename="$data/maps/mapEU/textures/props/electricalBoxesDecals_diffuse.png"/>
+    <File fileId="14" filename="$data/maps/mapEU/textures/props/electricalBoxes_diffuse.png"/>
+    <File fileId="15" filename="$data/maps/mapEU/textures/props/electricalBoxes_normal.png"/>
+    <File fileId="16" filename="$data/maps/mapEU/textures/props/electricalBoxes_specular.png"/>
+    <File fileId="1" filename="$data/maps/mapEU/textures/props/industrialLight02_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/mapEU/textures/props/industrialLight02_normal.png"/>
+    <File fileId="10" filename="$data/maps/mapEU/textures/props/industrialLight05Glass_diffuse.png"/>
+    <File fileId="11" filename="$data/maps/mapEU/textures/props/industrialLight05Glass_normal.png"/>
+    <File fileId="12" filename="$data/maps/mapEU/textures/props/industrialLight05Glass_specular.png"/>
+    <File fileId="8" filename="$data/maps/mapEU/textures/props/industrialLight05_diffuse.png"/>
+    <File fileId="9" filename="$data/maps/mapEU/textures/props/industrialLight05_normal.png"/>
+    <File fileId="13" filename="$data/maps/mapEU/textures/props/industrialLight05_specular.png"/>
+    <File fileId="4" filename="$data/maps/mapEU/textures/windowsGlass_diffuse.png"/>
+    <File fileId="5" filename="$data/maps/mapEU/textures/windowsGlass_normal.png"/>
+    <File fileId="6" filename="$data/maps/mapEU/textures/windowsGlass_specular.png"/>
+    <File fileId="7" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="17" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="21" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="electricalBoxes_mat" materialId="5" customShaderId="17">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+    </Material>
+    <Material name="electricalBoxesDecals_mat" materialId="6">
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+    </Material>
+    <Material name="industrialLight02_mat" materialId="7" specularColor="0.501961 1 0.501961">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="industrialLight02_mat1" materialId="9" specularColor="0.501961 1 0.501961" customShaderId="7">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="lightControl" value="2"/>
+    </Material>
+    <Material name="industrialLight05_mat" materialId="10" specularColor="0.501961 1 0.501961">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+    </Material>
+    <Material name="industrialLight05_mat1" materialId="12" customShaderId="7">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="13"/>
+      <CustomParameter name="lightControl" value="2"/>
+    </Material>
+    <Material name="industrialLight05Glass_mat" materialId="11" alphaBlending="true">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="windowsGlass_mat" materialId="8" alphaBlending="true">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="props.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="props" nodeId="25">
+      <TransformGroup name="lights" nodeId="26">
+        <TransformGroup name="industrialLight02" translation="3.14944 5.39601 7.49967" lodDistance="0 10" clipDistance="80" nodeId="27">
+          <TransformGroup name="LOD0" nodeId="28">
+            <Shape name="industrialLight02" shapeId="1" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="glass" shapeId="2" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          </TransformGroup>
+          <TransformGroup name="LOD1" nodeId="31">
+            <Shape name="industrialLight02" shapeId="3" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="illum" nodeId="33" weatherRequiredMask="0x40">
+            <Shape name="selfIllum" shapeId="4" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="9"/>
+            <Light name="spotLight" translation="0 -0.013468 0.139509" rotation="-150.919 0 0" clipDistance="100" nodeId="35" type="spot" color="0.626814 0.797249 0.873" emitDiffuse="true" emitSpecular="true" range="10" coneAngle="120" dropOff="4" weatherRequiredMask="0x40"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="industrialLight03" translation="-3.11359 5.39601 7.49967" lodDistance="0 10" clipDistance="80" nodeId="36">
+          <TransformGroup name="LOD0" nodeId="37">
+            <Shape name="industrialLight02" shapeId="1" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="glass" shapeId="2" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          </TransformGroup>
+          <TransformGroup name="LOD1" nodeId="40">
+            <Shape name="industrialLight02" shapeId="3" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="illum" nodeId="42" weatherRequiredMask="0x40">
+            <Shape name="selfIllum" shapeId="4" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="9"/>
+            <Light name="spotLight" translation="0 -0.013468 0.139509" rotation="-150.919 0 0" clipDistance="100" nodeId="44" type="spot" color="0.626814 0.797249 0.873" emitDiffuse="true" emitSpecular="true" range="10" coneAngle="120" dropOff="4" weatherRequiredMask="0x40"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="industrialLight05" translation="-3.27326 5.15486 -7.20057" lodDistance="0 10" clipDistance="80" nodeId="45">
+          <TransformGroup name="LOD0" nodeId="46">
+            <Shape name="industrialLight05" shapeId="5" clipDistance="300" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            <Shape name="glass" shapeId="6" clipDistance="300" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="11"/>
+          </TransformGroup>
+          <TransformGroup name="LOD1" nodeId="49">
+            <Shape name="industrialLight05" shapeId="7" clipDistance="300" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+          <TransformGroup name="illum" nodeId="51" weatherRequiredMask="0x40">
+            <Shape name="selfIllum" shapeId="8" clipDistance="300" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="12"/>
+            <Light name="spotLight" translation="0 -0.003879 0.063532" rotation="-143.009 0 0" clipDistance="100" nodeId="53" type="spot" color="0.626814 0.797249 0.873" emitDiffuse="true" emitSpecular="true" range="10" coneAngle="110" dropOff="4" weatherRequiredMask="0x40"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="industrialLight06" translation="3.3197 5.15486 -7.20057" lodDistance="0 10" clipDistance="80" nodeId="54">
+          <TransformGroup name="LOD0" nodeId="55">
+            <Shape name="industrialLight05" shapeId="5" clipDistance="300" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            <Shape name="glass" shapeId="6" clipDistance="300" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="11"/>
+          </TransformGroup>
+          <TransformGroup name="LOD1" nodeId="58">
+            <Shape name="industrialLight05" shapeId="7" clipDistance="300" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+          <TransformGroup name="illum" nodeId="60" weatherRequiredMask="0x40">
+            <Shape name="selfIllum" shapeId="8" clipDistance="300" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="12"/>
+            <Light name="spotLight" translation="0 -0.003879 0.063532" rotation="-143.009 0 0" clipDistance="100" nodeId="62" type="spot" color="0.626814 0.797249 0.873" emitDiffuse="true" emitSpecular="true" range="10" coneAngle="110" dropOff="4" weatherRequiredMask="0x40"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="industrialLight07" translation="9.05069 5.15486 -7.20057" lodDistance="0 10" clipDistance="80" nodeId="63">
+          <TransformGroup name="LOD0" nodeId="64">
+            <Shape name="industrialLight05" shapeId="5" clipDistance="300" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            <Shape name="glass" shapeId="6" clipDistance="300" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="11"/>
+          </TransformGroup>
+          <TransformGroup name="LOD1" nodeId="67">
+            <Shape name="industrialLight05" shapeId="7" clipDistance="300" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+          <TransformGroup name="illum" nodeId="69" weatherRequiredMask="0x40">
+            <Shape name="selfIllum" shapeId="8" clipDistance="300" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="12"/>
+            <Light name="spotLight" translation="0 -0.003879 0.063532" rotation="-143.009 0 0" clipDistance="100" nodeId="71" type="spot" color="0.626814 0.797249 0.873" emitDiffuse="true" emitSpecular="true" range="10" coneAngle="110" dropOff="4" weatherRequiredMask="0x40"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="industrialLight08" translation="-9.29363 5.15486 -7.20057" lodDistance="0 10" clipDistance="80" nodeId="72">
+          <TransformGroup name="LOD0" nodeId="73">
+            <Shape name="industrialLight05" shapeId="5" clipDistance="300" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            <Shape name="glass" shapeId="6" clipDistance="300" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="11"/>
+          </TransformGroup>
+          <TransformGroup name="LOD1" nodeId="76">
+            <Shape name="industrialLight05" shapeId="7" clipDistance="300" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+          <TransformGroup name="illum" nodeId="78" weatherRequiredMask="0x40">
+            <Shape name="selfIllum" shapeId="8" clipDistance="300" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="12"/>
+            <Light name="spotLight" translation="0 -0.003879 0.063532" rotation="-143.009 0 0" clipDistance="100" nodeId="80" type="spot" color="0.626814 0.797249 0.873" emitDiffuse="true" emitSpecular="true" range="10" coneAngle="110" dropOff="4" weatherRequiredMask="0x40"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="decoration" translation="-3 0.05 15.3725" nodeId="81">
+        <Shape name="lightningCable" translation="-5.0021 0 -23.0288" shapeId="9" clipDistance="150" nodeId="82" castsShadows="true" receiveShadows="true" skinBindNodeIds="82 83 85 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123" materialIds="5"/>
+        <TransformGroup name="electricalBox01" translation="15 1.35 -9.62245" rotation="0 90 0" clipDistance="150" nodeId="83">
+          <Shape name="decal" shapeId="10" clipDistance="30" nodeId="84" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="electricalBox02" translation="-9.05 1.83529 -19.4839" rotation="0 -90 0" clipDistance="150" nodeId="85">
+          <Shape name="decal" translation="0.8195 0.429619 0.002917" shapeId="11" clipDistance="30" nodeId="86" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="electricalBox04" translation="15 1.30125 -18.7371" rotation="0 90 0" clipDistance="150" nodeId="87"/>
+        <TransformGroup name="electricalBox05" translation="12.708 3.45421 -22.8725" rotation="0 180 0" clipDistance="150" nodeId="88"/>
+        <TransformGroup name="electricalBox06" translation="3.05356 0 -7.77245" clipDistance="150" nodeId="89"/>
+        <TransformGroup name="electricalBox_END" translation="3.05 5.2923 -7.87245" rotation="0 0 -90" clipDistance="150" nodeId="90"/>
+        <TransformGroup name="Cable1m" translation="3.05 2.2 -7.77245" rotation="0 0 -90" clipDistance="150" nodeId="91"/>
+        <TransformGroup name="CableCornerV" translation="13.8 3.45 -22.8725" rotation="180 0 90" clipDistance="150" nodeId="92"/>
+        <TransformGroup name="CableCornerH" translation="3.05 5.2 -7.77245" rotation="0 0 90" clipDistance="150" nodeId="93"/>
+        <TransformGroup name="Cable1m2" translation="3.05 3.2 -7.77245" rotation="0 0 -90" clipDistance="150" nodeId="94"/>
+        <TransformGroup name="Cable1m3" translation="3.05 4.2 -7.77245" rotation="0 0 -90" clipDistance="150" nodeId="95"/>
+        <TransformGroup name="Cable50cm1" translation="3.05 1.7 -7.77245" rotation="0 0 -90" clipDistance="150" nodeId="96"/>
+        <TransformGroup name="Cable50cm2" translation="3.05 1.2 -7.77245" rotation="0 0 -90" clipDistance="150" nodeId="97"/>
+        <TransformGroup name="Cable1m4" translation="15 1.35 -18.7725" rotation="-180 -90 0" clipDistance="150" nodeId="98"/>
+        <TransformGroup name="Cable1m5" translation="15 1.35 -19.7725" rotation="-180 -90 0" clipDistance="150" nodeId="99"/>
+        <TransformGroup name="Cable1m6" translation="15 1.35 -20.7725" rotation="-180 -90 0" clipDistance="150" nodeId="100"/>
+        <TransformGroup name="Cable1m7" translation="15 1.35 -21.7725" rotation="-180 -90 0" clipDistance="150" nodeId="101"/>
+        <TransformGroup name="CableCornerH1" translation="15 1.35 -22.7725" rotation="0 90 0" clipDistance="150" nodeId="102"/>
+        <TransformGroup name="Cable1m8" translation="14.9 1.35 -22.8725" rotation="-180 0 0" clipDistance="150" nodeId="103"/>
+        <TransformGroup name="Cable1m9" translation="13.7 3.55 -22.8725" rotation="-180 0 0" clipDistance="150" nodeId="104"/>
+        <TransformGroup name="CableCornerV1" translation="13.8 1.45 -22.8725" rotation="0 180 90" clipDistance="150" nodeId="105"/>
+        <TransformGroup name="Cable1m10" translation="13.8 1.45 -22.8725" rotation="-180 0 -90" clipDistance="150" nodeId="106"/>
+        <TransformGroup name="Cable1m11" translation="13.8 2.45 -22.8725" rotation="-180 0 -90" clipDistance="150" nodeId="107"/>
+        <TransformGroup name="Cable1m12" translation="11.05 3.55 -22.8725" rotation="-180 0 0" clipDistance="150" nodeId="108"/>
+        <TransformGroup name="CableCornerV2" translation="10.05 3.55 -22.8725" rotation="0 180 0" clipDistance="150" nodeId="109"/>
+        <TransformGroup name="Cable1m13" translation="9.95 3.45 -22.8725" rotation="-180 0 90" clipDistance="150" nodeId="110"/>
+        <TransformGroup name="Cable1m14" translation="9.95 2.45 -22.8725" rotation="-180 0 90" clipDistance="150" nodeId="111"/>
+        <TransformGroup name="CableCornerV3" translation="9.85 0.85 -22.8725" rotation="180 0 0" clipDistance="150" nodeId="112"/>
+        <TransformGroup name="Cable50cm3" translation="9.95 0.95 -22.8725" rotation="-180 0 -90" clipDistance="150" nodeId="113"/>
+        <TransformGroup name="Cable1m15" translation="9.85 0.85 -22.8725" rotation="-180 0 0" clipDistance="150" nodeId="114"/>
+        <TransformGroup name="Cable1m16" translation="8.85 0.85 -22.8725" rotation="-180 0 0" clipDistance="150" nodeId="115"/>
+        <TransformGroup name="Cable1m17" translation="7.85 0.85 -22.8725" rotation="-180 0 0" clipDistance="150" nodeId="116"/>
+        <TransformGroup name="Cable1m18" translation="6.85 0.85 -22.8725" rotation="-180 0 0" clipDistance="150" nodeId="117"/>
+        <TransformGroup name="Cable1m19" translation="5.85 0.85 -22.8725" rotation="-180 0 0" clipDistance="150" nodeId="118"/>
+        <TransformGroup name="Cable1m20" translation="4.85 0.85 -22.8725" rotation="-180 0 0" clipDistance="150" nodeId="119"/>
+        <TransformGroup name="Cable1m21" translation="3.85 0.85 -22.8725" rotation="-180 0 0" clipDistance="150" nodeId="120"/>
+        <TransformGroup name="Cable1m22" translation="2.85 0.85 -22.8725" rotation="-180 0 0" clipDistance="150" nodeId="121"/>
+        <TransformGroup name="Cable1m23" translation="1.85 0.85 -22.8725" rotation="-180 0 0" clipDistance="150" nodeId="122"/>
+        <TransformGroup name="electricalBox_END1" translation="0.85 0.85 -22.8725" rotation="-180 0 0" clipDistance="150" nodeId="123"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

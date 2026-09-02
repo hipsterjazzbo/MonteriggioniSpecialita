@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="ridingArena.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="11" filename="$data/maps/mapUS/textures/props/woodenBank_diffuse.png"/>
+    <File fileId="12" filename="$data/maps/mapUS/textures/props/woodenBank_normal.png"/>
+    <File fileId="13" filename="$data/maps/mapUS/textures/props/woodenBank_specular.png"/>
+    <File fileId="5" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="2" filename="../textures/tuscanFence_diffuse.dds"/>
+    <File fileId="3" filename="../textures/tuscanFence_normal.png"/>
+    <File fileId="4" filename="../textures/tuscanFence_specular.png"/>
+    <File fileId="15" filename="../../prefabs/FS22_MapFR/textures/props/bistroFurniture_diffuse.png"/>
+    <File fileId="16" filename="../../prefabs/FS22_MapFR/textures/props/bistroFurniture_normal.png"/>
+    <File fileId="17" filename="../../prefabs/FS22_MapFR/textures/props/bistroFurniture_specular.png"/>
+    <File fileId="8" filename="../../prefabs/FS22_obstaclesHorses_prefab/textures/horseObstaclesSET_diffuse.png"/>
+    <File fileId="9" filename="../../prefabs/FS22_obstaclesHorses_prefab/textures/horseObstaclesSET_normal.png"/>
+    <File fileId="10" filename="../../prefabs/FS22_obstaclesHorses_prefab/textures/horseObstaclesSET_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="bistroFurniture_mat" materialId="5">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="obstaclesSET_a_material" materialId="8">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="tuscanFence_mat" materialId="9" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="tuscanFence_mat2" materialId="10" customShaderId="5" customShaderVariation="vertexOffset">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="woodenBank_mat" materialId="11" customShaderId="5">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="ridingArena.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="riding arena" lockedgroup="true" nodeId="22">
+      <TransformGroup name="tuscanFence_15" lockedgroup="true" translation="-15.3919 -0.467873 8.19885" rotation="-1.58 90 0" scale="1.2 1.2 1.2" nodeId="23">
+        <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="24">
+          <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="25" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <Shape name="visual" shapeId="2" clipDistance="80" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        </TransformGroup>
+        <TransformGroup name="panels" nodeId="27">
+          <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="28">
+            <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="29" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="4" clipDistance="80" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+          <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="31">
+            <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="32" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="4" clipDistance="80" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+          <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="34">
+            <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="35" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="37">
+          <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="38" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <Shape name="visual" shapeId="2" clipDistance="80" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        </TransformGroup>
+        <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="40">
+          <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="41">
+            <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="42" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          </TransformGroup>
+          <TransformGroup name="panels" nodeId="44">
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="45">
+              <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="46" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="48">
+              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="49" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="51">
+              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="52" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="54">
+              <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="55">
+                <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="56" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              </TransformGroup>
+              <TransformGroup name="panels" nodeId="58">
+                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="59">
+                  <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="60" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                </TransformGroup>
+                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="62">
+                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="63" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                </TransformGroup>
+                <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="65">
+                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="66" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                  <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                </TransformGroup>
+                <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="68">
+                  <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="69">
+                    <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="70" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                  </TransformGroup>
+                  <TransformGroup name="panels" nodeId="72">
+                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="73">
+                      <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="74" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                    </TransformGroup>
+                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="76">
+                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="77" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                    </TransformGroup>
+                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="79">
+                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="80" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                      <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="81" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                    </TransformGroup>
+                    <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="82">
+                      <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="83">
+                        <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="84" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                      </TransformGroup>
+                      <TransformGroup name="panels" nodeId="86">
+                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="87">
+                          <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="88" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="89" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                        </TransformGroup>
+                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="90">
+                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="91" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="92" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                        </TransformGroup>
+                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="93">
+                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="94" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                          <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="95" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                        </TransformGroup>
+                        <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="96">
+                          <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="97">
+                            <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="98" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="99" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                          </TransformGroup>
+                          <TransformGroup name="panels" nodeId="100">
+                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="101">
+                              <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="102" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="103" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                            </TransformGroup>
+                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="104">
+                              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="105" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="106" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                            </TransformGroup>
+                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="107">
+                              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="108" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                              <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="109" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                            </TransformGroup>
+                            <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="110">
+                              <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="111">
+                                <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="112" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="113" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                              </TransformGroup>
+                              <TransformGroup name="panels" nodeId="114">
+                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="115">
+                                  <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="116" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="117" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                </TransformGroup>
+                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="118">
+                                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="119" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="120" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                </TransformGroup>
+                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="121">
+                                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="122" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                  <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="123" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                </TransformGroup>
+                                <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="124">
+                                  <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="125">
+                                    <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="126" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="127" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                  </TransformGroup>
+                                  <TransformGroup name="panels" nodeId="128">
+                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="129">
+                                      <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="130" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="131" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                    </TransformGroup>
+                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="132">
+                                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="133" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="134" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                    </TransformGroup>
+                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="135">
+                                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="136" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                      <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="137" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                    </TransformGroup>
+                                    <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="138">
+                                      <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="139">
+                                        <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="140" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="141" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                      </TransformGroup>
+                                      <TransformGroup name="panels" nodeId="142">
+                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="143">
+                                          <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="144" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="145" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                        </TransformGroup>
+                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="146">
+                                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="147" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="148" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                        </TransformGroup>
+                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="149">
+                                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="150" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                          <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="151" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                        </TransformGroup>
+                                        <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="152">
+                                          <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="153">
+                                            <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="154" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="155" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                          </TransformGroup>
+                                          <TransformGroup name="panels" nodeId="156">
+                                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="157">
+                                              <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="158" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="159" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                            </TransformGroup>
+                                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="160">
+                                              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="161" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="162" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                            </TransformGroup>
+                                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="163">
+                                              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="164" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                              <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="165" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                            </TransformGroup>
+                                            <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="166">
+                                              <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="167">
+                                                <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="168" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="169" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                              </TransformGroup>
+                                              <TransformGroup name="panels" nodeId="170">
+                                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="171">
+                                                  <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="172" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="173" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                </TransformGroup>
+                                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="174">
+                                                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="175" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="176" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                </TransformGroup>
+                                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="177">
+                                                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="178" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                  <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="179" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                </TransformGroup>
+                                                <TransformGroup name="tuscanFence" lockedgroup="true" translation="5.11898e-06 0 4.51143" rotation="2.13443e-07 -4.07111e-13 -1.145e-13" nodeId="180">
+                                                  <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="181">
+                                                    <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="182" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="183" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                                  </TransformGroup>
+                                                  <TransformGroup name="panels" nodeId="184">
+                                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="185">
+                                                      <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="186" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="187" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                    </TransformGroup>
+                                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="188">
+                                                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="189" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="190" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                    </TransformGroup>
+                                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="191">
+                                                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="192" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                      <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="193" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                    </TransformGroup>
+                                                    <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="194">
+                                                      <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="195">
+                                                        <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="196" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="197" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                                      </TransformGroup>
+                                                      <TransformGroup name="panels" nodeId="198">
+                                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="199">
+                                                          <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="200" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="201" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                        </TransformGroup>
+                                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="202">
+                                                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="203" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="204" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                        </TransformGroup>
+                                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="205">
+                                                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="206" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                          <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="207" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                        </TransformGroup>
+                                                      </TransformGroup>
+                                                      <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="208">
+                                                        <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="209" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="210" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                                      </TransformGroup>
+                                                    </TransformGroup>
+                                                  </TransformGroup>
+                                                  <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="211">
+                                                    <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="212" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="213" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                                  </TransformGroup>
+                                                </TransformGroup>
+                                              </TransformGroup>
+                                              <TransformGroup name="pole01" translation="0 0 1.46699" nodeId="214">
+                                                <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="215" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="216" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                              </TransformGroup>
+                                            </TransformGroup>
+                                          </TransformGroup>
+                                          <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="217">
+                                            <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="218" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="219" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                          </TransformGroup>
+                                        </TransformGroup>
+                                      </TransformGroup>
+                                      <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="220">
+                                        <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="221" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="222" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                      </TransformGroup>
+                                    </TransformGroup>
+                                  </TransformGroup>
+                                  <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="223">
+                                    <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="224" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="225" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                  </TransformGroup>
+                                </TransformGroup>
+                              </TransformGroup>
+                              <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="226">
+                                <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="227" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="228" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                              </TransformGroup>
+                            </TransformGroup>
+                          </TransformGroup>
+                          <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="229">
+                            <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="230" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="231" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                          </TransformGroup>
+                        </TransformGroup>
+                      </TransformGroup>
+                      <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="232">
+                        <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="233" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="234" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                  <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="235">
+                    <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="236" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="237" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="238">
+                <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="239" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="240" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="241">
+            <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="242" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="243" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tuscanFence_15" lockedgroup="true" translation="-15.4673 -0.198132 -7.98953" rotation="0.95 -0 0" scale="1.2 1.2 1.2" nodeId="244">
+        <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="245">
+          <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="246" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <Shape name="visual" shapeId="2" clipDistance="80" nodeId="247" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        </TransformGroup>
+        <TransformGroup name="panels" nodeId="248">
+          <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="249">
+            <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="250" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="4" clipDistance="80" nodeId="251" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+          <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="252">
+            <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="253" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="4" clipDistance="80" nodeId="254" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+          <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="255">
+            <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="256" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="257" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="258">
+          <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="259" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <Shape name="visual" shapeId="2" clipDistance="80" nodeId="260" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        </TransformGroup>
+        <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="261">
+          <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="262">
+            <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="263" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="264" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          </TransformGroup>
+          <TransformGroup name="panels" nodeId="265">
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="266">
+              <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="267" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="268" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="269">
+              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="270" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="271" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="272">
+              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="273" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="274" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="275">
+              <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="276">
+                <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="277" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="278" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              </TransformGroup>
+              <TransformGroup name="panels" nodeId="279">
+                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="280">
+                  <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="281" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="282" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                </TransformGroup>
+                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="283">
+                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="284" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="285" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                </TransformGroup>
+                <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="286">
+                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="287" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                  <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="288" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                </TransformGroup>
+                <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="289">
+                  <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="290">
+                    <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="291" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="292" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                  </TransformGroup>
+                  <TransformGroup name="panels" nodeId="293">
+                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="294">
+                      <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="295" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="296" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                    </TransformGroup>
+                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="297">
+                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="298" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="299" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                    </TransformGroup>
+                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="300">
+                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="301" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                      <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="302" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                    </TransformGroup>
+                    <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="303">
+                      <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="304">
+                        <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="305" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="306" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                      </TransformGroup>
+                      <TransformGroup name="panels" nodeId="307">
+                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="308">
+                          <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="309" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="310" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                        </TransformGroup>
+                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="311">
+                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="312" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="313" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                        </TransformGroup>
+                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="314">
+                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="315" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                          <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="316" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                        </TransformGroup>
+                        <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="317">
+                          <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="318">
+                            <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="319" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="320" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                          </TransformGroup>
+                          <TransformGroup name="panels" nodeId="321">
+                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="322">
+                              <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="323" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="324" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                            </TransformGroup>
+                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="325">
+                              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="326" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="327" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                            </TransformGroup>
+                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="328">
+                              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="329" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                              <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="330" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                            </TransformGroup>
+                            <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="331">
+                              <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="332">
+                                <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="333" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="334" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                              </TransformGroup>
+                              <TransformGroup name="panels" nodeId="335">
+                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="336">
+                                  <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="337" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="338" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                </TransformGroup>
+                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="339">
+                                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="340" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="341" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                </TransformGroup>
+                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="342">
+                                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="343" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                  <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="344" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                </TransformGroup>
+                                <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="345">
+                                  <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="346">
+                                    <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="347" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="348" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                  </TransformGroup>
+                                  <TransformGroup name="panels" nodeId="349">
+                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="350">
+                                      <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="351" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="352" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                    </TransformGroup>
+                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="353">
+                                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="354" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="355" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                    </TransformGroup>
+                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="356">
+                                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="357" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                      <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="358" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                    </TransformGroup>
+                                    <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="359">
+                                      <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="360">
+                                        <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="361" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="362" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                      </TransformGroup>
+                                      <TransformGroup name="panels" nodeId="363">
+                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="364">
+                                          <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="365" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="366" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                        </TransformGroup>
+                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="367">
+                                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="368" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="369" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                        </TransformGroup>
+                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="370">
+                                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="371" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                          <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="372" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                        </TransformGroup>
+                                      </TransformGroup>
+                                      <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="373">
+                                        <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="374" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="375" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                      </TransformGroup>
+                                    </TransformGroup>
+                                  </TransformGroup>
+                                  <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="376">
+                                    <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="377" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="378" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                  </TransformGroup>
+                                </TransformGroup>
+                              </TransformGroup>
+                              <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="379">
+                                <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="380" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="381" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                              </TransformGroup>
+                            </TransformGroup>
+                          </TransformGroup>
+                          <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="382">
+                            <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="383" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="384" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                          </TransformGroup>
+                        </TransformGroup>
+                      </TransformGroup>
+                      <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="385">
+                        <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="386" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="387" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                  <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="388">
+                    <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="389" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="390" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="391">
+                <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="392" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="393" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="394">
+            <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="395" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="396" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tuscanFence_15" lockedgroup="true" translation="11.5628 0.586502 -8.04025" rotation="1.663 -90 0" scale="1.2 1.2 1.2" nodeId="397">
+        <TransformGroup name="pole01" translation="0 0 -0.0461696" visibility="false" nodeId="398">
+          <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="399" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <Shape name="visual" shapeId="2" clipDistance="80" nodeId="400" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        </TransformGroup>
+        <TransformGroup name="panels" nodeId="401">
+          <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="402">
+            <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="403" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="4" clipDistance="80" nodeId="404" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+          <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="405">
+            <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="406" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="4" clipDistance="80" nodeId="407" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+          <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="408">
+            <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="409" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="410" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="411">
+          <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="412" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <Shape name="visual" shapeId="2" clipDistance="80" nodeId="413" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        </TransformGroup>
+        <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="414">
+          <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="415">
+            <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="416" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="417" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          </TransformGroup>
+          <TransformGroup name="panels" nodeId="418">
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="419">
+              <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="420" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="421" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="422">
+              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="423" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="424" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="425">
+              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="426" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="427" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="428">
+              <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="429">
+                <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="430" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="431" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              </TransformGroup>
+              <TransformGroup name="panels" nodeId="432">
+                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="433">
+                  <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="434" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="435" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                </TransformGroup>
+                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="436">
+                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="437" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="438" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                </TransformGroup>
+                <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="439">
+                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="440" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                  <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="441" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                </TransformGroup>
+                <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="442">
+                  <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="443">
+                    <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="444" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="445" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                  </TransformGroup>
+                  <TransformGroup name="panels" nodeId="446">
+                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="447">
+                      <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="448" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="449" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                    </TransformGroup>
+                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="450">
+                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="451" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="452" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                    </TransformGroup>
+                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="453">
+                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="454" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                      <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="455" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                    </TransformGroup>
+                    <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="456">
+                      <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="457">
+                        <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="458" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="459" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                      </TransformGroup>
+                      <TransformGroup name="panels" nodeId="460">
+                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="461">
+                          <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="462" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="463" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                        </TransformGroup>
+                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="464">
+                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="465" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="466" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                        </TransformGroup>
+                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="467">
+                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="468" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                          <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="469" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                        </TransformGroup>
+                        <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="470">
+                          <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="471">
+                            <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="472" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="473" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                          </TransformGroup>
+                          <TransformGroup name="panels" nodeId="474">
+                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="475">
+                              <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="476" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="477" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                            </TransformGroup>
+                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="478">
+                              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="479" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="480" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                            </TransformGroup>
+                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="481">
+                              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="482" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                              <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="483" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                            </TransformGroup>
+                            <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="484">
+                              <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="485">
+                                <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="486" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="487" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                              </TransformGroup>
+                              <TransformGroup name="panels" nodeId="488">
+                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="489">
+                                  <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="490" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="491" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                </TransformGroup>
+                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="492">
+                                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="493" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="494" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                </TransformGroup>
+                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="495">
+                                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="496" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                  <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="497" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                </TransformGroup>
+                                <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="498">
+                                  <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="499">
+                                    <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="500" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="501" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                  </TransformGroup>
+                                  <TransformGroup name="panels" nodeId="502">
+                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="503">
+                                      <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="504" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="505" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                    </TransformGroup>
+                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="506">
+                                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="507" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="508" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                    </TransformGroup>
+                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="509">
+                                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="510" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                      <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="511" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                    </TransformGroup>
+                                    <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="512">
+                                      <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="513">
+                                        <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="514" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="515" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                      </TransformGroup>
+                                      <TransformGroup name="panels" nodeId="516">
+                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="517">
+                                          <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="518" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="519" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                        </TransformGroup>
+                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="520">
+                                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="521" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="522" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                        </TransformGroup>
+                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="523">
+                                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="524" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                          <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="525" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                        </TransformGroup>
+                                        <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="526">
+                                          <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="527">
+                                            <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="528" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="529" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                          </TransformGroup>
+                                          <TransformGroup name="panels" nodeId="530">
+                                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="531">
+                                              <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="532" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="533" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                            </TransformGroup>
+                                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="534">
+                                              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="535" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="536" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                            </TransformGroup>
+                                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="537">
+                                              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="538" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                              <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="539" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                            </TransformGroup>
+                                            <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="540">
+                                              <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="541">
+                                                <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="542" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="543" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                              </TransformGroup>
+                                              <TransformGroup name="panels" nodeId="544">
+                                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="545">
+                                                  <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="546" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="547" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                </TransformGroup>
+                                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="548">
+                                                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="549" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="550" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                </TransformGroup>
+                                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="551">
+                                                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="552" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                  <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="553" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                </TransformGroup>
+                                                <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="554">
+                                                  <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="555">
+                                                    <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="556" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="557" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                                  </TransformGroup>
+                                                  <TransformGroup name="panels" nodeId="558">
+                                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="559">
+                                                      <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="560" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="561" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                    </TransformGroup>
+                                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="562">
+                                                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="563" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="564" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                    </TransformGroup>
+                                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="565">
+                                                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="566" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                      <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="567" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                    </TransformGroup>
+                                                    <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="568">
+                                                      <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="569">
+                                                        <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="570" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="571" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                                      </TransformGroup>
+                                                      <TransformGroup name="panels" nodeId="572">
+                                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="573">
+                                                          <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="574" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="575" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                        </TransformGroup>
+                                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="576">
+                                                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="577" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="578" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                        </TransformGroup>
+                                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="579">
+                                                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="580" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                          <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="581" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                        </TransformGroup>
+                                                        <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="582">
+                                                          <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="583">
+                                                            <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="584" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="585" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                                          </TransformGroup>
+                                                          <TransformGroup name="panels" nodeId="586">
+                                                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="587">
+                                                              <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="588" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="589" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                            </TransformGroup>
+                                                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="590">
+                                                              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="591" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="592" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                            </TransformGroup>
+                                                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="593">
+                                                              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="594" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                              <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="595" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                            </TransformGroup>
+                                                            <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="596">
+                                                              <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="597">
+                                                                <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="598" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="599" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                                              </TransformGroup>
+                                                              <TransformGroup name="panels" nodeId="600">
+                                                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="601">
+                                                                  <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="602" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="603" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                                </TransformGroup>
+                                                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="604">
+                                                                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="605" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="606" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                                </TransformGroup>
+                                                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="607">
+                                                                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="608" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                                  <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="609" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                                                </TransformGroup>
+                                                              </TransformGroup>
+                                                              <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="610">
+                                                                <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="611" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="612" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                                              </TransformGroup>
+                                                            </TransformGroup>
+                                                          </TransformGroup>
+                                                          <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="613">
+                                                            <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="614" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="615" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                                          </TransformGroup>
+                                                        </TransformGroup>
+                                                      </TransformGroup>
+                                                      <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="616">
+                                                        <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="617" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="618" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                                      </TransformGroup>
+                                                    </TransformGroup>
+                                                  </TransformGroup>
+                                                  <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="619">
+                                                    <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="620" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="621" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                                  </TransformGroup>
+                                                </TransformGroup>
+                                              </TransformGroup>
+                                              <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="622">
+                                                <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="623" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="624" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                              </TransformGroup>
+                                            </TransformGroup>
+                                          </TransformGroup>
+                                          <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="625">
+                                            <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="626" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="627" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                          </TransformGroup>
+                                        </TransformGroup>
+                                      </TransformGroup>
+                                      <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="628">
+                                        <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="629" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="630" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                      </TransformGroup>
+                                    </TransformGroup>
+                                  </TransformGroup>
+                                  <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="631">
+                                    <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="632" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="633" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                  </TransformGroup>
+                                </TransformGroup>
+                              </TransformGroup>
+                              <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="634">
+                                <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="635" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="636" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                              </TransformGroup>
+                            </TransformGroup>
+                          </TransformGroup>
+                          <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="637">
+                            <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="638" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="639" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                          </TransformGroup>
+                        </TransformGroup>
+                      </TransformGroup>
+                      <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="640">
+                        <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="641" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="642" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                  <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="643">
+                    <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="644" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="645" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="646">
+                <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="647" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="648" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="649">
+            <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="650" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="651" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tuscanFence_15" lockedgroup="true" translation="11.5802 0.276161 8.13712" rotation="178.9 -0 180" scale="1.2 1.2 1.2" nodeId="652">
+        <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="653">
+          <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="654" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <Shape name="visual" shapeId="2" clipDistance="80" nodeId="655" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        </TransformGroup>
+        <TransformGroup name="panels" nodeId="656">
+          <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="657">
+            <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="658" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="4" clipDistance="80" nodeId="659" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+          <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="660">
+            <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="661" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="4" clipDistance="80" nodeId="662" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+          <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="663">
+            <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="664" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="665" castsShadows="true" receiveShadows="true" materialIds="10"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="666">
+          <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="667" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <Shape name="visual" shapeId="2" clipDistance="80" nodeId="668" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        </TransformGroup>
+        <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="669">
+          <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="670">
+            <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="671" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="672" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          </TransformGroup>
+          <TransformGroup name="panels" nodeId="673">
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="674">
+              <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="675" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="676" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="677">
+              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="678" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="679" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="680">
+              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="681" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="682" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="683">
+              <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="684">
+                <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="685" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="686" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              </TransformGroup>
+              <TransformGroup name="panels" nodeId="687">
+                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="688">
+                  <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="689" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="690" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                </TransformGroup>
+                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="691">
+                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="692" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="693" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                </TransformGroup>
+                <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="694">
+                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="695" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                  <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="696" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                </TransformGroup>
+                <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="697">
+                  <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="698">
+                    <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="699" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="700" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                  </TransformGroup>
+                  <TransformGroup name="panels" nodeId="701">
+                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="702">
+                      <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="703" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="704" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                    </TransformGroup>
+                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="705">
+                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="706" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="707" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                    </TransformGroup>
+                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="708">
+                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="709" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                      <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="710" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                    </TransformGroup>
+                    <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="711">
+                      <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="712">
+                        <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="713" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="714" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                      </TransformGroup>
+                      <TransformGroup name="panels" nodeId="715">
+                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="716">
+                          <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="717" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="718" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                        </TransformGroup>
+                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="719">
+                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="720" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="721" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                        </TransformGroup>
+                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="722">
+                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="723" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                          <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="724" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                        </TransformGroup>
+                        <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="725">
+                          <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="726">
+                            <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="727" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="728" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                          </TransformGroup>
+                          <TransformGroup name="panels" nodeId="729">
+                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="730">
+                              <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="731" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="732" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                            </TransformGroup>
+                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="733">
+                              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="734" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="735" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                            </TransformGroup>
+                            <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="736">
+                              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="737" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                              <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="738" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                            </TransformGroup>
+                            <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="739">
+                              <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="740">
+                                <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="741" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="742" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                              </TransformGroup>
+                              <TransformGroup name="panels" nodeId="743">
+                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="744">
+                                  <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="745" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="746" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                </TransformGroup>
+                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="747">
+                                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="748" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                  <Shape name="visual" shapeId="4" clipDistance="80" nodeId="749" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                </TransformGroup>
+                                <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="750">
+                                  <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="751" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                  <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="752" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                </TransformGroup>
+                                <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="753">
+                                  <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="754">
+                                    <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="755" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="756" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                  </TransformGroup>
+                                  <TransformGroup name="panels" nodeId="757">
+                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="758">
+                                      <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="759" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="760" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                    </TransformGroup>
+                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="761">
+                                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="762" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                      <Shape name="visual" shapeId="4" clipDistance="80" nodeId="763" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                    </TransformGroup>
+                                    <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="764">
+                                      <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="765" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                      <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="766" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                    </TransformGroup>
+                                    <TransformGroup name="tuscanFence" lockedgroup="true" translation="-4.48561e-09 3.54534e-14 1.50381" rotation="3.08514e-13 -0 -5.08889e-14" nodeId="767">
+                                      <TransformGroup name="pole01" translation="0 0 -0.0461696" nodeId="768">
+                                        <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="769" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="770" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                      </TransformGroup>
+                                      <TransformGroup name="panels" nodeId="771">
+                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="772">
+                                          <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="773" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="774" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                        </TransformGroup>
+                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" nodeId="775">
+                                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="776" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                          <Shape name="visual" shapeId="4" clipDistance="80" nodeId="777" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                        </TransformGroup>
+                                        <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" nodeId="778">
+                                          <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="779" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                          <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="780" castsShadows="true" receiveShadows="true" materialIds="10"/>
+                                        </TransformGroup>
+                                      </TransformGroup>
+                                      <TransformGroup name="pole01" translation="0 0 1.46699" nodeId="781">
+                                        <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="782" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="783" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                      </TransformGroup>
+                                    </TransformGroup>
+                                  </TransformGroup>
+                                  <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="784">
+                                    <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="785" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="786" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                                  </TransformGroup>
+                                </TransformGroup>
+                              </TransformGroup>
+                              <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="787">
+                                <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="788" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="789" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                              </TransformGroup>
+                            </TransformGroup>
+                          </TransformGroup>
+                          <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="790">
+                            <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="791" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="792" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                          </TransformGroup>
+                        </TransformGroup>
+                      </TransformGroup>
+                      <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="793">
+                        <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="794" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                        <Shape name="visual" shapeId="2" clipDistance="80" nodeId="795" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                  <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="796">
+                    <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="797" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                    <Shape name="visual" shapeId="2" clipDistance="80" nodeId="798" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="799">
+                <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="800" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+                <Shape name="visual" shapeId="2" clipDistance="80" nodeId="801" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="pole01" translation="0 0 1.46699" visibility="false" nodeId="802">
+            <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="803" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="804" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="modernCross" translation="2.79965 0.103523 -2.07373" rotation="90.0007 88.5256 90.0007" shapeId="5" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="160" nodeId="805" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      <Shape name="modernTwoBar" translation="-4.40468 -0.178257 -2.07779" rotation="89.999 -88.9648 -89.999" shapeId="6" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="160" nodeId="806" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      <TransformGroup name="woodenBank" lockedgroup="true" translation="9.60626 0.081707 9.11371" rotation="1.31082 -4.50001e-07 1.31117" scale="0.990582 0.990582 0.990582" clipDistance="55" nodeId="807">
+        <Shape name="LOD0" shapeId="7" nodeId="808" castsShadows="true" receiveShadows="true" materialIds="11"/>
+        <Shape name="col" shapeId="8" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="809" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+      </TransformGroup>
+      <TransformGroup name="horseFence" lockedgroup="true" translation="5.37506 -0.137199 11.338" rotation="0 20.071 0" nodeId="810">
+        <TransformGroup name="fence" translation="0 0 -0.734375" nodeId="811">
+          <TransformGroup name="pole01" translation="7.62939e-06 0 -0.519806" nodeId="812">
+            <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="813" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="814" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          </TransformGroup>
+          <TransformGroup name="panels" translation="7.62939e-06 0 -0.506184" nodeId="815">
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="816">
+              <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="817" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="818" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" visibility="false" nodeId="819">
+              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="820" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="821" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" visibility="false" nodeId="822">
+              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="823" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="824" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="pole01" translation="7.62939e-06 0 0.993347" visibility="false" nodeId="825">
+            <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="826" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="827" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="fence" translation="0 0 0.734406" nodeId="828">
+          <TransformGroup name="pole01" translation="7.62939e-06 0 -0.519806" nodeId="829">
+            <Shape name="col" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="830" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="831" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          </TransformGroup>
+          <TransformGroup name="panels" translation="7.62939e-06 0 -0.473633" nodeId="832">
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0790649 1.3073 -0.00591981" rotation="0 -0 -180" scale="1 1 0.75" nodeId="833">
+              <Shape name="col" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="834" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="835" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.0625574 1.09621 0.159222" rotation="-17.1474 0 -180" scale="0.8 0.8 0.76" visibility="false" nodeId="836">
+              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="837" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" shapeId="4" clipDistance="80" nodeId="838" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="panel01" lockedgroup="true" translation="-0.00149414 1.0981 1.34331" rotation="162.73 -0 0" scale="0.8 0.8 0.83" visibility="false" nodeId="839">
+              <Shape name="col" shapeId="3" static="true" density="0.0001" nodeId="840" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+              <Shape name="visual" translation="0 0 0.0085378" shapeId="4" clipDistance="80" nodeId="841" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="pole01" translation="7.62939e-06 0 0.966853" nodeId="842">
+            <Shape name="col" shapeId="1" static="true" density="0.0001" nodeId="843" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+            <Shape name="visual" shapeId="2" clipDistance="80" nodeId="844" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="bistroFurnitureParasolClosed" translation="10.5886 0.0590019 8.44525" rotation="1.44622 24.9877 1.92219" shapeId="9" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="845" castsShadows="true" receiveShadows="true" materialIds="5"/>
+    </TransformGroup>
+    <TransformGroup name="tipOcclusionUpdateAreas" translation="0.698943 0 -3.66695" nodeId="848">
+      <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-16.3986 0 -4.65651" nodeId="849">
+        <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="27.6289 0 17.8625" nodeId="850"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>
