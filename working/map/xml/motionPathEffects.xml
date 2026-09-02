@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <motionPathEffects>
 	<motionPathEffect filename="map/effects/cutter/cutterEffects.xml" />
+	<motionPathEffect filename="map/effects/cutter/sesameEffects.xml" />
     <motionPathEffect filename="map/effects/cutter/cutterFruitEffects.xml" />
     <motionPathEffect filename="map/effects/cutter/cutterThreshingEffects.xml" />
     <!--<motionPathEffect filename="$data/effects/cutter/cutterFruitEffects.xml" />

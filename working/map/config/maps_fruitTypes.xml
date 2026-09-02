@@ -34,19 +34,20 @@
 		<fruitType filename="map/foliage/spelt/spelt.xml"/>
 		<fruitType filename="map/foliage/vetchRye/vetchRye.xml"/>
 		<fruitType filename="map/foliage/greenRye/greenRye.xml"/>
-		<fruitType filename="map/foliage/fieldGrass/fieldGrass.xml"/>	
+		<fruitType filename="map/foliage/fieldGrass/fieldGrass.xml"/>
+		<fruitType filename="map/foliage/sesame/sesame.xml"/>
 		
 		<fruitType filename="$data/foliage/meadow/meadowUS/meadowUS.xml"/>
     </fruitTypes>
 
     <fruitTypeCategories>
-        <fruitTypeCategory name="GRAINHEADER">WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM RICELONGGRAIN RYE TRITICALE SPELT</fruitTypeCategory>
+        <fruitTypeCategory name="GRAINHEADER">WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM RICELONGGRAIN RYE TRITICALE SPELT SESAME</fruitTypeCategory>
         <fruitTypeCategory name="MAIZEHEADER">MAIZE SUNFLOWER</fruitTypeCategory>
-        <fruitTypeCategory name="MAIZECUTTER">MAIZE WHEAT BARLEY OAT CANOLA SORGHUM SOYBEAN SUNFLOWER SILAGEMAIZE VETCHRYE GREENRYE</fruitTypeCategory>
-        <fruitTypeCategory name="DIRECTCUTTER">GRASS WHEAT BARLEY OAT CANOLA SORGHUM SOYBEAN SUNFLOWER FIELDGRASS</fruitTypeCategory>
+        <fruitTypeCategory name="MAIZECUTTER">MAIZE WHEAT BARLEY OAT CANOLA SORGHUM SOYBEAN SUNFLOWER SILAGEMAIZE VETCHRYE GREENRYE SESAME</fruitTypeCategory>
+        <fruitTypeCategory name="DIRECTCUTTER">GRASS WHEAT BARLEY OAT CANOLA SORGHUM SOYBEAN SUNFLOWER FIELDGRASS SESAME</fruitTypeCategory>
         <fruitTypeCategory name="SOWINGMACHINE">WHEAT BARLEY OAT CANOLA RICELONGGRAIN OILSEEDRADISH GRASS PEA SPINACH RYE TRITICALE SPELT VETCHRYE GREENRYE HUMUSACTIVE MUSTARD FIELDGRASS</fruitTypeCategory>
         <fruitTypeCategory name="SUGARCANE_PLANTER">SUGARCANE</fruitTypeCategory>
-        <fruitTypeCategory name="PLANTER">MAIZE SORGHUM SUNFLOWER SOYBEAN SUGARBEET COTTON GREENBEAN SILAGEMAIZE</fruitTypeCategory>
+        <fruitTypeCategory name="PLANTER">MAIZE SORGHUM SUNFLOWER SOYBEAN SUGARBEET COTTON GREENBEAN SILAGEMAIZE SESAME</fruitTypeCategory>
         <fruitTypeCategory name="PLANTER_SMALL">CARROT PARSNIP BEETROOT SPINACH</fruitTypeCategory>
         <fruitTypeCategory name="WEEDER">OILSEEDRADISH GRASS HUMUSACTIVE MUSTARD VETCHRYE GREENRYE FIELDGRASS</fruitTypeCategory>
         <fruitTypeCategory name="TOPLIFTINGHARVESTER">CARROT BEETROOT PARSNIP</fruitTypeCategory>
@@ -69,6 +70,7 @@
 			<converter from="SILAGEMAIZE" to="CHAFF" factor="4.5"/>
             <converter from="VETCHRYE" to="CHAFF" factor="3.9"/>
             <converter from="GREENRYE" to="CHAFF" factor="3.9"/>
+            <converter from="SESAME" to="CHAFF" factor="6.0"/>
         </fruitTypeConverter>
         <fruitTypeConverter name="MOWER">
             <converter from="GRASS" to="GRASS_WINDROW" factor="1.0"/>

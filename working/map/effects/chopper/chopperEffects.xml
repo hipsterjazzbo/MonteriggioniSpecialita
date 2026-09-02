@@ -2,7 +2,7 @@
 <motionPathEffects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mapMotionPathEffects.xsd">
     <motionPathEffect effectClass="TypedMotionPathEffect" effectType="STRAW_CHOPPER" filename="$data/effects/chopper/strawChopper.i3d">
         <effectGeneration rootNode="0|0"/>
-        <typeDefinition fillTypes="WHEAT BARLEY OAT RYE TRITICALE SPELT MAIZE CANOLA SOYBEAN SUNFLOWER SORGHUM STRAW SNOW DRYGRASS_WINDROW RICELONGGRAIN RICE SPINACH PEA GREENBEAN"/>
+        <typeDefinition fillTypes="WHEAT BARLEY OAT RYE TRITICALE SPELT MAIZE CANOLA SOYBEAN SUNFLOWER SORGHUM STRAW SNOW DRYGRASS_WINDROW RICELONGGRAIN RICE SPINACH PEA GREENBEAN SESAME"/>
  
         <effectMeshes>
             <effectMesh node="0|0|0" numRows="8"  rowLength="6"  skipPositions="0" boundingBox="16 5 14" boundingBoxCenter="0 0 -7"/>
@@ -18,7 +18,7 @@
 
 <!--  CHOPPER  (spreading straw from the end of the harvester) -->
 
-            <effectMaterial materialType="CHOPPER" node="0|1|0|0" fillTypes="WHEAT BARLEY OAT RYE TRITICALE SPELT STRAW" speedScale="1.0">
+            <effectMaterial materialType="CHOPPER" node="0|1|0|0" fillTypes="WHEAT BARLEY OAT RYE TRITICALE SPELT STRAW SESAME" speedScale="1.0">
                 <customShaderParameter name="sizeScale" value="0.75 3.75 0.0 0.0"/>
             </effectMaterial>
             <effectMaterial materialType="CHOPPER" node="0|1|0|1" fillTypes="MAIZE" densityScale="0.75" speedScale="1.0">
@@ -57,7 +57,7 @@
 
 <!--  CHAFFER (spreading straw from the sides of the harvester) -->
 
-            <effectMaterial materialType="CHAFFER" node="0|1|1|0" fillTypes="WHEAT BARLEY OAT RYE TRITICALE SPELT STRAW" speedScale="1.0">
+            <effectMaterial materialType="CHAFFER" node="0|1|1|0" fillTypes="WHEAT BARLEY OAT RYE TRITICALE SPELT STRAW SESAME" speedScale="1.0">
                 <customShaderParameter name="sizeScale" value="0.25 3.75 0.0 0.0"/>
             </effectMaterial>
             <effectMaterial materialType="CHAFFER" node="0|1|1|1" fillTypes="MAIZE" speedScale="1.0">

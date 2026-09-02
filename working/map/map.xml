@@ -123,11 +123,17 @@
         <soilMap filename="$data/maps/mapEU/data/soilMap.grle"/> 	<!-- DIESEN PFAD ANPASSEN WENN DIE KARTE ÜBER EINE EIGENE soilMap.grle VERFÜGT --> 
 																	<!-- ADJUST THIS PATH IF THE MAP HAS ITS OWN soilMap.grle -->
 		
-		<cropSensor fruitTypes="MEADOW RYE TRITICALE SPELT GREENRYE VETCHRYE SILAGEMAIZE FIELDGRASS"/>
+		<cropSensor fruitTypes="MEADOW RYE TRITICALE SPELT GREENRYE VETCHRYE SILAGEMAIZE FIELDGRASS SESAME"/>
 
-        <npcTramlines fruitTypes="RYE TRITICALE SPELT VETCHRYE GREENRYE WHEAT BARLEY OAT CANOLA OAT SOYBEAN SORGHUM PEA GREENBEAN SPINACH" workingWidth="27"/>    
+        <npcTramlines fruitTypes="RYE TRITICALE SPELT VETCHRYE GREENRYE WHEAT BARLEY OAT CANOLA OAT SOYBEAN SORGHUM PEA GREENBEAN SPINACH SESAME" workingWidth="27"/>
         
-		<fruitRequirements>
+        <fruitRequirements>
+            <fruitRequirement fruitTypeName="SESAME">
+                <soil soilTypeIndex="1" targetLevel="100" reduction="60" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="120" reduction="80" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="160" reduction="100" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="140" reduction="100" yieldPotential="0.9"/>
+            </fruitRequirement>
             <fruitRequirement fruitTypeName="RYE">
                 <soil soilTypeIndex="1" targetLevel="130" reduction="110" yieldPotential="0.8"/>
                 <soil soilTypeIndex="2" targetLevel="150" reduction="130" yieldPotential="1.0"/>
@@ -186,10 +192,19 @@
                 <soil soilTypeIndex="3" targetLevel="65" reduction="50" yieldPotential="1.25"/>
                 <soil soilTypeIndex="4" targetLevel="65" reduction="55" yieldPotential="0.9"/>
             </fruitRequirement>
-        </fruitRequirements>
+		</fruitRequirements>
         
 		<seedRateMap>
             <fruitTypes>
+                <fruitType name="SESAME">
+                    <seedRates rates="10 12 14" usages="0.002916 0.0035 0.00408"/>
+                    <soilTypes>
+                        <soilType index="1" yields="0.875 1.000 1.125"/>
+                        <soilType index="2" yields="0.950 1.000 1.000"/>
+                        <soilType index="3" yields="1.000 1.000 1.000"/>
+                        <soilType index="4" yields="0.777 1.000 1.111"/>
+                    </soilTypes>
+                </fruitType>
                 <fruitType name="POTATO">
                     <seedRates rates="8 9 10" usages="0.1848 0.3733 0.4312"/>
 

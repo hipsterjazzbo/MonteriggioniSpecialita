@@ -122,12 +122,20 @@
                     <output fillType="RICE_OIL" amount="10" />
                 </outputs>
             </production>
-			<production id="grapeseed_oil" name="$l10n_fillType_grapeSeedOil" cyclesPerHour="12" costsPerActiveHour="2.5">
+            <production id="grapeseed_oil" name="$l10n_fillType_grapeSeedOil" cyclesPerHour="12" costsPerActiveHour="2.5">
                 <inputs>
                     <input fillType="GRAPESEED" amount="10" />
                 </inputs>
                 <outputs>
                     <output fillType="GRAPESEED_OIL" amount="4" />
+                </outputs>
+            </production>
+            <production id="sesame_oil" name="$l10n_fillType_sesameOil" cyclesPerHour="10" costsPerActiveHour="2.5">
+                <inputs>
+                    <input fillType="SESAME" amount="40" />
+                </inputs>
+                <outputs>
+                    <output fillType="SESAME_OIL" amount="15" />
                 </outputs>
             </production>
         </productions>
@@ -139,16 +147,18 @@
             <capacity fillType="RICELONGGRAIN" capacity="6000" />
             <capacity fillType="RICE"          capacity="6000" />
 			<capacity fillType="GRAPESEED"     capacity="5000" />
+            <capacity fillType="SESAME" capacity="5000" />
+            <capacity fillType="SESAME_OIL" capacity="5000" />
             <capacity fillType="SUNFLOWER_OIL" capacity="5000" />
             <capacity fillType="CANOLA_OIL"    capacity="5000" />
             <capacity fillType="OLIVE_OIL"     capacity="5000" />
             <capacity fillType="RICE_OIL"      capacity="5000" />
-			<capacity fillType="GRAPESEED_OIL" capacity="5000" />
+            <capacity fillType="GRAPESEED_OIL" capacity="5000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false" allowMissions="false">
-            <unloadTrigger exactFillRootNode="exactFillNode" aiNode="unloadTriggerAINode" fillTypes="SUNFLOWER CANOLA OLIVE RICELONGGRAIN RICE GRAPESEED"/>
-			<palletTrigger triggerNode="palletTrigger" fillTypes="SUNFLOWER CANOLA OLIVE RICELONGGRAIN RICE GRAPESEED"/>
+            <unloadTrigger exactFillRootNode="exactFillNode" aiNode="unloadTriggerAINode" fillTypes="SUNFLOWER CANOLA OLIVE RICELONGGRAIN RICE GRAPESEED SESAME"/>
+			<palletTrigger triggerNode="palletTrigger" fillTypes="SUNFLOWER CANOLA OLIVE RICELONGGRAIN RICE GRAPESEED SESAME_OIL"/>
 		</sellingStation>
 
         <palletSpawner>

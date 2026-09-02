@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<motionPathEffects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/mapMotionPathEffects.xsd">
+    <motionPathEffect effectClass="CutterMotionPathEffect" effectType="CUTTER_FORAGE" filename="map/foliage/sesame/sesame_greenBig.i3d">
+        <effectGeneration rootNode="0|7|0" useFoliage="sesame" useFoliageStage="4" useFoliageLOD="0"/>
+        <typeDefinition fruitTypes="SESAME" growthStates="4" speedScale="0.25"/>
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="6" rowLength="5" skipPositions="0" boundingBox="6 4 4"/>
+            <effectMesh node="0|0|1" numRows="6" rowLength="20" skipPositions="0" boundingBox="10 7.5 7.5"/>
+            <effectMesh node="0|0|2" numRows="12" rowLength="26" skipPositions="0" boundingBox="16 7.5 7.5"/>
+            <effectMesh node="0|0|3" numRows="20" rowLength="36" skipPositions="0" boundingBox="24 7.5 7.5"/>
+        </effectMeshes>
+    </motionPathEffect>
+    <motionPathEffect effectClass="CutterMotionPathEffect" effectType="CUTTER CUTTER_FORAGE" filename="map/foliage/sesame/sesame_harvestReady.i3d">
+        <effectGeneration rootNode="0|7|1" useFoliage="sesame" useFoliageStage="5" useFoliageLOD="0"/>
+        <typeDefinition fruitTypes="SESAME" growthStates="5" speedScale="0.25"/>
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="32" rowLength="42" skipPositions="1" boundingBox="18 3 5"/>
+            <effectMesh node="0|0|1" numRows="6" rowLength="5" skipPositions="0" boundingBox="6 4 4"/>
+            <effectMesh node="0|0|2" numRows="6" rowLength="20" skipPositions="0" boundingBox="10 7.5 7.5"/>
+            <effectMesh node="0|0|3" numRows="12" rowLength="26" skipPositions="0" boundingBox="16 7.5 7.5"/>
+            <effectMesh node="0|0|4" numRows="20" rowLength="36" skipPositions="0" boundingBox="24 7.5 7.5"/>
+        </effectMeshes>
+    </motionPathEffect>
+</motionPathEffects>

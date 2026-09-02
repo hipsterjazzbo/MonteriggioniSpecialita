@@ -55,5 +55,7 @@
 		
 		<text name="ui_animalDealerBaleSell" 				text="Ballen Verkauf" />
 	
+		<text name="fillType_sesame" text="Sesame" />
+		<text name="fillType_sesameOil" text="Sesame Oil" />
     </texts>
 </l10n>

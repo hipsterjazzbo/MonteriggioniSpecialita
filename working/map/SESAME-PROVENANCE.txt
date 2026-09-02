@@ -1,0 +1,11 @@
+Phase 1 sesame provenance
+
+Crop foliage, fill-plane textures, sesame HUD icon, and harvesting source snippets:
+  sesame(prefab).zip — Jinkou89 donor archive
+
+Sesame oil HUD icon and pallet:
+  FS25_MultifruitPack_PREFAB.zip — Jinkou89 reference archive; only the sesame-oil
+  product icon and pallet assets were copied. The multifruit framework was not copied.
+
+The donor archives contained no separate readme, license, or credits file. Keep this
+provenance file with the map fork and confirm redistribution terms before publishing.

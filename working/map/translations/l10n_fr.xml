@@ -54,6 +54,8 @@
 		<text name="function_removeVendesiSign" 			text="Retirer le panneau" />
 		
 		<text name="ui_animalDealerBaleSell" 				text="Vente de balles" />
+		<text name="fillType_sesame" text="Sesame" />
+		<text name="fillType_sesameOil" text="Sesame Oil" />
 	</texts>
 
 </l10n>
