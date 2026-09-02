@@ -133,6 +133,12 @@
 	<storeItem xmlFilename="map/placeables/bakery/bakery.xml" />
 	<storeItem xmlFilename="map/placeables/smallOilPress/smallOilPress.xml" />
 	<storeItem xmlFilename="map/placeables/pastaFactory/pastaFactory.xml" />
+	<storeItem xmlFilename="map/placeables/conservificio/conservificio.xml" />
+	<storeItem xmlFilename="map/placeables/herbDryer/herbDryer.xml" />
+	<storeItem xmlFilename="map/placeables/specialitaVegetableGreenhouse/specialitaVegetableGreenhouse.xml" />
+	<storeItem xmlFilename="map/placeables/specialitaHerbGreenhouse/specialitaHerbGreenhouse.xml" />
+	<storeItem xmlFilename="map/placeables/mushroomGrowHouse/mushroomGrowHouse.xml" />
+	<storeItem xmlFilename="map/placeables/compostMixer/compostMixer.xml" />
 	
 	
 	<!-- SELLING POINTS -->

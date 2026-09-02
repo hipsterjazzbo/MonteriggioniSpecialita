@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="greenhouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_storeItem_extendedGreenHouse</name>
+        <name>$l10n_storeItem_specialitaHerbGreenhouse</name>
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>
-        <image>map/placeables/greenhouses/store_greenHousesTarpMedium.dds</image>
-        <price>18000</price>
-        <dailyUpkeep>50</dailyUpkeep>
+        <image>map/placeables/greenhouses/store_greenHouseGlassMedium.dds</image>
+        <price>28000</price>
+        <dailyUpkeep>30</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>
@@ -23,7 +23,7 @@
     </storeData>
 
     <base>
-        <filename>map/placeables/greenhouses/greenHousesTarpMedium.i3d</filename>
+        <filename>map/placeables/greenhouses/greenHouseGlassMedium.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
         <boughtWithFarmland>true</boughtWithFarmland>
     </base>
@@ -61,10 +61,6 @@
         <updateAreas>
             <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
         </updateAreas>
-
-        <splines>
-            <spline node="aiSpline" />
-        </splines>
     </ai>
 
     <infoTrigger triggerNode="infoTrigger" />
@@ -74,7 +70,7 @@
     </hotspots>
 	
 	<dynamicallyLoadedParts>
-        <dynamicallyLoadedPart node="0" linkNode="props" filename="map/placeables/greenhouses/greenHouseProps02.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="props" filename="map/placeables/greenhouses/greenHouseProps.i3d" />
     </dynamicallyLoadedParts>
 
     <triggerMarkers>
@@ -247,10 +243,7 @@
                     <output fillType="GARLIC" amount="9" />
                 </outputs>
             </production>
-            <!-- Specialita vegetables and hydroponic herbs; visual plant slots remain the existing greenhouse slots. -->
             <production id="specialita_vegetables" name="Specialita vegetables" cyclesPerHour="18" costsPerActiveHour="0.2"><inputs><input fillType="WATER" amount="10"/><input fillType="SEEDS" amount="2"/><input fillType="FERTILIZER" amount="1"/></inputs><outputs><output fillType="PEPPER" amount="12"/><output fillType="EGGPLANT" amount="12"/><output fillType="ASPARAGUS_WHITE" amount="10"/><output fillType="ASPARAGUS_GREEN" amount="10"/></outputs></production>
-            <production id="specialita_herbs" name="Specialita herbs" cyclesPerHour="18" costsPerActiveHour="0.2"><inputs><input fillType="WATER" amount="8"/><input fillType="SEEDS" amount="2"/><input fillType="FERTILIZER" amount="1"/></inputs><outputs><output fillType="BASIL" amount="8"/><output fillType="PARSLEY" amount="8"/><output fillType="ROSEMARY" amount="8"/><output fillType="SAGE" amount="8"/><output fillType="CHIVES" amount="8"/><output fillType="THYME" amount="8"/><output fillType="LEMONBALM" amount="8"/></outputs></production>
-            <production id="specialita_vegetables_compost" name="Specialita vegetables (compost)" cyclesPerHour="18" costsPerActiveHour="0.2"><inputs><input fillType="WATER" amount="10"/><input fillType="SEEDS" amount="2"/><input fillType="COMPOST" amount="3"/></inputs><outputs><output fillType="PEPPER" amount="12"/><output fillType="EGGPLANT" amount="12"/><output fillType="ASPARAGUS_WHITE" amount="10"/><output fillType="ASPARAGUS_GREEN" amount="10"/></outputs></production>
             <production id="specialita_herbs_compost" name="Specialita herbs (compost)" cyclesPerHour="18" costsPerActiveHour="0.2"><inputs><input fillType="WATER" amount="8"/><input fillType="SEEDS" amount="2"/><input fillType="COMPOST" amount="3"/></inputs><outputs><output fillType="BASIL" amount="8"/><output fillType="PARSLEY" amount="8"/><output fillType="ROSEMARY" amount="8"/><output fillType="SAGE" amount="8"/><output fillType="CHIVES" amount="8"/><output fillType="THYME" amount="8"/><output fillType="LEMONBALM" amount="8"/></outputs></production>
         </productions>
 
@@ -286,18 +279,27 @@
             <capacity fillType="SEEDS"        capacity="5000" />
 			<capacity fillType="FERTILIZER"   capacity="5000" />
 			
-			<fillPlane maxY="0.9" fillType="MANURE" node="manure_plane" minY="-0.056"/>
+			<fillPlane maxY="0.923" fillType="MANURE" node="manure_plane" minY="-0.088"/>
         </storage>
 
         <playerTrigger node="playerTrigger" />
     </productionPoint>
 
     <animatedObjects>
-        <animatedObject saveId="door1" >
+        <animatedObject saveId="door1">
             <animation duration="3">
+                <part node="door1RightOpener">
+                    <keyFrame time="0.00" rotation="0 0 0"/>
+                    <keyFrame time="0.25" rotation="0 0 -25"/>
+                    <keyFrame time="0.75" rotation="0 0 0"/>
+                </part>
                 <part node="door1Left">
-                    <keyFrame time="0.1" rotation="0 0 0"/>
-                    <keyFrame time="1.0" rotation="0 100 0"/>
+                    <keyFrame time="0.50" rotation="0 0 0"/>
+                    <keyFrame time="1.50" rotation="0 -100 0"/>
+                </part>
+                <part node="door1Right">
+                    <keyFrame time="0.25" rotation="0 0 0"/>
+                    <keyFrame time="1.25" rotation="0 100 0"/>
                 </part>
             </animation>
             <controls triggerNode="door1Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
@@ -307,11 +309,21 @@
                 <posEnd linkNode="door1" template="metalDoorsOpen" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door2" >
+
+    <animatedObject saveId="door2" >
             <animation duration="3">
+                <part node="door2RightOpener">
+                    <keyFrame time="0.00" rotation="0 0 0"/>
+                    <keyFrame time="0.25" rotation="0 0 -25"/>
+                    <keyFrame time="0.75" rotation="0 0 0"/>
+                </part>
+                <part node="door2Left">
+                    <keyFrame time="0.50" rotation="0 0 0"/>
+                    <keyFrame time="1.50" rotation="0 -100 0"/>
+                </part>
                 <part node="door2Right">
-                    <keyFrame time="0.1" rotation="0 0 0"/>
-                    <keyFrame time="1.0" rotation="0 100 0"/>
+                    <keyFrame time="0.25" rotation="0 0 0"/>
+                    <keyFrame time="1.25" rotation="0 100 0"/>
                 </part>
             </animation>
             <controls triggerNode="door2Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
@@ -348,24 +360,27 @@
         <i3dMapping id="exactFillRootNode" node="0>5|4|0" />
         <i3dMapping id="unloadTriggerMarker" node="0>5|4|1" />
         <i3dMapping id="unloadTriggerAINode" node="0>5|4|2" />
-        <i3dMapping id="aiSpline" node="0>5|4|3" />
-		<i3dMapping id="exactFillRootNode2" node="0>5|4|4" />
-        <i3dMapping id="unloadTriggerMarker2" node="0>5|4|5" />
-        <i3dMapping id="unloadTriggerAINode2" node="0>5|4|6" />
-		<i3dMapping id="unloadTriggerMarker3" node="0>5|4|7" />
+		<i3dMapping id="exactFillRootNode2" node="0>5|4|3" />
+        <i3dMapping id="unloadTriggerMarker2" node="0>5|4|4" />
+        <i3dMapping id="unloadTriggerAINode2" node="0>5|4|5" />
+		<i3dMapping id="unloadTriggerMarker3" node="0>5|4|6" />
         <i3dMapping id="storage" node="0>5|5" />
         <i3dMapping id="playerTrigger" node="0>5|6" />
         <i3dMapping id="playerTriggerMarker" node="0>5|7" />
         <i3dMapping id="teleportNode" node="0>5|8" />
         <i3dMapping id="door1" node="0>6|0" />
         <i3dMapping id="door1Left" node="0>6|0|0" />
-        <i3dMapping id="door1Trigger" node="0>6|0|1" />
+        <i3dMapping id="door1Right" node="0>6|0|1" />
+        <i3dMapping id="door1RightOpener" node="0>6|0|1|0|0|0" />
+        <i3dMapping id="door1Trigger" node="0>6|0|2" />
         <i3dMapping id="door2" node="0>6|1" />
-        <i3dMapping id="door2Right" node="0>6|1|0" />
-        <i3dMapping id="door2Trigger" node="0>6|1|1" />
-        <i3dMapping id="warningStripes" node="0>7" />
-        <i3dMapping id="infoTrigger" node="0>8" />
-		<i3dMapping id="manure_plane" node="0>9|4" />
+        <i3dMapping id="door2Left" node="0>6|1|0" />
+        <i3dMapping id="door2Right" node="0>6|1|1" />
+        <i3dMapping id="door2RightOpener" node="0>6|1|1|0|0|0" />
+        <i3dMapping id="door2Trigger" node="0>6|1|2" />
+        <i3dMapping id="infoTrigger" node="0>7" />
+        <i3dMapping id="warningStripes" node="0>8" />
+        <i3dMapping id="manure_plane" node="0>9|4" />
 		<i3dMapping id="props" node="0>9|5" />
     </i3dMappings>
 </placeable>
