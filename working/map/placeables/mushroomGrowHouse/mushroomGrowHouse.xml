@@ -243,7 +243,10 @@
                     <output fillType="GARLIC" amount="9" />
                 </outputs>
             </production>
-            <production id="specialita_vegetables" name="Specialita vegetables" cyclesPerHour="18" costsPerActiveHour="0.2"><inputs><input fillType="WATER" amount="10"/><input fillType="SEEDS" amount="2"/><input fillType="FERTILIZER" amount="1"/></inputs><outputs><output fillType="PEPPER" amount="12"/><output fillType="EGGPLANT" amount="12"/><output fillType="ASPARAGUS_WHITE" amount="10"/><output fillType="ASPARAGUS_GREEN" amount="10"/></outputs></production>
+            <production id="specialita_pepper" name="Pepper" cyclesPerHour="18" costsPerActiveHour="0.2"><inputs><input fillType="WATER" amount="10"/><input fillType="SEEDS" amount="2"/><input fillType="FERTILIZER" amount="1"/></inputs><outputs><output fillType="PEPPER" amount="12"/></outputs></production>
+            <production id="specialita_eggplant" name="Eggplant" cyclesPerHour="18" costsPerActiveHour="0.2"><inputs><input fillType="WATER" amount="10"/><input fillType="SEEDS" amount="2"/><input fillType="FERTILIZER" amount="1"/></inputs><outputs><output fillType="EGGPLANT" amount="12"/></outputs></production>
+            <production id="specialita_asparagus_white" name="White asparagus" cyclesPerHour="18" costsPerActiveHour="0.2"><inputs><input fillType="WATER" amount="10"/><input fillType="SEEDS" amount="2"/><input fillType="FERTILIZER" amount="1"/></inputs><outputs><output fillType="ASPARAGUS_WHITE" amount="10"/></outputs></production>
+            <production id="specialita_asparagus_green" name="Green asparagus" cyclesPerHour="18" costsPerActiveHour="0.2"><inputs><input fillType="WATER" amount="10"/><input fillType="SEEDS" amount="2"/><input fillType="FERTILIZER" amount="1"/></inputs><outputs><output fillType="ASPARAGUS_GREEN" amount="10"/></outputs></production>
             <production id="specialita_mushrooms_compost" name="Mushrooms (compost)" cyclesPerHour="16" costsPerActiveHour="0.2"><inputs><input fillType="WATER" amount="8"/><input fillType="SEEDS" amount="2"/><input fillType="COMPOST" amount="5"/></inputs><outputs><output fillType="OYSTER" amount="10"/><output fillType="ENOKI" amount="10"/></outputs></production>
         </productions>
 
@@ -276,6 +279,7 @@
 			<capacity fillType="BASIL" capacity="10000" /><capacity fillType="PARSLEY" capacity="10000" /><capacity fillType="ROSEMARY" capacity="10000" /><capacity fillType="SAGE" capacity="10000" /><capacity fillType="CHIVES" capacity="10000" /><capacity fillType="THYME" capacity="10000" /><capacity fillType="LEMONBALM" capacity="10000" />
 			<capacity fillType="MANURE"       capacity="10000" />
 			<capacity fillType="COMPOST"      capacity="10000" />
+            <capacity fillType="OYSTER"       capacity="14000" /><capacity fillType="ENOKI" capacity="14000" />
             <capacity fillType="SEEDS"        capacity="5000" />
 			<capacity fillType="FERTILIZER"   capacity="5000" />
 			

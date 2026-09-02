@@ -65,8 +65,8 @@
 		<text name="fillType_compost" text="Compost" />
 		<text name="storeItem_conservificio" text="Conservificio Monteriggioni" />
 		<text name="storeItem_herbDryer" text="Farm Herb Dryer" />
-		<text name="storeItem_specialitaVegetableGreenhouse" text="Specialità Vegetable Greenhouse" />
-		<text name="storeItem_specialitaHerbGreenhouse" text="Specialità Herb Greenhouse" />
+		<text name="storeItem_specialitaVegetableGreenhouse" text="Vegetable Greenhouse" />
+		<text name="storeItem_specialitaHerbGreenhouse" text="Herb Greenhouse" />
 		<text name="storeItem_mushroomGrowHouse" text="Mushroom Grow House" />
 		<text name="storeItem_compostMixer" text="Small Compost Mixer" />
 	</texts>

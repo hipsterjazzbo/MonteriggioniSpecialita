@@ -21,7 +21,7 @@
     </storeData>
 
     <base>
-        <filename>map/placeables/pastaFactory/pastaFactory.i3d</filename>
+        <filename>map/placeables/smallOilPress/smallOilPress.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
 		<boughtWithFarmland>true</boughtWithFarmland>
         <canBeDeleted>true</canBeDeleted>
@@ -29,7 +29,7 @@
 	
 	<placement useRandomYRotation="false" useManualYRotation="true" >
         <testAreas>
-            <testArea startNode="testArea1Start" endNode="testArea1End"/>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01"/>
         </testAreas>
 
         <sounds>
@@ -64,11 +64,6 @@
 
     <infoTrigger triggerNode="infoTrigger" />
 
-    <dynamicallyLoadedParts>
-        <dynamicallyLoadedPart filename="$data/placeables/shared/sellingStationGeneric/sellingStationGenericNoCoverWideGrid.i3d" node="0" linkNode="exactFillNode" rotation="0 90 0" />
-		<dynamicallyLoadedPart filename="$data/effects/chimneySmoke/smokeTrailSubUV.i3d"                                         node="1" linkNode="smoke01" shaderParameterName="colorAlpha" shaderParameter="0.5 0.5 0.5 0.5" position="0 -0.2 0"/>
-	</dynamicallyLoadedParts>
-
     <productionPoint>
         <productions sharedThroughputCapacity="false">
             <!-- Standalone conservificio: recipes intentionally moved out of the pasta factory. -->
@@ -97,11 +92,12 @@
             <capacity fillType="PEPPER" capacity="20000"/><capacity fillType="BASIL" capacity="10000"/><capacity fillType="PARSLEY" capacity="10000"/><capacity fillType="ROSEMARY" capacity="10000"/><capacity fillType="SAGE" capacity="10000"/><capacity fillType="THYME" capacity="10000"/><capacity fillType="MINT" capacity="10000"/>
             <capacity fillType="PASSATA" capacity="25000"/><capacity fillType="SUGO_AL_POMODORO" capacity="25000"/><capacity fillType="ARRABBIATA" capacity="25000"/><capacity fillType="MARINARA" capacity="25000"/><capacity fillType="SUGO_AI_FUNGHI" capacity="25000"/><capacity fillType="PESTO" capacity="25000"/><capacity fillType="PESTO_ROSSO" capacity="25000"/><capacity fillType="RICOTTA" capacity="20000"/><capacity fillType="RICOTTA_SPINACH_FILLING" capacity="25000"/><capacity fillType="RAVIOLI" capacity="25000"/>
             <capacity fillType="EGGPLANT" capacity="20000"/><capacity fillType="ASPARAGUS_WHITE" capacity="20000"/><capacity fillType="ASPARAGUS_GREEN" capacity="20000"/><capacity fillType="CHIVES" capacity="10000"/><capacity fillType="LEMONBALM" capacity="10000"/><capacity fillType="DRIED_BASIL" capacity="25000"/><capacity fillType="DRIED_PARSLEY" capacity="25000"/><capacity fillType="DRIED_ROSEMARY" capacity="25000"/><capacity fillType="DRIED_SAGE" capacity="25000"/><capacity fillType="DRIED_THYME" capacity="25000"/><capacity fillType="DRIED_MINT" capacity="25000"/><capacity fillType="PRESERVED_PEPPERS" capacity="25000"/><capacity fillType="GARLIC_IN_OIL" capacity="25000"/><capacity fillType="MUSHROOMS_IN_OIL" capacity="25000"/><capacity fillType="PASTA_AL_POMODORO" capacity="25000"/><capacity fillType="PASTA_ARRABBIATA" capacity="25000"/><capacity fillType="PASTA_AI_FUNGHI" capacity="25000"/><capacity fillType="PASTA_AL_PESTO" capacity="25000"/><capacity fillType="GNOCCHI_AL_POMODORO" capacity="25000"/>
+            <capacity fillType="OLIVE_OIL" capacity="10000"/><capacity fillType="GARLIC" capacity="10000"/><capacity fillType="CHILLI" capacity="10000"/><capacity fillType="OYSTER" capacity="10000"/>
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="exactFillNode" aiNode="unloadTriggerAINode" fillTypes="POTATO TOMATO SPINACH PEPPER EGGPLANT ASPARAGUS_WHITE ASPARAGUS_GREEN BASIL PARSLEY ROSEMARY SAGE CHIVES THYME LEMONBALM OYSTER OLIVE_OIL CHEESE RICOTTA PASTA GNOCCHI"/>
-            <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR POTATO TOMATO SPINACH PEPPER EGGPLANT ASPARAGUS_WHITE ASPARAGUS_GREEN BASIL PARSLEY ROSEMARY SAGE CHIVES THYME LEMONBALM OYSTER OLIVE_OIL CHEESE RICOTTA PASTA GNOCCHI"/>
+            <unloadTrigger exactFillRootNode="exactFillNode" aiNode="unloadTriggerAINode" fillTypes="TOMATO OLIVE_OIL GARLIC CHILLI BASIL OYSTER PEPPER"/>
+            <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="TOMATO OLIVE_OIL GARLIC CHILLI BASIL OYSTER PEPPER PASSATA SUGO_AL_POMODORO ARRABBIATA MARINARA SUGO_AI_FUNGHI PESTO PESTO_ROSSO PRESERVED_PEPPERS GARLIC_IN_OIL MUSHROOMS_IN_OIL"/>
         </sellingStation>
 
         <palletSpawner>
@@ -120,6 +116,7 @@
 
     <triggerMarkers>
         <triggerMarker node="warningStripes01"/>
+        <triggerMarker node="warningStripes02"/>
         <triggerMarker node="playerTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconWrench.i3d"/>
         <triggerMarker node="unloadTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconUnload.i3d"/>
     </triggerMarkers>
@@ -130,36 +127,29 @@
 
     <i3dMappings>
         <i3dMapping id="pastaFactory" node="0>" />
-        <i3dMapping id="indoorAreaStart01" node="0>0|0" />
-        <i3dMapping id="indoorAreaWidth01" node="0>0|0|0" />
-        <i3dMapping id="indoorAreaHeight01" node="0>0|0|1" />
-        <i3dMapping id="indoorAreaStart02" node="0>0|1" />
-        <i3dMapping id="indoorAreaWidth02" node="0>0|1|0" />
-        <i3dMapping id="indoorAreaHeight02" node="0>0|1|1" />
-        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>1|0" />
-        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>1|0|0" />
-        <i3dMapping id="infoTrigger" node="0>2" />
-        <i3dMapping id="sellingStation" node="0>3" />
-        <i3dMapping id="exactFillNode" node="0>3|0" />
-        <i3dMapping id="unloadTriggerMarker" node="0>3|0|0" />
-        <i3dMapping id="unloadTriggerAINode" node="0>3|0|1" />
-        <i3dMapping id="palletTrigger" node="0>3|2" />
-        <i3dMapping id="playerTrigger" node="0>4|0" />
-        <i3dMapping id="playerTriggerMarker" node="0>4|0|0" />
-        <i3dMapping id="palletSpawner" node="0>5" />
-        <i3dMapping id="palletAreaStart01" node="0>5|0|1" />
-        <i3dMapping id="palletAreaEnd01" node="0>5|0|1|0" />
-        <i3dMapping id="palletAreaStart02" node="0>5|0|2" />
-        <i3dMapping id="palletAreaEnd02" node="0>5|0|2|0" />
-        <i3dMapping id="warningStripes01" node="0>5|0|0" />
-        <i3dMapping id="smoke01" node="0>6|0" />
-		<i3dMapping id="testArea1Start" node="0>9" />
-		<i3dMapping id="testArea1End" node="0>9|0" />
-		<i3dMapping id="clearAreaStart01" node="0>10|0" />
-        <i3dMapping id="clearAreaWidth01" node="0>10|0|0" />
-        <i3dMapping id="clearAreaHeight01" node="0>10|0|1" />
-		<i3dMapping id="levelAreaStart01" node="0>11|0" />
-		<i3dMapping id="levelAreaWidth01" node="0>11|0|0" />
-        <i3dMapping id="levelAreaHeight01" node="0>11|0|1" />
+        <i3dMapping id="indoorAreaStart01" node="0>3|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>3|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>3|0|1" />
+        <i3dMapping id="indoorAreaStart02" node="0>3|1" />
+        <i3dMapping id="indoorAreaWidth02" node="0>3|1|0" />
+        <i3dMapping id="indoorAreaHeight02" node="0>3|1|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>5|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>5|0|0" />
+        <i3dMapping id="infoTrigger" node="0>6" />
+        <i3dMapping id="sellingStation" node="0>7" />
+        <i3dMapping id="exactFillNode" node="0>7|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>7|1" />
+        <i3dMapping id="unloadTriggerAINode" node="0>7|2" />
+        <i3dMapping id="palletTrigger" node="0>7|3" />
+        <i3dMapping id="playerTrigger" node="0>8|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>8|1" />
+        <i3dMapping id="warningStripes01" node="0>9|0" />
+        <i3dMapping id="warningStripes02" node="0>9|1" />
+        <i3dMapping id="palletSpawner" node="0>10" />
+        <i3dMapping id="palletAreaStart01" node="0>10|0" />
+        <i3dMapping id="palletAreaEnd01" node="0>10|0|0" />
+        <i3dMapping id="clearAreaStart01" node="0>0|0" /><i3dMapping id="clearAreaWidth01" node="0>0|0|0" /><i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="levelAreaStart01" node="0>1|0" /><i3dMapping id="levelAreaWidth01" node="0>1|0|0" /><i3dMapping id="levelAreaHeight01" node="0>1|0|1" />
+        <i3dMapping id="testAreaStart01" node="0>4|0" /><i3dMapping id="testAreaEnd01" node="0>4|0|0" />
     </i3dMappings>
 </placeable>

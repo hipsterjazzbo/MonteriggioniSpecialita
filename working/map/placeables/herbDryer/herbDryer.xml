@@ -82,16 +82,21 @@
 
     <productionPoint>
         <productions>
-            <production id="specialita_herbs" name="Dried herbs" cyclesPerHour="4" costsPerActiveHour="0.5"><inputs><input fillType="BASIL" amount="5"/><input fillType="PARSLEY" amount="5"/><input fillType="ROSEMARY" amount="5"/><input fillType="SAGE" amount="5"/><input fillType="THYME" amount="5"/><input fillType="LEMONBALM" amount="5"/></inputs><outputs><output fillType="DRIED_BASIL" amount="4"/><output fillType="DRIED_PARSLEY" amount="4"/><output fillType="DRIED_ROSEMARY" amount="4"/><output fillType="DRIED_SAGE" amount="4"/><output fillType="DRIED_THYME" amount="4"/><output fillType="DRIED_MINT" amount="4"/></outputs></production>
+            <production id="specialita_dry_basil" name="Dry basil" cyclesPerHour="4" costsPerActiveHour="0.5"><inputs><input fillType="BASIL" amount="5"/></inputs><outputs><output fillType="DRIED_BASIL" amount="4"/></outputs></production>
+            <production id="specialita_dry_parsley" name="Dry parsley" cyclesPerHour="4" costsPerActiveHour="0.5"><inputs><input fillType="PARSLEY" amount="5"/></inputs><outputs><output fillType="DRIED_PARSLEY" amount="4"/></outputs></production>
+            <production id="specialita_dry_rosemary" name="Dry rosemary" cyclesPerHour="4" costsPerActiveHour="0.5"><inputs><input fillType="ROSEMARY" amount="5"/></inputs><outputs><output fillType="DRIED_ROSEMARY" amount="4"/></outputs></production>
+            <production id="specialita_dry_sage" name="Dry sage" cyclesPerHour="4" costsPerActiveHour="0.5"><inputs><input fillType="SAGE" amount="5"/></inputs><outputs><output fillType="DRIED_SAGE" amount="4"/></outputs></production>
+            <production id="specialita_dry_thyme" name="Dry thyme" cyclesPerHour="4" costsPerActiveHour="0.5"><inputs><input fillType="THYME" amount="5"/></inputs><outputs><output fillType="DRIED_THYME" amount="4"/></outputs></production>
+            <production id="specialita_dry_mint" name="Dry mint" cyclesPerHour="4" costsPerActiveHour="0.5"><inputs><input fillType="MINT" amount="5"/></inputs><outputs><output fillType="DRIED_MINT" amount="4"/></outputs></production>
         </productions>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="BASIL" capacity="5000"/><capacity fillType="PARSLEY" capacity="5000"/><capacity fillType="ROSEMARY" capacity="5000"/><capacity fillType="SAGE" capacity="5000"/><capacity fillType="THYME" capacity="5000"/><capacity fillType="LEMONBALM" capacity="5000"/><capacity fillType="DRIED_BASIL" capacity="10000"/><capacity fillType="DRIED_PARSLEY" capacity="10000"/><capacity fillType="DRIED_ROSEMARY" capacity="10000"/><capacity fillType="DRIED_SAGE" capacity="10000"/><capacity fillType="DRIED_THYME" capacity="10000"/><capacity fillType="DRIED_MINT" capacity="10000"/>
             <capacity fillType="SUNFLOWER"     capacity="9600" />
             <capacity fillType="CANOLA"        capacity="9600" />
             <capacity fillType="OLIVE"         capacity="9600" />
             <capacity fillType="RICELONGGRAIN" capacity="6000" />
             <capacity fillType="RICE"          capacity="6000" />
-			<capacity fillType="GRAPESEED"     capacity="5000" />
             <capacity fillType="SESAME" capacity="5000" />
             <capacity fillType="SESAME_OIL" capacity="5000" />
 			<capacity fillType="LAVENDER" capacity="5000" /><capacity fillType="MINT" capacity="5000" />
@@ -100,12 +105,11 @@
             <capacity fillType="CANOLA_OIL"    capacity="5000" />
             <capacity fillType="OLIVE_OIL"     capacity="5000" />
             <capacity fillType="RICE_OIL"      capacity="5000" />
-            <capacity fillType="GRAPESEED_OIL" capacity="5000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false" allowMissions="false">
-            <unloadTrigger exactFillRootNode="exactFillNode" aiNode="unloadTriggerAINode" fillTypes="SUNFLOWER CANOLA OLIVE RICELONGGRAIN RICE GRAPESEED SESAME LAVENDER MINT"/>
-			<palletTrigger triggerNode="palletTrigger" fillTypes="SUNFLOWER CANOLA OLIVE RICELONGGRAIN RICE GRAPESEED SESAME_OIL LAVENDER_OIL MINT_OIL"/>
+            <unloadTrigger exactFillRootNode="exactFillNode" aiNode="unloadTriggerAINode" fillTypes="BASIL PARSLEY ROSEMARY SAGE THYME LEMONBALM MINT"/>
+			<palletTrigger triggerNode="palletTrigger" fillTypes="DRIED_BASIL DRIED_PARSLEY DRIED_ROSEMARY DRIED_SAGE DRIED_THYME DRIED_MINT"/>
 		</sellingStation>
 
         <palletSpawner>

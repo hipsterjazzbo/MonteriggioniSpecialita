@@ -65,8 +65,8 @@
 		<text name="fillType_compost" text="Compost" />
 		<text name="storeItem_conservificio" text="Conservificio Monteriggioni" />
 		<text name="storeItem_herbDryer" text="Essiccatore Erbe Agricolo" />
-		<text name="storeItem_specialitaVegetableGreenhouse" text="Serra Ortaggi Specialità" />
-		<text name="storeItem_specialitaHerbGreenhouse" text="Serra Erbe Specialità" />
+		<text name="storeItem_specialitaVegetableGreenhouse" text="Serra Ortaggi" />
+		<text name="storeItem_specialitaHerbGreenhouse" text="Serra Erbe" />
 		<text name="storeItem_mushroomGrowHouse" text="Fungaia" />
 		<text name="storeItem_compostMixer" text="Piccolo Compostatore" />
 	</texts>
