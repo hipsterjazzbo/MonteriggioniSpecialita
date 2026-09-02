@@ -1,0 +1,4 @@
+interface:
+  display_name: "FS25 Test Runner"
+  short_description: "Run and report GIANTS FS25 map validation"
+  default_prompt: "Run the fs25-test-runner skill and report regressions."
