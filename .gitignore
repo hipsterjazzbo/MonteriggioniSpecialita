@@ -1,3 +1,8 @@
 # Generated validation/build output; Test Runner paths remain fixed at project root.
 /testrunner-results/
 /builds/
+
+# Local-only source/reference archives; the push repository deliberately omits these.
+/FS25_Monteriggioni_original.zip
+/donors/*.zip
+/reference/*.zip
