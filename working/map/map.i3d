@@ -2484,6 +2484,12 @@
     <File fileId="1811" filename="textures/wood_diffuse.dds"/>
     <File fileId="1812" filename="textures/wood_normal.dds"/>
     <File fileId="1813" filename="textures/wood_specular.dds"/>
+    <File fileId="2533" filename="foliage/sesame/sesame.xml"/>
+    <File fileId="2534" filename="foliage/fabaBean/fabaBean.xml"/>
+    <File fileId="2535" filename="foliage/lavender/lavender.xml"/>
+    <File fileId="2536" filename="foliage/mint/mint.xml"/>
+    <File fileId="2537" filename="foliage/chickpeas.xml"/>
+    <File fileId="2538" filename="foliage/grapeb.xml"/>
   </Files>
 
 
@@ -7241,6 +7247,12 @@
             <FoliageType name="spelt" foliageXmlId="689"/>
             <FoliageType name="triticale" foliageXmlId="690"/>
             <FoliageType name="vetchRye" foliageXmlId="691"/>
+            <FoliageType name="sesame" foliageXmlId="2533"/>
+            <FoliageType name="fababean" foliageXmlId="2534"/>
+            <FoliageType name="lavender" foliageXmlId="2535"/>
+            <FoliageType name="mint" foliageXmlId="2536"/>
+            <FoliageType name="chickpea" foliageXmlId="2537"/>
+            <FoliageType name="grapeb" foliageXmlId="2538"/>
           </FoliageMultiLayer>
           <FoliageMultiLayer densityMapId="721" numChannels="4" numTypeIndexChannels="0">
             <FoliageType name="weed" foliageXmlId="692"/>
