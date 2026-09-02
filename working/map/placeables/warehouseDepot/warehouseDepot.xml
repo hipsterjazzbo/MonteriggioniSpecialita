@@ -112,6 +112,7 @@
         <fillType name="GARLIC"               priceScale="1.44" />
         <fillType name="ENOKI"                priceScale="1.44" />
         <fillType name="OYSTER"               priceScale="1.44" />
+		<fillType name="PEPPER" priceScale="1.44" /><fillType name="EGGPLANT" priceScale="1.44" /><fillType name="ASPARAGUS_WHITE" priceScale="1.44" /><fillType name="ASPARAGUS_GREEN" priceScale="1.44" /><fillType name="BASIL" priceScale="1.44" /><fillType name="PARSLEY" priceScale="1.44" /><fillType name="ROSEMARY" priceScale="1.44" /><fillType name="SAGE" priceScale="1.44" /><fillType name="CHIVES" priceScale="1.44" /><fillType name="THYME" priceScale="1.44" /><fillType name="LEMONBALM" priceScale="1.44" />
         <fillType name="POTATOCHIPS"          priceScale="1.44" />
         <fillType name="PRESERVEDCARROTS"     priceScale="1.44" />
         <fillType name="PRESERVEDPARSNIP"     priceScale="1.44" />

@@ -243,6 +243,8 @@
                     <output fillType="GARLIC" amount="9" />
                 </outputs>
             </production>
+            <production id="specialita_vegetables" name="Specialita vegetables" cyclesPerHour="18" costsPerActiveHour="0.2"><inputs><input fillType="WATER" amount="10"/><input fillType="SEEDS" amount="2"/><input fillType="FERTILIZER" amount="1"/></inputs><outputs><output fillType="PEPPER" amount="12"/><output fillType="EGGPLANT" amount="12"/><output fillType="ASPARAGUS_WHITE" amount="10"/><output fillType="ASPARAGUS_GREEN" amount="10"/></outputs></production>
+            <production id="specialita_herbs" name="Specialita herbs" cyclesPerHour="18" costsPerActiveHour="0.2"><inputs><input fillType="WATER" amount="8"/><input fillType="SEEDS" amount="2"/><input fillType="FERTILIZER" amount="1"/></inputs><outputs><output fillType="BASIL" amount="8"/><output fillType="PARSLEY" amount="8"/><output fillType="ROSEMARY" amount="8"/><output fillType="SAGE" amount="8"/><output fillType="CHIVES" amount="8"/><output fillType="THYME" amount="8"/><output fillType="LEMONBALM" amount="8"/></outputs></production>
         </productions>
 
         <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false">
@@ -270,6 +272,8 @@
             <capacity fillType="NAPACABBAGE"  capacity="14000" />
             <capacity fillType="CHILLI"       capacity="14000" />
             <capacity fillType="GARLIC"       capacity="14000" />
+			<capacity fillType="PEPPER" capacity="14000" /><capacity fillType="EGGPLANT" capacity="14000" /><capacity fillType="ASPARAGUS_WHITE" capacity="14000" /><capacity fillType="ASPARAGUS_GREEN" capacity="14000" />
+			<capacity fillType="BASIL" capacity="10000" /><capacity fillType="PARSLEY" capacity="10000" /><capacity fillType="ROSEMARY" capacity="10000" /><capacity fillType="SAGE" capacity="10000" /><capacity fillType="CHIVES" capacity="10000" /><capacity fillType="THYME" capacity="10000" /><capacity fillType="LEMONBALM" capacity="10000" />
 			<capacity fillType="MANURE"       capacity="10000" />
             <capacity fillType="SEEDS"        capacity="5000" />
 			<capacity fillType="FERTILIZER"   capacity="5000" />

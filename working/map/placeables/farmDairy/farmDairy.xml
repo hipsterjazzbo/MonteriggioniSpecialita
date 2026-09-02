@@ -205,6 +205,13 @@
                 </outputs>
             </production>
 
+            <production id="cream_milk" name="$l10n_fillType_cream" cyclesPerHour="20" costsPerActiveHour="1"><inputs><input fillType="MILK" amount="10"/></inputs><outputs><output fillType="CREAM" amount="6"/></outputs></production>
+            <production id="ricotta_milk" name="$l10n_fillType_ricotta" cyclesPerHour="15" costsPerActiveHour="1"><inputs><input fillType="MILK" amount="12"/></inputs><outputs><output fillType="RICOTTA" amount="8"/></outputs></production>
+            <production id="cream_goatMilk" name="$l10n_fillType_goatCream" cyclesPerHour="15" costsPerActiveHour="4"><inputs><input fillType="GOATMILK" amount="10"/></inputs><outputs><output fillType="GOAT_CREAM" amount="6"/></outputs></production>
+            <production id="caprino_goatMilk" name="$l10n_fillType_caprino" cyclesPerHour="15" costsPerActiveHour="4"><inputs><input fillType="GOATMILK" amount="10"/></inputs><outputs><output fillType="CAPRINO" amount="6"/></outputs></production>
+            <production id="ricotta_goatMilk" name="$l10n_fillType_goatRicotta" cyclesPerHour="15" costsPerActiveHour="4"><inputs><input fillType="GOATMILK" amount="12"/></inputs><outputs><output fillType="GOAT_RICOTTA" amount="8"/></outputs></production>
+            <production id="ricotta_buffaloMilk" name="$l10n_fillType_buffaloRicotta" cyclesPerHour="10" costsPerActiveHour="8"><inputs><input fillType="BUFFALOMILK" amount="12"/></inputs><outputs><output fillType="BUFFALO_RICOTTA" amount="8"/></outputs></production>
+
             <production id="chocolate" name="$l10n_fillType_chocolate" cyclesPerHour="50" costsPerActiveHour="1">
                 <inputs>
                     <input fillType="MILK"  amount="1" />
@@ -250,6 +257,12 @@
             <capacity fillType="CHEESE"              capacity="7000" />
             <capacity fillType="GOATCHEESE"          capacity="5000" />
             <capacity fillType="BUFFALOMOZZARELLA"   capacity="5000" />
+            <capacity fillType="CREAM"                capacity="7000" />
+            <capacity fillType="RICOTTA"              capacity="7000" />
+            <capacity fillType="GOAT_CREAM"           capacity="5000" />
+            <capacity fillType="CAPRINO"              capacity="5000" />
+            <capacity fillType="GOAT_RICOTTA"         capacity="5000" />
+            <capacity fillType="BUFFALO_RICOTTA"      capacity="5000" />
             <capacity fillType="CHOCOLATE"           capacity="3000" />
             <capacity fillType="MILK_BOTTLED"        capacity="9600" />
             <capacity fillType="GOATMILK_BOTTLED"    capacity="5000" />
