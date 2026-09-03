@@ -10,21 +10,21 @@ This is catalogue coverage, not a claim that every candidate has been gameplay-t
 |---|---|---|
 | Tractor | CANDIDATE — NEEDS GAMEPLAY TEST | Fiat 480, Landini 0550, SAME Explorer 90 and other pre-1990 entries |
 | Combine | CANDIDATE — NEEDS GAMEPLAY TEST | CLAAS Dominator 85/105; TX32 begins in 1990 |
-| Mower | CANDIDATE — YEAR UNRESOLVED | Deutz-Fahr KM24 is documented by 1982, but exact introduction is unresolved |
+| Mower | CANDIDATE — NEEDS GAMEPLAY TEST | Deutz-Fahr KM24, 1982 approximate KM-family availability proxy |
 | Tedder | CANDIDATE — NEEDS GAMEPLAY TEST | SIP Favorit 220, dated 1972 |
 | Rake / windrower | CANDIDATE — NEEDS GAMEPLAY TEST | SIP Favorit 220 dual-purpose configuration |
 | Round baler | CANDIDATE — NEEDS GAMEPLAY TEST | Welger RP150, earliest confirmed existence 1978 |
 | Forage wagon | CANDIDATE — NEEDS GAMEPLAY TEST | Pöttinger Pionier LW14 (1963); Krone Optimat Alleslader (1963 family date) |
 | Grain drill | CANDIDATE — NEEDS GAMEPLAY TEST | Hassia DU 100, earliest confirmed exact-model existence 1984 |
 | Plough | CANDIDATE — YEAR UNRESOLVED | Nardi BT2 / BT3 |
-| Cultivator / secondary tillage | CANDIDATE — YEAR UNRESOLVED | Lemken Achat, exact model documented with build year 1990 |
+| Cultivator / secondary tillage | CANDIDATE — NEEDS GAMEPLAY TEST | Lemken Achat, exact model documented with build year 1990 |
 | Manure spreader | CANDIDATE — YEAR UNRESOLVED | Strautmann Streublitz BE5 |
-| Slurry tanker | CANDIDATE — YEAR UNRESOLVED | Joskin Tanker 3500; historic capacity/source conflict prevents a date assignment |
+| Slurry tanker | CANDIDATE — NEEDS GAMEPLAY TEST | Joskin Tanker 3500, 1984 approximate JOSKIN-family proxy; historic capacity conflict remains |
 | Fertiliser spreader | MISSING | No suitable pre-1990 FS25 candidate verified |
-| Grain / general trailer | CANDIDATE — YEAR UNRESOLVED | Krone Emsland |
-| Bale handling / transport | CANDIDATE — YEAR UNRESOLVED | Krone Emsland removable-side / bale configurations |
+| Grain / general trailer | CANDIDATE — NEEDS GAMEPLAY TEST | Krone Emsland, 1963 approximate Alleslader-family proxy |
+| Bale handling / transport | CANDIDATE — NEEDS GAMEPLAY TEST | Krone Emsland removable-side / bale configurations; 1963 family proxy |
 | Fertiliser spreader | CANDIDATE — NEEDS GAMEPLAY TEST | RAUCH ZSA580, earliest confirmed dated documentation 1989 |
-| Maize / silage harvesting | CANDIDATE — YEAR UNRESOLVED | Pöttinger MEX II S; wider MEX family begins around 1969, exact II S date unresolved |
+| Maize / silage harvesting | CANDIDATE — NEEDS GAMEPLAY TEST | Pöttinger MEX II S, 1969 approximate MEX-family proxy |
 
 ## Research decisions
 
@@ -36,7 +36,9 @@ This is catalogue coverage, not a claim that every candidate has been gameplay-t
 - The Hassia DU 100 row uses 1984 as earliest confirmed exact-model existence from the IMAG/DLG report, not as a claimed launch year.
 - The RAUCH ZSA580 row uses 1989 as earliest confirmed dated documentation from ZSA spread-table sheets, not as a claimed launch year.
 - The Lemken Achat row uses an exact 1990 used-machine record as earliest confirmed existence, not as a proven introduction.
-- The Joskin Tanker 3500 remains undated: JOSKIN sources disagree on whether the first 1984 tanker was 3,500 or 5,500 litres, and the FS25 listing does not prove historic reproduction.
+- Where exact model dates remain unavailable, the KM24, MEX II S, Krone Emsland and Joskin Tanker 3500 use explicitly labelled family-era or historical-analogue proxies for campaign gating; these are not claimed launch dates.
+- The Joskin proxy remains conservative: JOSKIN sources disagree on whether the first 1984 tanker was 3,500 or 5,500 litres, and the FS25 listing does not prove historic reproduction.
+- Strautmann Streublitz BE5 and Nardi BT2 / BT3 remain undated because the available evidence does not support even a reliable rough year.
 
 ## Deferred or rejected candidates
 
