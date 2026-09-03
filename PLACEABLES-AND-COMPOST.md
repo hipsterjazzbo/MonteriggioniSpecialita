@@ -6,7 +6,7 @@ This pass adds manually placeable food-economy buildings. No entries were added 
 
 `conservificio/conservificio.xml` provides sauce and preserve recipes. `herbDryer/herbDryer.xml` provides fresh-to-dried herb recipes. `specialitaVegetableGreenhouse`, `specialitaHerbGreenhouse`, and `mushroomGrowHouse` provide compost-backed greenhouse routes. Compost production is supplied by the external Compost Production Pack.
 
-All are registered only in `map/config/storeItems.xml`; the player places them manually. Their placement meshes reuse existing local Monteriggioni assets to avoid importing donor frameworks: pasta-factory, small oil press, glass greenhouse, and small manure-plate meshes respectively. This is functional scaffolding; dedicated visual assets can follow.
+All are registered only in `map/config/storeItems.xml`; the player places them manually. Their placement meshes reuse existing local Monteriggioni assets to avoid importing donor frameworks: pasta-factory, glass greenhouse, and small manure-plate meshes. The Conservificio now uses the pasta-factory building model while retaining its own production XML and recipes.
 
 ## Canonical compost — Compost Production Pack
 

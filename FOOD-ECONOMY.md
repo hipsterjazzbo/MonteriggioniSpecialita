@@ -31,7 +31,7 @@ Animal collection remains the existing map architecture; no animal Lua was added
 
 ## Conservificio and herbs
 
-The standalone Conservificio Monteriggioni produces `PASSATA`, `SUGO_AL_POMODORO`, `ARRABBIATA`, `MARINARA`, `SUGO_AI_FUNGHI`, `PESTO`, `PESTO_ROSSO`, `PRESERVED_PEPPERS`, `GARLIC_IN_OIL`, and `MUSHROOMS_IN_OIL`. The standalone Farm Herb Dryer produces dried herbs without changing the existing `MINT_WINDROW -> DRYMINT_WINDROW` field mechanic. See `PLACEABLES-AND-COMPOST.md`.
+The standalone Conservificio Monteriggioni uses the Pasta Factory building model but retains its own production identity and produces `PASSATA`, `SUGO_AL_POMODORO`, `ARRABBIATA`, `MARINARA`, `SUGO_AI_FUNGHI`, `PESTO`, `PESTO_ROSSO`, `PRESERVED_PEPPERS`, `GARLIC_IN_OIL`, and `MUSHROOMS_IN_OIL`. The standalone Farm Herb Dryer produces dried herbs without changing the existing `MINT_WINDROW -> DRYMINT_WINDROW` field mechanic. See `PLACEABLES-AND-COMPOST.md`.
 
 ## Pasta meals
 
