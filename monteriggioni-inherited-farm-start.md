@@ -659,7 +659,12 @@ orientation.
 
 ### Canonical save files
 
-The local `savegame3` is synchronized from Nicklepuss slot 3. A pre-sync local
-backup is retained outside the repository. The remote pre-correction vehicle
-backup remains separate from the active save. Do not edit the pristine map or
-donor archives when reconstructing this state.
+The Nicklepuss slot 3 state captured on 2026-09-03 is the canonical starting
+point. It is preserved at `canonical-start-savegame3-20260903` on Nicklepuss,
+and the local `savegame3` is synchronized to the same state. The active save's
+`careerSavegame.xml` SHA-256 is
+`fe5cbdfdc8d4953278fa656baec05570ce6a682d0ed87ece051b6301c52599a6`; its
+`vehicles.xml` SHA-256 is
+`de338001b558d4154f62aa8c3ce5f335e83caa610d63d8c037efb0c7d9d18c49`.
+Pre-sync backups are retained outside the repository. Do not edit the pristine
+map or donor archives when reconstructing this state.
