@@ -258,7 +258,7 @@ After the preliminary placement test, the save's current component-1 transforms 
 | Equipment | Position | Rotation |
 |---|---|---|
 | Fiatagri 110-90 DT | `-588.663 37.549 55.954` | `176.86 8.21 -179.15` |
-| Fiat 480 | `-595.708 37.097 63.621` | `178.62 82.64 -179.70` |
+| Fiat 480 DT + BAAS loader | `-595.709 37.097 63.622` | `178.61 82.66 -179.71` |
 | New Holland TX32 | `-578.115 38.539 28.407` | `-0.37 87.43 -0.94` |
 | TX32 grain header | `-573.411 39.527 28.803` | `-16.60 87.43 -0.92` |
 | Deutz-Fahr KM24 | `168.745 28.079 -127.547` | `-0.02 -0.05 0.04` |
@@ -274,7 +274,7 @@ After the preliminary placement test, the save's current component-1 transforms 
 
 The three bale stocks are stored inside `placeable_smallRusticBaleShed` at `-558.951 38.698 68.075`, rotation `0 0 0`, rather than spawned as loose world objects. Its serialized contents are 10 hay bales, 8 straw bales and 6 wrapped silage bales. Keep them in that object-storage inventory on future save construction.
 
-The canonical equipment metadata is: Fiatagri 110-90 (age 4, 3,840 h, 17% damage), Fiat 480 (age 17, 8,960 h, 29%), TX32 and header (age 0, 42 h / 0 h, 2% / 0%), KM24 (age 8, 1,150 h, 24%), SIP Favorit 220 (age 18, 1,780 h, 32%), Welger RP150 (age 12, 2,420 h, 28%), Pionier LW14 (age 27, 3,260 h, 39%), RAUCH ZSA580 (age 1, 760 h, 22%), Hassia DU100 (age 6, 1,360 h, 19%), Lemken Achat (age 0, 35 h, 3%), Krone Emsland (age 27, 4,100 h, 36%) and Joskin Tanker 3500 (age 6, 2,050 h, 31%). These values are the intended March 1990 start metadata; preserve the current saved transforms above when reconstructing the save.
+The canonical equipment metadata is: Fiatagri 110-90 (age 4, 3,840 h, 17% damage), Fiat 480 DT with BAAS loader (age 17, 8,960 h, 29%), TX32 and header (age 0, 42 h / 0 h, 2% / 0%), KM24 (age 8, 1,150 h, 24%), SIP Favorit 220 (age 18, 1,780 h, 32%), Welger RP150 (age 12, 2,420 h, 28%), Pionier LW14 (age 27, 3,260 h, 39%), RAUCH ZSA580 (age 1, 760 h, 22%), Hassia DU100 (age 6, 1,360 h, 19%), Lemken Achat (age 0, 35 h, 3%), Krone Emsland (age 27, 4,100 h, 36%) and Joskin Tanker 3500 (age 6, 2,050 h, 31%). These values are the intended March 1990 start metadata; preserve the current saved transforms above when reconstructing the save.
 
 The live save uses the existing separate heaps: `placeable4259b534ddb7df4ae18d7dd025ce87eb` beside the cow barn currently has engine heap state `manureToDrop="7"`, and `placeable_smallManurePlate` at `-594.604 37.819 52.874` beside the goat shed currently has `manureToDrop="4"`. These are FS25 heap-state counters rather than litre values; do not put manure into the husbandry storage node, whose configured `MANURE` capacity is zero.
 
@@ -293,9 +293,9 @@ The fleet should have deliberately uneven wear. Do not apply one global degradat
 | Machine | Role | Hours | Repair / mechanical | Paint | Fuel |
 |---|---|---:|---:|---:|---:|
 | **Fiatagri 110-90 DT** | Main tractor | **3,840 h** | **83%** | **58%** | **70%** |
-| **Fiat 480** | Yard / light tractor | **8,960 h** | **71%** | **31%** | **55%** |
+| **Fiat 480 DT (Fiat 420–640 series)** | Yard / light tractor with BAAS loader | **8,960 h** | **71%** | **31%** | **55%** |
 
-Interpretation: the 480 is the old family survivor; the 110-90 is the newer main machine that has already worked hard.
+Interpretation: the 480 DT is the old family survivor; the 110-90 is the newer main machine that has already worked hard. The canonical 480 DT uses the BAAS front-loader configuration, with the inherited small bucket, pallet forks and bale spike stored nearby.
 
 ## Combine
 
@@ -358,7 +358,7 @@ Where Historical Start / Vehicle Years needs manual overrides:
 Known campaign anchors include:
 
 - Fiatagri 110-90 DT — **1986**
-- Fiat 480 — **1973**
+- Fiat 480 DT (Fiat 420–640 series) — **1973 historical model anchor**
 - New Holland TX32 — **1990**
 - Welger RP150 — **1978**
 - Pöttinger Pionier LW14 — **1963**
@@ -502,7 +502,7 @@ Fava is a legume and should ultimately be balanced accordingly, but do not inven
 ## Machinery
 
 - [ ] Fiatagri 110-90 DT.
-- [ ] Fiat 480.
+- [ ] Fiat 480 DT with BAAS loader, bucket, pallet forks and bale spike.
 - [ ] New Holland TX32 + grain header.
 - [ ] Deutz-Fahr KM24.
 - [ ] SIP Favorit 220.
@@ -624,7 +624,7 @@ current canonical values.
 | Equipment | Age | Hours | Damage |
 |---|---:|---:|---:|
 | Fiatagri 110-90 DT | 4 | 3,840 | 17% |
-| Fiat 480 | 17 | 8,960 | 29% |
+| Fiat 480 DT + BAAS loader | 17 | 8,960 | 29% |
 | New Holland TX32 | 0 | 42 | 2% |
 | TX32 grain header | 0 | 0 | 0% |
 | SIP Favorit 220 | 18 | 1,780 | 32% |
@@ -638,7 +638,7 @@ current canonical values.
 | Joskin Tanker 3500 | 6 | 2,050 | 31% |
 | Goat-milk tanker MKS8 | 6 | 2,050 | 31% |
 
-The Fiat 480 and all other starting machines now use the corrected FS25
+The Fiat 480 DT replacement and all other starting machines now use the corrected FS25
 seconds representation. The live save also contains a Farm 1 Fiat Panda at
 age 0 with approximately 0.10 displayed hours; it is not part of the
 inherited-equipment specification.

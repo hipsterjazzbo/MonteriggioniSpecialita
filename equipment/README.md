@@ -8,7 +8,7 @@ This is catalogue coverage, not a claim that every candidate has been gameplay-t
 
 | Operation | Status | Catalogue candidate / gap |
 |---|---|---|
-| Tractor | CANDIDATE — NEEDS GAMEPLAY TEST | Fiat 480, Landini 0550, SAME Explorer 90 and other pre-1990 entries |
+| Tractor | CANDIDATE — NEEDS GAMEPLAY TEST | Loader-capable Fiat 480 DT (420–640 series), Landini 0550, SAME Explorer 90 and other pre-1990 entries |
 | Combine | CANDIDATE — NEEDS GAMEPLAY TEST | CLAAS Dominator 85/105; TX32 begins in 1990 |
 | Mower | CANDIDATE — NEEDS GAMEPLAY TEST | Deutz-Fahr KM24, 1982 approximate KM-family availability proxy |
 | Tedder | CANDIDATE — NEEDS GAMEPLAY TEST | SIP Favorit 220, dated 1972 |
@@ -42,4 +42,4 @@ This is catalogue coverage, not a claim that every candidate has been gameplay-t
 
 ## Deferred or rejected candidates
 
-The following remain outside the catalogue pending configuration/fidelity inspection: Fiat 640 standalone; Fiat 420–640 combined pack; Landini 10000/13000; Landini Legend; CLAAS Dominator 88/98/108 SL; and any fantasy-power, huge-capacity, reskinned or otherwise misleading equipment.
+The standalone Peppe978 Fiat 480 remains in the catalogue as historical provenance only. The canonical Grandpa Tractor now uses the loader-capable Fiat 480 DT configuration from Eagle14 Modding's Fiat 420–640 pack. The following remain outside the catalogue pending configuration/fidelity inspection: Fiat 640 standalone; Landini 10000/13000; Landini Legend; CLAAS Dominator 88/98/108 SL; and any fantasy-power, huge-capacity, reskinned or otherwise misleading equipment.
