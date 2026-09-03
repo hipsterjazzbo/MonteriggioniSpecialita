@@ -264,12 +264,15 @@ After the preliminary placement test, the save's current component-1 transforms 
 | Lemken Achat | `-575.452 38.428 35.075` | `-176.36 89.67 -176.35` |
 | Krone Emsland | `-577.295 39.971 41.844` | `-177.20 87.12 -177.27` |
 | Joskin Tanker 3500 | `-550.839 38.737 68.548` | `-178.57 -3.05 180.00` |
+| Goat-milk tanker (Goat Milk IBC Handling MKS8) | `-546.839 38.737 68.761` | `-178.57 -3.05 180.00` |
 
 The three bale stocks are stored inside `placeable_smallRusticBaleShed` at `-558.951 38.698 68.075`, rotation `0 0 0`, rather than spawned as loose world objects. Its serialized contents are 10 hay bales, 8 straw bales and 6 wrapped silage bales. Keep them in that object-storage inventory on future save construction.
 
 The canonical equipment metadata is: Fiatagri 110-90 (age 4, 3,840 h, 17% damage), Fiat 480 (age 17, 8,960 h, 29%), TX32 and header (age 0, 42 h / 0 h, 2% / 0%), KM24 (age 8, 1,150 h, 24%), SIP Favorit 220 (age 18, 1,780 h, 32%), Welger RP150 (age 12, 2,420 h, 28%), Pionier LW14 (age 27, 3,260 h, 39%), RAUCH ZSA580 (age 1, 760 h, 22%), Hassia DU100 (age 6, 1,360 h, 19%), Lemken Achat (age 0, 35 h, 3%), Krone Emsland (age 27, 4,100 h, 36%) and Joskin Tanker 3500 (age 6, 2,050 h, 31%). These values are the intended March 1990 start metadata; preserve the current saved transforms above when reconstructing the save.
 
 The live save uses the existing separate heaps: `placeable4259b534ddb7df4ae18d7dd025ce87eb` beside the cow barn currently has engine heap state `manureToDrop="7"`, and `placeable_smallManurePlate` at `-594.604 37.819 52.874` beside the goat shed currently has `manureToDrop="4"`. These are FS25 heap-state counters rather than litre values; do not put manure into the husbandry storage node, whose configured `MANURE` capacity is zero.
+
+The starting goat-milk tanker uses the installed Goat Milk IBC Handling MKS8 (`mks8GoatMilk.xml`). It is positioned 4 m to the right of the Joskin tanker, with the same orientation, age 6, 2,050 operating hours and 31% damage. The MKS8 is an 8,000 L compatible tanker rather than a historically verified 3,500 L model; it is used here because it is the installed tanker that accepts `GOATMILK` and the IBC transfer workflow.
 
 ---
 
@@ -554,3 +557,101 @@ That tension is intentional.
 ## Canonical changes after testing
 
 - 
+
+## 18. Canonical Save Snapshot — Nicklepuss Slot 3
+
+Captured from Nicklepuss slot 3 on **2026-09-03**. This live save is now the
+canonical tested state; it supersedes the pristine March-1 setup values above
+where the save has naturally advanced or been manually tested.
+
+### Campaign
+
+- Farm: `Azienda Agricola Monteriggioni` (Farm 1)
+- Money: `25,000`
+- Loan: `0`
+- Calendar: March 1990, **3 days per month**
+- Current save day: `7`; current monotonic day: `3`
+- Vehicle Years start year: `1990`
+- Moisture profile: `mediterranean`
+- Fresh, Realistic Livestock, Pasture Grazing, Courseplay, Precision Farming,
+  Crop Rotation, Moisture System, Advanced Damage System and the historical
+  vehicle-year systems are enabled in this save.
+- Enabled mod count: **76**. The saved `careerSavegame.xml` is the authoritative
+  mod set; the active remote mod profile is `EmptyMods`.
+
+### Owned land and current field state
+
+Farm 1 owns fields **6, 65, 70, 75 and 102**. The live tested states are:
+
+| Field | Fruit | Growth | Ground | Weeds | Spray | Lime | Plow |
+|---:|---|---:|---|---:|---:|---:|---:|
+| 6 | `FIELDGRASS` | 6 | `GRASS` | 0 | `NONE` / 1 | 2 | 1 |
+| 65 | `BARLEY` | 4 | `SOWN` | 6 | `NONE` / 1 | 3 | 1 |
+| 70 | `WHEAT` | 4 | `SOWN` | 0 | `NONE` / 1 | 3 | 1 |
+| 75 | `FIELDGRASS` | 5 | `SOWN` | 0 | `NONE` / 0 | 1 | 1 |
+| 102 | `MAIZE` | 10 | `SEEDBED` | 0 | `NONE` / 1 | 2 | 1 |
+
+These are the actual current save values, not inferred agronomic targets.
+
+### Livestock and husbandry state
+
+- Cow shed: 12 `COW_SWISS_BROWN` and 6 `COW_WATERBUFFALO` (18 total), all
+  age 24 months, health 100%, pregnant, with 7 engine manure-heap units.
+- Goat barn: 20 `GOAT`, all age 24 months, health 100%, pregnant, with 4
+  engine manure-heap units.
+- Chicken shed: 20 `CHICKEN` hens and 1 `CHICKEN_ROOSTER`.
+- Cow shed `GRASS_WINDROW`: 7,454.127 L / 24,200 L.
+- Goat barn `GRASS_WINDROW`: 3,537.515 L / 9,880 L.
+- Cow manure heap: unique ID
+  `placeable4259b534ddb7df4ae18d7dd025ce87eb`, beside the cow shed.
+- Goat manure heap: unique ID `placeable_smallManurePlate`, position
+  `-594.604 37.819 52.874`, rotation `-0.00 90.00 0.00`.
+
+### Canonical equipment metadata
+
+Operating time is stored in FS25 seconds; the following are the displayed
+hour values reconstructed from the live save. Ages, wear and damage are the
+current canonical values.
+
+| Equipment | Age | Hours | Damage |
+|---|---:|---:|---:|
+| Fiatagri 110-90 DT | 4 | 3,840 | 17% |
+| Fiat 480 | 17 | 8,960 | 29% |
+| New Holland TX32 | 0 | 42 | 2% |
+| TX32 grain header | 0 | 0 | 0% |
+| SIP Favorit 220 | 18 | 1,780 | 32% |
+| RAUCH ZSA580 | 1 | 760 | 22% |
+| Welger RP150 | 12 | 2,420 | 28% |
+| Deutz-Fahr KM24 | 8 | 1,150 | 24% |
+| Pöttinger Pionier LW14 | 27 | 3,260 | 39% |
+| Hassia DU100 | 6 | 1,360 | 19% |
+| Lemken Achat | 0 | 35 | 3% |
+| Krone Emsland | 27 | 4,100 | 36% |
+| Joskin Tanker 3500 | 6 | 2,050 | 31% |
+| Goat-milk tanker MKS8 | 6 | 2,050 | 31% |
+
+The Fiat 480 and all other starting machines now use the corrected FS25
+seconds representation. The live save also contains a Farm 1 Fiat Panda at
+age 0 with approximately 0.10 displayed hours; it is not part of the
+inherited-equipment specification.
+
+### Farm 6 placeables and transforms
+
+The live save contains 20 Farm 1 placeables. Important canonical transforms
+are retained from the save itself: the bale shed is at
+`-558.951 38.698 68.075`, the cow shed at `-548.250 39.071 39.000`, the goat
+barn at `-598.000 37.896 41.000`, the dairy at `-542.451 39.025 7.986`, the
+farm silo at `-577.137 37.456 67.710`, and the two greenhouses at
+`-615.839 37.004 62.826` and `-615.839 36.793 76.537`.
+
+The live vehicle transforms remain the authoritative positions for the moved
+fleet, including the Joskin tanker at `-550.839 38.737 68.548` and the MKS8
+tanker at `-546.840 38.629 68.758`, both with the saved near-identical
+orientation.
+
+### Canonical save files
+
+The local `savegame3` is synchronized from Nicklepuss slot 3. A pre-sync local
+backup is retained outside the repository. The remote pre-correction vehicle
+backup remains separate from the active save. Do not edit the pristine map or
+donor archives when reconstructing this state.

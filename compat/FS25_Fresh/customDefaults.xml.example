@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Monteriggioni Specialità overlay for FS25_Fresh.
+     Copy to modSettings/FS25_Fresh/customDefaults.xml.
+     Fresh savegame settings still take precedence over these defaults. -->
+<freshSettings version="2">
+    <fillTypes>
+        <!-- Field crops and harvested specialist materials -->
+        <fillType name="SESAME" period="6.0" maxBenefitClass="indoor"/>
+        <fillType name="FABABEAN" period="6.0" maxBenefitClass="indoor"/>
+        <fillType name="FABA_BEAN_CUT" period="3.0" maxBenefitClass="sheltered"/>
+        <fillType name="LAVENDER" period="6.0" maxBenefitClass="indoor"/>
+        <fillType name="MINT" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="MINT_WINDROW" period="1.0" maxBenefitClass="sheltered"/>
+        <fillType name="DRYMINT_WINDROW" period="12.0" maxBenefitClass="indoor"/>
+        <fillType name="CHICKPEA" period="6.0" maxBenefitClass="indoor"/>
+        <fillType name="CHICKPEA_CUT" period="3.0" maxBenefitClass="sheltered"/>
+        <fillType name="GRAPEB" period="3.0" maxBenefitClass="cooled"/>
+
+        <!-- Greenhouse produce and fresh herbs -->
+        <fillType name="TOMATO" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="PEPPER" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="EGGPLANT" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="CHILLI" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="GARLIC" period="3.0" maxBenefitClass="sheltered"/>
+        <fillType name="SPRING_ONION" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="GREENBEAN" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="PEA" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="SPINACH" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="ASPARAGUS_WHITE" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="ASPARAGUS_GREEN" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="OYSTER" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="ENOKI" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="BASIL" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="PARSLEY" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="ROSEMARY" period="3.0" maxBenefitClass="cooled"/>
+        <fillType name="SAGE" period="3.0" maxBenefitClass="cooled"/>
+        <fillType name="CHIVES" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="THYME" period="3.0" maxBenefitClass="cooled"/>
+        <fillType name="LEMONBALM" period="1.0" maxBenefitClass="cooled"/>
+
+        <!-- Milk and fresh dairy -->
+        <fillType name="GOATMILK" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="BUFFALOMILK" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="CREAM" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="GOAT_CREAM" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="RICOTTA" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="GOAT_RICOTTA" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="BUFFALO_RICOTTA" period="1.0" maxBenefitClass="cooled"/>
+        <fillType name="CAPRINO" period="3.0" maxBenefitClass="cooled"/>
+        <fillType name="BUFFALOMOZZARELLA" period="1.0" maxBenefitClass="cooled"/>
+
+        <!-- Conservificio products -->
+        <fillType name="PASSATA" period="6.0" maxBenefitClass="cooled"/>
+        <fillType name="SUGO_AL_POMODORO" period="3.0" maxBenefitClass="cooled"/>
+        <fillType name="ARRABBIATA" period="3.0" maxBenefitClass="cooled"/>
+        <fillType name="MARINARA" period="3.0" maxBenefitClass="cooled"/>
+        <fillType name="SUGO_AI_FUNGHI" period="3.0" maxBenefitClass="cooled"/>
+        <fillType name="PESTO" period="3.0" maxBenefitClass="cooled"/>
+        <fillType name="PESTO_ROSSO" period="3.0" maxBenefitClass="cooled"/>
+        <fillType name="PRESERVED_PEPPERS" period="12.0" maxBenefitClass="indoor"/>
+        <fillType name="GARLIC_IN_OIL" period="12.0" maxBenefitClass="indoor"/>
+        <fillType name="MUSHROOMS_IN_OIL" period="12.0" maxBenefitClass="indoor"/>
+
+        <!-- Pasta and meals -->
+        <fillType name="DRIED_BASIL" period="24.0" maxBenefitClass="indoor"/>
+        <fillType name="DRIED_PARSLEY" period="24.0" maxBenefitClass="indoor"/>
+        <fillType name="DRIED_ROSEMARY" period="24.0" maxBenefitClass="indoor"/>
+        <fillType name="DRIED_SAGE" period="24.0" maxBenefitClass="indoor"/>
+        <fillType name="DRIED_THYME" period="24.0" maxBenefitClass="indoor"/>
+        <fillType name="DRIED_MINT" period="24.0" maxBenefitClass="indoor"/>
+        <fillType name="DRIED_LEMONBALM" period="24.0" maxBenefitClass="indoor"/>
+        <fillType name="PASTA_AL_POMODORO" period="3.0" maxBenefitClass="cooled"/>
+        <fillType name="PASTA_ARRABBIATA" period="3.0" maxBenefitClass="cooled"/>
+        <fillType name="PASTA_AI_FUNGHI" period="3.0" maxBenefitClass="cooled"/>
+        <fillType name="PASTA_AL_PESTO" period="3.0" maxBenefitClass="cooled"/>
+        <fillType name="GNOCCHI_AL_POMODORO" period="3.0" maxBenefitClass="cooled"/>
+        <fillType name="RAVIOLI" period="3.0" maxBenefitClass="cooled"/>
+
+        <!-- Oils and wine are stable indoor products -->
+        <fillType name="SESAME_OIL" period="36.0" maxBenefitClass="indoor"/>
+        <fillType name="LAVENDER_OIL" period="36.0" maxBenefitClass="indoor"/>
+        <fillType name="MINT_OIL" period="36.0" maxBenefitClass="indoor"/>
+        <fillType name="RED_WINE" period="60.0" maxBenefitClass="indoor"/>
+        <fillType name="WHITE_WINE" period="60.0" maxBenefitClass="indoor"/>
+    </fillTypes>
+</freshSettings>

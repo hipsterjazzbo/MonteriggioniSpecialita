@@ -1,6 +1,9 @@
 # FS25_Fresh compatibility mapping
 
-This is documentation scaffolding, not a loadable FS25_Fresh configuration. The installed Fresh schema was not available, so no unsupported XML syntax is fabricated.
+`customDefaults.xml.example` is a loadable FS25_Fresh external overlay using
+the installed v2 schema. Copy it to
+`modSettings/FS25_Fresh/customDefaults.xml` on each FS25 installation. It is
+read at game launch and does not modify FS25_Fresh or the savegame.
 
 | Class | Fill types | Suggested treatment |
 |---|---|---|
