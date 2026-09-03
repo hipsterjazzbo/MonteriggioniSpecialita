@@ -88,7 +88,7 @@
     </paintableFoliages>
 
     
-    <groundTypeMappings>
+	<groundTypeMappings>
     
         <groundTypeMapping type="dirt" 			title="$l10n_groundType_dirt" 			layer="MUDLIGHT" />
     
@@ -118,10 +118,26 @@
 		<groundTypeMapping type="asphalt_dusty" 		title="$l10n_groundType_asphalt" 		layer="ASPHALT_DUSTY" />
         
     </groundTypeMappings>
+
+    <sprayTypes>
+        <sprayType name="COMPOST" litersPerSecond="0.45" type="FERTILIZER" sprayGroundType="MANURE" />
+    </sprayTypes>
 	
 	<precisionFarming>
-        <soilMap filename="$data/maps/mapEU/data/soilMap.grle"/> 	<!-- DIESEN PFAD ANPASSEN WENN DIE KARTE ÜBER EINE EIGENE soilMap.grle VERFÜGT --> 
-																	<!-- ADJUST THIS PATH IF THE MAP HAS ITS OWN soilMap.grle -->
+		<soilMap filename="$data/maps/mapEU/data/soilMap.grle"/> 	<!-- DIESEN PFAD ANPASSEN WENN DIE KARTE ÜBER EINE EIGENE soilMap.grle VERFÜGT --> 
+																																							<!-- ADJUST THIS PATH IF THE MAP HAS ITS OWN soilMap.grle -->
+
+        <applicationRates>
+            <applicationRate fillType="COMPOST" autoAdjustToFruit="false" regularRate="40">
+                <soil soilTypeIndex="1" rate="50" />
+                <soil soilTypeIndex="2" rate="70" />
+                <soil soilTypeIndex="3" rate="90" />
+                <soil soilTypeIndex="4" rate="70" />
+            </applicationRate>
+        </applicationRates>
+        <fertilizerUsage>
+            <nAmount fillType="COMPOST" amount="0.055" />
+        </fertilizerUsage>
 		
 		<cropSensor fruitTypes="MEADOW RYE TRITICALE SPELT GREENRYE VETCHRYE SILAGEMAIZE FIELDGRASS SESAME"/>
 

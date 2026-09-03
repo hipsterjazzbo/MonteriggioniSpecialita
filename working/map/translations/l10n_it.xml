@@ -62,13 +62,11 @@
 		<text name="fillType_passata" text="Passata" /><text name="fillType_sugoPomodoro" text="Sugo al pomodoro" /><text name="fillType_arrabbiata" text="Arrabbiata" /><text name="fillType_marinara" text="Marinara" /><text name="fillType_sugoFunghi" text="Sugo ai funghi" /><text name="fillType_pesto" text="Pesto" /><text name="fillType_pestoRosso" text="Pesto rosso" /><text name="fillType_preservedPeppers" text="Peperoni sott’olio" /><text name="fillType_garlicInOil" text="Aglio sott’olio" /><text name="fillType_mushroomsInOil" text="Funghi sott’olio" />
 		<text name="fillType_driedBasil" text="Basilico secco" /><text name="fillType_driedParsley" text="Prezzemolo secco" /><text name="fillType_driedRosemary" text="Rosmarino secco" /><text name="fillType_driedSage" text="Salvia secca" /><text name="fillType_driedThyme" text="Timo secco" /><text name="fillType_driedMint" text="Menta secca" /><text name="fillType_ricottaSpinachFilling" text="Ripieno ricotta e spinaci" /><text name="fillType_ravioli" text="Ravioli" />
 		<text name="fillType_pastaAlPomodoro" text="Pasta al pomodoro" /><text name="fillType_pastaArrabbiata" text="Pasta all’arrabbiata" /><text name="fillType_pastaAiFunghi" text="Pasta ai funghi" /><text name="fillType_pastaAlPesto" text="Pasta al pesto" /><text name="fillType_gnocchiAlPomodoro" text="Gnocchi al pomodoro" />
-		<text name="fillType_compost" text="Compost" />
 		<text name="storeItem_conservificio" text="Conservificio Monteriggioni" />
 		<text name="storeItem_herbDryer" text="Essiccatore Erbe Agricolo" />
 		<text name="storeItem_specialitaVegetableGreenhouse" text="Serra Ortaggi" />
 		<text name="storeItem_specialitaHerbGreenhouse" text="Serra Erbe" />
 		<text name="storeItem_mushroomGrowHouse" text="Fungaia" />
-		<text name="storeItem_compostMixer" text="Piccolo Compostatore" />
 	</texts>
 
 </l10n>

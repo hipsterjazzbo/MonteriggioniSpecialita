@@ -62,13 +62,11 @@
 		<text name="fillType_passata" text="Passata" /><text name="fillType_sugoPomodoro" text="Tomato Sugo" /><text name="fillType_arrabbiata" text="Arrabbiata" /><text name="fillType_marinara" text="Marinara" /><text name="fillType_sugoFunghi" text="Mushroom Sugo" /><text name="fillType_pesto" text="Pesto" /><text name="fillType_pestoRosso" text="Red Pesto" /><text name="fillType_preservedPeppers" text="Preserved Peppers" /><text name="fillType_garlicInOil" text="Garlic in Oil" /><text name="fillType_mushroomsInOil" text="Mushrooms in Oil" />
 		<text name="fillType_driedBasil" text="Dried Basil" /><text name="fillType_driedParsley" text="Dried Parsley" /><text name="fillType_driedRosemary" text="Dried Rosemary" /><text name="fillType_driedSage" text="Dried Sage" /><text name="fillType_driedThyme" text="Dried Thyme" /><text name="fillType_driedMint" text="Dried Mint" /><text name="fillType_ricottaSpinachFilling" text="Ricotta Spinach Filling" /><text name="fillType_ravioli" text="Ravioli" />
 		<text name="fillType_pastaAlPomodoro" text="Pasta al Pomodoro" /><text name="fillType_pastaArrabbiata" text="Pasta Arrabbiata" /><text name="fillType_pastaAiFunghi" text="Pasta ai Funghi" /><text name="fillType_pastaAlPesto" text="Pasta al Pesto" /><text name="fillType_gnocchiAlPomodoro" text="Gnocchi al Pomodoro" />
-		<text name="fillType_compost" text="Compost" />
 		<text name="storeItem_conservificio" text="Conservificio Monteriggioni" />
 		<text name="storeItem_herbDryer" text="Farm Herb Dryer" />
 		<text name="storeItem_specialitaVegetableGreenhouse" text="Vegetable Greenhouse" />
 		<text name="storeItem_specialitaHerbGreenhouse" text="Herb Greenhouse" />
 		<text name="storeItem_mushroomGrowHouse" text="Mushroom Grow House" />
-		<text name="storeItem_compostMixer" text="Small Compost Mixer" />
 	</texts>
 
 </l10n>

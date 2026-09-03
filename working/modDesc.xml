@@ -236,6 +236,7 @@ CHANGELOG Version 1.0.0.1:
 		<dependency>FS25_GreenHouseTree</dependency>
 		<dependency>FS25_smallRusticBaleShed</dependency>
 		<dependency>FS25_SilosFS_crossplay</dependency>
+        <dependency>FS25_compostProduction</dependency>
     </dependencies>
 
 </modDesc>

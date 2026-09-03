@@ -39,7 +39,13 @@ Existing flour/pasta recipes are preserved. Added chains are `RICOTTA + SPINACH 
 
 ## Fresh compatibility
 
-`compat/FS25_Fresh/README.md` is documentation scaffolding only. It intentionally does not claim to be loadable: the exact external FS25_Fresh schema was not available in the map and FS25_Fresh itself was not modified.
+`compat/FS25_Fresh/customDefaults.xml.example` is a supported external overlay
+for the installed FS25_Fresh v2 schema. It classifies Specialità fresh goods,
+dairy, sauces, meals, dried herbs, oils and wine without modifying Fresh.
+
+Greenhouse recipes continue to consume the canonical `COMPOST` supplied by
+the external Compost Production Pack; compost is not produced by the food
+economy.
 
 ## Validation and limitations
 

@@ -138,7 +138,6 @@
 	<storeItem xmlFilename="map/placeables/specialitaVegetableGreenhouse/specialitaVegetableGreenhouse.xml" />
 	<storeItem xmlFilename="map/placeables/specialitaHerbGreenhouse/specialitaHerbGreenhouse.xml" />
 	<storeItem xmlFilename="map/placeables/mushroomGrowHouse/mushroomGrowHouse.xml" />
-	<storeItem xmlFilename="map/placeables/compostMixer/compostMixer.xml" />
 	
 	
 	<!-- SELLING POINTS -->

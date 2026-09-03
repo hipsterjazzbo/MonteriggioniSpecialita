@@ -2400,13 +2400,6 @@
                       distance             ="$data/fillPlanes/distance/manureDistance_diffuse.png" />
         </fillType>
 
-        <fillType name="COMPOST" title="$l10n_fillType_compost" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
-            <physics massPerLiter="0.65" maxPhysicalSurfaceAngle="50" />
-            <economy pricePerLiter="0.045" />
-            <image hud="map/huds/specialita/compost.dds" />
-            <textures diffuse="$data/fillPlanes/manure_diffuse.png" unitSize="1" />
-        </fillType>
-
         <fillType name="LIQUIDMANURE" title="$l10n_fillType_liquidManure" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
             <physics massPerLiter="0.90" maxPhysicalSurfaceAngle="0" />
             <economy pricePerLiter="0.033">

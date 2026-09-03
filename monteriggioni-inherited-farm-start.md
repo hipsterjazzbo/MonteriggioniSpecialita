@@ -225,6 +225,12 @@ Put these materials in the Farm 6 silo where supported:
 
 These are leftovers from the previous harvest, not a free warehouse of everything the farm might someday need.
 
+The farm is traditionally low-input, not formally certified organic. The
+canonical compost source is the external Compost Production Pack. Target
+starting finished compost is **6,000 L**; if the save cannot represent this
+without an unsuitable extra storage object, start at zero finished compost and
+retain the manure/straw stock for the first composting cycle.
+
 Do not pre-stock Specialità cash crops such as sesame, fava, chickpea, lavender or mint. The player should produce those.
 
 ---
@@ -372,7 +378,7 @@ Start with modest working quantities only.
 |---|---:|
 | Diesel in farm storage, if Farm 6 has usable fuel storage | **2,000 L** |
 | Seeds | **1,500 L** |
-| Solid fertiliser | **1,000 L** |
+| Solid fertiliser | **500 L** |
 | Lime | **2,000 L** |
 | Herbicide | **0 L** |
 | Liquid fertiliser | **0 L** |
@@ -391,7 +397,9 @@ At start:
 
 - farm dairy: present, inactive unless the player turns on a recipe;
 - glass greenhouses: present, **empty / inactive**;
-- no free compost;
+- **6,000 L finished compost**, supplied by Compost Production Pack when safe
+  storage representation is available; otherwise zero finished compost and
+  the existing manure/straw stock;
 - no free Specialità finished products;
 - no free sauce, pasta, oils or wine.
 

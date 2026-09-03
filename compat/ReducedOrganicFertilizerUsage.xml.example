@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Copy to modSettings/FS25_ReducedOrganicFertilizerUsage.xml. -->
+<reducedOrganicFertilizerUsage>
+    <info>Monteriggioni Specialità campaign setting: 55% organic-fertilizer usage.</info>
+    <usage manure="0.55" liquidManure="0.55" digestate="0.55" />
+</reducedOrganicFertilizerUsage>

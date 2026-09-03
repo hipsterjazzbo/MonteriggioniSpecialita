@@ -336,10 +336,10 @@ This pass used the current FS25 profile and the locally available mod archives. 
 | Animal Herding Lite | not installed | NOT TESTED | Install the ConGan fork before testing movement for cows, goats, and buffalo. |
 | Pasture Grazing System | not installed | NOT TESTED | Requires the herding/RLRM stack; do not hardwire pasture into Farm 6 yet. |
 | Precision Farming | map integration present; mod version not locally identified | PARTIAL / LIMITATION | `map.xml` has explicit sesame PF requirements and seed-rate entries for FABABEAN, CHICKPEA, LAVENDER, and MINT. Only SESAME is in `cropSensor`/`npcTramlines`; no new PF entries were added without a controlled PF gameplay test. GRAPEB remains outside arable PF additions. |
-| Crop Rotation | not installed | NOT TESTED | No documented stable map-author custom-crop schema was available locally. Record behavior after installing; do not hack classifications into the map. |
+| Crop Rotation | 1.0.1.0 | PARTIAL / LIMITATION | Already installed in the active setup; no second copy or replacement was added. Custom-crop classification remains a gameplay/test concern. |
 | Moisture System | not installed | NOT TESTED | Mediterranean profile and custom crop handling require an actual installed-version test. |
 | Realistic Harvesting | not installed | NOT TESTED | Existing crop/cut mechanics were not changed. Test SESAME, FABABEAN/FABA_BEAN_CUT, CHICKPEA/CHICKPEA_CUT, and mint windrows together with Moisture System. |
-| FS25_Fresh | not installed; no `customDefaults.xml` present | EXTERNAL CONFIG REQUIRED | Existing repo README remains documentation only. Inspect the installed schema first, then create a supported external preset; none was fabricated here. |
+| FS25_Fresh | installed; external preset configured | EXTERNAL CONFIG REQUIRED | Installed schema was inspected. `compat/FS25_Fresh/customDefaults.xml.example` is copied to the active local and Nicklepuss `modSettings/FS25_Fresh/customDefaults.xml`; save/gameplay spoilage verification remains. |
 | Vehicle Years / Historical Start / Disable GPS by Year | not installed | SAVE SETUP REQUIRED | No map changes. Validate date/year filtering before building the March 1990 save. |
 | Advanced Damage System | not installed | TEST NOT AVAILABLE | No map-specific dependency found locally. |
 | Real Fuel Consumption / Realistic Fuel Costs | not installed | TEST NOT AVAILABLE | Existing fuel stations were not changed. Test together with ADS at the planned ~1.5x consumption setting. |
@@ -357,7 +357,28 @@ The active profile contains the Specialità map, Easy Development Controls, and 
 - `FS25_RealisticLivestockRM.zip` — SHA-256 `42cf0f07ebf73ff840fd85c8264efd147c76e440186eb71b58e137f6509aab38`
 - `FS25_ManureForAll.zip` — SHA-256 `f90f7fb9e6bbcc18ac848699e8f0f7e87421f4a85e9ee91f2ef6f249f36bfc31`
 
-The game profile has no installed `FS25_Fresh/customDefaults.xml`, so Fresh syntax remains intentionally unimplemented.
+The active local and Nicklepuss profiles now contain
+`modSettings/FS25_Fresh/customDefaults.xml`, sourced from the installed Fresh
+v2 example schema. The repo source is
+`compat/FS25_Fresh/customDefaults.xml.example`.
+
+### Compost and organic-fertiliser additions — 2026-09-03
+
+| Mod | Version / filename | Status | Notes |
+|---|---|---|---|
+| Compost Production Pack | 1.3.0.0 / `FS25_compostProduction.zip` | CORE / MAP DEPENDENCY | ModHub ID 319065, [Weekend Farmers]. Installed locally and on Nicklepuss. Its installation guide was followed: dependency, COMPOST spray type, PF application rate and PF nitrogen usage were added to the map. |
+| Reduced Organic Fertilizer Usage | 1.1.0.0 / `FS25_ReducedOrganicFertilizerUsage.zip` | CORE / SAVE CONFIG | ModHub ID 367543, moji. Installed locally and on Nicklepuss. Manure, liquid manure and digestate are configured to 0.55 in the external modSettings XML. |
+
+Specialità's former COMPOST fillType, density-height entry, HUD asset and
+compost mixer production/store item were removed. Greenhouse consumers still
+use the Compost Production Pack's canonical `COMPOST` fill type. Fresh,
+compost spreading, PF and reduced-usage behaviour still require live gameplay
+verification.
+
+The official Test Runner completed after the migration. MapCheck, PlaceableCheck,
+I3DCheck and ShaderCheckEditor passed. DXTCheck, MipMapCheck, ModDescCheck,
+ObsoleteFiles and EditorCheck remain the known baseline failures recorded in
+`BASELINE-TEST-RUNNER.md`; no new compost-specific error was identified.
 
 ### Freeze decision
 
